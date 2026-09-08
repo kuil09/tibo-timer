@@ -2,6 +2,10 @@ name: CPU model evaluation
 on:
   workflow_dispatch:
     inputs:
+      development_only:
+        description: Evaluate development cases only during prompt iteration
+        type: boolean
+        default: false
       cold_download:
         description: Bypass CPU cache to measure fresh download and cold-start gate
         type: boolean
@@ -66,9 +70,13 @@ jobs:
         if: inputs.cache_check != true
         run: |
           node --import tsx src/evaluate.ts --model '${{ matrix.model }}' --split dev
-          node --import tsx src/evaluate.ts --model '${{ matrix.model }}' --split holdout
+          if [[ '${{ inputs.development_only }}' != 'true' ]]; then
+            node --import tsx src/evaluate.ts --model '${{ matrix.model }}' --split holdout
+          fi
           node --import tsx src/evaluate.ts --model baseline --split dev
-          node --import tsx src/evaluate.ts --model baseline --split holdout
+          if [[ '${{ inputs.development_only }}' != 'true' ]]; then
+            node --import tsx src/evaluate.ts --model baseline --split holdout
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
