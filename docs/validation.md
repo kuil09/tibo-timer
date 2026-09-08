@@ -73,3 +73,7 @@ Publication without upstream access succeeded: https://github.com/kuil09/tibo-ti
 ## Phi-4-mini-instruct CPU result
 
 Run 34222964322 at e0a59b4 completed successfully as an evaluation job. Phi Q4_K_M passed the CPU speed/memory gate: cold preparation + startup + five posts 173.01 s, warm five posts 28.90 s, server peak RSS 4,329,948 KiB. Frozen holdout: 6/20 (30%), one false completion, one false time, two extraction errors. Development: 4/20. Automatic interpretation remains disabled. The model mistook an individual usage reply for a completion and a last-month retrospective for a new schedule; source-only publication is required. Raw result reports are in docs/evaluation/phi4mini-*.json.
+
+## CPU cache verification
+
+Run https://github.com/kuil09/tibo-timer/actions/runs/34223918223 (be10c4e) succeeded with `cache_check=true`, without repeating quality evaluation. Both runtime and model cache hits were true. After Actions restored the cache, verification/extraction took 2.32 s, server startup 3 s, first five posts 37.59 s, warm five posts 27.50 s, and no extraction errors occurred in those batches. The 42.91 s subtotal excludes Actions cache transfer time and is not a cold-download proof. `performance_passed=false` in this cached report deliberately prevents replacing the previously measured cold proof. The sanitized v2 cache was saved before inference; runtime unpacked binaries and process state are not retained in it. Latest Pages deployment 34223917381 succeeded. Automatic interpretation remains disabled due to the independent quality failure.
