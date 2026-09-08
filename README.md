@@ -35,6 +35,10 @@ Collection detects changed records before restoring model artifacts. Unchanged p
 
 The fixture contains 20 development cases and 20 frozen holdout cases. Approval requires holdout accuracy >=95%, zero false completion/time claims, a cold download+five-post batch <10 minutes, and a warm five-post batch <5 minutes. Unresolved answers on resolvable cases fail. Reports retain all failed cases, server peak memory, elapsed time, runtime identity and hardware. Do not tune against the holdout or relax it after observing results.
 
+The v2 extractor supplies exact source sentence/time spans and accepts four selection fields: type, state, sentence ID, and time ID. Code reconstructs evidence and qualifiers; the model cannot write times, timezones, or audience text. A time ID must belong to the selected sentence and may only accompany a scheduled event. Unsupported expressions remain unresolved. Cross-sentence timezone borrowing is intentionally unsupported. Audience is currently empty rather than inferred; original text remains available.
+
+Evaluation retains raw model output before validation, and distinguishes format errors, semantic classification, temporal results, and legacy exact-string scores. It exercises the production interpretation path, including skipping truncated sources. Existing viewed cases are regression evidence; they cannot authorize publication after prompt development without a new unseen acceptance evaluation.
+
 `config/selection.json` is the explicit publication gate. Only a reviewed passing CPU result may enable a model. Changing model, prompt or schema invalidates cached interpretations.
 
 ## Collection and publication

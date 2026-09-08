@@ -1,6 +1,6 @@
 import { appendFile, mkdir, readFile } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
-import { extract, PROMPT_VERSION, SCHEMA_VERSION } from './inference.ts';
+import { extract, PROMPT_VERSION, SCHEMA_VERSION, type InferenceDiagnostic } from './inference.ts';
 import { normalizeTemporal } from './temporal.ts';
 import { fetchFeed, postsFromFeed, hash, type SourcePost, type Feed } from './source.ts';
 import { readJson, writeJson } from './storage.ts';
@@ -15,13 +15,20 @@ export function sourceOnly(post:SourcePost, reason:string):EventRecord {
 }
 export async function interpret(post:SourcePost, model:string, infer=extract):Promise<EventRecord> {
   if (post.truncated) return sourceOnly(post,'source_truncated');
+  let diagnostic: InferenceDiagnostic | undefined;
   try {
-    const extraction = validateExtraction(await infer(post.text));
+    const extraction = validateExtraction(await infer(post.text, d => { diagnostic = d; }));
     const temporal = normalizeTemporal(extraction,post);
     // Invalid supporting evidence cannot establish a completion announcement either.
-    if (!extraction.evidence || !post.text.includes(extraction.evidence) || (extraction.time_expression && !extraction.evidence.includes(extraction.time_expression))) return sourceOnly(post,'invalid_evidence');
+    if (((extraction.event_type !== 'unknown' || extraction.state !== 'unknown') && !extraction.evidence) || !post.text.includes(extraction.evidence) || (extraction.time_expression && !extraction.evidence.includes(extraction.time_expression))) return sourceOnly(post,'invalid_evidence');
     return {...sourceOnly(post,''),event:{type:extraction.event_type,state:extraction.state,audience:extraction.audience},temporal,interpretation:{method:'cpu-model',model},extraction} as EventRecord;
   } catch(error) {return sourceOnly(post,error instanceof Error?error.message:'inference_failed');}
+  finally {
+    if (diagnostic && infer === extract) {
+      await mkdir('.cache',{recursive:true});
+      await appendFile('.cache/inference-trace.jsonl',JSON.stringify({post_id:post.id,model,...diagnostic})+'\n');
+    }
+  }
 }
 export async function planSync() {
   const selection=await readJson<Selection>('config/selection.json');

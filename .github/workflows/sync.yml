@@ -83,7 +83,9 @@ jobs:
         if: always()
         with:
           name: sync-report-${{ github.run_id }}
-          path: .cache/sync-report.json
+          path: |
+            .cache/sync-report.json
+            .cache/inference-trace.jsonl
           include-hidden-files: true
           retention-days: 3
       - name: Report stale upstream
