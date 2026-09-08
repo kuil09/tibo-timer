@@ -21,3 +21,11 @@ test('legacy report uses pinned-run provenance without inventing direct hash evi
  const c=candidate('qwen25');delete c.benchmark!.prepared.runtime_sha256;
  const r=selectModel([c],lock,'run','151d96b');assert.equal(r.selection.enabled,true);assert.match(r.summary.candidates[0].identity_evidence,/legacy report/);assert.equal(r.summary.evaluation_commit,'151d96b');
 });
+test('accepts a configured Phi candidate through the same unchanged gates',()=>{
+ const phiLock:ModelLock={runtime:lock.runtime,active_candidates:['phi4mini'],models:{phi4mini:{file:'phi.gguf',sha256:'phi',revision:'phi-revision'}}};
+ const c=candidate('qwen25');c.key='phi4mini';c.holdout!.model='phi4mini';c.benchmark!.model='phi4mini';
+ Object.assign(c.benchmark!.prepared,{model:'phi4mini',model_path:'/cache/phi.gguf',model_sha256:'phi',model_revision:'phi-revision'});
+ assert.equal(selectModel([c],phiLock,'run').selection.model,'phi4mini');
+ c.holdout!.correct=18;c.holdout!.accuracy=.9;
+ assert.equal(selectModel([c],phiLock,'run').selection.enabled,false);
+});

@@ -41,8 +41,10 @@ jobs:
       - uses: actions/cache@v4
         if: steps.plan.outputs.inference == 'true'
         with:
-          path: .cache/cpu
-          key: cpu-${{ runner.os }}-${{ steps.plan.outputs.model }}-${{ hashFiles('config/models.lock.json') }}
+          path: |
+            .cache/cpu/*.gguf
+            .cache/cpu/runtime.tar.gz
+          key: cpu-v2-${{ runner.os }}-${{ steps.plan.outputs.model }}-${{ hashFiles('config/models.lock.json') }}
       - name: Prepare and start approved CPU model
         id: cpu
         timeout-minutes: 4

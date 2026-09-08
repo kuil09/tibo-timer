@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "evaluation_run_url": "https://github.com/kuil09/tibo-timer/actions/runs/34220225831",
-  "evaluation_commit": "151d96b",
+  "evaluation_run_url": "https://github.com/kuil09/tibo-timer/actions/runs/34222964322",
+  "evaluation_commit": "e0a59b4",
   "selection": {
     "enabled": false,
     "model": null,
@@ -9,67 +9,37 @@
   },
   "candidates": [
     {
-      "model": "qwen25",
+      "model": "phi4mini",
       "passed": false,
       "reasons": [
         "quality_gate_failed",
-        "inconsistent_quality_counts",
-        "performance_gate_failed",
-        "benchmark_rounds_failed"
+        "inconsistent_quality_counts"
       ],
-      "accuracy": 0,
-      "correct": 0,
-      "false_completed": 0,
-      "false_time": 0,
-      "errors": 19,
-      "warm_five_seconds": 13.774651263,
-      "cold_total_seconds": 37.95188804300001,
-      "server_peak_rss_kib": 2135228,
-      "identity_evidence": "pinned_preparation_at_evaluation_commit; hashes not included in legacy report",
+      "accuracy": 0.3,
+      "correct": 6,
+      "false_completed": 1,
+      "false_time": 1,
+      "errors": 2,
+      "warm_five_seconds": 28.903450344999996,
+      "cold_total_seconds": 173.00564127200002,
+      "server_peak_rss_kib": 4329948,
+      "identity_evidence": "report_metadata_and_pinned_preparation",
       "expected_runtime": {
         "version": "b10856",
         "url": "https://github.com/ggml-org/llama.cpp/releases/download/b10856/llama-b10856-bin-ubuntu-x64.tar.gz",
         "sha256": "35dfdbc7b39b5791cc692d47051e93773ee31813ebe88318f1e0ce4ba5f6b674"
       },
       "expected_model": {
-        "repo": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
-        "revision": "91cad51170dc346986eccefdc2dd33a9da36ead9",
-        "file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
-        "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
-        "bytes": 1117320736
-      }
-    },
-    {
-      "model": "qwen3",
-      "passed": false,
-      "reasons": [
-        "quality_gate_failed",
-        "inconsistent_quality_counts",
-        "performance_gate_failed",
-        "benchmark_rounds_failed"
-      ],
-      "accuracy": 0.15,
-      "correct": 3,
-      "false_completed": 3,
-      "false_time": 0,
-      "errors": 1,
-      "warm_five_seconds": 21.349241926999994,
-      "cold_total_seconds": 70.481408962,
-      "server_peak_rss_kib": 2359240,
-      "identity_evidence": "pinned_preparation_at_evaluation_commit; hashes not included in legacy report",
-      "expected_runtime": {
-        "version": "b10856",
-        "url": "https://github.com/ggml-org/llama.cpp/releases/download/b10856/llama-b10856-bin-ubuntu-x64.tar.gz",
-        "sha256": "35dfdbc7b39b5791cc692d47051e93773ee31813ebe88318f1e0ce4ba5f6b674"
-      },
-      "expected_model": {
-        "repo": "Qwen/Qwen3-1.7B-GGUF",
-        "revision": "90862c4b9d2787eaed51d12237eafdfe7c5f6077",
-        "file": "Qwen3-1.7B-Q8_0.gguf",
-        "sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a",
-        "bytes": 1834426016
+        "repo": "bartowski/microsoft_Phi-4-mini-instruct-GGUF",
+        "revision": "7ff82c2aaa4dde30121698a973765f39be5288c0",
+        "file": "microsoft_Phi-4-mini-instruct-Q4_K_M.gguf",
+        "sha256": "01999f17c39cc3074afae5e9c539bc82d45f2dd7faa3917c66cbef76fce8c0c2",
+        "bytes": 2491874688,
+        "base_model": "microsoft/Phi-4-mini-instruct",
+        "distribution": "community GGUF quantization by bartowski; not a Microsoft-published GGUF",
+        "quantization": "Q4_K_M"
       }
     }
   ],
-  "generated_at": "2026-09-08T11:29:07.056Z"
+  "generated_at": "2026-09-08T12:01:23.910Z"
 }

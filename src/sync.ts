@@ -29,11 +29,12 @@ export async function planSync() {
   try {
     const feed=await fetchFeed();
     const posts=postsFromFeed(feed);
-    const lock=await readFile('config/models.lock.json','utf8');
-    const revision=hash({model:selection.enabled?selection.model:null,lock:selection.enabled?hash(lock):null,prompt:PROMPT_VERSION,schema:SCHEMA_VERSION});
+    const lock=JSON.parse(await readFile('config/models.lock.json','utf8'));
+    const identity=selection.enabled&&selection.model?{runtime:lock.runtime,model:lock.models[selection.model]}:null;
+    const revision=hash({model:selection.enabled?selection.model:null,identity,prompt:PROMPT_VERSION,schema:SCHEMA_VERSION});
     const pending=posts.filter(p=>state.processed[p.id]!==hash({post:p,revision}));
     await writeJson('.cache/pending.json',{feed,posts,pending,revision,selection});
-    if(process.env.GITHUB_OUTPUT) await appendFile(process.env.GITHUB_OUTPUT,`inference=${selection.enabled&&pending.length>0}\nmodel=${selection.model??''}\n`);
+    if(process.env.GITHUB_OUTPUT) await appendFile(process.env.GITHUB_OUTPUT,`inference=${selection.enabled&&pending.some(p=>!p.truncated)}\nmodel=${selection.model??''}\n`);
     console.log(JSON.stringify({phase:'fetch',posts:posts.length,pending:pending.length,inference:selection.enabled}));
   } catch(error) {
     state.last_attempt_at=new Date().toISOString();state.last_error=error instanceof Error?error.message:'fetch_failed';

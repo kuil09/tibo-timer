@@ -27,7 +27,7 @@ test('sync deduplicates, retains absent history, invalidates edits with exhauste
  const previous=process.cwd(),budget=process.env.SYNC_BUDGET_MS,cpuReady=process.env.CPU_READY;
  const folder=await mkdtemp(join(tmpdir(),'tibo-sync-test-'));process.chdir(folder);
  t.after(()=>{process.chdir(previous);if(cpuReady===undefined) delete process.env.CPU_READY;else process.env.CPU_READY=cpuReady;if(budget===undefined) delete process.env.SYNC_BUDGET_MS;else process.env.SYNC_BUDGET_MS=budget;});
- await writeJson('config/selection.json',{enabled:false,model:null,reason:'test'});await writeJson('config/models.lock.json',{});
+ await writeJson('config/selection.json',{enabled:false,model:null,reason:'test'});await writeJson('config/models.lock.json',{runtime:{sha256:'runtime'},models:{qwen25:{sha256:'model'}}});
  await writeJson('data/state.json',{schema_version:1,processed:{},last_success_at:null,last_attempt_at:null,last_error:null});
  await writeJson('data/events.json',{schema_version:1,last_success_at:null,events:[sourceOnly({...post,id:'999'},'historic')]});
  let source={version:1,stale:false,fetched_at:new Date().toISOString(),tweets:[{id:post.id,url:post.url,text:post.text,at:post.posted_at}],events:[]};

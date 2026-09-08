@@ -1,0 +1,31 @@
+{
+  "model": "phi4mini",
+  "prepared": {
+    "runtime_version": "b10856",
+    "runtime_sha256": "35dfdbc7b39b5791cc692d47051e93773ee31813ebe88318f1e0ce4ba5f6b674",
+    "model_sha256": "01999f17c39cc3074afae5e9c539bc82d45f2dd7faa3917c66cbef76fce8c0c2",
+    "model_revision": "7ff82c2aaa4dde30121698a973765f39be5288c0",
+    "model": "phi4mini",
+    "runtime_cache_hit": false,
+    "model_cache_hit": false,
+    "prepare_seconds": 130.437915043,
+    "model_path": "/home/runner/work/tibo-timer/tibo-timer/.cache/cpu/microsoft_Phi-4-mini-instruct-Q4_K_M.gguf",
+    "server_path": "/home/runner/work/tibo-timer/tibo-timer/.cache/cpu/runtime/llama-b10856/llama-server"
+  },
+  "startup_seconds": 3,
+  "rounds": [
+    {
+      "label": "cold_first_five",
+      "seconds": 39.56772622900001,
+      "errors": 0
+    },
+    {
+      "label": "warm_five",
+      "seconds": 28.903450344999996,
+      "errors": 0
+    }
+  ],
+  "cold_total_seconds": 173.00564127200002,
+  "server_peak_rss_kib": 4329948,
+  "performance_passed": true
+}

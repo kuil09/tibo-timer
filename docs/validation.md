@@ -67,3 +67,9 @@ The implementation, CPU comparison, manual deployment, scheduled execution and l
 ## Collection pause and local publication (2026-09-08)
 
 Remote collection was disabled before 11:50 UTC; no jobs were running at that point. Scheduled collection has been removed. Push and default manual publication now deploy stored data without a feed request. A thread follow-up is scheduled after 12:51 UTC for exactly one current-Node request (`diagnose-feed.yml`, `single=true`), followed by one local refresh and publication. Neither request retries on failure. A different runner can have a different IP, so recovery would not identify the cause. Local refresh is deferred until that point to keep the pause free of our feed requests. Automatic remote collection remains suspended regardless of that single result. The follow-up must record actual outcomes; none is claimed here.
+
+Publication without upstream access succeeded: https://github.com/kuil09/tibo-timer/actions/runs/34222960550 . The fetch step was skipped. Production browser verification passed all nine scenarios, including one real-data smoke test and eight controlled UI fixtures. Phi CPU evaluation runs separately at https://github.com/kuil09/tibo-timer/actions/runs/34222964322 ; model download and server startup completed.
+
+## Phi-4-mini-instruct CPU result
+
+Run 34222964322 at e0a59b4 completed successfully as an evaluation job. Phi Q4_K_M passed the CPU speed/memory gate: cold preparation + startup + five posts 173.01 s, warm five posts 28.90 s, server peak RSS 4,329,948 KiB. Frozen holdout: 6/20 (30%), one false completion, one false time, two extraction errors. Development: 4/20. Automatic interpretation remains disabled. The model mistook an individual usage reply for a completion and a last-month retrospective for a new schedule; source-only publication is required. Raw result reports are in docs/evaluation/phi4mini-*.json.

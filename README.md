@@ -29,6 +29,10 @@ python3 -m http.server 4173 --directory dist
 
 `config/models.lock.json` pins model revisions, SHA256 hashes, and the CPU runtime archive. The active candidate is Phi-4-mini-instruct Q4_K_M, using the explicitly community-published bartowski GGUF conversion of Microsoft’s model. Use the manual **CPU model evaluation** workflow to evaluate it; prior Qwen locks and reports remain for provenance. GPU offload is disabled; the loopback-only server exists only during the job. Qwen3 thinking is disabled. Model artifacts are cached, never committed or served to visitors.
 
+Evaluation restores verified weights and the runtime archive by default. Use `cold_download=true` only for a fresh-download performance proof; cached measurements cannot replace that proof. `cache_check=true` measures cache restoration, one model load, and five-post batches without rerunning quality cases. Artifacts are cached immediately after preparation, before inference. Runtime extraction is isolated by SHA256; process IDs and prepared paths are not cached. Each job loads one CPU server and processes its batch sequentially; GitHub-hosted jobs do not retain a live model between runs.
+
+Collection detects changed records before restoring model artifacts. Unchanged posts and batches containing only truncated sources skip model loading. Processing fingerprints include only the active model and runtime, so inactive candidate changes do not invalidate interpretations.
+
 The fixture contains 20 development cases and 20 frozen holdout cases. Approval requires holdout accuracy >=95%, zero false completion/time claims, a cold download+five-post batch <10 minutes, and a warm five-post batch <5 minutes. Unresolved answers on resolvable cases fail. Reports retain all failed cases, server peak memory, elapsed time, runtime identity and hardware. Do not tune against the holdout or relax it after observing results.
 
 `config/selection.json` is the explicit publication gate. Only a reviewed passing CPU result may enable a model. Changing model, prompt or schema invalidates cached interpretations.

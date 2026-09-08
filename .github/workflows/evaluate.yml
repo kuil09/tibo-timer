@@ -1,6 +1,15 @@
 name: CPU model evaluation
 on:
   workflow_dispatch:
+    inputs:
+      cold_download:
+        description: Bypass CPU cache to measure fresh download and cold-start gate
+        type: boolean
+        default: false
+      cache_check:
+        description: Measure cache restore, model load, and five-post batches without repeating quality evaluation
+        type: boolean
+        default: false
 permissions:
   contents: read
 jobs:
@@ -19,9 +28,33 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check && npm test
-      # Deliberately cold: deployment must pass the cache-loss scenario.
+      # Cached evaluation is fast; only explicit cold runs can prove the cold-start gate.
+      - name: Restore fixed CPU artifacts
+        id: cpu_cache
+        if: inputs.cold_download != true
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            .cache/cpu/*.gguf
+            .cache/cpu/runtime.tar.gz
+          key: cpu-v2-${{ runner.os }}-${{ matrix.model }}-${{ hashFiles('config/models.lock.json') }}
+      # Legacy caches used a different path set (and thus a different cache version).
+      # Restore only this exact model+lock legacy key, then save sanitized v2 artifacts.
+      - name: Restore compatible legacy CPU cache
+        if: inputs.cold_download != true && steps.cpu_cache.outputs.cache-hit != 'true'
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/cpu
+          key: cpu-${{ runner.os }}-${{ matrix.model }}-${{ hashFiles('config/models.lock.json') }}
       - name: Prepare fixed CPU model
         run: python3 scripts/prepare-cpu.py '${{ matrix.model }}'
+      - name: Cache verified CPU artifacts before inference
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            .cache/cpu/*.gguf
+            .cache/cpu/runtime.tar.gz
+          key: cpu-v2-${{ runner.os }}-${{ matrix.model }}-${{ hashFiles('config/models.lock.json') }}
       - name: Start CPU inference
         run: |
           start=$SECONDS
@@ -30,15 +63,12 @@ jobs:
       - name: Measure cold and warm five-post batches
         run: node --import tsx src/benchmark.ts
       - name: Evaluate development and frozen holdout
+        if: inputs.cache_check != true
         run: |
           node --import tsx src/evaluate.ts --model '${{ matrix.model }}' --split dev
           node --import tsx src/evaluate.ts --model '${{ matrix.model }}' --split holdout
           node --import tsx src/evaluate.ts --model baseline --split dev
           node --import tsx src/evaluate.ts --model baseline --split holdout
-      - uses: actions/cache/save@v4
-        with:
-          path: .cache/cpu
-          key: cpu-${{ runner.os }}-${{ matrix.model }}-${{ hashFiles('config/models.lock.json') }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
