@@ -1,5 +1,5 @@
 {
   "enabled": false,
   "model": null,
-  "reason": "No CPU model passed all verified quality, performance, and model configuration gates; source-only publication remains enabled."
+  "reason": "Span-selection v2.1 remains unapproved: development regression 9/20 with 2 selection errors; new unseen acceptance evaluation still required. Active candidate remains lfm25."
 }

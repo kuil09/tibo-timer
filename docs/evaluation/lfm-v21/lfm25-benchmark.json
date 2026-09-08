@@ -1,0 +1,34 @@
+{
+  "model": "lfm25",
+  "measurement_mode": "cached_load",
+  "cold_proof_eligible": false,
+  "prepared": {
+    "runtime_version": "b10856",
+    "runtime_sha256": "35dfdbc7b39b5791cc692d47051e93773ee31813ebe88318f1e0ce4ba5f6b674",
+    "model_sha256": "b1b3de114215d9507409a662a501a631095a479a419584e8a2ded6304b19b4f5",
+    "model_revision": "6767265158422fb8a19c62ceb45f16f05363615b",
+    "model": "lfm25",
+    "runtime_cache_hit": true,
+    "runtime_unpack_hit": false,
+    "model_cache_hit": true,
+    "prepare_seconds": 0.8217482640000071,
+    "model_path": "/home/runner/work/tibo-timer/tibo-timer/.cache/cpu/LFM2.5-1.2B-Instruct-Q4_K_M.gguf",
+    "server_path": "/home/runner/work/tibo-timer/tibo-timer/.cache/cpu/runtime/35dfdbc7b39b5791cc692d47051e93773ee31813ebe88318f1e0ce4ba5f6b674/llama-b10856/llama-server"
+  },
+  "startup_seconds": 1,
+  "rounds": [
+    {
+      "label": "cold_first_five",
+      "seconds": 30.862150531,
+      "errors": 0
+    },
+    {
+      "label": "warm_five",
+      "seconds": 27.312917507999998,
+      "errors": 0
+    }
+  ],
+  "cold_total_seconds": 32.683898795000005,
+  "server_peak_rss_kib": 1376424,
+  "performance_passed": false
+}
