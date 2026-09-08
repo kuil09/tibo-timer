@@ -70,7 +70,7 @@ export async function main(mode:string) {
     await new Promise(r=>setTimeout(r,Math.max(0,3100-(Date.now()-lastStart)))); lastStart=Date.now(); count++;
     const started=Date.now();
     const r=await fetch('https://openrouter.ai/api/v1/chat/completions',{method:'POST',signal:AbortSignal.timeout(90000),headers:{Authorization:`Bearer ${key}`,'Content-Type':'application/json'},body:JSON.stringify({model:model.id,stream:false,max_tokens:4096,reasoning:{enabled:true,exclude:true},temperature:0,provider:{allow_fallbacks:false,max_price:{prompt:0,completion:0,request:0}},messages:[{role:'system',content:system},{role:'user',content:JSON.stringify(input)}]})});
-    if(!r.ok) {calls.push({model:model.id,http_status:r.status,ms:Date.now()-started}); stopped=true; await checkpoint(); throw new Error(`OpenRouter HTTP ${r.status}; no retry or paid fallback`);}
+    if(!r.ok) {const detail=(await r.text()).split(key!).join('[redacted]').slice(0,2000); calls.push({model:model.id,http_status:r.status,detail,ms:Date.now()-started}); stopped=true; await checkpoint(); throw new Error(`OpenRouter HTTP ${r.status}; no retry or paid fallback`);}
     const response=await r.json() as any;
     const choice=response.choices?.[0];
     calls.push({input,model:model.id,returned_model:response.model,id:response.id,usage:response.usage,finish_reason:choice?.finish_reason,content:choice?.message?.content,ms:Date.now()-started});
