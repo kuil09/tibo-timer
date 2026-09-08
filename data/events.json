@@ -1,1 +1,608 @@
-{"schema_version":1,"last_success_at":null,"events":[]}
+{
+  "schema_version": 1,
+  "last_success_at": "2026-09-08T11:22:39.627Z",
+  "events": [
+    {
+      "id": "2097183639356489952",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2097183639356489952",
+        "text": "You forgot the part where I reset usage twice in the middle",
+        "posted_at": "2026-09-08T04:41:58.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2097179930719310259",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2097179930719310259",
+        "text": "Spidey sense",
+        "posted_at": "2026-09-08T04:27:13.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2097175062566846501",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2097175062566846501",
+        "text": "There is no schedule, only resets",
+        "posted_at": "2026-09-08T04:07:53.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2097174560412246215",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2097174560412246215",
+        "text": "All reset for everyone. Enjoy the week with Astra. https://t.co/WBM38JotGO",
+        "posted_at": "2026-09-08T04:05:53.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2097043464538264003",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2097043464538264003",
+        "text": "Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\n\nThanks for reading. We will do a global reset of the usage for all paid subscriptions so that you can keep enjoying Astra after burning through all of it doing fun 3D modeling in blender. The work week is about to start.\n\nLands around 6pm PST today.",
+        "posted_at": "2026-09-07T19:24:57.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      },
+      "observation": {
+        "at": "2026-09-08T01:34:00.000Z",
+        "result": "reset_observed"
+      }
+    },
+    {
+      "id": "2096730328090189914",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096730328090189914",
+        "text": "RESTLE?",
+        "posted_at": "2026-09-06T22:40:40.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096717905614524491",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096717905614524491",
+        "text": "We've made some improvements that improve usage on the long tail for power users of Astra when logged in with your ChatGPT account.\n\nNo change in quality and a pure win that on the long tail can result in up to 3-4X less usage being drawn from the subscription.",
+        "posted_at": "2026-09-06T21:51:18.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096700527753245068",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096700527753245068",
+        "text": "The number of people who don't get it in the comments is concerning to me. Go ask Astra.",
+        "posted_at": "2026-09-06T20:42:15.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096692394435752258",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096692394435752258",
+        "text": "Who says it won't reset in a while 👀",
+        "posted_at": "2026-09-06T20:09:56.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096686370848989558",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096686370848989558",
+        "text": "Not the case. There is no difference between usage you get before or after a reset.",
+        "posted_at": "2026-09-06T19:46:00.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096035437299237298",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096035437299237298",
+        "text": "Because we are beyond happy to have Astra rolled out today ahead of schedule and you have been super patient with us (not really, but it’s ok!)… we will do the full banked reset today too for all Plus, Pro and Business users. Lands end of day.\n\nHappy Astra day and enjoy a",
+        "posted_at": "2026-09-05T00:39:25.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "banked_reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095979536043401428",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095979536043401428",
+        "text": "Some Plus and Business users won't yet get access to Astra today, we've got you covered with a banked reset. Lands by end of day and if you create your account by 8pm PT then you'll get it too.",
+        "posted_at": "2026-09-04T20:57:17.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "banked_reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095899886470463914",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095899886470463914",
+        "text": "@jrysana I tested it and you can comfortably do it in the Plus subscription. It takes Astra 10-15 minutes and less than the 15% of the weekly usage.\n\nThis means that you can sell ~6 tables per week. Or 24 tables in a month. Making it less than 85 cents per table.",
+        "posted_at": "2026-09-04T15:40:47.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095651088502591861",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095651088502591861",
+        "text": "We will give one banked reset for every day you don't have access to Astra on your paid ChatGPT plan, starting today.  Team is moving mountains to give access as fast as we can.\n\nFirst one will land in ~ 3 hours. There is still time to create your account if you don't have one.",
+        "posted_at": "2026-09-03T23:12:09.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "banked_reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095597659545591917",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095597659545591917",
+        "text": "Across the plans Astra will be included in the normal usage allocation and you will be able to use 100% of it towards Astra.",
+        "posted_at": "2026-09-03T19:39:51.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095370639892955269",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095370639892955269",
+        "text": "Which Codex reset?",
+        "posted_at": "2026-09-03T04:37:45.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094254532020818191",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094254532020818191",
+        "text": "For clarity, while both are called 20X, in Codex they apply specifically to weekly usage limits. And we also don't have 5h limits for both Pro plans.\n\nThe Pro 20X is quite precisely 20X the usage of the Plus subscription, so it does exactly what it says on the tin. https://t.co/vMchMCT80Z",
+        "posted_at": "2026-08-31T02:42:44.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094252447271366730",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094252447271366730",
+        "text": "What I wanted to say yesterday is that we hit 25M active users and to celebrate we have now reset usage for all paid subscriptions for ChatGPT Work and Codex.\n\nSee you soon for more news from The Reset Company. https://t.co/7Yc5znAJIc",
+        "posted_at": "2026-08-31T02:34:27.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094144275957350900",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094144275957350900",
+        "text": "Your Codex and ChatGPT Work reset will land at 6pm PST. \n\nI challenge you to burn as much usage as you can and discover and the latest awesome features. \n\nTime to go /fast",
+        "posted_at": "2026-08-30T19:24:37.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093801758665715784",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093801758665715784",
+        "text": "We are reseting usage for all paid users of Codex and ChatGPT Work.\n\nPlease continue reading for an update on Codex usage limits. The team has been working around the clock, going through thousands of reports and shipping fixes.\n\nDepending on how you use Codex, you should see",
+        "posted_at": "2026-08-29T20:43:34.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093551005711679557",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093551005711679557",
+        "text": "There is a place and a time for resets. Soon, but not today",
+        "posted_at": "2026-08-29T04:07:10.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093351797830422812",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093351797830422812",
+        "text": "@buildwithrajath Always improving. Team working hard on infra and usage optimizations",
+        "posted_at": "2026-08-28T14:55:35.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093014447833116908",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093014447833116908",
+        "text": "Never slept better and feeling reseted. Brand new me and brand new usage for all ChatGPT Work and Codex users. Regaining my youth one button press at a time.\n\nHappy Thursday",
+        "posted_at": "2026-08-27T16:35:05.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092862554632826968",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092862554632826968",
+        "text": "A good thing about having aged is that I feel that it’s been 20 years since I’ve pressed the reset button. Intrigued to see if I can find it tomorrow and dust it up",
+        "posted_at": "2026-08-27T06:31:31.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092675679724978506",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092675679724978506",
+        "text": "@slopshipper Dear Viktor, it's all forgiven. Glad you found your usage back. Let's build!",
+        "posted_at": "2026-08-26T18:08:56.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092490655864127909",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092490655864127909",
+        "text": "Reseted you mean?",
+        "posted_at": "2026-08-26T05:53:43.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    }
+  ]
+}
