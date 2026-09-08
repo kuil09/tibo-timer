@@ -27,7 +27,7 @@ python3 -m http.server 4173 --directory dist
 
 ## CPU inference
 
-`config/models.lock.json` pins official model revisions, SHA256 hashes, and the CPU runtime archive. Use the manual **CPU model evaluation** workflow to compare Qwen2.5 1.5B Q4_K_M and Qwen3 1.7B Q8_0. GPU offload is disabled; the loopback-only server exists only during the job. Qwen3 thinking is disabled. Model artifacts are cached, never committed or served to visitors.
+`config/models.lock.json` pins model revisions, SHA256 hashes, and the CPU runtime archive. The active candidate is Phi-4-mini-instruct Q4_K_M, using the explicitly community-published bartowski GGUF conversion of Microsoft’s model. Use the manual **CPU model evaluation** workflow to evaluate it; prior Qwen locks and reports remain for provenance. GPU offload is disabled; the loopback-only server exists only during the job. Qwen3 thinking is disabled. Model artifacts are cached, never committed or served to visitors.
 
 The fixture contains 20 development cases and 20 frozen holdout cases. Approval requires holdout accuracy >=95%, zero false completion/time claims, a cold download+five-post batch <10 minutes, and a warm five-post batch <5 minutes. Unresolved answers on resolvable cases fail. Reports retain all failed cases, server peak memory, elapsed time, runtime identity and hardware. Do not tune against the holdout or relax it after observing results.
 
@@ -35,7 +35,9 @@ The fixture contains 20 development cases and 20 frozen holdout cases. Approval 
 
 ## Collection and publication
 
-The **Collect and deploy Pages** workflow runs at minutes 7/22/37/52 and manually. It checks source changes before loading a model, preserves raw semantic snapshots and historical edits, commits collection state, and deploys Pages within the same workflow. Runs are serialized. The generated site uses relative asset paths for `/tibo-timer/` hosting.
+Remote scheduled collection is suspended after Cloudflare challenges. **Publish Pages (optional collection)** deploys repository data on main pushes and manual dispatch without contacting upstream. The `collect` input defaults to false; enable it only for an explicitly authorized remote collection. No separate push workflow is assumed for bot commits.
+
+For a local refresh, run `git pull --ff-only`, then `bash scripts/collect-local.sh`. Review the data changes and commit/push `data/` to publish them. The command validates the feed, preserves historical data, and does not commit or push automatically. While model approval is disabled it publishes original text with unresolved timing. An approved model requires the configured local CPU service when using this entry point. Local collection is manual: there is no unattended Mac scheduler. The generated site uses relative asset paths for `/tibo-timer/` hosting.
 
 A failed/stale/invalid feed keeps the last valid dataset. Individual inference failures remain unresolved; a later source or interpretation-version change retries them. Budget-deferred and startup-failed records remain pending. Public freshness is the last successful feed check, not the newest tweet. After 60 minutes without a successful check the browser displays a delay notice. GitHub schedules may be delayed or disabled after prolonged repository inactivity; use manual dispatch to restore and investigate.
 
@@ -53,6 +55,8 @@ Public standard GitHub runners and Pages avoid additional infrastructure charges
 
 - [Public feed](https://codex-reset.com/api/feed)
 - [llama.cpp](https://github.com/ggml-org/llama.cpp)
+- [Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct)
+- [Phi GGUF community conversion](https://huggingface.co/bartowski/microsoft_Phi-4-mini-instruct-GGUF)
 - [Qwen2.5 official GGUF](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF)
 - [Qwen3 official GGUF](https://huggingface.co/Qwen/Qwen3-1.7B-GGUF)
 

@@ -18,6 +18,19 @@
       "file": "Qwen3-1.7B-Q8_0.gguf",
       "sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a",
       "bytes": 1834426016
+    },
+    "phi4mini": {
+      "repo": "bartowski/microsoft_Phi-4-mini-instruct-GGUF",
+      "revision": "7ff82c2aaa4dde30121698a973765f39be5288c0",
+      "file": "microsoft_Phi-4-mini-instruct-Q4_K_M.gguf",
+      "sha256": "01999f17c39cc3074afae5e9c539bc82d45f2dd7faa3917c66cbef76fce8c0c2",
+      "bytes": 2491874688,
+      "base_model": "microsoft/Phi-4-mini-instruct",
+      "distribution": "community GGUF quantization by bartowski; not a Microsoft-published GGUF",
+      "quantization": "Q4_K_M"
     }
-  }
+  },
+  "active_candidates": [
+    "phi4mini"
+  ]
 }

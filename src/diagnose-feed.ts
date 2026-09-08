@@ -46,9 +46,10 @@ export async function main(){
     }catch(error){const result={name:v.name,recheck,started_at:started,request_headers:v.headers,valid_feed:false,error:error instanceof Error?error.message:String(error)};results.push(result);console.log(JSON.stringify(result));}
   }
   // Exactly three controlled probes. Never retry failed/challenged requests.
-  for(const v of variants)await run(v);
+  const single=process.argv.includes('--single');
+  for(const v of (single?variants.slice(0,1):variants))await run(v);
   const successful=variants.find(v=>results.find(r=>r.name===v.name)?.valid_feed);
-  if(successful)await run(successful,true); // One confirmation only, on this same runner.
+  if(successful&&!single)await run(successful,true); // One confirmation only, on this same runner.
   const confirmation=results.find(r=>r.recheck);
   await writeJson('.cache/feed-diagnosis/report.json',{version:1,url,run_url:`https://github.com/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`,runner:process.env.RUNNER_NAME,node_version:process.version,request_count:results.length,
     note:'Identical application-specified headers for variants 1 and 2; implicit transport headers and TLS/HTTP fingerprints remain client-dependent. No cookies, redirects, retries, IP rotation or challenge solving.',

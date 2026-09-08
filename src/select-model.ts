@@ -4,8 +4,8 @@ import { pathToFileURL } from 'node:url';
 import { writeJson } from './storage.ts';
 
 type Json = Record<string, any>;
-export interface ModelCandidate { key: 'qwen25' | 'qwen3'; holdout: Json | null; benchmark: Json | null; }
-export interface ModelLock { runtime: { version: string; sha256: string }; models: Record<string,{file:string;revision:string;sha256:string}>; }
+export interface ModelCandidate { key: string; holdout: Json | null; benchmark: Json | null; }
+export interface ModelLock { active_candidates?: string[]; runtime: { version: string; sha256: string }; models: Record<string,{file:string;revision:string;sha256:string}>; }
 const finite = (v: unknown): v is number => typeof v === 'number' && Number.isFinite(v);
 export function selectModel(candidates: ModelCandidate[], lock: ModelLock, evidenceUrl: string, evaluationCommit = '') {
   const reviewed = candidates.map(({key,holdout:h,benchmark:b})=>{
@@ -38,7 +38,7 @@ export async function main() {
   const directory=process.argv[2]??'.cache/reports';
   const lock=JSON.parse(await readFile('config/models.lock.json','utf8')) as ModelLock;
   const candidates:ModelCandidate[]=[];
-  for(const key of ['qwen25','qwen3'] as const){
+  for(const key of lock.active_candidates??['qwen25','qwen3']){
     const path=join(directory,`evaluation-${key}`);
     candidates.push({key,holdout:await readOptional(join(path,`${key}-holdout.json`)),benchmark:await readOptional(join(path,`${key}-benchmark.json`))});
   }

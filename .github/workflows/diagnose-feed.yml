@@ -1,6 +1,11 @@
 name: Bounded feed access diagnosis
 on:
   workflow_dispatch:
+    inputs:
+      single:
+        description: Only one current Node request, without confirmation
+        type: boolean
+        default: true
 permissions:
   contents: read
 jobs:
@@ -14,7 +19,7 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci
-      - run: node --import tsx src/diagnose-feed.ts
+      - run: node --import tsx src/diagnose-feed.ts ${{ inputs.single && '--single' || '' }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:

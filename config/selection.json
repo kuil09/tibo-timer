@@ -1,5 +1,5 @@
 {
   "enabled": false,
-  "model": null,
-  "reason": "No CPU model passed all verified quality, performance, and model configuration gates; source-only publication remains enabled."
+  "model": "phi4mini",
+  "reason": "Phi-4-mini-instruct Q4_K_M selected as the next CPU candidate; automatic interpretation remains disabled pending unchanged quality and performance gates."
 }

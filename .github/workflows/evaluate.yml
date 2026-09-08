@@ -10,7 +10,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        model: [qwen25, qwen3]
+        model: [phi4mini]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
