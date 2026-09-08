@@ -1,3 +1,4 @@
+import { emptyCouncil } from './publish-council.ts';
 import { cp, mkdir, readFile, writeFile } from 'node:fs/promises';
 await mkdir('dist',{recursive:true});
 await cp('public','dist',{recursive:true});
@@ -8,3 +9,8 @@ if(doc.schema_version!==1||!Array.isArray(doc.events))throw new Error('Invalid p
 await writeFile('dist/events.json',JSON.stringify(doc));
 await writeFile('dist/.nojekyll','');
 console.log(`Built ${doc.events.length} source records`);
+
+let council;
+try { council=JSON.parse(await readFile('data/council.json','utf8')); } catch(error) { if((error as NodeJS.ErrnoException).code!=='ENOENT') throw error; council=emptyCouncil(); }
+if(council.schema_version!==1||!Array.isArray(council.attempts))throw new Error('Invalid council publication schema');
+await writeFile('dist/council.json',JSON.stringify(council));

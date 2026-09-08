@@ -1,3 +1,4 @@
+import { mountCouncil } from './council.js';
 import { TYPE_LABELS, nextEvent, sourceUrl, stateLabel, temporalLabel, formatInstant, countdown, isStale } from './view.js';
 
 const zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -103,8 +104,10 @@ try {
   items = data.events.filter(item => item?.event && item?.temporal && item?.source)
     .sort((a, b) => (Date.parse(b.source.posted_at) || 0) - (Date.parse(a.source.posted_at) || 0));
   render();
+  mountCouncil(items).catch(() => { document.querySelector('#council-status').textContent = '회의 기록을 확인할 수 없습니다.'; });
 } catch {
   render();
+  mountCouncil([]).catch(() => { document.querySelector('#council-status').textContent = '회의 기록을 확인할 수 없습니다.'; });
   const status = document.querySelector('#status');
   status.classList.add('warning');
   status.textContent = '공지 데이터를 불러오지 못했습니다. 잠시 후 새로고침해 주세요.';

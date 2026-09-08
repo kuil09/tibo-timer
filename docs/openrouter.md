@@ -1,6 +1,6 @@
 # OpenRouter discovery and cross-review
 
-This strategy replaces local model selection experiments with a daily inventory of free OpenRouter candidates and a separate three-model inference experiment. It produces review artifacts. It does not approve a model for production, update public event interpretations, fetch fresh upstream posts, or deploy Pages.
+This strategy replaces local model selection experiments with a daily inventory of free OpenRouter candidates and a separate three-model inference experiment. It produces review artifacts and a sanitized public meeting snapshot. It does not approve a model for production, update public event interpretations, or fetch fresh upstream posts. The Pages workflow publishes the meeting snapshot after each council run, including failed runs with usable evidence.
 
 ## Workflows
 
@@ -34,7 +34,7 @@ Agreement is evidence of consistency, not independent ground truth. Models can s
 
 - Workflow permissions are read-only: discovery uses `contents: read`; council additionally uses `actions: read` to download the prior run's artifact.
 - The catalog is data. The triggered workflow executes trusted `main` code, not code from the discovery artifact.
-- These workflows make no repository commits and do not mutate `data/events.json` or `data/state.json`.
+- Discovery and council do not mutate the repository. The separate Pages workflow projects the completed artifact into `data/council.json`, commits that snapshot and deploys in the same job; it does not depend on a bot commit triggering another workflow. `data/events.json` and `data/state.json` are unchanged by meeting publication.
 - Existing source freshness and unresolved interpretations are preserved. This strategy does not resolve the upstream Cloudflare collection failure.
 - Publishing new interpretations requires a separately validated integration. No deployment or model reliability claim follows from workflow configuration alone.
 
@@ -63,3 +63,9 @@ Persist the exact model IDs for every result, the abandoned claims/reviews, repl
 - A subsequent run observed Gemma HTTP429 from `upstream_provider_shared_pool`; this did not establish a key-budget failure.
 - The fallback implementation ran on Actions: https://github.com/kuil09/tibo-timer/actions/runs/34276337271 . Exactly three requests were attempted. Nemotron Ultra returned an inconsistent claim (empty delivery expression with `unclear` basis), Nemotron Lightning timed out, and Cohere North Mini Code returned another inconsistent claim (empty expression with `posted_at` basis). Both model replacements were recorded. The third panel exhausted the attempt cap and the workflow correctly failed with an unresolved result.
 - This proves live fallback and bounded termination, not a completed three-model review or interpretation accuracy. A full successful council remains unverified. The latest local suite has 73 passing tests, including mocked full recovery and review-stage restart. Public data remains unchanged.
+
+## Comic meeting page
+
+The supplied original image is served unchanged as `public/assets/model-council.png`. Three accessible speech buttons show the selected panel's actual model output/status. The attempt selector exposes fallback history; clicking a bubble opens its source evidence. The lower bubble shows corroboration, disagreement or incomplete review, never a fabricated reset confirmation.
+
+`src/publish-council.ts` projects only allowed public fields from a report, matches the source text/hash, and excludes raw provider errors, account identifiers and request metadata. Invalid parsed drafts remain explicitly invalid. If projection fails or the artifact is missing, the prior snapshot remains and publication reports the failure.

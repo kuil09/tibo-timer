@@ -1,5 +1,9 @@
 name: Publish Pages (optional collection)
 on:
+  workflow_run:
+    workflows: ['OpenRouter independent inference and cross-review']
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
     inputs:
       collect:
@@ -10,6 +14,7 @@ on:
     branches: [main]
     paths-ignore: ['docs/**']
 permissions:
+  actions: read
   contents: write
   pages: write
   id-token: write
@@ -18,6 +23,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   publish:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.head_repository.full_name == github.repository
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     environment:
@@ -33,6 +39,23 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check && npm test
+      - name: Download completed council evidence
+        id: council_artifact
+        if: github.event_name == 'workflow_run'
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          name: openrouter-council
+          path: .cache/council-publication
+          github-token: ${{ github.token }}
+          run-id: ${{ github.event.workflow_run.id }}
+      - name: Project safe public meeting record
+        id: council_publication
+        if: steps.council_artifact.outcome == 'success'
+        continue-on-error: true
+        env:
+          COUNCIL_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.event.workflow_run.id }}
+        run: node --import tsx src/publish-council.ts .cache/council-publication/council.json data/council.json "$COUNCIL_RUN_URL"
       - name: Fetch and identify changed posts
         id: plan
         if: inputs.collect == true
@@ -62,7 +85,7 @@ jobs:
           CPU_READY: ${{ steps.cpu.outcome }}
         run: node --import tsx src/sync.ts apply
       - name: Save collection state
-        if: inputs.collect == true
+        if: inputs.collect == true || steps.council_publication.outcome == 'success'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -92,4 +115,10 @@ jobs:
         if: steps.plan.outcome == 'failure'
         run: |
           echo 'The last valid dataset was deployed; upstream refresh failed.'
+          exit 1
+
+      - name: Report missing council evidence
+        if: github.event_name == 'workflow_run' && steps.council_publication.outcome != 'success'
+        run: |
+          echo 'Previous public snapshot preserved; new council evidence could not be published.'
           exit 1
