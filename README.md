@@ -41,6 +41,16 @@ Evaluation retains raw model output before validation, and distinguishes format 
 
 `config/selection.json` is the explicit publication gate. Only a reviewed passing CPU result may enable a model. Changing model, prompt or schema invalidates cached interpretations.
 
+## Local prompt experiments
+
+On macOS arm64, run `python3 scripts/local-cpu.py` once. It verifies the identical GGUF model and b10856 runtime, downloads only missing artifacts, and prints the CPU-only server command. Run that command in a terminal and keep it running across experiments. `python3 scripts/local-cpu.py --check` verifies the cache without network access.
+
+- `npm run lab`: six development probes with and without JSON Schema; saves raw requests, responses, scores and elapsed times under `.cache/local-lab/`.
+- `npm run lab -- --schema-only --prompt=/absolute/path/prompt.txt --output=.cache/local-lab/variant.json`: test a draft instruction without changing production code.
+- `npm run evaluate -- --model lfm25 --split dev`: full development regression through the production path.
+
+Optional lab flags `--single-message` and `--compact-input` isolate message placement and input representation. The lab only connects to loopback and never collects upstream, commits, pushes, or dispatches Actions. Iterate locally, preserve failed variants, and update production instructions once evidence supports improvement. Local macOS timing/output is not Linux runner acceptance evidence; an unseen acceptance set remains required before enabling automatic interpretation.
+
 ## Collection and publication
 
 Remote scheduled collection is suspended after Cloudflare challenges. **Publish Pages (optional collection)** deploys repository data on main pushes and manual dispatch without contacting upstream. The `collect` input defaults to false; enable it only for an explicitly authorized remote collection. No separate push workflow is assumed for bot commits.
@@ -70,3 +80,15 @@ Public standard GitHub runners and Pages avoid additional infrastructure charges
 - [Qwen3 official GGUF](https://huggingface.co/Qwen/Qwen3-1.7B-GGUF)
 
 Independent community utility; not affiliated with OpenAI or Tibo. Source material retains its original rights. Model licenses remain with their publishers.
+
+### Two-stage claim experiment
+
+`npm run evaluate:claims -- --pairs` evaluates controlled minimal pairs; `npm run evaluate:claims` evaluates the reviewed development mapping. Both use the already running local CPU server (default port8081). The experimental path classifies `scheduled/completed/retrospective/not_announcement/uncertain`, then selects a whole-post delivery-time candidate only for a scheduled claim with available candidates. It never publishes results. Gold mappings in `eval/claims-dev.json` retain previous labels and review reasons; original cases are unchanged. Reports explicitly count false scheduled claims even when normalized time stays unresolved.
+
+### Latest local candidate and completion verifier
+
+Qwen3.5-9B Q4_K_M is pinned in `config/local-models.json` for local CPU experiments. It is not the production-selected model. Run its server with four CPU threads, GPU layers zero, context 4096 and explicit non-thinking mode. The saved model/runtime hashes, rendered chat template and launch settings are in `docs/evaluation/local-lab/qwen359b/`.
+
+`CLAIM_VERSION=v3 LOCAL_MODEL=qwen359b LLAMA_URL=http://127.0.0.1:8083 npm run evaluate:claims` selects the refined classifier; add `-- --pairs` or `-- --fresh` for the other controlled sets. `src/verify-completion.ts` provides a live classification-plus-verification wrapper: only completed claims receive one source-only verification, and disagreement or unsupported evidence becomes unresolved. `scripts/evaluate-completion.ts` replays locked first-stage results and calls the verifier live.
+
+Across 52 controlled cases, completion verification reduced false completions from four to zero while retaining nine true completion announcements. Exact accuracy stays 47/52 because rejected completions become unresolved rather than recovered schedules. These are local experiments, not release acceptance. Automatic collection is still suspended and automatic interpretation is still disabled. Publishing code and Pages does not refresh the feed or approve these models.

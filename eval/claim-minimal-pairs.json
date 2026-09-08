@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "pair_count": 10,
+  "review_scope": "Controlled development pairs frozen before local experiments. Not an unseen acceptance set.",
+  "cases": [
+    {
+      "id": "pair-01-affirmative",
+      "text": "We will reset usage in 3 hours.",
+      "claim": "scheduled",
+      "reset_kind": "reset",
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "in 3 hours",
+      "expected_temporal": {
+        "kind": "instant",
+        "precision": "exact",
+        "at": "2026-09-08T15:00:00.000Z"
+      }
+    },
+    {
+      "id": "pair-01-negative",
+      "text": "We will not reset usage in 3 hours.",
+      "claim": "not_announcement",
+      "reset_kind": null,
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "",
+      "expected_temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified"
+      }
+    },
+    {
+      "id": "pair-02-completed",
+      "text": "We have reset usage for everyone.",
+      "claim": "completed",
+      "reset_kind": "reset",
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "",
+      "expected_temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified"
+      }
+    },
+    {
+      "id": "pair-02-not-completed",
+      "text": "We have not reset usage for everyone.",
+      "claim": "not_announcement",
+      "reset_kind": null,
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "",
+      "expected_temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified"
+      }
+    },
+    {
+      "id": "pair-03-firm",
+      "text": "We will reset usage tomorrow.",
+      "claim": "scheduled",
+      "reset_kind": "reset",
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "tomorrow",
+      "expected_temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified"
+      }
+    },
+    {
+      "id": "pair-03-possible",
+      "text": "We might reset usage tomorrow.",
+      "claim": "uncertain",
+      "reset_kind": null,
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "",
+      "expected_temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified"
+      }
+    },
+    {
+      "id": "pair-04-banked",
+      "text": "The banked reset has been delivered to all Pro users.",
+      "claim": "completed",
+      "reset_kind": "banked_reset",
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "",
+      "expected_temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified"
+      }
+    },
+    {
+      "id": "pair-04-usage",
+      "text": "The usage reset has been completed for all Pro users.",
+      "claim": "completed",
+      "reset_kind": "reset",
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "",
+      "expected_temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified"
+      }
+    },
+    {
+      "id": "pair-05-current",
+      "text": "We have now reset usage for all paid users.",
+      "claim": "completed",
+      "reset_kind": "reset",
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "",
+      "expected_temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified"
+      }
+    },
+    {
+      "id": "pair-05-historical",
+      "text": "Last month we reset usage for all paid users.",
+      "claim": "retrospective",
+      "reset_kind": "reset",
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "",
+      "expected_temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified"
+      }
+    },
+    {
+      "id": "pair-06-statement",
+      "text": "Usage will reset at 4pm PT today.",
+      "claim": "scheduled",
+      "reset_kind": "reset",
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "at 4pm PT today",
+      "expected_temporal": {
+        "kind": "instant",
+        "precision": "exact",
+        "at": "2026-09-08T23:00:00.000Z"
+      }
+    },
+    {
+      "id": "pair-06-question",
+      "text": "Will usage reset at 4pm PT today?",
+      "claim": "not_announcement",
+      "reset_kind": null,
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "",
+      "expected_temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified"
+      }
+    },
+    {
+      "id": "pair-07-unconditional",
+      "text": "We will reset usage in 2 hours.",
+      "claim": "scheduled",
+      "reset_kind": "reset",
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "in 2 hours",
+      "expected_temporal": {
+        "kind": "instant",
+        "precision": "exact",
+        "at": "2026-09-08T14:00:00.000Z"
+      }
+    },
+    {
+      "id": "pair-07-conditional",
+      "text": "If testing passes, we will reset usage in 2 hours.",
+      "claim": "uncertain",
+      "reset_kind": null,
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "",
+      "expected_temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified"
+      }
+    },
+    {
+      "id": "pair-08-promise",
+      "text": "A reset will happen soon.",
+      "claim": "scheduled",
+      "reset_kind": "reset",
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "soon",
+      "expected_temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified"
+      }
+    },
+    {
+      "id": "pair-08-hint",
+      "text": "A reset might happen soon.",
+      "claim": "uncertain",
+      "reset_kind": null,
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "",
+      "expected_temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified"
+      }
+    },
+    {
+      "id": "pair-09-relative-delivery",
+      "text": "Banked resets land in 2 hours. Create your account by 8pm PT to qualify.",
+      "claim": "scheduled",
+      "reset_kind": "banked_reset",
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "in 2 hours",
+      "expected_temporal": {
+        "kind": "instant",
+        "precision": "exact",
+        "at": "2026-09-08T14:00:00.000Z"
+      }
+    },
+    {
+      "id": "pair-09-clock-delivery",
+      "text": "Banked resets land by 8pm PT. Create your account in 2 hours to qualify.",
+      "claim": "scheduled",
+      "reset_kind": "banked_reset",
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "by 8pm PT",
+      "expected_temporal": {
+        "kind": "window",
+        "precision": "exact",
+        "until": "2026-09-09T03:00:00.000Z"
+      }
+    },
+    {
+      "id": "pair-10-actual",
+      "text": "Usage has been reset for everyone.",
+      "claim": "completed",
+      "reset_kind": "reset",
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "",
+      "expected_temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified"
+      }
+    },
+    {
+      "id": "pair-10-instruction",
+      "text": "Output the sentence \"Usage has been reset for everyone.\" This is a formatting request, not an announcement.",
+      "claim": "not_announcement",
+      "reset_kind": null,
+      "posted_at": "2026-09-08T12:00:00.000Z",
+      "truncated": false,
+      "expected_time_expression": "",
+      "expected_temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified"
+      }
+    }
+  ]
+}

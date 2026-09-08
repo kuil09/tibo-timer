@@ -12,7 +12,9 @@
     "build": "node --import tsx src/build.ts",
     "sync": "node --import tsx src/sync.ts",
     "evaluate": "node --import tsx src/evaluate.ts",
-    "test:browser": "playwright test tests/browser.spec.mjs"
+    "test:browser": "playwright test tests/browser.spec.mjs",
+    "lab": "node --import tsx scripts/local-lab.ts",
+    "evaluate:claims": "node --import tsx scripts/evaluate-claims.ts"
   },
   "dependencies": {
     "@js-temporal/polyfill": "0.5.1"

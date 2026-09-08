@@ -91,3 +91,51 @@ Source spans are now deterministic candidates. The model selects type/state/sent
 V2 regression run https://github.com/kuil09/tibo-timer/actions/runs/34225682429 at 64c9667: dev6/20, errors4; existing holdout3/20, errors6, false completion1, false time0. All times unresolved: this was not a successful extractor. The raw outputs revealed an unknown-state bias. V2.1 adds balanced examples and separates missing time from unknown state. Development-only run https://github.com/kuil09/tibo-timer/actions/runs/34226291109 at e66fed7: dev9/20, errors2, false completion/time0, unresolved15. Same v2 scoring allows the dev6-to9 comparison; old v1 accuracy is not directly comparable. V2.1 did not rerun holdout. Model and runtime caches hit.
 
 Publication remains disabled. Remaining failures include wrong reset type, wrong supporting sentence, missing time selection, and negative/conditional classification. Source-copy failures are structurally removed, but semantic reliability is not established. A fresh unseen acceptance set and passing quality evidence are required before automatic interpretation. Prior summary docs/model-evaluation.json refers to the pre-redesign comparison; current detailed reports reside under docs/evaluation/lfm-v2 and lfm-v21.
+
+## Local experiment loop
+
+Prepared official b10856 macOS arm64 runtime and exactly the same LFM Q4_K_M SHA256 as Actions. Kept one CPU server loaded with four threads and GPU offload zero. Tested six development cases with/without JSON Schema, single-message layout, compact input plus a shorter prompt, a brief explanation field, and prompt-state caching disabled. None established improvement over current selection prompt. Disabling prompt caching reproduced the same six selections, so that experiment did not support a prompt-cache explanation. Template inspection showed a user-message loop; no evidence of missing user content was found. Brief direct-question controls showed some correct comprehension, but did not establish reliable reset classification.
+
+A full local v2.1 development run completed in 25.92 s: 9/20, one selection error, zero false completion/time; CPU platform differs from Actions (which had two selection errors). No new holdout was inspected. Existing production prompt is retained rather than replacing it with an unproven variant. The local lab supports draft prompt files and reports raw requests/outputs, so future iteration needs no push or Actions dispatch. No workflow dispatch or push occurred during these local experiments.
+
+## One-hour pause follow-up (2026-09-08)
+
+Exactly one current-Node request ran at 12:51:57 UTC after collection had been stopped before 11:50 UTC. https://github.com/kuil09/tibo-timer/actions/runs/34228505081 : HTTP403, Content-Type text/html; charset=UTF-8, cf-mitigated challenge, body began with HTML titled Just a moment, valid_feed=false. No retry or second remote request occurred. This does not establish permanent blocking or identify the trigger; a different runner/IP is also a confound.
+
+One local collection succeeded at 12:52:32.391 UTC and preserved 26 records with last_error=null. Data-only commit f7320bc triggered https://github.com/kuil09/tibo-timer/actions/runs/34228610625 . Local prompt-lab work was excluded from the commit. Remote collection schedules remain absent; this is a local refresh, not recovery of remote automatic collection.
+
+Pages run 34228610625 succeeded with the fetch step skipped. The public /tibo-timer/events.json returned HTTP200, 26 records, last_success_at=2026-09-08T12:52:32.391Z and collection.last_error=null. The first verification mistakenly requested /data/events.json (HTML/404); the actual build path was inspected and corrected. No additional upstream request was involved. The one-shot heartbeat was paused after verification. This documentation remains local with the unpublished prompt-lab changes.
+
+## Larger LFM local CPU comparison
+
+LiquidAI/LFM2-2.6B-Exp-GGUF Q4_K_M (revision 7d9bef941a2642e1d00967564fd55e1dcecf0d6a, SHA256 95b9322dc81f577be1d966f508bc2fa3ec2cda56a556347d3cdf71cfefaba591) was verified and run locally with b10856, four CPU threads, GPU offload zero, context4096, prompt cache disabled. Production prompt v2.1, schema and greedy sampling were unchanged. Development-only result: 10/20 operational, 9/19 invoked classifications correct, four selection-validation errors, zero published false completion/time, 55.45 seconds excluding download/load. LFM2.5-1.2B local baseline:9/20, one error,25.92seconds. This is one extra correct case at roughly2.14x processing time, not evidence of a reliable upgrade. Different size/checkpoint training are jointly changed; this does not isolate parameter count. No holdout, push, or Actions run occurred. Official recommended stochastic sampling was not evaluated.
+
+## User-supplied prompt experiment
+
+The user-supplied English prompt was evaluated unchanged in meaning (Markdown underscore escapes rendered normally), with the same LFM2-2.6B-Exp Q4_K_M CPU server, v2 scoring and 20 development cases. Only the system prompt and matching token count input were replaced; no production instruction edit or push occurred. Result:10/20 operational,9/19 classification,one cross-sentence selection error,zero published false completion/time,99.10seconds. Prior prompt:10/20,4 selection errors,55.45seconds. The same ten cases pass. Type/state/time selection for the banked grant improved to banked_reset/scheduled/t1, but sentence_id=s0 mismatched t1's source sentence. Negation becomes unknown/unknown instead of a future claim but still misses the expected reset/unknown taxonomy. Completed and conditional statements remain misclassified. Detailed raw outputs and exact prompt hash are preserved under docs/evaluation/local-lab/user-prompt.
+
+## Whole-post experiment
+
+Removed sentence splitting and sentence_id from the model input/output. Scanned exact time spans directly across the original post and retained the full source as evidence. Used the user prompt with only sentence-selection requirements adapted, same LFM2-2.6B-Exp Q4_K_M CPU model and sampling. Development20 result:11/20, zero validation errors, zero published false completion/time,88.35seconds. Compared to sentence-based user prompt10/20/errors1/99.10seconds, exactly the cross-sentence banked grant case became correct (banked_reset/scheduled/t1). No previously correct case regressed. The other nine failures remain; this is development evidence and not release approval. No push or Actions run. Raw report and prompt:docs/evaluation/local-lab/whole-post/.
+
+## Two-stage claims experiment
+
+Implemented an experimental local path: whole-post claim/kind classification, then delivery-time selection only for scheduled claims with candidates. Frozen new gold mapping retains old development labels and reasons; original cases unchanged. LFM2-2.6B-Exp Q4_K_M, b10856 Mac ARM CPU4/ngl0, same greedy decoding. Minimal pairs20:11 correct,12 class-correct,0 schema/selection errors,7 false scheduled,1 false completed,4 false normalized times,48.42s (20 claim+12 time calls). Reviewed development20:11 correct,3 inconsistent claim/kind errors,4 false scheduled,0 false completed/normalized time,45.50s (19 claim+10 time calls; one truncated bypass). These scores use a changed taxonomy and cannot be directly compared with prior11/20.
+
+Failure localization: negative/conditional/questions can still enter the scheduled branch; the second stage can then faithfully normalize a time from a non-announcement, as seen in minimal pairs. No first-stage quality gate passed. Production remains on the disabled inference/source-only path; experimental two-stage modules are not connected to publication. Tests50 passed. No push or Actions run. Reports:docs/evaluation/local-lab/two-stage.
+
+## EXAONE 3.5 2.4B Q8_0 local experiment
+
+Official model hash and chat template verified; official system sentence prepended in both stages. CPU 4 threads, no GPU. Minimal pairs: 12/20 in 37.54 s; existing development: 13/20 in 37.05 s. Eight inconsistent claim/kind errors and eight raw false-scheduled results across the two sets prevent promotion. See `evaluation/local-lab/exaone35/README.md`. Fifty tests and TypeScript checks pass. No GitHub Actions runs or publication in this experiment.
+
+## Qwen3.5-9B Q4_K_M local experiment
+
+Pinned Unsloth GGUF, verified SHA-256, explicit non-thinking CPU execution. Existing 40 cases: 34/40 (pairs 18/20, development 16/20), 277.51 seconds total. Three false completions and three inconsistent claim/kind results prevent promotion. See `evaluation/local-lab/qwen359b/README.md`. No publication or Actions runs.
+
+## Qwen claim refinement v3
+
+Combined-label v2 regressed to 13/20 pairs and was rejected. V3 preserves fields with constrained combinations and short tense rules: 36/40 existing cases versus 34/40 before; 11/12 fresh independently authored controlled cases. Validation contradictions eliminated, but three existing and one fresh false completions remain. Local-only experimental branch, no publication. See `evaluation/local-lab/qwen359b-v3/README.md`.
+
+## Completion verification
+
+Locked v3 baseline replay across 52 cases plus 13 live independent verification calls: false completions 4 to 0, true completions 9/9 retained, exact correctness unchanged at 47/52 because four false completions become unresolved. Added wall time 79.79 s. Separate single-case full live integration recorded. 56 tests and type checks pass; no publication. See `evaluation/local-lab/qwen359b-verified/README.md`.

@@ -10,6 +10,10 @@ interface EvaluationCase extends GoldCase {id:string;split:'dev'|'holdout';categ
 const flag=(name:string,fallback:string)=>{const i=process.argv.indexOf(`--${name}`);return i<0?fallback:process.argv[i+1];};
 const model=flag('model','baseline'),split=flag('split','holdout');
 const lock=JSON.parse(await readFile('config/models.lock.json','utf8'));
+if(process.argv.includes('--local')) {
+ Object.assign(lock.models,JSON.parse(await readFile('config/local-models.json','utf8')));
+ lock.runtime=JSON.parse(await readFile('config/local-runtime.json','utf8')).runtime;
+}
 if((model!=='baseline'&&!lock.models[model])||!['dev','holdout'].includes(split))throw new Error('Use configured --model and --split dev|holdout');
 const fixture=await readFile(new URL('../eval/cases.json',import.meta.url),'utf8');
 const all=JSON.parse(fixture) as EvaluationCase[];

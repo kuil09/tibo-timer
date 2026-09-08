@@ -1,0 +1,12 @@
+{
+  "platform": "Darwin",
+  "architecture": "arm64",
+  "runtime": {
+    "version": "b10856",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/download/b10856/llama-b10856-bin-macos-arm64.tar.gz",
+    "sha256": "783396188c44bbecad931844a7cee5803ebf71e285694fe0ebf3be4e0dd8628c",
+    "archive": "runtime-macos.tar.gz",
+    "directory": "macos-b10856",
+    "server": "llama-b10856/llama-server"
+  }
+}

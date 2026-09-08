@@ -1,0 +1,33 @@
+{
+  "model": {
+    "repo": "unsloth/Qwen3.5-9B-GGUF",
+    "revision": "3885219b6810b007914f3a7950a8d1b469d598a5",
+    "file": "Qwen3.5-9B-Q4_K_M.gguf",
+    "sha256": "03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8",
+    "bytes": 5680522464
+  },
+  "runtime": {
+    "version": "b10856",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/download/b10856/llama-b10856-bin-macos-arm64.tar.gz",
+    "sha256": "783396188c44bbecad931844a7cee5803ebf71e285694fe0ebf3be4e0dd8628c",
+    "archive": "runtime-macos.tar.gz",
+    "directory": "macos-b10856",
+    "server": "llama-b10856/llama-server"
+  },
+  "cpu_threads": 4,
+  "gpu_layers": 0,
+  "context": 4096,
+  "temperature": 0,
+  "seed": 42,
+  "max_output_tokens": 384,
+  "reasoning": "off",
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "download_seconds_approx": 156,
+  "rss_snapshot_kib": 9462960,
+  "rss_is_peak": false,
+  "reasoning_chars": 0,
+  "max_stage_ms": 7971.019500000002,
+  "template_note": "Unsloth template differs in tool argument iteration and default thinking mode. Text-only input with explicit enable_thinking=false uses the same branch as official template; rendered prompt saved."
+}

@@ -1,0 +1,55 @@
+{
+  "post": {
+    "text": "Usage will reset at 4pm PT today.",
+    "posted_at": "2026-09-08T12:00:00.000Z"
+  },
+  "result": {
+    "claim": "uncertain",
+    "reset_kind": null,
+    "time_id": null,
+    "temporal": {
+      "kind": "unresolved",
+      "precision": "unspecified",
+      "original": "",
+      "reason": "completion_verification_failed"
+    },
+    "bypassed": false,
+    "verification": {
+      "needed": true,
+      "accepted": false,
+      "reason": "completion_not_confirmed",
+      "answer": {
+        "verdict": "rejected",
+        "reset_kind": null,
+        "evidence": ""
+      }
+    }
+  },
+  "traces": [
+    {
+      "stage": "claim",
+      "raw": "{\n  \"claim\": \"completed\",\n  \"reset_kind\": \"reset\"\n}",
+      "error": null,
+      "ms": 7704.041083,
+      "reasoning_chars": 0,
+      "finish_reason": "stop",
+      "parsed": {
+        "claim": "completed",
+        "reset_kind": "reset"
+      }
+    },
+    {
+      "stage": "verify",
+      "raw": "{\n  \"verdict\": \"rejected\",\n  \"reset_kind\": null,\n  \"evidence\": \"\"\n}",
+      "error": null,
+      "ms": 5733.717458,
+      "reasoning_chars": 0,
+      "finish_reason": "stop",
+      "parsed": {
+        "verdict": "rejected",
+        "reset_kind": null,
+        "evidence": ""
+      }
+    }
+  ]
+}
