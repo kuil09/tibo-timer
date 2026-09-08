@@ -24,6 +24,9 @@ export function selectModels(models: Model[]): Model[] {
   const diverse=ranked.filter(m => { const author=m.id.split('/')[0]; if(authors.has(author)) return false; authors.add(author); return true; }).slice(0,3);
   return [...diverse,...ranked.filter(m=>!diverse.includes(m))].slice(0,3);
 }
+export function fatalProviderError(status:number, detail:string):boolean {
+  return [401,402].includes(status)||(status===429&&!detail.includes('upstream_provider_shared_pool')&&!detail.includes('temporarily rate-limited upstream'));
+}
 async function catalog() {
   const r = await fetch('https://openrouter.ai/api/v1/models', {signal:AbortSignal.timeout(30000)});
   if(!r.ok) throw new Error(`Catalog HTTP ${r.status}`);
@@ -89,14 +92,14 @@ export async function main(mode:string) {
       const detail=(await r.text()).split(key!).join('[redacted]').slice(0,2000);
       calls.push({model:model.id,http_status:r.status,detail,ms:Date.now()-started});
       // Account authentication/budget failures cannot be repaired by changing models.
-      stopped=[401,402].includes(r.status)||(r.status===429&&!detail.includes('upstream_provider_shared_pool')&&!detail.includes('temporarily rate-limited upstream'));
+      stopped=fatalProviderError(r.status,detail);
       await checkpoint();throw new Error(`OpenRouter HTTP ${r.status}: ${detail}`);
     }
     const response=await r.json() as any;
     const choice=response.choices?.[0];
     calls.push({input,model:model.id,returned_model:response.model,id:response.id,usage:response.usage,provider_error:response.error,finish_reason:choice?.finish_reason,content:choice?.message?.content,ms:Date.now()-started});
     await checkpoint();
-    if(response.error && [401,402].includes(Number(response.error.code))) stopped=true;
+    if(response.error && fatalProviderError(Number(response.error.code),JSON.stringify(response.error))) stopped=true;
     if(response.error || choice?.finish_reason!=='stop' || typeof choice?.message?.content!=='string') throw new Error('Incomplete model response');
     return JSON.parse(choice.message.content.trim().replace(/^```(?:json)?\s*|\s*```$/g,''));
   }

@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {freeReasoning,selectModels,validateClaim,accepted} from '../src/openrouter.ts';
+import {freeReasoning,selectModels,validateClaim,accepted,fatalProviderError} from '../src/openrouter.ts';
 const model=(id:string,score:number)=>({id,pricing:{prompt:'0',completion:'0'},supported_parameters:['reasoning','max_tokens'],context_length:32768,architecture:{input_modalities:['text'],output_modalities:['text']},benchmarks:{artificial_analysis:{intelligence_index:score}}});
 test('selection excludes paid, unscored and duplicate authors',()=>{
  const paid=model('paid/x:free',100);paid.pricing.prompt='0.01';
@@ -26,4 +26,12 @@ test('acceptance requires three matching drafts and six distinct non-self approv
  assert.equal(accepted([c,c,c],reviews.slice(1)),false);
  assert.equal(accepted([c,c,c],[...reviews.slice(1),reviews[1]]),false);
  assert.equal(accepted([c,c,{...c,time_basis:'posted_at'}],reviews),false);
+});
+
+test('embedded and HTTP provider errors share account-stop policy',()=>{
+ assert.equal(fatalProviderError(429,'daily account quota'),true);
+ assert.equal(fatalProviderError(429,'upstream_provider_shared_pool'),false);
+ assert.equal(fatalProviderError(401,'invalid key'),true);
+ assert.equal(fatalProviderError(402,'budget exhausted'),true);
+ assert.equal(fatalProviderError(403,'model restricted'),false);
 });
