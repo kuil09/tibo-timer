@@ -26,7 +26,7 @@ export async function mountCouncil(events){
       const m=attempt.models[i];button.classList.toggle('active',i===activeSeat);button.setAttribute('aria-pressed',String(i===activeSeat));
       button.querySelector('.speaker').textContent=shortName(m?.id);
       const c=m?.claim;
-      button.querySelector('.speech-copy').textContent=m?.status==='timeout'?'응답 시간\n초과…':m?.status==='not_run'?'아직\n차례가…':c?`${c.state==='retrospective'?'과거 이야기':labels[c.state]||'판단 미정'}${m.status==='invalid'?'\n검증 실패':''}`:'해석을\n확인 못했어';
+      button.querySelector('.speech-copy').textContent=c?`${c.state==='retrospective'?'과거 이야기':labels[c.state]||'판단 미정'}${m.status==='invalid'?'\n검증 실패':m.status!=='valid'?'\n검증 미완료':''}`:m?.status==='timeout'?'응답 시간\n초과…':m?.status==='not_run'?'아직\n차례가…':'해석을\n확인 못했어';
       button.setAttribute('aria-label',`${shortName(m?.id)} · ${statuses[m?.status]||'기록 없음'} · 상세 해석 보기`);
     });
     const final=Number(select.value)===doc.attempts.length-1;
