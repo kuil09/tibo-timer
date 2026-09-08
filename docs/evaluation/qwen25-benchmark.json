@@ -1,0 +1,27 @@
+{
+  "model": "qwen25",
+  "prepared": {
+    "model": "qwen25",
+    "runtime_cache_hit": false,
+    "model_cache_hit": false,
+    "prepare_seconds": 21.884050050000013,
+    "model_path": "/home/runner/work/tibo-timer/tibo-timer/.cache/cpu/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "server_path": "/home/runner/work/tibo-timer/tibo-timer/.cache/cpu/runtime/llama-b10856/llama-server"
+  },
+  "startup_seconds": 1,
+  "rounds": [
+    {
+      "label": "cold_first_five",
+      "seconds": 15.067837993000001,
+      "errors": 4
+    },
+    {
+      "label": "warm_five",
+      "seconds": 13.774651263,
+      "errors": 4
+    }
+  ],
+  "cold_total_seconds": 37.95188804300001,
+  "server_peak_rss_kib": 2135228,
+  "performance_passed": false
+}

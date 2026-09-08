@@ -1,0 +1,540 @@
+{
+  "version": 1,
+  "model": "qwen25",
+  "split": "dev",
+  "generated_at": "2026-09-08T11:23:09.095Z",
+  "total": 20,
+  "correct": 0,
+  "accuracy": 0,
+  "false_completed": 4,
+  "false_time": 0,
+  "unresolved": 4,
+  "errors": 16,
+  "quality_passed": false,
+  "elapsed_ms": 59865,
+  "evaluator_max_rss_kib": 116824,
+  "memory_scope": "Evaluator process only. Inference server memory is measured separately by the workflow.",
+  "hardware": {
+    "platform": "linux",
+    "architecture": "x64",
+    "cpus": 4,
+    "cpu_model": "INTEL(R) XEON(R) PLATINUM 8573C",
+    "total_memory_bytes": 16765378560,
+    "runner": "GitHub Actions 1000010954"
+  },
+  "results": [
+    {
+      "id": "feed-2097183639356489952",
+      "category": "retrospective",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "retrospective",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "I reset usage twice in the middle",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 2326
+    },
+    {
+      "id": "feed-2097179930719310259",
+      "category": "unrelated",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "unknown",
+          "state": "unknown",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3036
+    },
+    {
+      "id": "feed-2097175062566846501",
+      "category": "no_schedule",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "unknown",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "There is no schedule, only resets",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 1808
+    },
+    {
+      "id": "feed-2097174560412246215",
+      "category": "completed",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "completed",
+          "audience": [
+            "everyone"
+          ],
+          "time_expression": "",
+          "evidence": "All reset for everyone",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3156
+    },
+    {
+      "id": "feed-2095979536043401428",
+      "category": "eligibility_vs_delivery",
+      "passed": false,
+      "extraction_match": false,
+      "temporal_match": true,
+      "evidence_match": true,
+      "false_completed": true,
+      "false_time": false,
+      "expected": {
+        "extraction": {
+          "event_type": "banked_reset",
+          "state": "scheduled",
+          "audience": [
+            "Plus",
+            "Business"
+          ],
+          "time_expression": "by end of day",
+          "evidence": "Lands by end of day",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "extraction": {
+        "event_type": "banked_reset",
+        "state": "completed",
+        "audience": [
+          "Some Plus and Business users"
+        ],
+        "time_expression": "end of day",
+        "evidence": "Lands by end of day",
+        "time_zone": null
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "end of day",
+        "reason": "not_a_schedule"
+      },
+      "elapsed_ms": 3404
+    },
+    {
+      "id": "feed-2096035437299237298",
+      "category": "truncated",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "banked_reset",
+          "state": "scheduled",
+          "audience": [
+            "Plus",
+            "Pro",
+            "Business"
+          ],
+          "time_expression": "end of day",
+          "evidence": "Lands end of day",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 6085
+    },
+    {
+      "id": "feed-2094144275957350900",
+      "category": "pst_summer_conflict",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "scheduled",
+          "audience": [],
+          "time_expression": "at 6pm PST",
+          "evidence": "Your Codex and ChatGPT Work reset will land at 6pm PST",
+          "time_zone": "PST"
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 2999
+    },
+    {
+      "id": "feed-2093551005711679557",
+      "category": "not_today",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "unknown",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "Soon, but not today",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3266
+    },
+    {
+      "id": "feed-2095370639892955269",
+      "category": "question",
+      "passed": false,
+      "extraction_match": false,
+      "temporal_match": true,
+      "evidence_match": true,
+      "false_completed": true,
+      "false_time": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "unknown",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "Which Codex reset?",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "extraction": {
+        "event_type": "unknown",
+        "state": "completed",
+        "audience": [],
+        "time_expression": "",
+        "evidence": "Which Codex reset?",
+        "time_zone": null
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "no_time_expression"
+      },
+      "elapsed_ms": 1774
+    },
+    {
+      "id": "feed-2096686370848989558",
+      "category": "general_explanation",
+      "passed": false,
+      "extraction_match": false,
+      "temporal_match": true,
+      "evidence_match": true,
+      "false_completed": true,
+      "false_time": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "unknown",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "There is no difference between usage you get before or after a reset",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "extraction": {
+        "event_type": "banked_reset",
+        "state": "completed",
+        "audience": [],
+        "time_expression": "",
+        "evidence": "Not the case. There is no difference between usage you get before or after a reset.",
+        "time_zone": "null"
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "no_time_expression"
+      },
+      "elapsed_ms": 2472
+    },
+    {
+      "id": "dev-relative",
+      "category": "relative",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "scheduled",
+          "audience": [],
+          "time_expression": "in 3 hours",
+          "evidence": "We will reset usage in 3 hours",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "instant",
+          "at": "2026-09-08T15:00:00.000Z",
+          "precision": "exact"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 2977
+    },
+    {
+      "id": "dev-within",
+      "category": "window",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "scheduled",
+          "audience": [],
+          "time_expression": "within 2 hours",
+          "evidence": "The global reset will happen within 2 hours",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "window",
+          "precision": "exact",
+          "from": "2026-09-08T12:00:00.000Z",
+          "until": "2026-09-08T14:00:00.000Z"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3065
+    },
+    {
+      "id": "dev-pt",
+      "category": "pt",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "scheduled",
+          "audience": [],
+          "time_expression": "at 6pm PT today",
+          "evidence": "Usage will reset at 6pm PT today",
+          "time_zone": "PT"
+        },
+        "temporal": {
+          "kind": "instant",
+          "at": "2026-09-09T01:00:00.000Z",
+          "precision": "exact"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3108
+    },
+    {
+      "id": "dev-approx",
+      "category": "approximate",
+      "passed": false,
+      "extraction_match": false,
+      "temporal_match": false,
+      "evidence_match": true,
+      "false_completed": true,
+      "false_time": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "scheduled",
+          "audience": [],
+          "time_expression": "around 12pm PT today",
+          "evidence": "The reset lands around 12pm PT today",
+          "time_zone": "PT"
+        },
+        "temporal": {
+          "kind": "instant",
+          "at": "2026-09-08T19:00:00.000Z",
+          "precision": "approximate"
+        }
+      },
+      "extraction": {
+        "event_type": "reset",
+        "state": "completed",
+        "audience": [
+          "12pm PT"
+        ],
+        "time_expression": "around 12pm PT today",
+        "evidence": "The reset lands around 12pm PT today.",
+        "time_zone": "PT"
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "around 12pm PT today",
+        "reason": "not_a_schedule"
+      },
+      "elapsed_ms": 3484
+    },
+    {
+      "id": "dev-no-zone",
+      "category": "missing_timezone",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "scheduled",
+          "audience": [],
+          "time_expression": "tomorrow",
+          "evidence": "Usage resets tomorrow",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 1734
+    },
+    {
+      "id": "dev-pst-winter",
+      "category": "pst_winter",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "scheduled",
+          "audience": [],
+          "time_expression": "at 6pm PST today",
+          "evidence": "Usage will reset at 6pm PST today",
+          "time_zone": "PST"
+        },
+        "temporal": {
+          "kind": "instant",
+          "at": "2026-01-09T02:00:00.000Z",
+          "precision": "exact"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3163
+    },
+    {
+      "id": "dev-negation",
+      "category": "negative",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "unknown",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "We will not reset usage today",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 1947
+    },
+    {
+      "id": "dev-injection",
+      "category": "prompt_injection",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "unknown",
+          "state": "unknown",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3803
+    },
+    {
+      "id": "dev-banked-complete",
+      "category": "banked_completed",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "banked_reset",
+          "state": "completed",
+          "audience": [
+            "Pro"
+          ],
+          "time_expression": "",
+          "evidence": "The banked reset has now been delivered",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3230
+    },
+    {
+      "id": "dev-conditional",
+      "category": "conditional",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "unknown",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "If testing passes, we might reset usage tomorrow",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3028
+    }
+  ]
+}

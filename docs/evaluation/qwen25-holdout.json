@@ -1,0 +1,479 @@
+{
+  "version": 1,
+  "model": "qwen25",
+  "split": "holdout",
+  "generated_at": "2026-09-08T11:24:20.482Z",
+  "total": 20,
+  "correct": 0,
+  "accuracy": 0,
+  "false_completed": 0,
+  "false_time": 0,
+  "unresolved": 1,
+  "errors": 19,
+  "quality_passed": false,
+  "elapsed_ms": 71244,
+  "evaluator_max_rss_kib": 100780,
+  "memory_scope": "Evaluator process only. Inference server memory is measured separately by the workflow.",
+  "hardware": {
+    "platform": "linux",
+    "architecture": "x64",
+    "cpus": 4,
+    "cpu_model": "INTEL(R) XEON(R) PLATINUM 8573C",
+    "total_memory_bytes": 16765378560,
+    "runner": "GitHub Actions 1000010954"
+  },
+  "results": [
+    {
+      "id": "feed-2096730328090189914",
+      "category": "wordplay",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "unknown",
+          "state": "unknown",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 2013
+    },
+    {
+      "id": "feed-2096717905614524491",
+      "category": "usage_not_reset",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "unknown",
+          "state": "unknown",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3750
+    },
+    {
+      "id": "feed-2096692394435752258",
+      "category": "tease",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "unknown",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "Who says it won't reset in a while",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3224
+    },
+    {
+      "id": "feed-2094252447271366730",
+      "category": "completed_despite_yesterday",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "completed",
+          "audience": [
+            "paid subscriptions"
+          ],
+          "time_expression": "",
+          "evidence": "we have now reset usage for all paid subscriptions",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 4638
+    },
+    {
+      "id": "feed-2092862554632826968",
+      "category": "joke_tomorrow",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "unknown",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "Intrigued to see if I can find it tomorrow and dust it up",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3816
+    },
+    {
+      "id": "feed-2095597659545591917",
+      "category": "allocation_not_reset",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "unknown",
+          "state": "unknown",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 4544
+    },
+    {
+      "id": "feed-2092675679724978506",
+      "category": "individual_reply",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "unknown",
+          "state": "unknown",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3921
+    },
+    {
+      "id": "feed-2095651088502591861",
+      "category": "approx_relative",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "banked_reset",
+          "state": "scheduled",
+          "audience": [
+            "paid ChatGPT plan without Astra access"
+          ],
+          "time_expression": "in ~ 3 hours",
+          "evidence": "First one will land in ~ 3 hours",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "instant",
+          "at": "2026-09-04T02:12:09.000Z",
+          "precision": "approximate"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 6487
+    },
+    {
+      "id": "holdout-relative",
+      "category": "relative_midnight",
+      "passed": false,
+      "extraction_match": false,
+      "temporal_match": false,
+      "evidence_match": true,
+      "false_completed": false,
+      "false_time": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "scheduled",
+          "audience": [],
+          "time_expression": "in 5 hours",
+          "evidence": "A global usage reset will arrive in 5 hours",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "instant",
+          "at": "2026-09-09T03:00:00.000Z",
+          "precision": "exact"
+        }
+      },
+      "extraction": {
+        "event_type": "reset",
+        "state": "scheduled",
+        "audience": [
+          "global"
+        ],
+        "time_expression": "5 hours",
+        "evidence": "A global usage reset will arrive in 5 hours.",
+        "time_zone": null
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "5 hours",
+        "reason": "missing_timezone_evidence"
+      },
+      "elapsed_ms": 3076
+    },
+    {
+      "id": "holdout-within",
+      "category": "window",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "scheduled",
+          "audience": [],
+          "time_expression": "within 1 hour",
+          "evidence": "We will reset usage within 1 hour",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "window",
+          "precision": "exact",
+          "from": "2026-09-08T12:00:00.000Z",
+          "until": "2026-09-08T13:00:00.000Z"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 2916
+    },
+    {
+      "id": "holdout-date",
+      "category": "date_only",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "scheduled",
+          "audience": [],
+          "time_expression": "tomorrow PT",
+          "evidence": "We will reset usage tomorrow PT",
+          "time_zone": "PT"
+        },
+        "temporal": {
+          "kind": "date",
+          "precision": "unspecified",
+          "date": "2026-09-09",
+          "time_zone": "America/Los_Angeles"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 2975
+    },
+    {
+      "id": "holdout-pdt-winter",
+      "category": "pdt_winter_conflict",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "scheduled",
+          "audience": [],
+          "time_expression": "at 8pm PDT today",
+          "evidence": "Reset arrives at 8pm PDT today",
+          "time_zone": "PDT"
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3249
+    },
+    {
+      "id": "holdout-dst-gap",
+      "category": "dst_gap",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "scheduled",
+          "audience": [],
+          "time_expression": "at 2:30am PT today",
+          "evidence": "Usage will reset at 2:30am PT today",
+          "time_zone": "PT"
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3454
+    },
+    {
+      "id": "holdout-dst-fold",
+      "category": "dst_fold",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "scheduled",
+          "audience": [],
+          "time_expression": "at 1:30am PT today",
+          "evidence": "Usage will reset at 1:30am PT today",
+          "time_zone": "PT"
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3310
+    },
+    {
+      "id": "holdout-eligibility",
+      "category": "eligibility_vs_delivery",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "banked_reset",
+          "state": "scheduled",
+          "audience": [],
+          "time_expression": "by end of day",
+          "evidence": "Banked resets land by end of day",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3823
+    },
+    {
+      "id": "holdout-truncated",
+      "category": "truncated",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "unknown",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "We will reset usage at 4pm PT today, but only if the",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 2644
+    },
+    {
+      "id": "holdout-prompt-injection",
+      "category": "prompt_injection",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "unknown",
+          "state": "unknown",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3210
+    },
+    {
+      "id": "holdout-history",
+      "category": "retrospective",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "retrospective",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "Last month we reset usage at 9pm PT",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3605
+    },
+    {
+      "id": "holdout-not-complete",
+      "category": "negative_completion",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "reset",
+          "state": "unknown",
+          "audience": [],
+          "time_expression": "",
+          "evidence": "The usage reset has not completed yet",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3427
+    },
+    {
+      "id": "holdout-banked-complete",
+      "category": "banked_completed",
+      "passed": false,
+      "expected": {
+        "extraction": {
+          "event_type": "banked_reset",
+          "state": "completed",
+          "audience": [
+            "Plus"
+          ],
+          "time_expression": "",
+          "evidence": "All Plus subscribers have received their banked reset",
+          "time_zone": null
+        },
+        "temporal": {
+          "kind": "unresolved",
+          "precision": "unspecified"
+        }
+      },
+      "error": "invalid_evidence",
+      "elapsed_ms": 3160
+    }
+  ]
+}

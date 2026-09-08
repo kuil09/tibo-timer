@@ -26,7 +26,7 @@ subprocess.run(['tar','-xzf',str(a),'-C',str(binroot)],check=True)
 m = root / model['file']
 model_hit = download(f"https://huggingface.co/{model['repo']}/resolve/{model['revision']}/{model['file']}",m,model['sha256'])
 server = next(binroot.rglob('llama-server'))
-result = {'model':key,'runtime_cache_hit':runtime_hit,'model_cache_hit':model_hit,'prepare_seconds':time.monotonic()-start,'model_path':str(m.resolve()),'server_path':str(server.resolve())}
+result = {'runtime_version':runtime['version'],'runtime_sha256':runtime['sha256'],'model_sha256':model['sha256'],'model_revision':model['revision'],'model':key,'runtime_cache_hit':runtime_hit,'model_cache_hit':model_hit,'prepare_seconds':time.monotonic()-start,'model_path':str(m.resolve()),'server_path':str(server.resolve())}
 (root/'prepared.json').write_text(json.dumps(result,indent=2))
 if os.getenv('GITHUB_ENV'):
     with open(os.environ['GITHUB_ENV'],'a') as env:

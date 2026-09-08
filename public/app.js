@@ -87,9 +87,10 @@ function tick() {
   counters.forEach(({ node, item }) => { node.textContent = countdown(item); });
   if (!dataset) return;
   const stale = isStale(dataset.last_success_at);
+  const collectionFailed = dataset.collection?.last_error != null;
   const status = document.querySelector('#status');
-  status.classList.toggle('warning', stale);
-  status.textContent = stale ? '정보 지연 · 마지막으로 확보한 공지를 표시합니다. 최신 상태는 원문에서 확인하세요.' : '수집 상태 정상 · 표시된 시각은 공지 내용에 근거합니다.';
+  status.classList.toggle('warning', stale || collectionFailed);
+  status.textContent = collectionFailed ? '자동 수집 지연 · 마지막 성공 기록을 표시합니다.' : stale ? '정보 지연 · 마지막으로 확보한 공지를 표시합니다. 최신 상태는 원문에서 확인하세요.' : '수집 상태 정상 · 표시된 시각은 공지 내용에 근거합니다.';
   document.querySelector('#updated').textContent = dataset.last_success_at ? `마지막 수집 성공 ${formatInstant(dataset.last_success_at, zone)}` : '아직 성공한 수집 기록이 없습니다.';
 }
 

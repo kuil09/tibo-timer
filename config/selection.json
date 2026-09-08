@@ -1,1 +1,5 @@
-{"enabled":false,"model":null,"reason":"Awaiting CPU evaluation; source-only publication is enabled."}
+{
+  "enabled": false,
+  "model": null,
+  "reason": "No CPU model passed all verified quality, performance, and model configuration gates; source-only publication remains enabled."
+}

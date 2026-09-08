@@ -105,3 +105,14 @@ test('source-only interpretation and operator observations are distinct Korean n
   await expect(page.locator('body')).not.toContainText('reset_observed');
   await expect(page.locator('body')).not.toContainText('model_not_approved');
 });
+
+test('collection error immediately overrides fresh success without exposing internal failure', async ({ page }) => {
+  const doc = fixture({ collection: { last_attempt_at: new Date().toISOString(), last_error: 'HTTP_403_CF_CHALLENGE' } });
+  await stub(page, doc);
+  await page.goto(origin + '/');
+  await expect(page.locator('#status')).toHaveText('자동 수집 지연 · 마지막 성공 기록을 표시합니다.');
+  await expect(page.locator('#status')).toHaveClass(/warning/);
+  await expect(page.locator('#updated')).toContainText('마지막 수집 성공');
+  await expect(page.locator('#event-count')).toHaveText('1개 기록');
+  await expect(page.locator('body')).not.toContainText('HTTP_403_CF_CHALLENGE');
+});
