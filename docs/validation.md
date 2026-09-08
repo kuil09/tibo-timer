@@ -34,3 +34,9 @@ No challenge bypass, external proxy, paid source, or unapproved account was intr
 Tests cover schema and evidence validation, loopback-only inference, output truncation, source edits/history, duplicate processing, startup failure, budget carryover, UTC date boundaries and DST conflicts. Browser scenarios cover Seoul/Los Angeles/London, mobile overflow, literal HTML in source text, safe source links, date-only display, expired schedules and source-only observations. Static and fixture tests do not prove model accuracy or upstream availability.
 
 The custom domain remains deferred. The final release report records the live Pages verification and scheduled-run outcome separately.
+
+## Published browser check
+
+At the deployed `/tibo-timer/` URL, all 9 Playwright scenarios passed. Eight use controlled JSON fixtures over the real deployed frontend; the live-data smoke scenario reads the actual 26-record public document and checks source links and console errors. The publication includes immediate collection failure status as well as the last successful check time. Unit/integration checks: 36 passed; TypeScript and static build passed.
+
+[Pages deployment with collection-health UI](https://github.com/kuil09/tibo-timer/actions/runs/34220940737) deployed successfully; the overall workflow correctly reports the upstream collection failure. The extra diagnostic curl request was removed after capturing the challenge response, so routine runs make only the collector request.
