@@ -40,3 +40,19 @@ The custom domain remains deferred. The final release report records the live Pa
 At the deployed `/tibo-timer/` URL, all 9 Playwright scenarios passed. Eight use controlled JSON fixtures over the real deployed frontend; the live-data smoke scenario reads the actual 26-record public document and checks source links and console errors. The publication includes immediate collection failure status as well as the last successful check time. Unit/integration checks: 36 passed; TypeScript and static build passed.
 
 [Pages deployment with collection-health UI](https://github.com/kuil09/tibo-timer/actions/runs/34220940737) deployed successfully; the overall workflow correctly reports the upstream collection failure. The extra diagnostic curl request was removed after capturing the challenge response, so routine runs make only the collector request.
+
+## Bounded same-runner HTTP comparison
+
+[Diagnosis run 34221287228](https://github.com/kuil09/tibo-timer/actions/runs/34221287228), 2026-09-08T11:33:27Z, runner `GitHub Actions 1000010963`, Node v22.23.2:
+
+| Probe | HTTP | Content-Type | cf-mitigated | Valid feed |
+| --- | --- | --- | --- | --- |
+| Current Node fetch | 403 | text/html; charset=UTF-8 | challenge | no |
+| curl, same application-specified headers | 403 | text/html; charset=UTF-8 | challenge | no |
+| Node, application/json + generic browser User-Agent | 403 | text/html; charset=UTF-8 | challenge | no |
+
+All three bodies began with HTML containing `<title>Just a moment...</title>`. The current collector already requests `Accept: application/json`; the third probe changes only the explicit User-Agent. Client-added transport headers and HTTP/TLS fingerprints remain client-dependent. This experiment does **not** identify IP reputation as the cause, nor exhaust every possible browser/client characteristic. It establishes that these bounded header/client combinations do not solve access from this runner.
+
+Exactly three requests were issued. No successful combination existed, so no confirmation request was made. No further diagnostic retries, IP changes, browser-cookie copying or challenge-solving were attempted. The normal collector headers were not changed based on unsuccessful evidence. Machine-readable headers, excerpts, timestamps and schema decisions are preserved in `docs/feed-diagnosis.json`.
+
+Upstream-approved automated API access is required to unblock unattended collection under the project's constraints. Collection failure remains visible and the last valid dataset remains preserved. Successful Pages deployment and successful diagnostic execution are **not** successful automatic collection.
