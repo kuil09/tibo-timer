@@ -56,3 +56,9 @@ All three bodies began with HTML containing `<title>Just a moment...</title>`. T
 Exactly three requests were issued. No successful combination existed, so no confirmation request was made. No further diagnostic retries, IP changes, browser-cookie copying or challenge-solving were attempted. The normal collector headers were not changed based on unsuccessful evidence. Machine-readable headers, excerpts, timestamps and schema decisions are preserved in `docs/feed-diagnosis.json`.
 
 Upstream-approved automated API access is required to unblock unattended collection under the project's constraints. Collection failure remains visible and the last valid dataset remains preserved. Successful Pages deployment and successful diagnostic execution are **not** successful automatic collection.
+
+## Scheduled-run verification
+
+The existing schedule produced [run 34221019718](https://github.com/kuil09/tibo-timer/actions/runs/34221019718) at 2026-09-08T11:30:07Z. Its collector logged `feed_http_403` at 11:30:34Z. Pages deployment succeeded and the last valid dataset was retained; the overall run failed deliberately in `Report stale upstream`. Because `continue-on-error` is used to allow preservation/deployment, the API's step conclusion alone can appear successful; the collector log and the final failure step establish the actual refresh outcome. No manual request was created to obtain this scheduled-run evidence.
+
+The implementation, CPU comparison, manual deployment, scheduled execution and live browser checks are complete. Unattended feed acquisition is blocked by the upstream challenge, and CPU inference publication remains disabled because neither candidate passed the fixed quality gate.
