@@ -20,7 +20,7 @@ const flag = (name: string, fallback: string) => {
 };
 const model = flag('model', 'baseline');
 const split = flag('split', 'holdout');
-if (!['phi4mini', 'qwen25', 'qwen3', 'baseline'].includes(model) || !['dev', 'holdout'].includes(split)) throw new Error('Use --model phi4mini|qwen25|qwen3|baseline --split dev|holdout');
+if (!['lfm25', 'phi4mini', 'qwen25', 'qwen3', 'baseline'].includes(model) || !['dev', 'holdout'].includes(split)) throw new Error('Use --model lfm25|phi4mini|qwen25|qwen3|baseline --split dev|holdout');
 const all = JSON.parse(await readFile(new URL('../eval/cases.json', import.meta.url), 'utf8')) as EvaluationCase[];
 if (all.length !== 40 || new Set(all.map(c => c.id)).size !== 40 || ['dev','holdout'].some(s => all.filter(c => c.split === s).length !== 20)) throw new Error('Evaluation fixture must contain 40 unique cases split 20/20');
 const cases = all.filter(c => c.split === split);

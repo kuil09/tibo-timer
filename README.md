@@ -27,7 +27,7 @@ python3 -m http.server 4173 --directory dist
 
 ## CPU inference
 
-`config/models.lock.json` pins model revisions, SHA256 hashes, and the CPU runtime archive. The active candidate is Phi-4-mini-instruct Q4_K_M, using the explicitly community-published bartowski GGUF conversion of Microsoft’s model. Use the manual **CPU model evaluation** workflow to evaluate it; prior Qwen locks and reports remain for provenance. GPU offload is disabled; the loopback-only server exists only during the job. Qwen3 thinking is disabled. Model artifacts are cached, never committed or served to visitors.
+`config/models.lock.json` pins model revisions, SHA256 hashes, and the CPU runtime archive. The active candidate is LFM2.5-1.2B-Instruct Q4_K_M from LiquidAI’s official GGUF distribution. Use the manual **CPU model evaluation** workflow to evaluate it; prior Phi and Qwen locks and reports remain for provenance. GPU offload is disabled; the loopback-only server exists only during the job. Qwen3 thinking is disabled. Model artifacts are cached, never committed or served to visitors.
 
 Evaluation restores verified weights and the runtime archive by default. Use `cold_download=true` only for a fresh-download performance proof; cached measurements cannot replace that proof. `cache_check=true` measures cache restoration, one model load, and five-post batches without rerunning quality cases. Artifacts are cached immediately after preparation, before inference. Runtime extraction is isolated by SHA256; process IDs and prepared paths are not cached. Each job loads one CPU server and processes its batch sequentially; GitHub-hosted jobs do not retain a live model between runs.
 
@@ -59,6 +59,7 @@ Public standard GitHub runners and Pages avoid additional infrastructure charges
 
 - [Public feed](https://codex-reset.com/api/feed)
 - [llama.cpp](https://github.com/ggml-org/llama.cpp)
+- [LFM2.5 official GGUF](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF)
 - [Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct)
 - [Phi GGUF community conversion](https://huggingface.co/bartowski/microsoft_Phi-4-mini-instruct-GGUF)
 - [Qwen2.5 official GGUF](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF)

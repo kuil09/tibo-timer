@@ -28,9 +28,18 @@
       "base_model": "microsoft/Phi-4-mini-instruct",
       "distribution": "community GGUF quantization by bartowski; not a Microsoft-published GGUF",
       "quantization": "Q4_K_M"
+    },
+    "lfm25": {
+      "repo": "LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+      "revision": "6767265158422fb8a19c62ceb45f16f05363615b",
+      "file": "LFM2.5-1.2B-Instruct-Q4_K_M.gguf",
+      "sha256": "b1b3de114215d9507409a662a501a631095a479a419584e8a2ded6304b19b4f5",
+      "bytes": 730895168,
+      "distribution": "official LiquidAI GGUF",
+      "quantization": "Q4_K_M"
     }
   },
   "active_candidates": [
-    "phi4mini"
+    "lfm25"
   ]
 }

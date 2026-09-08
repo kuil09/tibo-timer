@@ -1,5 +1,5 @@
 {
   "enabled": false,
-  "model": null,
-  "reason": "No CPU model passed all verified quality, performance, and model configuration gates; source-only publication remains enabled."
+  "model": "lfm25",
+  "reason": "LFM2.5-1.2B-Instruct Q4_K_M is the active CPU candidate; awaiting unchanged quality and performance gates."
 }
