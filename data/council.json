@@ -1,37 +1,68 @@
 {
   "schema_version": 1,
-  "run_at": "2026-09-08T20:44:50.829Z",
+  "run_at": "2026-09-08T21:03:35.683Z",
   "status": "failed",
   "source_id": "2097183639356489952",
   "source_hash": "824b02a347621eb6b60a0e5de9693ad9afe770d7261efc965fc67d60d6c022c0",
-  "run_url": "https://github.com/kuil09/tibo-timer/actions/runs/34276337271",
+  "run_url": "https://github.com/kuil09/tibo-timer/actions/runs/34278029478",
   "attempts": [
     {
       "attempt": 1,
       "models": [
         {
           "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "event_type": "reset",
-            "state": "retrospective",
-            "conditional": false,
-            "condition": "",
-            "evidence": "You forgot the part where I reset usage twice in the middle",
-            "time_expression": "",
-            "time_basis": "unclear"
-          },
+          "claim": null,
+          "reviews": [
+            {
+              "reviewer": "google/gemma-4-31b-it:free",
+              "verdict": "unavailable"
+            },
+            {
+              "reviewer": "nvidia/nemotron-3-super-120b-a12b:free",
+              "verdict": "unavailable"
+            }
+          ],
           "status": "invalid",
           "error": "invalid_response"
         },
         {
           "id": "google/gemma-4-31b-it:free",
           "claim": null,
-          "status": "not_run"
+          "reviews": [
+            {
+              "reviewer": "nvidia/nemotron-3-ultra-550b-a55b:free",
+              "verdict": "unavailable"
+            },
+            {
+              "reviewer": "nvidia/nemotron-3-super-120b-a12b:free",
+              "verdict": "unavailable"
+            }
+          ],
+          "status": "error",
+          "error": "request_failed"
         },
         {
           "id": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": null,
-          "status": "not_run"
+          "claim": {
+            "event_type": "reset",
+            "state": "retrospective",
+            "conditional": false,
+            "condition": "",
+            "evidence": "I reset usage twice",
+            "time_expression": "",
+            "time_basis": "none"
+          },
+          "reviews": [
+            {
+              "reviewer": "nvidia/nemotron-3-ultra-550b-a55b:free",
+              "verdict": "unavailable"
+            },
+            {
+              "reviewer": "google/gemma-4-31b-it:free",
+              "verdict": "unavailable"
+            }
+          ],
+          "status": "valid"
         }
       ],
       "status": "failed"
@@ -42,25 +73,19 @@
         {
           "id": "nvidia/nemotron-3.5-lightning:free",
           "claim": null,
+          "reviews": [
+            {
+              "reviewer": "cohere/north-mini-code:free",
+              "verdict": "unavailable"
+            },
+            {
+              "reviewer": "nvidia/nemotron-3-super-120b-a12b:free",
+              "verdict": "unavailable"
+            }
+          ],
           "status": "timeout",
           "error": "timeout"
         },
-        {
-          "id": "google/gemma-4-31b-it:free",
-          "claim": null,
-          "status": "not_run"
-        },
-        {
-          "id": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": null,
-          "status": "not_run"
-        }
-      ],
-      "status": "failed"
-    },
-    {
-      "attempt": 3,
-      "models": [
         {
           "id": "cohere/north-mini-code:free",
           "claim": {
@@ -70,20 +95,111 @@
             "condition": "",
             "evidence": "You forgot the part where I reset usage twice in the middle",
             "time_expression": "",
-            "time_basis": "posted_at"
+            "time_basis": "none"
           },
-          "status": "invalid",
-          "error": "invalid_response"
-        },
-        {
-          "id": "google/gemma-4-31b-it:free",
-          "claim": null,
-          "status": "not_run"
+          "reviews": [
+            {
+              "reviewer": "nvidia/nemotron-3.5-lightning:free",
+              "verdict": "unavailable"
+            },
+            {
+              "reviewer": "nvidia/nemotron-3-super-120b-a12b:free",
+              "verdict": "error"
+            }
+          ],
+          "status": "valid"
         },
         {
           "id": "nvidia/nemotron-3-super-120b-a12b:free",
+          "claim": {
+            "event_type": "reset",
+            "state": "retrospective",
+            "conditional": false,
+            "condition": "",
+            "evidence": "You forgot the part where I reset usage twice in the middle",
+            "time_expression": "",
+            "time_basis": "none"
+          },
+          "reviews": [
+            {
+              "reviewer": "nvidia/nemotron-3.5-lightning:free",
+              "verdict": "unavailable"
+            },
+            {
+              "reviewer": "cohere/north-mini-code:free",
+              "verdict": "supported"
+            }
+          ],
+          "status": "invalid",
+          "error": "invalid_response"
+        }
+      ],
+      "status": "failed"
+    },
+    {
+      "attempt": 3,
+      "models": [
+        {
+          "id": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "event_type": "reset",
+            "state": "retrospective",
+            "conditional": false,
+            "condition": "",
+            "evidence": "You forgot the part where I reset usage twice in the middle",
+            "time_expression": "",
+            "time_basis": "none"
+          },
+          "reviews": [
+            {
+              "reviewer": "cohere/north-mini-code:free",
+              "verdict": "supported"
+            },
+            {
+              "reviewer": "google/gemma-4-26b-a4b-it:free",
+              "verdict": "unavailable"
+            }
+          ],
+          "status": "valid"
+        },
+        {
+          "id": "cohere/north-mini-code:free",
+          "claim": {
+            "event_type": "reset",
+            "state": "completed",
+            "conditional": false,
+            "condition": "",
+            "evidence": "You forgot the part where I reset usage twice in the middle",
+            "time_expression": "",
+            "time_basis": "none"
+          },
+          "reviews": [
+            {
+              "reviewer": "dots-studio/dots-3-note-preview:free",
+              "verdict": "unsupported"
+            },
+            {
+              "reviewer": "google/gemma-4-26b-a4b-it:free",
+              "verdict": "unavailable"
+            }
+          ],
+          "status": "valid"
+        },
+        {
+          "id": "google/gemma-4-26b-a4b-it:free",
           "claim": null,
-          "status": "not_run"
+          "reviews": [
+            {
+              "reviewer": "dots-studio/dots-3-note-preview:free",
+              "verdict": "unavailable"
+            },
+            {
+              "reviewer": "cohere/north-mini-code:free",
+              "verdict": "unavailable"
+            }
+          ],
+          "status": "error",
+          "error": "request_failed"
         }
       ],
       "status": "failed"
