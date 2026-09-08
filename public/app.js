@@ -26,6 +26,7 @@ function source(item) {
     meta.append(link);
   } else meta.append(el('span', '', '원문 링크 미확인'));
   box.append(meta);
+  if (item.interpretation?.method === 'source-only') box.append(el('p', 'quiet interpretation', '원문만 표시 · 공지의 의미와 시각은 아직 검증되지 않았습니다.'));
   return box;
 }
 
@@ -72,7 +73,10 @@ function render() {
     if (item.temporal.original) article.append(el('p', 'expression', `시간 표현: ${item.temporal.original}`));
     if (item.temporal.kind === 'unresolved') article.append(el('p', 'quiet', '근거가 충분한 시각으로 변환되지 않았습니다. 원문을 확인해 주세요.'));
     if (item.event.audience?.length) article.append(el('p', 'quiet', `대상: ${item.event.audience.join(', ')}`));
-    if (item.observation) article.append(el('p', 'quiet', `관측 정보 · ${formatInstant(item.observation.at, zone)} · ${item.observation.result}`));
+    if (item.observation) {
+      const result = item.observation.result === 'reset_observed' ? 'Reset 관측 기록' : '별도 관측 기록';
+      article.append(el('p', 'quiet observation', `운영자 관측 정보 · ${formatInstant(item.observation.at, zone)} · ${result}. 티보의 완료 공지나 개인 계정 확인을 뜻하지 않습니다.`));
+    }
     article.append(source(item));
     list.append(article);
   }

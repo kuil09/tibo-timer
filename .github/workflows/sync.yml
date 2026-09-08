@@ -38,6 +38,7 @@ jobs:
         if: steps.plan.outcome == 'failure'
         continue-on-error: true
         run: |
+          mkdir -p .cache
           curl --silent --show-error --max-time 20 --dump-header .cache/feed-headers.txt --output .cache/feed-error.txt --user-agent 'tibo-timer/1.0 (+https://github.com/kuil09/tibo-timer)' https://codex-reset.com/api/feed
           cat .cache/feed-headers.txt
           head -c 1000 .cache/feed-error.txt
@@ -48,6 +49,7 @@ jobs:
           key: cpu-${{ runner.os }}-${{ steps.plan.outputs.model }}-${{ hashFiles('config/models.lock.json') }}
       - name: Prepare and start approved CPU model
         id: cpu
+        timeout-minutes: 4
         if: steps.plan.outputs.inference == 'true'
         continue-on-error: true
         run: |

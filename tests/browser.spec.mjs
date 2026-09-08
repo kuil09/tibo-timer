@@ -85,4 +85,23 @@ test('published source-only dataset is readable with zero runtime errors', async
   expect(errors).toEqual([]);
   await mkdir('.cache/screenshots', { recursive: true });
   await page.screenshot({ path: '.cache/screenshots/live-desktop.png', fullPage: true });
+  await page.screenshot({ path: '.cache/screenshots/live-desktop-viewport.png' });
+  await page.setViewportSize({ width: 390, height: 844 });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: '.cache/screenshots/live-mobile-viewport.png' });
+});
+
+test('source-only interpretation and operator observations are distinct Korean notices', async ({ page }) => {
+  const doc = fixture();
+  doc.events[0].interpretation = { method: 'source-only' };
+  doc.events[0].event.state = 'unknown';
+  doc.events[0].temporal = { kind: 'unresolved', precision: 'unspecified', original: '', reason: 'model_not_approved' };
+  doc.events[0].observation = { at: '2026-09-08T01:34:00Z', result: 'reset_observed' };
+  await stub(page, doc);
+  await page.goto(origin + '/');
+  await expect(page.locator('#events .interpretation')).toContainText('원문만 표시');
+  await expect(page.locator('#events .observation')).toContainText('운영자 관측 정보');
+  await expect(page.locator('#events .observation')).toContainText('티보의 완료 공지나 개인 계정 확인을 뜻하지 않습니다');
+  await expect(page.locator('body')).not.toContainText('reset_observed');
+  await expect(page.locator('body')).not.toContainText('model_not_approved');
 });
