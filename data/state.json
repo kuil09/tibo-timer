@@ -1,1 +1,7 @@
-{"schema_version":1,"processed":{},"last_success_at":null,"last_attempt_at":null,"last_error":null}
+{
+  "schema_version": 1,
+  "processed": {},
+  "last_success_at": null,
+  "last_attempt_at": "2026-09-08T11:21:20.739Z",
+  "last_error": "feed_http_403"
+}
