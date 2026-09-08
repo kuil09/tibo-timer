@@ -69,3 +69,9 @@ Persist the exact model IDs for every result, the abandoned claims/reviews, repl
 The supplied original image is served unchanged as `public/assets/model-council.png`. Three accessible speech buttons show the selected panel's actual model output/status. The attempt selector exposes fallback history; clicking a bubble opens its source evidence. The lower bubble shows corroboration, disagreement or incomplete review, never a fabricated reset confirmation.
 
 `src/publish-council.ts` projects only allowed public fields from a report, matches the source text/hash, and excludes raw provider errors, account identifiers and request metadata. Invalid parsed drafts remain explicitly invalid. If projection fails or the artifact is missing, the prior snapshot remains and publication reports the failure.
+
+## Parallel execution
+
+Drafts run concurrently with `Promise.allSettled`, followed by concurrent cross-reviews. Request starts are spaced by at least 3.1 seconds across both stages; response latency overlaps. Reservations are made synchronously before waiting so parallel calls cannot exceed the 45-request ceiling. Account-wide failures cancel queued requests; already-started calls are allowed to settle and are retained. Checkpoint writes are serialized.
+
+Every seat retains its own draft, raw-but-invalid structured output and failure state. Healthy models can cross-review each other's valid drafts even when another seat fails. Each candidate's public detail lists peer verdicts. All failed seats are replaced together before a fresh panel; a semantic disagreement still does not trigger retries. Three complete drafts plus all six supporting reviews remain required for corroboration.

@@ -38,22 +38,28 @@ export function projectCouncil(report: unknown, events: unknown, runUrl?: string
   if (!records.length) throw new Error('Missing attempt records');
   const attempts = records.map((record: Row) => {
     if (!Number.isInteger(record.attempt) || record.attempt < 1 || record.attempt > 3 || !Array.isArray(record.models) || record.models.length !== 3 || !record.models.every(modelId) || new Set(record.models).size !== 3 || !Array.isArray(record.claims)) throw new Error('Invalid attempt');
+    const parallel = Array.isArray(record.failed_models);
+    const failures: Row[] = parallel ? record.failed_models.filter((item: unknown) => object(item) && record.models.includes(item.id) && ['draft','review'].includes(item.stage)) : record.failed_model ? [{id:record.failed_model,error:record.error}] : [];
     const models = record.models.map((id: string, index: number) => {
+      const reviews = Array.isArray(record.reviews) ? record.reviews.filter((review: unknown) => object(review) && review.author === index && Number.isInteger(review.reviewer) && review.reviewer >= 0 && review.reviewer < 3 && review.reviewer !== index && ['supported','unsupported','uncertain','error','unavailable'].includes(review.verdict)).map((review: Row) => ({reviewer:record.models[review.reviewer] as string,verdict:review.verdict as string})) : [];
+      const failed = failures.find(item => item.id === id);
       const parsed = draft(record.claims[index], post.source.text);
       if (parsed) {
-        try {validateClaim(record.claims[index], post.source.text); return {id,claim:parsed,status:'valid'};} catch {return {id,claim:parsed,status:'invalid',error:'invalid_response'};}
+        if (failed) return {id,claim:parsed,reviews,...failure(failed.error)};
+        try {validateClaim(record.claims[index], post.source.text); return {id,claim:parsed,reviews,status:'valid'};} catch {return {id,claim:parsed,reviews,status:'invalid',error:'invalid_response'};}
       }
-      if (record.failed_model !== id) return {id,claim:null,status:'not_run'};
-      const matching = calls.filter((c: Row) => c.model === id);
-      let recovered: Claim | null = null;
-      for (const call of matching) {
+      if (!failed) return {id,claim:null,reviews,status:'not_run'};
+      let recovered: Claim | null = parallel && Array.isArray(record.raw_claims) ? draft(record.raw_claims[index], post.source.text) : null;
+      // Legacy sequential reports stored an invalid draft only in the call log.
+      // Parallel records have aligned seats; never borrow a draft from another attempt.
+      if (!parallel) for (const call of calls.filter((c: Row) => c.model === id)) {
         if (typeof call.content !== 'string') continue;
         try {recovered = draft(JSON.parse(call.content.trim().replace(/^```(?:json)?\s*|\s*```$/g,'')),post.source.text);} catch { /* Keep provider output private. */ }
       }
-      return {id,claim:recovered,...failure(record.error)};
+      return {id,claim:recovered,reviews,...failure(failed.error)};
     });
     const corroborated = record.status === 'corroborated' && models.every((m: Row) => m.status === 'valid') && Array.isArray(record.reviews) && accepted(models.map((m: Row) => m.claim),record.reviews);
-    return {attempt:record.attempt,models,status:corroborated?'corroborated':record.failed_model?'failed':'unresolved'};
+    return {attempt:record.attempt,models,status:corroborated?'corroborated':failures.length?'failed':'unresolved'};
   });
   const safeUrl = typeof runUrl === 'string' && /^https:\/\/github\.com\/kuil09\/tibo-timer\/actions\/runs\/\d+$/.test(runUrl) ? runUrl : null;
   return {schema_version:1,run_at:runAt,status:report.status==='completed'?'completed':'failed',source_id:last.id,source_hash:sourceHash,run_url:safeUrl,attempts,result:attempts.at(-1)?.status==='corroborated'?'corroborated':'unresolved',source_last_success_at:date(report.source_last_success_at)};

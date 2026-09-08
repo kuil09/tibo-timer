@@ -38,3 +38,45 @@ test('empty snapshot explicitly represents missing evaluation',()=>{
  const result=emptyCouncil();
  assert.equal(result.schema_version,1);assert.deepEqual(result.attempts,[]);assert.equal(result.result,'unresolved');assert.equal(result.source_id,null);
 });
+test('parallel failures stay aligned with their seats and preserve successful peers',()=>{
+ const report:any=fixture();
+ report.abandoned[0]={...report.abandoned[0],claims:[null,claim,null],failed_models:[{id:models[2],stage:'draft',error:'timeout private-provider'},{id:models[0],stage:'draft',error:'Invalid JSON private-secret'}],failed_model:models[2],reviews:[{author:1,reviewer:0,verdict:'unavailable'},{author:1,reviewer:2,verdict:'unavailable'}]};
+ const result=projectCouncil(report,events);
+ const seats=result.attempts[0].models;
+ assert.deepEqual(seats.map(seat=>seat.status),['invalid','valid','timeout']);
+ assert.equal(seats[0].claim,null); // A legacy raw call must not be recovered into a parallel attempt.
+ assert.deepEqual(seats[1].claim,claim);
+ assert.equal(seats[2].claim,null);
+ assert.deepEqual(seats[1].reviews,[{reviewer:models[0],verdict:'unavailable'},{reviewer:models[2],verdict:'unavailable'}]);
+ assert.equal(result.attempts[0].status,'failed');
+ assert.doesNotMatch(JSON.stringify(result),/private|secret/);
+});
+test('review failure retains its draft and publishes sanitized peer results only',()=>{
+ const report:any=fixture();
+ report.abandoned[0]={...report.abandoned[0],claims:[claim,claim,claim],failed_models:[{id:models[1],stage:'review',error:'timeout private'}],reviews:[
+  {author:0,reviewer:1,verdict:'error',provider_error:'private'},
+  {author:0,reviewer:2,verdict:'supported',evidence:'private'},
+  {author:0,reviewer:0,verdict:'supported'},
+  {author:0,reviewer:7,verdict:'supported'},
+  {author:0,reviewer:1,verdict:'private'},
+  {author:2,reviewer:0,verdict:'uncertain'},
+ ]};
+ const result=projectCouncil(report,events);
+ const seats=result.attempts[0].models;
+ assert.deepEqual(seats.map(seat=>seat.status),['valid','timeout','valid']);
+ assert.deepEqual(seats[1].claim,claim);
+ assert.deepEqual(seats[0].reviews,[{reviewer:models[1],verdict:'error'},{reviewer:models[2],verdict:'supported'}]);
+ assert.deepEqual(seats[2].reviews,[{reviewer:models[0],verdict:'uncertain'}]);
+ assert.equal(result.result,'unresolved');
+ assert.doesNotMatch(JSON.stringify(result),/private/);
+});
+test('parallel failed drafts recover only aligned sanitized raw claims',()=>{
+ const report:any=fixture();
+ report.abandoned[0]={...report.abandoned[0],claims:[null,claim,null],raw_claims:[{...claim,time_basis:'unclear',private:'secret'},null,{...claim,evidence:'invented private quotation'}],failed_models:[{id:models[0],stage:'draft',error:'Inconsistent claim private'},{id:models[2],stage:'draft',error:'Invalid claim private'}]};
+ const seats=projectCouncil(report,events).attempts[0].models;
+ assert.equal(seats[0].status,'invalid');
+ assert.equal(seats[0].claim?.time_basis,'unclear');
+ assert.deepEqual(seats[1].claim,claim);
+ assert.equal(seats[2].claim,null);
+ assert.doesNotMatch(JSON.stringify(seats),/private|secret|invented/);
+});

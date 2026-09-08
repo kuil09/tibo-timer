@@ -41,6 +41,11 @@ export async function mountCouncil(events){
       detail.append(node('p','detail-note',c.time_expression?`시간 표현: ${c.time_expression}`:'초기화 시각으로 해석할 수 있는 시간 표현을 제출하지 않았습니다.'));
       if(m.status!=='valid')detail.append(node('p','invalid-notice','검증을 통과하지 못한 모델의 발언입니다. 확정된 해석으로 사용하지 않습니다.'));
     }else detail.append(node('p','detail-note',m.status==='not_run'?'앞선 모델의 오류로 이 차수에서는 호출되지 않았습니다.':m.status==='timeout'?'제한 시간 안에 응답하지 못했습니다. 이 모델의 해석은 없습니다.':'사용할 수 있는 해석을 받지 못했습니다.'));
+    if(m.reviews?.length){
+      const reviewBox=node('div','peer-reviews','');reviewBox.append(node('h4','','다른 모델의 검증'));
+      const verdicts={supported:'근거에 동의',unsupported:'근거 불충분',uncertain:'판단 유보',error:'검증 실패',unavailable:'검증 미참여'};
+      m.reviews.forEach(r=>{const row=node('p','peer-review','');row.append(node('span','',shortName(r.reviewer)),node('strong','',verdicts[r.verdict]||'확인 불가'));reviewBox.append(row);});detail.append(reviewBox);
+    }
   }
   select.value=String(doc.attempts.length-1);select.addEventListener('change',()=>{activeSeat=0;draw();});
   document.querySelectorAll('.speech').forEach((b,i)=>b.addEventListener('click',()=>{activeSeat=i;draw();}));draw();
