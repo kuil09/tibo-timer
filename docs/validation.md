@@ -139,3 +139,7 @@ Combined-label v2 regressed to 13/20 pairs and was rejected. V3 preserves fields
 ## Completion verification
 
 Locked v3 baseline replay across 52 cases plus 13 live independent verification calls: false completions 4 to 0, true completions 9/9 retained, exact correctness unchanged at 47/52 because four false completions become unresolved. Added wall time 79.79 s. Separate single-case full live integration recorded. 56 tests and type checks pass; no publication. See `evaluation/local-lab/qwen359b-verified/README.md`.
+
+## All-claim verification and three-attempt loop
+
+User requested verification for every non-truncated claim and at most three total inference/verification attempts. Implemented and tested on locked 52-case first-stage results: 51 live verifier calls; 16 disagreements then received 70 live retry calls. 35 agreements plus one truncation bypass stop at attempt one; all 16 others exhaust three attempts, with no recoveries. Exact correctness 38/52, false completed/scheduled 0/0, accepted wrong 0. Sixty tests, type check and build pass. See `evaluation/local-lab/qwen359b-loop/README.md`. Automatic interpretation remains unapproved.

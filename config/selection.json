@@ -1,5 +1,5 @@
 {
   "enabled": false,
   "model": null,
-  "reason": "Automatic interpretation remains unapproved. Local Qwen3.5-9B Q4_K_M v3 plus completion verification retained 47/52 exact cases and reduced false completions from 4 to 0 by abstaining on four schedules. Unseen release acceptance and Linux CPU performance remain unverified; production active candidate remains lfm25."
+  "reason": "Automatic interpretation remains unapproved. Local Qwen3.5 all-claim verification with three total attempts produced 38/52 exact results, zero false completions/schedules, and 16 exhausted cases with no retry recoveries. Unseen acceptance and Linux CPU limits remain unverified; production active candidate remains lfm25."
 }

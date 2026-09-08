@@ -19,4 +19,4 @@ export async function verifyCompletion(post:{text:string},initial:Initial,call:S
  }catch(e){reason=e instanceof Error?e.message:String(e);}
  return {...initial,claim:'uncertain' as const,reset_kind:null,time_id:null,temporal:{kind:'unresolved' as const,precision:'unspecified' as const,original:'',reason:'completion_verification_failed'},verification:{needed:true,accepted:false,reason,answer}};
 }
-export async function runVerifiedClaim(post:Parameters<typeof runClaimV3>[0],call:StageCall){return verifyCompletion(post,await runClaimV3(post,call),call);}
+export {runVerifiedClaimAll as runVerifiedClaim} from './verify-claim.ts';
