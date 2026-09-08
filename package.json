@@ -1,0 +1,26 @@
+{
+  "name": "tibo-timer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --import tsx --test tests/*.test.ts",
+    "check": "tsc --noEmit",
+    "build": "node --import tsx src/build.ts",
+    "sync": "node --import tsx src/sync.ts",
+    "evaluate": "node --import tsx src/evaluate.ts",
+    "test:browser": "playwright test tests/browser.spec.mjs"
+  },
+  "dependencies": {
+    "@js-temporal/polyfill": "0.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "@playwright/test": "^1.55.0"
+  }
+}

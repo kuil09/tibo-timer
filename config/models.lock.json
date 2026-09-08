@@ -1,0 +1,23 @@
+{
+  "runtime": {
+    "version": "b10856",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/download/b10856/llama-b10856-bin-ubuntu-x64.tar.gz",
+    "sha256": "35dfdbc7b39b5791cc692d47051e93773ee31813ebe88318f1e0ce4ba5f6b674"
+  },
+  "models": {
+    "qwen25": {
+      "repo": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+      "revision": "91cad51170dc346986eccefdc2dd33a9da36ead9",
+      "file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+      "bytes": 1117320736
+    },
+    "qwen3": {
+      "repo": "Qwen/Qwen3-1.7B-GGUF",
+      "revision": "90862c4b9d2787eaed51d12237eafdfe7c5f6077",
+      "file": "Qwen3-1.7B-Q8_0.gguf",
+      "sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a",
+      "bytes": 1834426016
+    }
+  }
+}

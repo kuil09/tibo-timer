@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10151c">
+    <meta name="description" content="티보의 Codex Reset 공지를 내 시간대로 확인하세요. 원문, 예상 여부, 수집 시각을 함께 보여줍니다.">
+    <title>Codex Reset · 내 시간으로</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">본문으로 건너뛰기</a>
+    <div class="shell">
+      <header class="masthead"><a class="brand" href="./" aria-label="Codex Reset 홈"><span class="mark" aria-hidden="true">↻</span> CODEX RESET</a><span class="edition">LOCAL TIME / 내 시간으로</span></header>
+      <main id="main">
+        <section class="intro" aria-labelledby="page-title"><div class="eyebrow">티보의 공지에서, 당신의 시간으로</div><h1 id="page-title">다음 Reset,<br><span>내 시간으로.</span></h1><p class="lead">공지의 원문과 불확실성까지 함께 확인하세요.</p><p class="zone"><span class="dot" aria-hidden="true"></span><span id="timezone">시간대 확인 중</span><span id="local-clock"></span></p></section>
+        <div id="status" class="status" role="status">최신 공지를 불러오는 중입니다.</div>
+        <section class="schedules" aria-label="유형별 다음 일정" id="schedules"></section>
+        <section class="history" aria-labelledby="history-title"><div class="section-head"><h2 id="history-title">공지 기록</h2><span id="event-count"></span></div><p class="section-note">원문 기준으로 기록합니다. 서로 다른 공지는 자동으로 합치지 않습니다.</p><div id="events"></div></section>
+      </main>
+      <footer><p>개인 계정의 사용량이나 실제 초기화 여부를 확인하는 서비스가 아닙니다.<br>완료 공지는 발언 기록이며, 카운트다운 종료가 Reset 완료를 뜻하지 않습니다.</p><div class="footer-meta"><span id="updated">수집 기록 확인 중</span><a href="https://codex-reset.com/" target="_blank" rel="noopener noreferrer">데이터 출처 ↗</a><a href="https://github.com/kuil09/tibo-timer" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></footer>
+    </div>
+  </body>
+</html>

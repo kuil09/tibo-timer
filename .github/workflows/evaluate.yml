@@ -1,0 +1,48 @@
+name: CPU model evaluation
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  evaluate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        model: [qwen25, qwen3]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run check && npm test
+      # Deliberately cold: deployment must pass the cache-loss scenario.
+      - name: Prepare fixed CPU model
+        run: python3 scripts/prepare-cpu.py '${{ matrix.model }}'
+      - name: Start CPU inference
+        run: |
+          start=$SECONDS
+          bash scripts/start-cpu.sh
+          echo "STARTUP_SECONDS=$((SECONDS-start))" >> "$GITHUB_ENV"
+      - name: Measure cold and warm five-post batches
+        run: node --import tsx src/benchmark.ts
+      - name: Evaluate development and frozen holdout
+        run: |
+          node --import tsx src/evaluate.ts --model '${{ matrix.model }}' --split dev
+          node --import tsx src/evaluate.ts --model '${{ matrix.model }}' --split holdout
+          node --import tsx src/evaluate.ts --model baseline --split dev
+          node --import tsx src/evaluate.ts --model baseline --split holdout
+      - uses: actions/cache/save@v4
+        with:
+          path: .cache/cpu
+          key: cpu-${{ runner.os }}-${{ matrix.model }}-${{ hashFiles('config/models.lock.json') }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evaluation-${{ matrix.model }}
+          path: .cache/evaluation/
+          include-hidden-files: true
+          retention-days: 14
