@@ -55,3 +55,11 @@ Inkling and Inkling Small free endpoints are excluded because ordinary Actions r
 A post permits at most three panel attempts (initial plus two replacements). When any draft or review fails, preserve the abandoned panel, replace the failed model with the next live free reserve, and restart all three drafts and six reviews for that post. Never combine votes from different panels. Semantic disagreement is a valid unresolved outcome and does not trigger replacement to seek agreement. A completed run may contain recovered failures; every accepted post must still have one complete panel.
 
 Persist the exact model IDs for every result, the abandoned claims/reviews, replacement reasons, scored/unranked status and total requests. With fewer than nine requests remaining, do not start a replacement panel. Exhausted candidates, attempts or request budget fail the workflow and preserve unresolved evidence. Free IDs, zero price caps and the key budget apply to every reserve. No paid fallback.
+
+## Live verification, 2026-09-08 UTC
+
+- Discovery and automatic workflow handoff succeeded: https://github.com/kuil09/tibo-timer/actions/runs/34275836025 . The repository secret was installed without committing credentials.
+- The original Inkling panel failed with HTTP403 (harness-only access), and the restriction is now excluded.
+- A subsequent run observed Gemma HTTP429 from `upstream_provider_shared_pool`; this did not establish a key-budget failure.
+- The fallback implementation ran on Actions: https://github.com/kuil09/tibo-timer/actions/runs/34276337271 . Exactly three requests were attempted. Nemotron Ultra returned an inconsistent claim (empty delivery expression with `unclear` basis), Nemotron Lightning timed out, and Cohere North Mini Code returned another inconsistent claim (empty expression with `posted_at` basis). Both model replacements were recorded. The third panel exhausted the attempt cap and the workflow correctly failed with an unresolved result.
+- This proves live fallback and bounded termination, not a completed three-model review or interpretation accuracy. A full successful council remains unverified. The latest local suite has 73 passing tests, including mocked full recovery and review-stage restart. Public data remains unchanged.
