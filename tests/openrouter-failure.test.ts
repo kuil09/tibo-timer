@@ -5,30 +5,32 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { main } from '../src/openrouter.ts';
 
-type Failure = 'http' | 'network' | 'malformed';
+type Scenario = 'provider429' | 'unauthorized' | 'account429' | 'emptyreserve' | 'review' | 'disagreement' | 'attemptlimit' | 'network' | 'malformed';
 
-async function exerciseFailure(kind: Failure) {
+async function exerciseScenario(scenario: Scenario) {
   const directory = await mkdtemp(join(tmpdir(), 'openrouter-failure-'));
   const originalCwd = process.cwd();
   const originalFetch = globalThis.fetch;
   const originalTimeout = globalThis.setTimeout;
   const originalKey = process.env.OPENROUTER_API_KEY;
   const originalLimit = process.env.OPENROUTER_MAX_POSTS;
-  const models = ['a', 'b', 'c'].map((author, index) => ({
+  const authors = scenario === 'emptyreserve' ? ['a', 'b', 'c'] : ['a', 'b', 'c', 'd', 'e', 'f'];
+  const models = authors.map((author, index) => ({
     id: `${author}/test:free`, pricing: { prompt: '0', completion: '0', request: '0' },
     supported_parameters: ['reasoning', 'max_tokens'], context_length: 32768,
     architecture: { input_modalities: ['text'], output_modalities: ['text'] },
-    benchmarks: { artificial_analysis: { intelligence_index: 30 - index } },
+    benchmarks: { artificial_analysis: { intelligence_index: index < 3 ? 30 - index : null } },
   }));
   const now = new Date().toISOString();
   const source = JSON.stringify({ last_success_at: now, events: [{
     id: 'test-post', source: { text: 'Unrelated product news.', posted_at: now, truncated: false },
   }] });
-  let requests = 0;
+  const requests: { model: string; review: boolean }[] = [];
+  const fatal = ['unauthorized', 'account429', 'emptyreserve', 'attemptlimit'].includes(scenario);
   try {
     await mkdir(join(directory, '.cache/openrouter'), { recursive: true });
     await mkdir(join(directory, 'data'));
-    await writeFile(join(directory, '.cache/openrouter/catalog.json'), JSON.stringify({ fetched_at: now, models, selected: models }));
+    await writeFile(join(directory, '.cache/openrouter/catalog.json'), JSON.stringify({ fetched_at: now, models, selected: models.slice(0, 3) }));
     await writeFile(join(directory, 'data/events.json'), source);
     process.chdir(directory);
     process.env.OPENROUTER_API_KEY = 'test-only-dummy-key';
@@ -39,36 +41,66 @@ async function exerciseFailure(kind: Failure) {
     globalThis.fetch = async (input, init) => {
       if (String(input) === 'https://openrouter.ai/api/v1/models') return Response.json({ data: models });
       assert.equal(String(input), 'https://openrouter.ai/api/v1/chat/completions');
-      requests++;
-      if (requests === 1) {
-        if (kind === 'http') return new Response('Rate limited', { status: 429 });
-        if (kind === 'network') throw new TypeError('Simulated network failure');
-        return Response.json({ choices: [{ finish_reason: 'stop', message: { content: '{invalid JSON' } }] });
-      }
       const request = JSON.parse(String(init?.body));
       const review = request.messages[0].content.includes('Now audit');
-      const content = review ? { verdict: 'supported', evidence: '' } : {
+      requests.push({ model: request.model, review });
+      const failHere = scenario === 'attemptlimit' || requests.length === (scenario === 'review' ? 4 : 1);
+      if (failHere && scenario !== 'disagreement') {
+        if (scenario === 'unauthorized') return new Response('Invalid credentials', { status: 401 });
+        if (scenario === 'account429') return new Response('Daily account limit exceeded', { status: 429 });
+        if (scenario === 'network') throw new TypeError('Simulated network failure');
+        if (scenario === 'malformed') return Response.json({ choices: [{ finish_reason: 'stop', message: { content: '{invalid JSON' } }] });
+        return new Response('upstream_provider_shared_pool', { status: 429 });
+      }
+      const content = review ? { verdict: scenario === 'disagreement' ? 'uncertain' : 'supported', evidence: '' } : {
         event_type: 'unknown', state: 'unknown', conditional: false, condition: '',
         evidence: '', time_expression: '', time_basis: 'none',
       };
       return Response.json({ model: request.model, choices: [{ finish_reason: 'stop', message: { content: JSON.stringify(content) } }] });
     };
 
-    await assert.rejects(main('council'), kind === 'http' ? /HTTP 429/ : /failed model responses/);
+    if (fatal) await assert.rejects(main('council'), /HTTP (401|429)/);
+    else await main('council');
     const report = JSON.parse(await readFile('.cache/openrouter/council.json', 'utf8'));
-    assert.equal(report.status, 'failed');
-    assert.equal(report.requests, requests);
-    assert.ok(report.calls.some((call: { error?: string }) => typeof call.error === 'string'));
-    assert.ok(report.results.every((result: { status: string; publication: string }) =>
-      result.status === 'unresolved' && result.publication === 'not_published'));
-    if (kind === 'http') {
-      assert.equal(requests, 1, 'HTTP failures must stop without retry or fallback');
-      assert.ok(report.calls.some((call: { http_status?: number }) => call.http_status === 429));
+    assert.equal(report.status, fatal ? 'failed' : 'completed');
+    assert.equal(report.requests, requests.length);
+    assert.equal(report.results.length, 1);
+    assert.equal(report.results[0].publication, 'not_published');
+    assert.equal(report.results[0].status, fatal || scenario === 'disagreement' ? 'unresolved' : 'corroborated');
+    if (['unauthorized', 'account429', 'emptyreserve'].includes(scenario)) {
+      assert.equal(requests.length, 1);
+      assert.equal(report.fallbacks.length, 0);
+      assert.equal(report.abandoned.length, 1);
+      assert.ok(report.calls.some((call: { error?: string }) => typeof call.error === 'string'));
+    } else if (scenario === 'attemptlimit') {
+      assert.equal(requests.length, 3);
+      assert.equal(report.fallbacks.length, 2);
+      assert.equal(report.abandoned.length, 3);
+      assert.equal(new Set(requests.map(request => request.model)).size, 3);
+    } else if (scenario === 'disagreement') {
+      assert.equal(requests.length, 9);
+      assert.equal(report.fallbacks.length, 0, 'Semantic disagreement must not trigger replacement');
+      assert.equal(report.abandoned.length, 0);
     } else {
-      assert.equal(report.results.length, 1, 'Partial results must survive later successful calls');
-      assert.equal(report.results[0].claims[0], null);
-      assert.ok(report.calls.some((call: { stage?: string }) => call.stage === 'draft_validation'));
-      if (kind === 'network') assert.ok(report.calls.some((call: { error?: string }) => call.error?.includes('Simulated network failure')));
+      const firstAttemptCalls = scenario === 'review' ? 4 : 1;
+      assert.equal(requests.length, firstAttemptCalls + 9);
+      assert.equal(report.abandoned.length, 1);
+      assert.equal(report.abandoned[0].claims.length, scenario === 'review' ? 3 : 0);
+      assert.equal(report.fallbacks.length, 1);
+      assert.equal(report.fallbacks[0].from, 'a/test:free');
+      assert.equal(report.fallbacks[0].to, 'd/test:free');
+      assert.equal(report.fallbacks[0].ranked, false, 'Unscored free candidates remain usable reserves');
+      assert.deepEqual(report.results[0].models, ['d/test:free', 'b/test:free', 'c/test:free']);
+      assert.equal(report.results[0].attempt, 2);
+      assert.equal(report.results[0].claims.length, 3);
+      assert.equal(report.results[0].reviews.length, 6);
+      const fresh = requests.slice(firstAttemptCalls);
+      assert.deepEqual(fresh.slice(0, 3), [
+        { model: 'd/test:free', review: false }, { model: 'b/test:free', review: false }, { model: 'c/test:free', review: false },
+      ]);
+      assert.ok(fresh.slice(3).every(request => request.review));
+      assert.ok(fresh.every(request => request.model !== 'a/test:free'));
+      for (const model of report.results[0].models) assert.equal(fresh.filter(request => request.model === model && request.review).length, 2);
     }
     assert.equal(await readFile('data/events.json', 'utf8'), source);
   } finally {
@@ -83,6 +115,12 @@ async function exerciseFailure(kind: Failure) {
   }
 }
 
-test('council preserves failure evidence on HTTP 429 without retry', () => exerciseFailure('http'));
-test('council cannot report completion after an initial network failure', () => exerciseFailure('network'));
-test('council cannot corroborate a post after a malformed draft response', () => exerciseFailure('malformed'));
+test('provider 429 replaces the failed model and reruns a complete panel', () => exerciseScenario('provider429'));
+test('authentication failure stops without fallback', () => exerciseScenario('unauthorized'));
+test('account-wide rate limit stops without fallback', () => exerciseScenario('account429'));
+test('exhausted reserve preserves failed unresolved evidence', () => exerciseScenario('emptyreserve'));
+test('review failure restarts drafts and all six reviews without mixing panels', () => exerciseScenario('review'));
+test('semantic disagreement is unresolved without replacement', () => exerciseScenario('disagreement'));
+test('panel retries stop after three attempts despite remaining reserves', () => exerciseScenario('attemptlimit'));
+test('network failure uses a free replacement', () => exerciseScenario('network'));
+test('malformed draft uses a free replacement', () => exerciseScenario('malformed'));
