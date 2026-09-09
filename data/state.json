@@ -74,8 +74,8 @@
     "2095961185262997556": "05948db865efa569e8632eb923b79d36064fee90ff5725096dabcad17b1091e9"
   },
   "last_success_at": "2026-09-08T12:52:32.391Z",
-  "last_attempt_at": "2026-09-09T04:40:10.899Z",
-  "last_error": "collection_partial",
+  "last_attempt_at": "2026-09-09T04:41:21.926Z",
+  "last_error": "fx_invalid_post",
   "collection": {
     "provider": "fxembed",
     "checked_at": "2026-09-09T04:40:10.899Z",
