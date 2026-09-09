@@ -1,0 +1,69 @@
+name: Collector checks
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: ['fix/issue-1-free-collection']
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run check && npm test && npm run build
+      - name: Install browser
+        run: npx playwright install chromium
+      - name: Browser regression
+        run: |
+          python3 -m http.server 4173 --directory dist >/tmp/tibo-http.log 2>&1 &
+          npm run test:browser
+      - name: Exercise actual collection without publication
+        if: github.event_name != 'pull_request'
+        env:
+          CPU_READY: failure
+        run: |
+          node --import tsx src/sync.ts plan
+          node --import tsx src/sync.ts apply
+          npm run build
+          cat .cache/sync-report.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: collector-report
+          path: |
+            .cache/sync-report.json
+            data/state.json
+            dist/version.json
+          include-hidden-files: true
+          retention-days: 3
+  timeline:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        probe: [first, second]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: node --import tsx src/diagnose-timeline.ts
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: timeline-${{ matrix.probe }}
+          path: .cache/timeline-probe.json
+          include-hidden-files: true
+          retention-days: 3
