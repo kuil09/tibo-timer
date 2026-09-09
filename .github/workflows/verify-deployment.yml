@@ -1,0 +1,46 @@
+name: Verify deployed Pages
+on:
+  push:
+    branches: ['verify/issue-1-deployment']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-site:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 2
+    steps:
+      - name: Check actual public deployment without credentials
+        run: |
+          python3 - <<'PY'
+          import urllib.request, json, datetime, pathlib
+          base='https://kuil09.github.io/tibo-timer/'
+          def get(path):
+              request=urllib.request.Request(base+path,headers={'Cache-Control':'no-cache','User-Agent':'tibo-timer-deployment-verifier/1.0'})
+              with urllib.request.urlopen(request,timeout=20) as response:
+                  assert response.status==200
+                  return response.read(2000000).decode('utf-8')
+          html=get('')
+          assert 'app.js' in html
+          version=json.loads(get('version.json'))
+          assert version['commit']=='14b5ae063d91aff6aacc690b9d72b62d68d4f1df',version
+          data=json.loads(get('events.json'))
+          assert data['schema_version']==1 and len(data['events'])>26
+          assert data['collection']['provider']=='fxembed'
+          assert data['collection']['coverage'] in ('partial','complete')
+          ids=[p['id'] for p in data['events']]
+          assert len(ids)==len(set(ids))
+          assert all(p['source']['url']=='https://x.com/thsottiaux/status/'+p['id'] for p in data['events'])
+          assert '2097494113012863197' in ids
+          assert any(len(p['source']['text'])>280 for p in data['events'])
+          assert 'collection_partial' in get('app.js')
+          assert len(get('view.js'))>0
+          report={'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'site':base,'version':version,'events':len(ids),'collection':data['collection'],'last_success_at':data['last_success_at'],'latest_post':max(p['source']['posted_at'] for p in data['events']),'unique_ids':True,'source_urls_verified':True,'long_text_verified':True}
+          pathlib.Path('deployment-check.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+          print(json.dumps(report,ensure_ascii=False,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: deployment-check
+          path: deployment-check.json
+          retention-days: 3
