@@ -116,3 +116,20 @@ test('collection error immediately overrides fresh success without exposing inte
   await expect(page.locator('#event-count')).toHaveText('1개 기록');
   await expect(page.locator('body')).not.toContainText('HTTP_403_CF_CHALLENGE');
 });
+
+test('automatic AI status is distinct from healthy collection and labels AI interpretations', async ({ page }) => {
+  const doc = fixture({
+    collection: { mode: 'latest', lookback_hours: 24, coverage: 'complete', last_error: null },
+    analysis: { enabled: true, model: 'qwen359b', failed: 1, deferred: 2 },
+  });
+  doc.events[0].interpretation = { method: 'cpu-model', model: 'qwen359b' };
+  await stub(page, doc);
+  await page.goto(origin + '/');
+  await expect(page.locator('#analysis-status')).toContainText('AI 자동 해석 켜짐');
+  await expect(page.locator('#analysis-status')).toContainText('최근 24시간 최신 페이지');
+  await expect(page.locator('#analysis-status')).toContainText('일부 해석 실패');
+  await expect(page.locator('#analysis-status')).toContainText('2건 처리 대기');
+  await expect(page.locator('#status')).not.toHaveClass(/warning/);
+  await expect(page.locator('#events .interpretation')).toContainText('AI 자동 해석 · qwen359b');
+  await expect(page.locator('#events .interpretation')).not.toContainText('세 모델');
+});

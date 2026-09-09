@@ -2,8 +2,11 @@
 set -euo pipefail
 mkdir -p .cache/evaluation
 export LD_LIBRARY_PATH="$(dirname "$LLAMA_SERVER"):${LD_LIBRARY_PATH:-}"
+# GITHUB_ENV is available only to subsequent steps, not the preparation step
+# that also starts this server. Resolve the verified prepared model here too.
+MODEL_ID="${MODEL_ID:-$(python3 -c "import json;print(json.load(open('.cache/cpu/prepared.json'))['model'])")}" 
 template_args=()
-if [[ "${MODEL_ID:-}" == "qwen3" || "${MODEL_ID:-}" == "qwen359b" ]]; then
+if [[ "$MODEL_ID" == "qwen3" || "$MODEL_ID" == "qwen359b" ]]; then
   template_args=(--chat-template-kwargs '{"enable_thinking":false}')
 fi
 "$LLAMA_SERVER" -m "$MODEL_PATH" -ngl 0 -t 4 -c 4096 --parallel 1 --host 127.0.0.1 --port 8080 --jinja "${template_args[@]}" > .cache/evaluation/server.log 2>&1 &

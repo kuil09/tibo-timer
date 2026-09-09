@@ -9,7 +9,7 @@ A Korean, source-linked view of Tibo's public reset announcements in the visitor
 As of the explicit operator request on 2026-09-09, monitoring is **latest-only** and automatic CPU interpretation is **enabled**.
 
 - `config/source.json`: FxEmbed, first timeline page only (50 provider entries, replies included), with a 24-hour lookback. No historical pagination or backfill. Existing archives are retained.
-- `config/selection.json`: the locked `lfm25` model, LFM2.5-1.2B-Instruct Q4_K_M, running on the standard GitHub-hosted CPU. No paid API or visitor browser is required for this interpretation path.
+- `config/selection.json`: the locked `qwen359b` model, Qwen3.5-9B Q4_K_M, running on the standard GitHub-hosted CPU in non-thinking mode. No paid API or visitor browser is required for this interpretation path.
 - Scheduled collection runs every 20 minutes (`7,27,47 * * * *`). New or edited recent originals receive at most five model calls per run. Unchanged processed originals do not start the model. Deferred work and failed inference retry on a later poll while still in the monitored recent window.
 - Invalid or truncated sources remain source-only. A valid AI classification of unrelated text is still a completed interpretation; it does not become a reset announcement.
 
@@ -55,13 +55,13 @@ The codex-reset adapter remains available through explicit source configuration.
 
 ## Evaluation and provenance
 
-Previous model experiments, local CPU launch settings, frozen evaluation guidance and commands are preserved in [historical operations](docs/evaluation/historical-operations.md) and `docs/evaluation/`. These are historical records, not the current enablement policy. Existing lab scripts and model locks remain unchanged.
+Previous model experiments, local CPU launch settings, frozen evaluation guidance and commands are preserved in [historical operations](docs/evaluation/historical-operations.md) and `docs/evaluation/`. These are historical records, not the current enablement policy. Existing lab scripts remain unchanged; the previously pinned local Qwen model is also included in the production lock.
 
 ## Sources
 
 - [FxEmbed timeline API](https://docs.fxembed.com/api/twitter/operations/2profilehandlestatuses/)
 - [Secondary codex-reset feed](https://codex-reset.com/api/feed)
 - [llama.cpp](https://github.com/ggml-org/llama.cpp)
-- [LFM2.5 official GGUF](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF)
+- [Qwen3.5-9B community GGUF](https://huggingface.co/unsloth/Qwen3.5-9B-GGUF)
 
 Independent community utility; not affiliated with OpenAI or Tibo. Original source and model rights remain with their owners. Public standard runners and Pages avoid additional infrastructure charges, subject to existing storage limits. Third-party availability and complete source coverage are not guaranteed.
