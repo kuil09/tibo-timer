@@ -174,18 +174,20 @@
     "2092315945700381084": "4c55bdd2c84606dce695cc1d58d088105c15c23e0c405035a85071927c77ccc1",
     "2092359619075314102": "cdfb82f673c4c357d7d9f153d7939cc48b82b2940f43fd857b40adcfe263dcf0",
     "2092345330272780499": "542ff3412d07579b4a94467d2a3c4631d6d04008b969f47dbd7a949536a68174",
-    "2092316228497063958": "6d26bfbdeb3ba9e1861d54f1fa7c9ac8b326d759736e1e4eda29150e6e6a9453"
+    "2092316228497063958": "6d26bfbdeb3ba9e1861d54f1fa7c9ac8b326d759736e1e4eda29150e6e6a9453",
+    "2097560642400223387": "69824e305d0b8ad930edc0a144508d97dd0c08f4e76b7865aa2808c169e7f7a4",
+    "2097559315150426222": "124ff7c8f0a359fa8cd708ac326ce8a5b993481a956fd3ed5aec9bc089a77456"
   },
-  "last_success_at": "2026-09-09T05:33:18.818Z",
-  "last_attempt_at": "2026-09-09T05:33:18.818Z",
+  "last_success_at": "2026-09-09T05:50:25.346Z",
+  "last_attempt_at": "2026-09-09T05:50:25.346Z",
   "last_error": null,
   "collection": {
     "provider": "fxembed",
-    "checked_at": "2026-09-09T05:33:18.818Z",
+    "checked_at": "2026-09-09T05:50:25.346Z",
     "upstream_at": null,
     "coverage": "complete",
     "checkpoint": {
-      "watermark": "2026-09-09T01:15:40.000Z",
+      "watermark": "2026-09-09T05:40:02.000Z",
       "pending": null
     },
     "scope": {
@@ -196,10 +198,10 @@
   "analysis": {
     "enabled": true,
     "model": "qwen359b",
-    "last_run_at": "2026-09-09T05:35:17.504Z",
-    "last_success_at": "2026-09-09T05:35:17.504Z",
-    "attempted": 5,
-    "succeeded": 5,
+    "last_run_at": "2026-09-09T05:52:10.004Z",
+    "last_success_at": "2026-09-09T05:52:10.004Z",
+    "attempted": 2,
+    "succeeded": 2,
     "failed": 0,
     "deferred": 0
   }
