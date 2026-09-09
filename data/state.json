@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-09T19:50:37.340Z",
-  "last_success_at": "2026-09-09T19:50:37.340Z",
+  "checked_at": "2026-09-09T20:21:21.083Z",
+  "last_success_at": "2026-09-09T20:21:21.083Z",
   "source_status": "ok",
   "analysis_status": "unresolved",
   "models": [
@@ -530,64 +530,6 @@
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
           "claim": {
             "id": "2097476797298520292",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2097415471251464582",
-      "text": "@theo Not that an official word would stop you. But really it's an optimization related to scheduling and routing of request that combined with long context and workload we have on 1P subscriptions that yields a significant saving in long tail of long-running sessions",
-      "url": "https://x.com/thsottiaux/status/2097415471251464582",
-      "posted_at": "2026-09-08T20:03:11.000Z",
-      "truncated": false,
-      "hash": "6926cedcb1bb257c4179f7ef6140e1e447ac04d6a13e999c69303db915acbf08",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-09-09T07:07:29.150Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2097415471251464582",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2097415471251464582",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2097415471251464582",
             "event": "none",
             "state": "unknown",
             "conditional": false,
