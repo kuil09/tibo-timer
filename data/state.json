@@ -176,12 +176,12 @@
     "2092345330272780499": "542ff3412d07579b4a94467d2a3c4631d6d04008b969f47dbd7a949536a68174",
     "2092316228497063958": "6d26bfbdeb3ba9e1861d54f1fa7c9ac8b326d759736e1e4eda29150e6e6a9453"
   },
-  "last_success_at": "2026-09-09T04:56:05.892Z",
-  "last_attempt_at": "2026-09-09T04:56:05.892Z",
+  "last_success_at": "2026-09-09T05:21:55.857Z",
+  "last_attempt_at": "2026-09-09T05:21:55.857Z",
   "last_error": null,
   "collection": {
     "provider": "fxembed",
-    "checked_at": "2026-09-09T04:56:05.892Z",
+    "checked_at": "2026-09-09T05:21:55.857Z",
     "upstream_at": null,
     "coverage": "complete",
     "checkpoint": {
