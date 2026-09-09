@@ -2261,10 +2261,217 @@
       }
     },
     {
+      "id": "2094681510905516147",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094681510905516147",
+        "text": "@HenryRaiten Henry! We have an internal slackbot named after you. It’s quite popular",
+        "posted_at": "2026-09-01T06:59:24.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094681132780736835",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094681132780736835",
+        "text": "@adocomplete Sounds ominous",
+        "posted_at": "2026-09-01T06:57:54.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094588317245509959",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094588317245509959",
+        "text": "If you still haven't tried Codex but have considered it in the past, what's the one thing holding you back?",
+        "posted_at": "2026-09-01T00:49:05.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094587183483211962",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094587183483211962",
+        "text": "@bamitsmanas Welcome both! Very inspired by what you've built",
+        "posted_at": "2026-09-01T00:44:34.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094586662798201081",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094586662798201081",
+        "text": "@GergelyOrosz Our API bill is eye watering",
+        "posted_at": "2026-09-01T00:42:30.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094507935598874633",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094507935598874633",
+        "text": "@thenanyu Excited to invent what’s next together. Welcome!",
+        "posted_at": "2026-08-31T19:29:40.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094293383573545000",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094293383573545000",
+        "text": "@melvindvivas I try to pre-announce them these days when I can",
+        "posted_at": "2026-08-31T05:17:07.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094293190945976638",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094293190945976638",
+        "text": "What should we ship next week?",
+        "posted_at": "2026-08-31T05:16:21.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094284170520592430",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094284170520592430",
+        "text": "@JinjingLiang @orca_build What do you mean you have more computers on the way. How many computers",
+        "posted_at": "2026-08-31T04:40:30.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
       "id": "2094254532020818191",
       "source": {
         "url": "https://x.com/thsottiaux/status/2094254532020818191",
-        "text": "For clarity, while both are called 20X, in Codex they apply specifically to weekly usage limits. And we also don't have 5h limits for both Pro plans.\n\nThe Pro 20X is quite precisely 20X the usage of the Plus subscription, so it does exactly what it says on the tin. https://t.co/vMchMCT80Z",
+        "text": "For clarity, while both are called 20X, in Codex they apply specifically to weekly usage limits. And we also don't have 5h limits for both Pro plans.\n\nThe Pro 20X is quite precisely 20X the usage of the Plus subscription, so it does exactly what it says on the tin.",
         "posted_at": "2026-08-31T02:42:44.000Z",
         "truncated": false
       },
@@ -2287,12 +2494,35 @@
       "id": "2094252447271366730",
       "source": {
         "url": "https://x.com/thsottiaux/status/2094252447271366730",
-        "text": "What I wanted to say yesterday is that we hit 25M active users and to celebrate we have now reset usage for all paid subscriptions for ChatGPT Work and Codex.\n\nSee you soon for more news from The Reset Company. https://t.co/7Yc5znAJIc",
+        "text": "What I wanted to say yesterday is that we hit 25M active users and to celebrate we have now reset usage for all paid subscriptions for ChatGPT Work and Codex.\n\nSee you soon for more news from The Reset Company.",
         "posted_at": "2026-08-31T02:34:27.000Z",
         "truncated": false
       },
       "event": {
         "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094164029044646099",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094164029044646099",
+        "text": "Brent is incredible and one of the main forces behind the desktop app polish, performance and reliability.\n\nRelentless improvements day after day.",
+        "posted_at": "2026-08-30T20:43:06.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
         "state": "unknown",
         "audience": []
       },
@@ -2330,10 +2560,263 @@
       }
     },
     {
+      "id": "2094143696656867723",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094143696656867723",
+        "text": "Brent is one of the best things that happened to the quality and polish of the desktop app. \n\nRelentless improvements day after day.",
+        "posted_at": "2026-08-30T19:22:19.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094143384273461546",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094143384273461546",
+        "text": "@rezoundous More ultra, more fast",
+        "posted_at": "2026-08-30T19:21:04.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094143054039183573",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094143054039183573",
+        "text": "@rezoundous Yes",
+        "posted_at": "2026-08-30T19:19:46.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093914587645247967",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093914587645247967",
+        "text": "@RhysSullivan Open another modal",
+        "posted_at": "2026-08-30T04:11:55.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093914342551101782",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093914342551101782",
+        "text": "Team is cooking like never before",
+        "posted_at": "2026-08-30T04:10:56.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093909909553525066",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093909909553525066",
+        "text": "@theo Fair is fair",
+        "posted_at": "2026-08-30T03:53:20.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093819003286556908",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093819003286556908",
+        "text": "@scottstts Efficiency",
+        "posted_at": "2026-08-29T21:52:06.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093817627504447898",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093817627504447898",
+        "text": "@0xfoobar 2026 is the year of efficiency",
+        "posted_at": "2026-08-29T21:46:38.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093811840258293947",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093811840258293947",
+        "text": "This celebration is moved to tomorrow as the button was already pressed today.",
+        "posted_at": "2026-08-29T21:23:38.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093808835488325954",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093808835488325954",
+        "text": "@ChrisGPT Tell them Chris. Tell them! You're vindicated",
+        "posted_at": "2026-08-29T21:11:42.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093801838504186008",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093801838504186008",
+        "text": "Landing 2:30pm PST",
+        "posted_at": "2026-08-29T20:43:53.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
       "id": "2093801758665715784",
       "source": {
         "url": "https://x.com/thsottiaux/status/2093801758665715784",
-        "text": "We are reseting usage for all paid users of Codex and ChatGPT Work.\n\nPlease continue reading for an update on Codex usage limits. The team has been working around the clock, going through thousands of reports and shipping fixes.\n\nDepending on how you use Codex, you should see",
+        "text": "We are reseting usage for all paid users of Codex and ChatGPT Work.\n\nPlease continue reading for an update on Codex usage limits. The team has been working around the clock, going through thousands of reports and shipping fixes.\n\nDepending on how you use Codex, you should see your usage go between 10% and 50% further than before.\n\nWe really went with a fine comb, with many uncovered small things being longstanding and here is what we found and fixed:\n- Compaction. We were keeping old images during compaction, sometimes making the context large enough to trigger compaction again. After the fix, usage dropped around 10% for users making heavy use of images. Fixed.\n- Memory. Background memory workers could inherit Stop hooks and keep running when the hook wouldn’t let them finish. This affected fewer than 1% of users, with the long tail being pretty bad and we saw one example thread check whether it could stop 15,000 times. Fixed.\n- Goals. In some cases, a set /goal could finish and then keep going past the intended stop condition, or the model would keep retrying broken tools without stopping. We saw examples consume anywhere from 15% to 70% of a weekly allowance. Fixed.\n- Automations. Some custom schedules could run more frequently than configured. Fixed.\n- Subagents. Smaller models (e.g. Luna) sometimes picked more capable helpers without being explicitly asked. The same was true where the orchestrating model not running in /fast mode could request sub-agents to run /fast. Fixed.\n- Computer History. The older implementation could lead to repeatedly summarizing overlapping activity. For some cases we saw it consume up to one fifth of the weekly usage per week. Fixed.\n- Rolling task summaries. Ordinary turns were triggering extra background requests. These added about 1% to token usage. Small each time, but it adds up. We have disabled this.\n- MCP. Some tool results could be encoded twice. We also found tool instructions getting cut off and fetched again. Fixed.\n\nWe’ve also made architectural changes to prevent these from regressing and our teams will get paged if it happens regardless. We are also working on showing you directly in the app where your usage goes so you don’t have to guess.\n\nGoes without saying that we’re resetting usage limits and I hope you enjoy a very nice Saturday!",
         "posted_at": "2026-08-29T20:43:34.000Z",
         "truncated": false
       },
@@ -2353,10 +2836,148 @@
       }
     },
     {
+      "id": "2093784314714657110",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093784314714657110",
+        "text": "I've enjoyed working with Cursor pre-acquisition and have respect for the team and what they have built. The 5% here should have come with strong caveat and I would love for Michael to share the math.\n\nTokens are not a proxy for revenue nor value created and the OpenAI models are on the very frontier of token efficiency. Smaller or less strong models require many more tokens to achieve a task and therefore will inflate traffic share significantly.",
+        "posted_at": "2026-08-29T19:34:15.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093765917021004007",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093765917021004007",
+        "text": "@auchenberg Welcome Kenneth!",
+        "posted_at": "2026-08-29T18:21:09.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093762439645176020",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093762439645176020",
+        "text": "It was time https://t.co/bqWjqQU9uo",
+        "posted_at": "2026-08-29T18:07:20.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093677219508048295",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093677219508048295",
+        "text": "@jediahkatz Appreciate you too Jediah",
+        "posted_at": "2026-08-29T12:28:42.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093573991965557198",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093573991965557198",
+        "text": "Looking at the dashboard we might hit a new milestone to celebrate tomorrow. Hold on to your Codex",
+        "posted_at": "2026-08-29T05:38:31.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093573575869698091",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093573575869698091",
+        "text": "@maxktz This will indeed continue to be supported",
+        "posted_at": "2026-08-29T05:36:51.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
       "id": "2093551005711679557",
       "source": {
         "url": "https://x.com/thsottiaux/status/2093551005711679557",
-        "text": "There is a place and a time for resets. Soon, but not today",
+        "text": "@growing_daniel There is a place and a time for resets. Soon, but not today",
         "posted_at": "2026-08-29T04:07:10.000Z",
         "truncated": false
       },
@@ -2376,11 +2997,126 @@
       }
     },
     {
+      "id": "2093515916076343774",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093515916076343774",
+        "text": "We unfortunately have decided that we cannot continue providing access to our models through Cursor and are ending our partnership. It boils down to trust and we’ve asked that this takes effect on November 12 to give you some time to plan.\n\nMany have used the GPT models through Cursor and here are options we know should work in the future:\n\n- We will continue to allow using your own OpenAI API key and similarly will continue to provide access through our IDE extensions for Cursor.\n- We will keep working with the broadest range of tools and harnesses, some of which are OSS, but also many many closed-source ones.\n\nWe are as committed as ever to continue supporting developers and the flourishing ecosystem of tools, harnesses and products. We will also continue to invest in our own open-source initiatives and believe in broad optionality for developers.\n\nYou can read more about our decision in the blog:\nhttps://t.co/Oj76Bkc2KX",
+        "posted_at": "2026-08-29T01:47:44.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093399001358065720",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093399001358065720",
+        "text": "@charliermarsh Bugs are just software",
+        "posted_at": "2026-08-28T18:03:10.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093395719805960389",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093395719805960389",
+        "text": "@OpenRouter https://t.co/xd6Uwn0fpM",
+        "posted_at": "2026-08-28T17:50:07.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093354037198696932",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093354037198696932",
+        "text": "What is the most ambitious task you’ve given ChatGPT Work?",
+        "posted_at": "2026-08-28T15:04:29.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
       "id": "2093351797830422812",
       "source": {
         "url": "https://x.com/thsottiaux/status/2093351797830422812",
         "text": "@buildwithrajath Always improving. Team working hard on infra and usage optimizations",
         "posted_at": "2026-08-28T14:55:35.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093351485090496801",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093351485090496801",
+        "text": "@TokenGremlin Luna is used to give the session a title. A bit of a pass “you pass the butter” situation",
+        "posted_at": "2026-08-28T14:54:21.000Z",
         "truncated": false
       },
       "event": {

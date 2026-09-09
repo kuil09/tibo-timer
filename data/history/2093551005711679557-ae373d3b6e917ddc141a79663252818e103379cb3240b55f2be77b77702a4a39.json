@@ -1,0 +1,23 @@
+{
+  "id": "2093551005711679557",
+  "source": {
+    "url": "https://x.com/thsottiaux/status/2093551005711679557",
+    "text": "There is a place and a time for resets. Soon, but not today",
+    "posted_at": "2026-08-29T04:07:10.000Z",
+    "truncated": false
+  },
+  "event": {
+    "type": "reset",
+    "state": "unknown",
+    "audience": []
+  },
+  "temporal": {
+    "kind": "unresolved",
+    "precision": "unspecified",
+    "original": "",
+    "reason": "model_not_approved"
+  },
+  "interpretation": {
+    "method": "source-only"
+  }
+}

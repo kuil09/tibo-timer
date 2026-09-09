@@ -1,0 +1,23 @@
+{
+  "id": "2093801758665715784",
+  "source": {
+    "url": "https://x.com/thsottiaux/status/2093801758665715784",
+    "text": "We are reseting usage for all paid users of Codex and ChatGPT Work.\n\nPlease continue reading for an update on Codex usage limits. The team has been working around the clock, going through thousands of reports and shipping fixes.\n\nDepending on how you use Codex, you should see",
+    "posted_at": "2026-08-29T20:43:34.000Z",
+    "truncated": false
+  },
+  "event": {
+    "type": "reset",
+    "state": "unknown",
+    "audience": []
+  },
+  "temporal": {
+    "kind": "unresolved",
+    "precision": "unspecified",
+    "original": "",
+    "reason": "model_not_approved"
+  },
+  "interpretation": {
+    "method": "source-only"
+  }
+}

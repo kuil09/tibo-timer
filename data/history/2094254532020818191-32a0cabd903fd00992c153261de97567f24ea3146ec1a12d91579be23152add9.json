@@ -1,0 +1,23 @@
+{
+  "id": "2094254532020818191",
+  "source": {
+    "url": "https://x.com/thsottiaux/status/2094254532020818191",
+    "text": "For clarity, while both are called 20X, in Codex they apply specifically to weekly usage limits. And we also don't have 5h limits for both Pro plans.\n\nThe Pro 20X is quite precisely 20X the usage of the Plus subscription, so it does exactly what it says on the tin. https://t.co/vMchMCT80Z",
+    "posted_at": "2026-08-31T02:42:44.000Z",
+    "truncated": false
+  },
+  "event": {
+    "type": "unknown",
+    "state": "unknown",
+    "audience": []
+  },
+  "temporal": {
+    "kind": "unresolved",
+    "precision": "unspecified",
+    "original": "",
+    "reason": "model_not_approved"
+  },
+  "interpretation": {
+    "method": "source-only"
+  }
+}
