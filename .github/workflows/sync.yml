@@ -1,5 +1,7 @@
 name: Publish Pages (optional collection)
 on:
+  schedule:
+    - cron: '7,27,47 * * * *'
   workflow_run:
     workflows: ['OpenRouter independent inference and cross-review']
     types: [completed]
@@ -58,7 +60,7 @@ jobs:
         run: node --import tsx src/publish-council.ts .cache/council-publication/council.json data/council.json "$COUNCIL_RUN_URL"
       - name: Fetch and identify changed posts
         id: plan
-        if: inputs.collect == true
+        if: github.event_name == 'schedule' || inputs.collect == true || (github.event_name == 'push' && contains(github.event.head_commit.message, '[collect]'))
         continue-on-error: true
         run: node --import tsx src/sync.ts plan
       - uses: actions/cache@v4
@@ -85,7 +87,7 @@ jobs:
           CPU_READY: ${{ steps.cpu.outcome }}
         run: node --import tsx src/sync.ts apply
       - name: Save collection state
-        if: inputs.collect == true || steps.council_publication.outcome == 'success'
+        if: github.event_name == 'schedule' || inputs.collect == true || (github.event_name == 'push' && contains(github.event.head_commit.message, '[collect]')) || steps.council_publication.outcome == 'success'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'

@@ -6,7 +6,7 @@ A Korean, source-linked view of Tibo's public reset announcements in the visitor
 
 ## Reliability model
 
-The feed is a discovery source, not an authoritative schedule. Original `tweets.text` and tweet timestamps are preserved. Event summaries and operator timestamps never become original posts or scheduled reset times. No scheduled event becomes completed just because its countdown elapsed.
+The feed is a discovery source, not an authoritative schedule. Original source text (`raw_text.text` for FxEmbed) and post timestamps are preserved. Event summaries and operator timestamps never become original posts or scheduled reset times. No scheduled event becomes completed just because its countdown elapsed.
 
 CPU inference is disabled until a candidate passes the frozen holdout and runner performance gates. If neither candidate passes, the site publishes originals with unresolved timing. Source-only type labels are lexical navigation hints; announcement state stays unknown. This service cannot inspect your personal OpenAI quota.
 
@@ -53,9 +53,17 @@ Optional lab flags `--single-message` and `--compact-input` isolate message plac
 
 ## Collection and publication
 
-Remote scheduled collection is suspended after Cloudflare challenges. **Publish Pages (optional collection)** deploys repository data on main pushes and manual dispatch without contacting upstream. The `collect` input defaults to false; enable it only for an explicitly authorized remote collection. No separate push workflow is assumed for bot commits.
+Free automatic collection uses FxEmbed's public v2 `thsottiaux` timeline with replies, with no API key, X cookie, visitor browser or always-on machine. Two independent standard GitHub runner probes succeeded in [run 34310903217](https://github.com/kuil09/tibo-timer/actions/runs/34310903217). `config/source.json` selects the provider; the old codex-reset adapter remains available explicitly, not as an automatic fallback.
 
-For a local refresh, run `git pull --ff-only`, then `bash scripts/collect-local.sh`. Review the data changes and commit/push `data/` to publish them. The command validates the feed, preserves historical data, and does not commit or push automatically. While model approval is disabled it publishes original text with unresolved timing. An approved model requires the configured local CPU service when using this entry point. Local collection is manual: there is no unattended Mac scheduler. The generated site uses relative asset paths for `/tibo-timer/` hosting.
+**Publish Pages (optional collection)** collects at UTC minutes 7, 27 and 47. Manual dispatch with `collect=true` also collects. Normal main pushes only publish repository data; an explicitly requested deployment commit containing `[collect]` performs one refresh in that same deployment. Scheduled and manual collection persist data and deploy within the same workflow; no separate bot-push deployment is assumed.
+
+Each run makes at most three public timeline requests. The initial scan covers up to 14 days, continuing from a durable cursor across runs when necessary; this is not a full-account archive. Later runs re-read the head for edits and scan to the previous completed watermark. Fresh head posts collected during backlog recovery do not advance that backlog's watermark, so newer gaps can be scanned next. Partial scans retain the previous success timestamp and display a warning. Provider ordering, deletions and older edits outside the scanned window limit completeness.
+
+The collector pins both `thsottiaux` and numeric author ID `1953337039510003712`. Other authors' conversation parents and quoted text are not Tibo's own speech. Original `raw_text.text` is preserved, never inline translation; missing original text, visible truncation, or suspiciously short note text stays source-only. Normalized source fingerprints exclude likes, fetch timestamps and cursor metadata. Operator observations and past interpretations are retained separately.
+
+HTTP/JSON/schema/identity errors fail closed, with no immediate retry, paid fallback, cookie use, challenge solving or domain rotation. An unexpected 204 is rejected because this collector intentionally does not send `since`. `checked_at` is our successful request time; `upstream_at` remains null where the provider does not supply a collection timestamp. A successful request does not establish complete X coverage or verify a user's quota.
+
+For a local refresh, run `git pull --ff-only`, then `bash scripts/collect-local.sh`. Review the data changes and commit/push `data/` to publish them. The command validates the selected source, preserves historical data, and does not commit or push automatically. While model approval is disabled it publishes original text with unresolved timing. An approved model requires the configured local CPU service when using this entry point. Local collection is manual: there is no unattended Mac scheduler. The generated site uses relative asset paths for `/tibo-timer/` hosting.
 
 A failed/stale/invalid feed keeps the last valid dataset. Individual inference failures remain unresolved; a later source or interpretation-version change retries them. Budget-deferred and startup-failed records remain pending. Public freshness is the last successful feed check, not the newest tweet. After 60 minutes without a successful check the browser displays a delay notice. GitHub schedules may be delayed or disabled after prolonged repository inactivity; use manual dispatch to restore and investigate.
 
@@ -65,13 +73,14 @@ A failed/stale/invalid feed keeps the last valid dataset. Individual inference f
 
 Time shapes are `instant`, `window`, `date`, and `unresolved`; precision is separate. PT uses America/Los_Angeles. Explicit PST/PDT conflicting with the local seasonal offset is unresolved. Relative durations anchor to the original post. Date-only expressions retain their source calendar/timezone. Unsupported or ungrounded expressions do not gain an invented timestamp. Upstream may truncate without marking it: explicit flags/ellipsis are detected, but completeness cannot always be established. The UI links to the original for verification.
 
-The feed currently mixes original text, heuristic/LLM classifications and operator observations. We do not automatically merge apparently related announcements. An explicit completion is labeled as a source's completion announcement, not independent account verification.
+The legacy feed mixes original text, heuristic/LLM classifications and operator observations. We do not automatically merge apparently related announcements. An explicit completion is labeled as a source's completion announcement, not independent account verification.
 
 Public standard GitHub runners and Pages avoid additional infrastructure charges. This assumes a public repository and existing free quotas for ancillary GitHub storage; no paid runner, paid inference API, custom domain purchase, or persistent service is configured. Keep model caches and evaluation artifacts bounded. A custom domain is deferred until a hostname is supplied.
 
 ## Sources
 
-- [Public feed](https://codex-reset.com/api/feed)
+- [Primary timeline API](https://docs.fxembed.com/api/twitter/operations/2profilehandlestatuses/)
+- [Legacy public feed](https://codex-reset.com/api/feed)
 - [llama.cpp](https://github.com/ggml-org/llama.cpp)
 - [LFM2.5 official GGUF](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF)
 - [Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct)
@@ -91,7 +100,7 @@ Qwen3.5-9B Q4_K_M is pinned in `config/local-models.json` for local CPU experime
 
 `CLAIM_VERSION=v3 LOCAL_MODEL=qwen359b LLAMA_URL=http://127.0.0.1:8083 npm run evaluate:claims` selects the refined classifier; add `-- --pairs` or `-- --fresh` for the other controlled sets. `src/verify-completion.ts` provides a live classification-plus-verification wrapper: every non-truncated claim receives an independent source-only verification of type, state and delivery-time selection. Failed verification reruns inference and verification, with at most three total attempts; agreement stops immediately, while exhaustion remains unresolved. `scripts/evaluate-completion.ts` replays locked first-stage results and calls the verifier live.
 
-Across 52 controlled cases, completion verification reduced false completions from four to zero while retaining nine true completion announcements. Exact accuracy stays 47/52 because rejected completions become unresolved rather than recovered schedules. These are local experiments, not release acceptance. Automatic collection is still suspended and automatic interpretation is still disabled. Publishing code and Pages does not refresh the feed or approve these models.
+Across 52 controlled cases, completion verification reduced false completions from four to zero while retaining nine true completion announcements. Exact accuracy stays 47/52 because rejected completions become unresolved rather than recovered schedules. These are local experiments, not release acceptance. Automatic interpretation is still disabled; collection approval and model approval are independent. Normal Pages publication without collection does not refresh the source or approve these models.
 
 ### Bounded verification loop
 
