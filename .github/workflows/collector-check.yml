@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   pull_request:
   push:
-    branches: ['fix/issue-1-free-collection']
+    branches: ['fix/issue-1-*']
 permissions:
   contents: read
 jobs:
