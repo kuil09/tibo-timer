@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-09T23:18:16.312Z",
-  "last_success_at": "2026-09-09T23:18:16.312Z",
+  "checked_at": "2026-09-09T23:30:09.525Z",
+  "last_success_at": "2026-09-09T23:30:09.525Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-09T23:18:16.312Z"
+      "status": "pending",
+      "at": "2026-09-09T23:30:09.525Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-09T23:18:16.312Z"
+      "status": "pending",
+      "at": "2026-09-09T23:30:09.525Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-09T23:18:16.312Z"
+      "status": "pending",
+      "at": "2026-09-09T23:30:09.525Z"
     }
   ],
   "posts": [
+    {
+      "id": "2097829053147582782",
+      "text": "Happy to be building here with you all. Lots to explore",
+      "url": "https://x.com/thsottiaux/status/2097829053147582782",
+      "posted_at": "2026-09-09T23:26:36.000Z",
+      "truncated": false,
+      "hash": "7f5dfb466d616cdfdba3fa872e69001e82925b97b0f8b9ab9bc72e14111fbec8",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-10T00:30:09.525Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2097824089323045037",
       "text": "@TheHolyCoder @GergelyOrosz What’s in the box doesn’t matter, but what the box invariants are does (in/out contract, data access, security guarantees, …)",
@@ -610,7 +623,7 @@
   ],
   "budget": {
     "day": "2026-09-09",
-    "requests": 15
+    "requests": 18
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z"
