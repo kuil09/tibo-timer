@@ -3,21 +3,21 @@
   "checked_at": "2026-09-09T18:26:51.200Z",
   "last_success_at": "2026-09-09T18:26:51.200Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "unresolved",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-09T18:26:51.200Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-09T18:26:51.200Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-09T18:26:51.200Z"
     }
   ],
@@ -29,10 +29,47 @@
       "posted_at": "2026-09-09T18:23:34.000Z",
       "truncated": false,
       "hash": "2b3671c33cf7a738c1e136a64b8c495a02759b4293f122211ac098874fcf306b",
-      "status": "pending",
+      "status": "unresolved",
       "attempts": 1,
       "retry_at": "2026-09-09T19:26:51.200Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "nex-agi/nex-n2.5-mini:free",
+          "claim": {
+            "id": "2097752790177370535",
+            "event": "banked_reset",
+            "state": "scheduled",
+            "conditional": false,
+            "evidence": "Everyone who used one in the affected time window is getting another one",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2097752790177370535",
+            "event": "banked_reset",
+            "state": "completed",
+            "conditional": false,
+            "evidence": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex. Everyone who used one in the affected time window is getting another one and an email to apologize.",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "claim": {
+            "id": "2097752790177370535",
+            "event": "banked_reset",
+            "state": "completed",
+            "conditional": false,
+            "evidence": "Everyone who used one in the affected time window is getting another one and an email to apologize.",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
       "result": null
     },
     {
@@ -42,11 +79,56 @@
       "posted_at": "2026-09-09T17:58:14.000Z",
       "truncated": false,
       "hash": "06f32e93038ce1096ad8332b74f4964b45252d816d1e0c1afafa8e70aeedb91e",
-      "status": "pending",
+      "status": "complete",
       "attempts": 1,
       "retry_at": "2026-09-09T19:26:51.200Z",
-      "votes": [],
-      "result": null
+      "votes": [
+        {
+          "model": "nex-agi/nex-n2.5-mini:free",
+          "claim": {
+            "id": "2097746417012166816",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2097746417012166816",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "claim": {
+            "id": "2097746417012166816",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2097690915230097638",
