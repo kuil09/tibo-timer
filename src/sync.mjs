@@ -16,6 +16,8 @@ export async function synchronize(state, config, { request = fetch, now = Date.n
     await checkpoint(state); return state;
   }
   for (const post of state.posts) {
+    // An explicitly disabled failing model can be replaced without waiting for its retry window.
+    if (post.status === 'error' && post.attempts < 3 && post.votes?.some(v => v.error && config.excludedModels.includes(v.model))) post.retry_at = null;
     if (post.text.length > config.batchCharacters && !post.truncated) post.status = 'source_only';
     if (['pending', 'error'].includes(post.status) && post.attempts >= 3 && Date.parse(post.retry_at ?? '') <= now) post.status = 'unresolved';
   }
@@ -39,7 +41,7 @@ export async function synchronize(state, config, { request = fetch, now = Date.n
   await checkpoint(state);
   const results = await Promise.allSettled(models.map(model => infer(model, batch, key, request)));
   state.models = results.map((result, i) => ({ id: models[i].id, status: result.status === 'fulfilled' ? 'ok' : 'error', at: state.checked_at, ...(result.status === 'rejected' ? { error: safeError(result.reason) } : {}) }));
-  for (let i = 0; i < results.length; i++) if (results[i].status === 'rejected') state.cooldowns[models[i].id] = new Date(now + 3600000).toISOString();
+  for (let i = 0; i < results.length; i++) if (results[i].status === 'rejected') state.cooldowns[models[i].id] = new Date(now + 6 * 3600000).toISOString();
   for (let i = 0; i < batch.length; i++) {
     const post = batch[i];
     post.votes = results.map((r, j) => ({ model: models[j].id, claim: r.status === 'fulfilled' ? r.value[i] : null, ...(r.status === 'rejected' ? { error: safeError(r.reason) } : {}) }));

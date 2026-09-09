@@ -5,9 +5,9 @@
   "batchCharacters": 16000,
   "dailyRequests": 45,
   "preferredModels": [
-    "google/gemma-4-31b-it:free",
+    "nex-agi/nex-n2.5-mini:free",
     "cohere/north-mini-code:free",
     "nvidia/nemotron-3-super-120b-a12b:free"
   ],
-  "excludedModels": ["thinkingmachines/inkling-small:free", "thinkingmachines/inkling:free"]
+  "excludedModels": ["google/gemma-4-31b-it:free", "thinkingmachines/inkling-small:free", "thinkingmachines/inkling:free"]
 }
