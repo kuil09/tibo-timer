@@ -111,8 +111,8 @@
     "2094826841622348106": "6ea0331bb48debf7f28070b47878ac34eea79774b25212fc02fbf1d81f9ec42d"
   },
   "last_success_at": "2026-09-08T12:52:32.391Z",
-  "last_attempt_at": "2026-09-09T04:49:55.479Z",
-  "last_error": "collection_partial",
+  "last_attempt_at": "2026-09-09T04:51:00.300Z",
+  "last_error": "fx_cursor_loop",
   "collection": {
     "provider": "fxembed",
     "checked_at": "2026-09-09T04:49:55.479Z",
