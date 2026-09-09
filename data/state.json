@@ -1,25 +1,24 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-09T06:02:24.646Z",
-  "last_success_at": "2026-09-09T06:02:24.646Z",
+  "checked_at": "2026-09-09T06:07:29.150Z",
+  "last_success_at": "2026-09-09T06:07:29.150Z",
   "source_status": "ok",
-  "analysis_status": "error",
+  "analysis_status": "running",
   "models": [
     {
-      "id": "google/gemma-4-31b-it:free",
-      "status": "error",
-      "at": "2026-09-09T06:02:24.646Z",
-      "error": "http_429"
+      "id": "nex-agi/nex-n2.5-mini:free",
+      "status": "pending",
+      "at": "2026-09-09T06:07:29.150Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-09T06:02:24.646Z"
+      "status": "pending",
+      "at": "2026-09-09T06:07:29.150Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-09T06:02:24.646Z"
+      "status": "pending",
+      "at": "2026-09-09T06:07:29.150Z"
     }
   ],
   "posts": [
@@ -31,8 +30,8 @@
       "truncated": false,
       "hash": "5012fb5494eba8a39a95071d864f0defd381fcfd60d05c866492ed34c64212ec",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-09T07:02:24.646Z",
+      "attempts": 2,
+      "retry_at": "2026-09-09T07:07:29.150Z",
       "votes": [
         {
           "model": "google/gemma-4-31b-it:free",
@@ -74,8 +73,8 @@
       "truncated": false,
       "hash": "98f0ac2f1c9cb585e2fa15e29ac7ebc310f6453ee2a4e93f48d93ed5c54f46f2",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-09T07:02:24.646Z",
+      "attempts": 2,
+      "retry_at": "2026-09-09T07:07:29.150Z",
       "votes": [
         {
           "model": "google/gemma-4-31b-it:free",
@@ -117,8 +116,8 @@
       "truncated": false,
       "hash": "bdeaaa3b6980ac873ccbd4e50102f12cc112ddc536b72587829696e795748476",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-09T07:02:24.646Z",
+      "attempts": 2,
+      "retry_at": "2026-09-09T07:07:29.150Z",
       "votes": [
         {
           "model": "google/gemma-4-31b-it:free",
@@ -160,8 +159,8 @@
       "truncated": false,
       "hash": "a77b3de1ecff9eab78d82bcd24b3c18814d71adc047bfce215b19595b4c66650",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-09T07:02:24.646Z",
+      "attempts": 2,
+      "retry_at": "2026-09-09T07:07:29.150Z",
       "votes": [
         {
           "model": "google/gemma-4-31b-it:free",
@@ -203,8 +202,8 @@
       "truncated": false,
       "hash": "ebe835d7f75f9575dbe50b26679b4039095d0bb366f466a030ec65ba47269e72",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-09T07:02:24.646Z",
+      "attempts": 2,
+      "retry_at": "2026-09-09T07:07:29.150Z",
       "votes": [
         {
           "model": "google/gemma-4-31b-it:free",
@@ -259,8 +258,8 @@
       "truncated": false,
       "hash": "b9b5e6a804439e9c26a617d4c05c688cf6f7b889ff71d792d44dd9bf44fabe8d",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-09T07:02:24.646Z",
+      "attempts": 2,
+      "retry_at": "2026-09-09T07:07:29.150Z",
       "votes": [
         {
           "model": "google/gemma-4-31b-it:free",
@@ -302,8 +301,8 @@
       "truncated": false,
       "hash": "6926cedcb1bb257c4179f7ef6140e1e447ac04d6a13e999c69303db915acbf08",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-09T07:02:24.646Z",
+      "attempts": 2,
+      "retry_at": "2026-09-09T07:07:29.150Z",
       "votes": [
         {
           "model": "google/gemma-4-31b-it:free",
@@ -340,7 +339,7 @@
   ],
   "budget": {
     "day": "2026-09-09",
-    "requests": 3
+    "requests": 6
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z"
