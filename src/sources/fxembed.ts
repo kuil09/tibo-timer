@@ -29,7 +29,8 @@ export function parseTimeline(value:unknown):Page {
     if(matchingHandle!==matchingId) throw new Error('fx_author_identity_changed');
     // with_replies also returns OTHER authors' conversation parents. Never recurse into quote.
     if(!matchingId) continue;
-    if(!numeric(entry.id) || typeof entry.text!=='string' || !entry.text.trim() || typeof entry.url!=='string') throw new Error('fx_invalid_post');
+    // Media-only display text may be empty while raw_text retains the original URL.
+    if(!numeric(entry.id) || typeof entry.text!=='string' || typeof entry.url!=='string') throw new Error('fx_invalid_post');
     if(entry.url!==`https://x.com/${AUTHOR.handle}/status/${entry.id}`) throw new Error('fx_mismatched_url');
     if(typeof entry.created_timestamp!=='number' || !Number.isSafeInteger(entry.created_timestamp) || entry.created_timestamp<=0 || entry.created_timestamp*1000>Date.now()+300_000) throw new Error('fx_invalid_timestamp');
     if(typeof entry.created_at!=='string' || Math.abs(Date.parse(entry.created_at)-entry.created_timestamp*1000)>1000 || !Number.isFinite(Date.parse(entry.created_at))) throw new Error('fx_timestamp_mismatch');

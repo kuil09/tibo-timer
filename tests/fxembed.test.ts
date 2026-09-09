@@ -19,7 +19,7 @@ test('checks pinned numeric identity, source URL, timestamps and cursor schema',
   {...row(),id:123}, {...row(),author:{id:'999',screen_name:AUTHOR.handle}},
   {...row(),author:{id:AUTHOR.id,screen_name:'renamed'}}, {...row(),url:'https://evil.test/123'},
   {...row(),created_at:'bad'}, {...row(),created_timestamp:1}, {...row(),created_timestamp:Date.now()},
-  {...row(),text:''}, {...row(),raw_text:{text:''}}, {type:'thread'}, null
+  {...row(),text:null}, {...row(),raw_text:{text:''}}, {type:'thread'}, null
  ]) assert.throws(()=>parseTimeline(page([invalid])));
  assert.throws(()=>parseTimeline({...page([row()]),code:500}));
  assert.throws(()=>parseTimeline({...page([row()]),cursor:{bottom:123}}));
@@ -84,4 +84,12 @@ test('oversized and stale cached responses are rejected',async()=>{
 });
 test('checkpoint validation fails before any HTTP request',async()=>{
  let calls=0;await assert.rejects(collectTimeline({watermark:'bad',pending:null},(async()=>{calls++;return response(page([row()]));}) as typeof fetch),/checkpoint/);assert.equal(calls,0);
+});
+
+test('media-only display text uses the preserved nonempty original',()=>{
+ const media={...row(),text:'',raw_text:{text:'https://t.co/media'},media:{photos:[{url:'https://example.test/image.jpg'}]}};
+ const parsed=parseTimeline(page([media]));
+ assert.equal(parsed.posts[0].text,'https://t.co/media');
+ assert.equal(parsed.posts[0].id,media.id);
+ assert.throws(()=>parseTimeline(page([{...media,raw_text:{text:''}}])),/invalid_text/);
 });
