@@ -3,10 +3,171 @@
   "last_success_at": "2026-09-08T12:52:32.391Z",
   "events": [
     {
+      "id": "2097494113012863197",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2097494113012863197",
+        "text": "@DennisonBertram @OpenAI Astra on `ultra` and /fast?",
+        "posted_at": "2026-09-09T01:15:40.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2097492424474165293",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2097492424474165293",
+        "text": "See you at the Astra party. Excited to meet some of you",
+        "posted_at": "2026-09-09T01:08:58.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2097482341916852719",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2097482341916852719",
+        "text": "I am pleased to see that Ant’s new Claude Code has a version of background computer use on par with the version from Codex from last May this year. Nice work!\n\nShipping great features first turns out to be a great way to encourage other labs to ship too. We will continue to do this until other labs pay more attention to shipping. This is good for everyone and there is a lot of room left to go!\n\nWe solved computer use in practice for GPT models about four months ago. But computer use is a significantly awesome thing no matter what model you use, and it is important that the industry similarly spends more effort to train their models to be great at computer use, among other elements of model capabilities.\n\nAs models become more capable and central to businesses and economies, the value of computer use only increases. We should be taking it seriously, and doing the right thing for our customers and the world.",
+        "posted_at": "2026-09-09T00:28:54.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2097482307812859978",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2097482307812859978",
+        "text": "I for one am glad prompt injection is getting solved across the industry and that Astra is not only our most capable, but also our most aligned model to date. But also ...",
+        "posted_at": "2026-09-09T00:28:46.000Z",
+        "truncated": true
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2097476797298520292",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2097476797298520292",
+        "text": "Look! A fish!",
+        "posted_at": "2026-09-09T00:06:52.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2097415471251464582",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2097415471251464582",
+        "text": "@theo Not that an official word would stop you. But really it's an optimization related to scheduling and routing of request that combined with long context and workload we have on 1P subscriptions that yields a significant saving in long tail of long-running sessions",
+        "posted_at": "2026-09-08T20:03:11.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2097193293532848288",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2097193293532848288",
+        "text": "Looking at this 28 page deck right now where Codex is keeping track of all the individual launches. Each one of them I can't wait to see what people do with it.\n\nBrought to you by an incredible team (and Astra) https://t.co/DsYPXY7sfo",
+        "posted_at": "2026-09-08T05:20:19.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
       "id": "2097183639356489952",
       "source": {
         "url": "https://x.com/thsottiaux/status/2097183639356489952",
-        "text": "You forgot the part where I reset usage twice in the middle",
+        "text": "@0x0SojalSec You forgot the part where I reset usage twice in the middle",
         "posted_at": "2026-09-08T04:41:58.000Z",
         "truncated": false
       },
@@ -26,11 +187,57 @@
       }
     },
     {
+      "id": "2097181146752983291",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2097181146752983291",
+        "text": "@melvindvivas Hey Astra, cancel all the subscriptions I don't really need, also go negotiate my internet bill, same for my electricity bill... oh and find some nice flowers (she likes peonies) for my wife and make sure to remind me every 3 weeks to get some",
+        "posted_at": "2026-09-08T04:32:03.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
       "id": "2097179930719310259",
       "source": {
         "url": "https://x.com/thsottiaux/status/2097179930719310259",
-        "text": "Spidey sense",
+        "text": "@CorwinMarsh Spidey sense",
         "posted_at": "2026-09-08T04:27:13.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2097179752855646358",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2097179752855646358",
+        "text": "@amorriscode @maticrobots Congrats, you're a Google Gemini user",
+        "posted_at": "2026-09-08T04:26:31.000Z",
         "truncated": false
       },
       "event": {
@@ -52,7 +259,7 @@
       "id": "2097175062566846501",
       "source": {
         "url": "https://x.com/thsottiaux/status/2097175062566846501",
-        "text": "There is no schedule, only resets",
+        "text": "@FelipeFr1702 There is no schedule, only resets",
         "posted_at": "2026-09-08T04:07:53.000Z",
         "truncated": false
       },
@@ -75,12 +282,104 @@
       "id": "2097174560412246215",
       "source": {
         "url": "https://x.com/thsottiaux/status/2097174560412246215",
-        "text": "All reset for everyone. Enjoy the week with Astra. https://t.co/WBM38JotGO",
+        "text": "All reset for everyone. Enjoy the week with Astra.",
         "posted_at": "2026-09-08T04:05:53.000Z",
         "truncated": false
       },
       "event": {
         "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2097131394199896166",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2097131394199896166",
+        "text": "@aaryankushwah Sorry, but this is not an approved use of Sign in With ChatGPT.\n\nWe support pure OSS clients and others we have partnerships with, but you need to reach out and talk to us for that. Please see DM.",
+        "posted_at": "2026-09-08T01:14:21.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2097088648768635068",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2097088648768635068",
+        "text": "@blueemi99 My condolences",
+        "posted_at": "2026-09-07T22:24:30.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2097088586843816330",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2097088586843816330",
+        "text": "I think I can officially say: we are so back",
+        "posted_at": "2026-09-07T22:24:15.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2097084139627561041",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2097084139627561041",
+        "text": "I challenge this a bit\n\n(a) Codex was started as an internal tool. The goal was explicitly to build what was the highest leverage tool to accelerate infrastructure buildout.\n(b) I don’t think the Meta vs non-Meta is particularly enlightening here. Most of us who came from older tech companies were surprised at how far OpenAI had taken Python scripts and had a desire to scale OpenAI further.\n(c) A ton of infrastructure and internal tools were built over the last few years, it’s not the case that we were just waiting for AGI to appear.",
+        "posted_at": "2026-09-07T22:06:35.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
         "state": "unknown",
         "audience": []
       },
@@ -122,11 +421,172 @@
       }
     },
     {
+      "id": "2096847737153012204",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096847737153012204",
+        "text": "@moonflyingoverc @twostraws 你最牛了！",
+        "posted_at": "2026-09-07T06:27:12.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096835256611393924",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096835256611393924",
+        "text": "@oprydai But Mustafa, what are you vibe coding this weekend?",
+        "posted_at": "2026-09-07T05:37:37.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096775311790899620",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096775311790899620",
+        "text": "@melbourneandrew Glad you like it!",
+        "posted_at": "2026-09-07T01:39:25.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096775056336859637",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096775056336859637",
+        "text": "@Prathkum It's possible though that we built Astra in just 2 days. Not probable, but possible",
+        "posted_at": "2026-09-07T01:38:24.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096765806818509047",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096765806818509047",
+        "text": "@israelfemiojo @ajambrosino Did you ship comic sans again?",
+        "posted_at": "2026-09-07T01:01:39.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
       "id": "2096730328090189914",
       "source": {
         "url": "https://x.com/thsottiaux/status/2096730328090189914",
-        "text": "RESTLE?",
+        "text": "@BeingImmu RESTLE?",
         "posted_at": "2026-09-06T22:40:40.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096730186360463414",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096730186360463414",
+        "text": "@Arn0Stride7 Update! Always update!",
+        "posted_at": "2026-09-06T22:40:06.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096718427658629329",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096718427658629329",
+        "text": "@thekitze Why would we",
+        "posted_at": "2026-09-06T21:53:22.000Z",
         "truncated": false
       },
       "event": {
@@ -191,10 +651,79 @@
       }
     },
     {
+      "id": "2096698720440213943",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096698720440213943",
+        "text": "@Sujay__Raj @gadi_neelesh @oneill_c I can",
+        "posted_at": "2026-09-06T20:35:04.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096698561971064864",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096698561971064864",
+        "text": "Astra on NVIDIA GPUs every morning: You're not talking to somebody who woke up a loser. That loser attitude, that loser premise makes no sense to me. We are not a car. Brrrrrrr",
+        "posted_at": "2026-09-06T20:34:26.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096692856543182879",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096692856543182879",
+        "text": "@gadi_neelesh @oneill_c I have a rule for Twitter. I only hand-type things. Neurons to letters, with only the keyboard inbetween",
+        "posted_at": "2026-09-06T20:11:46.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
       "id": "2096692394435752258",
       "source": {
         "url": "https://x.com/thsottiaux/status/2096692394435752258",
-        "text": "Who says it won't reset in a while 👀",
+        "text": "@Gelassoldat @rezoundous Who says it won't reset in a while 👀",
         "posted_at": "2026-09-06T20:09:56.000Z",
         "truncated": false
       },
@@ -214,10 +743,79 @@
       }
     },
     {
+      "id": "2096689792281117103",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096689792281117103",
+        "text": "@pfernan95dev Welcome back Pablo. See DM for a little gift.",
+        "posted_at": "2026-09-06T19:59:35.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096689650257805558",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096689650257805558",
+        "text": "@TJeparskis Should not be the case, between those two it's about ~50% cheaper per task at roughly equivalent output.",
+        "posted_at": "2026-09-06T19:59:01.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096688770523467947",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096688770523467947",
+        "text": "To calibrate you all on which reasoning effort to use for Astra, know that GPT-6 Astra on low performs better than GPT-5.6 Sol on high.\n\nIf you were using high reasoning efforts with Sol and were happy, I suggest you move down to low or medium for Astra.",
+        "posted_at": "2026-09-06T19:55:32.000Z",
+        "truncated": true
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
       "id": "2096686370848989558",
       "source": {
         "url": "https://x.com/thsottiaux/status/2096686370848989558",
-        "text": "Not the case. There is no difference between usage you get before or after a reset.",
+        "text": "@hiarun02 Not the case. There is no difference between usage you get before or after a reset.",
         "posted_at": "2026-09-06T19:46:00.000Z",
         "truncated": false
       },
@@ -237,15 +835,406 @@
       }
     },
     {
+      "id": "2096494725318762951",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096494725318762951",
+        "text": "@FelipeFr1702 You’re welcome",
+        "posted_at": "2026-09-06T07:04:28.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096308922294652979",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096308922294652979",
+        "text": "@mweinbach 150?",
+        "posted_at": "2026-09-05T18:46:09.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096116729554620795",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096116729554620795",
+        "text": "@itssotsot Astra just keeps building and we keep shipping",
+        "posted_at": "2026-09-05T06:02:26.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096107832865436063",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096107832865436063",
+        "text": "@Saucisse_dev @leploutos Mais carrément Saucisse",
+        "posted_at": "2026-09-05T05:27:05.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096106997527830551",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096106997527830551",
+        "text": "@claudeebum Can it play it too?",
+        "posted_at": "2026-09-05T05:23:46.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096106878925410786",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096106878925410786",
+        "text": "@mweinbach Share the setup!",
+        "posted_at": "2026-09-05T05:23:18.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096106160780955944",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096106160780955944",
+        "text": "@rezoundous 🫡",
+        "posted_at": "2026-09-05T05:20:27.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096106003192488399",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096106003192488399",
+        "text": "@FelipeFr1702 La Vista",
+        "posted_at": "2026-09-05T05:19:49.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096104094943576067",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096104094943576067",
+        "text": "@chooi_jeq Very cool application",
+        "posted_at": "2026-09-05T05:12:14.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096102749813514292",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096102749813514292",
+        "text": "@rezoundous Spread the word. Would have been easy to do the same. Felt petty",
+        "posted_at": "2026-09-05T05:06:53.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096101429832552872",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096101429832552872",
+        "text": "Astra was probably our biggest competitive advantage while it wasn’t generally available.\n\nSince we’ve had it our productivity jumped so much that we shifted some of our plans 6 months ahead and will ship them at DevDay instead of mid next year.",
+        "posted_at": "2026-09-05T05:01:39.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096100688241873129",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096100688241873129",
+        "text": "@lydiahallie Wow, huge, wonder why!",
+        "posted_at": "2026-09-05T04:58:42.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096100013948743775",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096100013948743775",
+        "text": "@theo Let the potato rest a little",
+        "posted_at": "2026-09-05T04:56:01.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096055605538799675",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096055605538799675",
+        "text": "@DavidOndrej1 You’ve just revealed our strategy. See you at DevDay",
+        "posted_at": "2026-09-05T01:59:33.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096035748130795560",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096035748130795560",
+        "text": "And the team will have some nice sleep now. See you next week for some more ships.",
+        "posted_at": "2026-09-05T00:40:39.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
       "id": "2096035437299237298",
       "source": {
         "url": "https://x.com/thsottiaux/status/2096035437299237298",
-        "text": "Because we are beyond happy to have Astra rolled out today ahead of schedule and you have been super patient with us (not really, but it’s ok!)… we will do the full banked reset today too for all Plus, Pro and Business users. Lands end of day.\n\nHappy Astra day and enjoy a",
+        "text": "Because we are beyond happy to have Astra rolled out today ahead of schedule and you have been super patient with us (not really, but it’s ok!)… we will do the full banked reset today too for all Plus, Pro and Business users. Lands end of day.\n\nHappy Astra day and enjoy a phenomenal weekend. \n\nPS: If you create the account or upgrade before 8pm PT you will get it too. Still time!",
         "posted_at": "2026-09-05T00:39:25.000Z",
         "truncated": false
       },
       "event": {
         "type": "banked_reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2096002992046796932",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2096002992046796932",
+        "text": "OK nevermind, the team and Astra did a good job and our systems are more scalable than we anticipated.\n\nAstra is now rolled out to all Plus and Business users too. Hope you have a blast and let us know how it goes!",
+        "posted_at": "2026-09-04T22:30:29.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095995318471168397",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095995318471168397",
+        "text": "Awesome to see GPT-6 Astra is #1 on Terminal Bench 4.0 using the Codex harness. At 50% of the cost of #2. https://t.co/QeY4FfEcxc",
+        "posted_at": "2026-09-04T22:00:00.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
         "state": "unknown",
         "audience": []
       },
@@ -269,6 +1258,52 @@
       },
       "event": {
         "type": "banked_reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095964132461961370",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095964132461961370",
+        "text": "@BradGroux Congratulations. What will you do with it?",
+        "posted_at": "2026-09-04T19:56:04.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095961185262997556",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095961185262997556",
+        "text": "We are progressing through the rollout of Astra. Pro and Business subscriptions get it first, some of you should start seeing it across ChatGPT Work and Codex.\n\nAnd then we will proceed with rollout to all of Plus as fast as we can.",
+        "posted_at": "2026-09-04T19:44:22.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
         "state": "unknown",
         "audience": []
       },

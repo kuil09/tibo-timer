@@ -1,0 +1,23 @@
+{
+  "id": "2097183639356489952",
+  "source": {
+    "url": "https://x.com/thsottiaux/status/2097183639356489952",
+    "text": "You forgot the part where I reset usage twice in the middle",
+    "posted_at": "2026-09-08T04:41:58.000Z",
+    "truncated": false
+  },
+  "event": {
+    "type": "reset",
+    "state": "unknown",
+    "audience": []
+  },
+  "temporal": {
+    "kind": "unresolved",
+    "precision": "unspecified",
+    "original": "",
+    "reason": "model_not_approved"
+  },
+  "interpretation": {
+    "method": "source-only"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2097175062566846501",
+  "source": {
+    "url": "https://x.com/thsottiaux/status/2097175062566846501",
+    "text": "There is no schedule, only resets",
+    "posted_at": "2026-09-08T04:07:53.000Z",
+    "truncated": false
+  },
+  "event": {
+    "type": "reset",
+    "state": "unknown",
+    "audience": []
+  },
+  "temporal": {
+    "kind": "unresolved",
+    "precision": "unspecified",
+    "original": "",
+    "reason": "model_not_approved"
+  },
+  "interpretation": {
+    "method": "source-only"
+  }
+}

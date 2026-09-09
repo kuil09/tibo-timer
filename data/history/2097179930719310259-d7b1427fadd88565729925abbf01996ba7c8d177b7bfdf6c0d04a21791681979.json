@@ -1,0 +1,23 @@
+{
+  "id": "2097179930719310259",
+  "source": {
+    "url": "https://x.com/thsottiaux/status/2097179930719310259",
+    "text": "Spidey sense",
+    "posted_at": "2026-09-08T04:27:13.000Z",
+    "truncated": false
+  },
+  "event": {
+    "type": "unknown",
+    "state": "unknown",
+    "audience": []
+  },
+  "temporal": {
+    "kind": "unresolved",
+    "precision": "unspecified",
+    "original": "",
+    "reason": "model_not_approved"
+  },
+  "interpretation": {
+    "method": "source-only"
+  }
+}
