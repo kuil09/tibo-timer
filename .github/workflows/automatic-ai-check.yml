@@ -1,0 +1,31 @@
+name: Automatic AI checks
+on:
+  push:
+    branches: ['feat/latest-automatic-ai']
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run check && npm test && npm run build
+      - name: Export reviewed workspace for offline checks
+        if: github.event_name == 'push'
+        run: tar --exclude=.git --exclude=.cache --exclude=dist -czf /tmp/workspace.tar.gz .
+      - uses: actions/upload-artifact@v4
+        if: github.event_name == 'push'
+        with:
+          name: latest-ai-workspace
+          path: /tmp/workspace.tar.gz
+          retention-days: 1
