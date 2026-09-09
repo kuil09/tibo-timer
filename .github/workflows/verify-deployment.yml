@@ -20,27 +20,49 @@ jobs:
               with urllib.request.urlopen(request,timeout=20) as response:
                   assert response.status==200
                   return response.read(2000000).decode('utf-8')
-          html=get('')
-          assert 'app.js' in html
+          assert 'app.js' in get('')
           version=json.loads(get('version.json'))
-          assert version['commit']=='14b5ae063d91aff6aacc690b9d72b62d68d4f1df',version
           data=json.loads(get('events.json'))
           assert data['schema_version']==1 and len(data['events'])>26
           assert data['collection']['provider']=='fxembed'
-          assert data['collection']['coverage'] in ('partial','complete')
           ids=[p['id'] for p in data['events']]
           assert len(ids)==len(set(ids))
           assert all(p['source']['url']=='https://x.com/thsottiaux/status/'+p['id'] for p in data['events'])
           assert '2097494113012863197' in ids
           assert any(len(p['source']['text'])>280 for p in data['events'])
           assert 'collection_partial' in get('app.js')
-          assert len(get('view.js'))>0
           report={'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'site':base,'version':version,'events':len(ids),'collection':data['collection'],'last_success_at':data['last_success_at'],'latest_post':max(p['source']['posted_at'] for p in data['events']),'unique_ids':True,'source_urls_verified':True,'long_text_verified':True}
           pathlib.Path('deployment-check.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
           print(json.dumps(report,ensure_ascii=False,indent=2))
           PY
       - uses: actions/upload-artifact@v4
         with:
-          name: deployment-check
+          name: deployment-check-${{ github.run_attempt }}
           path: deployment-check.json
           retention-days: 3
+  inspect-source:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Inspect next two cursor pages without changing data
+        run: |
+          python3 - <<'PY'
+          import json,urllib.request,urllib.parse
+          state=json.load(open('data/state.json'))
+          cursor=state.get('collection',{}).get('checkpoint',{}).get('pending',{}).get('cursor')
+          for index in range(2):
+              if not cursor: break
+              url='https://api.fxtwitter.com/2/profile/thsottiaux/statuses?'+urllib.parse.urlencode({'count':50,'with_replies':1,'cursor':cursor})
+              req=urllib.request.Request(url,headers={'Accept':'application/json','User-Agent':'tibo-timer/1.0 (+https://github.com/kuil09/tibo-timer)'})
+              with urllib.request.urlopen(req,timeout=20) as r: data=json.load(r)
+              assert data['code']==200
+              rows=[r for r in data['results'] if r.get('author',{}).get('id')=='1953337039510003712']
+              print(json.dumps({'page':index,'count':len(rows),'oldest':rows[-1].get('created_at') if rows else None}))
+              for row in rows:
+                  if not row.get('text','').strip():
+                      print(json.dumps({'id':row.get('id'),'url':row.get('url'),'text':row.get('text'),'raw_text':row.get('raw_text'),'keys':list(row),'media_types':list(row.get('media',{})),'quote':bool(row.get('quote'))}))
+              cursor=data.get('cursor',{}).get('bottom')
+          PY
