@@ -9,7 +9,7 @@ permissions:
 jobs:
   tests:
     runs-on: ubuntu-24.04
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -18,14 +18,33 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check && npm test && npm run build
-      - name: Save public source snapshot for review
-        run: tar --exclude=.git --exclude=node_modules --exclude=.cache --exclude=dist -czf /tmp/source.tar.gz .
+      - name: Install browser
+        run: npx playwright install chromium
+      - name: Browser regression
+        run: |
+          python3 -m http.server 4173 --directory dist >/tmp/tibo-http.log 2>&1 &
+          npm run test:browser
+      - name: Exercise actual collection without publication
+        if: github.event_name != 'pull_request'
+        env:
+          CPU_READY: failure
+        run: |
+          node --import tsx src/sync.ts plan
+          node --import tsx src/sync.ts apply
+          npm run build
+          cat .cache/sync-report.json
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: source-review
-          path: /tmp/source.tar.gz
-          retention-days: 1
+          name: collector-report
+          path: |
+            .cache/sync-report.json
+            data/state.json
+            dist/version.json
+          include-hidden-files: true
+          retention-days: 3
   timeline:
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-24.04
     timeout-minutes: 3
     strategy:
@@ -34,47 +53,17 @@ jobs:
       matrix:
         probe: [first, second]
     steps:
-      - name: Read target timeline without credentials
-        run: |
-          python3 - <<'PY'
-          import urllib.request, urllib.error, json, datetime, pathlib
-          url='https://api.fxtwitter.com/2/profile/thsottiaux/statuses?count=50&with_replies=1'
-          report={'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'url':url,'valid':False}
-          try:
-              request=urllib.request.Request(url, headers={'Accept':'application/json','User-Agent':'tibo-timer/1.0 (+https://github.com/kuil09/tibo-timer)'})
-              with urllib.request.urlopen(request, timeout=20) as response:
-                  report.update(status=response.status,content_type=response.headers.get('Content-Type'))
-                  body=response.read(2000001)
-              if len(body)>2000000: raise ValueError('response_too_large')
-              if 'application/json' not in (report['content_type'] or ''): raise ValueError('not_json')
-              data=json.loads(body)
-              report['code']=data.get('code')
-              report['keys']=list(data)
-              rows=data.get('results')
-              if report['code']!=200 or not isinstance(rows,list): raise ValueError('invalid_timeline')
-              report['count']=len(rows)
-              report['cursor']=data.get('cursor')
-              own=[r for r in rows if r.get('author',{}).get('screen_name','').lower()=='thsottiaux']
-              report['own_count']=len(own)
-              report['author_ids']=sorted(set(r['author']['id'] for r in own))
-              report['samples']=[{k:r.get(k) for k in ('type','id','url','text','created_at','created_timestamp','replying_to','replying_to_status','truncated','raw_text')} for r in own[:8]]
-              report['first_post_keys']=list(own[0]) if own else []
-              if not own: raise ValueError('empty_target_timeline')
-              pathlib.Path('timeline.json').write_text(json.dumps(data,ensure_ascii=False))
-              report['valid']=True
-          except urllib.error.HTTPError as error:
-              report.update(status=error.code,error='http_'+str(error.code),content_type=error.headers.get('Content-Type'),cf_mitigated=error.headers.get('cf-mitigated'))
-          except Exception as error:
-              report['error']=str(error)
-          pathlib.Path('probe.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
-          print(json.dumps(report,ensure_ascii=False,indent=2))
-          if not report['valid']: raise SystemExit(1)
-          PY
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: node --import tsx src/diagnose-timeline.ts
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: timeline-${{ matrix.probe }}
-          path: |
-            probe.json
-            timeline.json
-          retention-days: 1
+          path: .cache/timeline-probe.json
+          include-hidden-files: true
+          retention-days: 3
