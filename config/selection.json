@@ -1,5 +1,9 @@
 {
-  "enabled": false,
-  "model": null,
-  "reason": "Automatic interpretation remains unapproved. Local Qwen3.5 all-claim verification with three total attempts produced 38/52 exact results, zero false completions/schedules, and 16 exhausted cases with no retry recoveries. Unseen acceptance and Linux CPU limits remain unverified; production active candidate remains lfm25."
+  "enabled": true,
+  "model": "lfm25",
+  "max_posts": 5,
+  "reason": "Operator explicitly requested automatic AI interpretation on 2026-09-09. Enabled for latest-only monitoring; this is not a claim of passing historical model acceptance gates. Source validation and unresolved fallback remain enforced.",
+  "activation": "operator-enabled",
+  "acceptance_status": "not-approved",
+  "previous_evaluation": "Automatic interpretation remains unapproved. Local Qwen3.5 all-claim verification with three total attempts produced 38/52 exact results, zero false completions/schedules, and 16 exhausted cases with no retry recoveries. Unseen acceptance and Linux CPU limits remain unverified; production active candidate remains lfm25."
 }

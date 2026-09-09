@@ -120,3 +120,19 @@ export async function collectTimeline(checkpoint?:Checkpoint, request:typeof fet
     checkpoint:{watermark:cursor?watermark:[watermark??'',target].sort().at(-1)!,pending:cursor?{cursor,boundary,target}:null},
     raw:{provider:'fxembed',checked_at,upstream_at:null,pages:pages.map(p=>({posts:p.raw,next_cursor:p.cursor,empty:p.empty}))}};
 }
+
+// Latest-only monitoring deliberately ignores historical cursors. A successful empty
+// 24-hour window is healthy when the provider still returns a valid author timeline.
+export async function collectLatestTimeline(lookbackHours=24, request:typeof fetch=fetch):Promise<SourceBatch> {
+  if(!Number.isInteger(lookbackHours) || lookbackHours<1 || lookbackHours>168) throw new Error('fx_invalid_lookback');
+  const checked_at=new Date().toISOString();
+  const page=await readPage(null,request);
+  if(page.posts.length===0) throw new Error('fx_empty_target_timeline');
+  const cutoff=Date.parse(checked_at)-lookbackHours*3_600_000;
+  const posts=page.posts.filter(p=>Date.parse(p.posted_at)>=cutoff).sort((a,b)=>b.posted_at.localeCompare(a.posted_at));
+  const ids=new Set(posts.map(p=>p.id));
+  const scope={mode:'latest' as const,lookback_hours:lookbackHours};
+  return {provider:'fxembed',posts,checked_at,upstream_at:null,coverage:'complete',scope,
+    checkpoint:{watermark:page.posts.reduce((a,p)=>p.posted_at>a?p.posted_at:a,''),pending:null},
+    raw:{provider:'fxembed',checked_at,upstream_at:null,scope,posts:page.raw.filter(p=>ids.has((p as ObjectValue).id as string))}};
+}
