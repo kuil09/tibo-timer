@@ -1,4 +1,6 @@
 {
   "provider": "fxembed",
-  "note": "Keyless public timeline verified on two GitHub-hosted runners in run 34310903217. No automatic paid or authenticated fallback."
+  "note": "Monitor only the newest keyless timeline page (50 provider entries, replies included) within 24 hours. No historical pagination or backfill. Existing archive is retained.",
+  "mode": "latest",
+  "lookback_hours": 24
 }

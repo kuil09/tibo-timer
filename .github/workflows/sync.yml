@@ -70,7 +70,7 @@ jobs:
             .cache/cpu/*.gguf
             .cache/cpu/runtime.tar.gz
           key: cpu-v2-${{ runner.os }}-${{ steps.plan.outputs.model }}-${{ hashFiles('config/models.lock.json') }}
-      - name: Prepare and start approved CPU model
+      - name: Prepare and start enabled CPU model
         id: cpu
         timeout-minutes: 4
         if: steps.plan.outputs.inference == 'true'
@@ -126,7 +126,7 @@ jobs:
                   data=json.loads(get('events.json'))
                   assert data==expected,'published_data_mismatch'
                   assert 'app.js' in get(''),'missing_application'
-                  report={'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'site':base,'version':version,'events':len(data['events']),'collection':data['collection'],'last_success_at':data['last_success_at'],'published_data_matches_build':True}
+                  report={'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'site':base,'version':version,'events':len(data['events']),'collection':data['collection'],'analysis':data.get('analysis'),'last_success_at':data['last_success_at'],'published_data_matches_build':True}
                   pathlib.Path('.cache').mkdir(exist_ok=True)
                   pathlib.Path('.cache/page-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
                   print(json.dumps(report,ensure_ascii=False,indent=2))
@@ -145,6 +145,10 @@ jobs:
             .cache/page-verification.json
           include-hidden-files: true
           retention-days: 3
+      - name: Report automatic interpretation failures
+        if: steps.plan.outcome == 'success'
+        run: |
+          node --input-type=module -e "import fs from 'node:fs'; const report=JSON.parse(fs.readFileSync('.cache/sync-report.json','utf8')); if(report.analysis?.failed || (report.analysis?.enabled && report.processed.some(p=>p.reason==='pending_cpu'))) {console.error('Automatic inference failed; source-only data was preserved and will retry.');process.exit(1);}"
       - name: Report stale upstream
         if: steps.plan.outcome == 'failure'
         run: |
