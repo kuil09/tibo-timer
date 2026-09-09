@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_success_at": "2026-09-09T05:21:55.857Z",
+  "last_success_at": "2026-09-09T05:33:18.818Z",
   "events": [
     {
       "id": "2097494113012863197",
@@ -19,10 +19,19 @@
         "kind": "unresolved",
         "precision": "unspecified",
         "original": "",
-        "reason": "model_not_approved"
+        "reason": "unsupported_evidence"
       },
       "interpretation": {
-        "method": "source-only"
+        "method": "cpu-model",
+        "model": "qwen359b"
+      },
+      "extraction": {
+        "event_type": "unknown",
+        "state": "unknown",
+        "audience": [],
+        "evidence": "",
+        "time_expression": "",
+        "time_zone": null
       }
     },
     {
@@ -42,10 +51,19 @@
         "kind": "unresolved",
         "precision": "unspecified",
         "original": "",
-        "reason": "model_not_approved"
+        "reason": "unsupported_evidence"
       },
       "interpretation": {
-        "method": "source-only"
+        "method": "cpu-model",
+        "model": "qwen359b"
+      },
+      "extraction": {
+        "event_type": "unknown",
+        "state": "unknown",
+        "audience": [],
+        "evidence": "",
+        "time_expression": "",
+        "time_zone": null
       }
     },
     {
@@ -65,10 +83,19 @@
         "kind": "unresolved",
         "precision": "unspecified",
         "original": "",
-        "reason": "model_not_approved"
+        "reason": "unsupported_evidence"
       },
       "interpretation": {
-        "method": "source-only"
+        "method": "cpu-model",
+        "model": "qwen359b"
+      },
+      "extraction": {
+        "event_type": "unknown",
+        "state": "unknown",
+        "audience": [],
+        "evidence": "",
+        "time_expression": "",
+        "time_zone": null
       }
     },
     {
@@ -88,7 +115,7 @@
         "kind": "unresolved",
         "precision": "unspecified",
         "original": "",
-        "reason": "model_not_approved"
+        "reason": "source_truncated"
       },
       "interpretation": {
         "method": "source-only"
@@ -111,10 +138,19 @@
         "kind": "unresolved",
         "precision": "unspecified",
         "original": "",
-        "reason": "model_not_approved"
+        "reason": "unsupported_evidence"
       },
       "interpretation": {
-        "method": "source-only"
+        "method": "cpu-model",
+        "model": "qwen359b"
+      },
+      "extraction": {
+        "event_type": "unknown",
+        "state": "unknown",
+        "audience": [],
+        "evidence": "",
+        "time_expression": "",
+        "time_zone": null
       }
     },
     {
@@ -134,10 +170,19 @@
         "kind": "unresolved",
         "precision": "unspecified",
         "original": "",
-        "reason": "model_not_approved"
+        "reason": "unsupported_evidence"
       },
       "interpretation": {
-        "method": "source-only"
+        "method": "cpu-model",
+        "model": "qwen359b"
+      },
+      "extraction": {
+        "event_type": "unknown",
+        "state": "unknown",
+        "audience": [],
+        "evidence": "",
+        "time_expression": "",
+        "time_zone": null
       }
     },
     {
