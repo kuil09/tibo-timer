@@ -9,7 +9,7 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
@@ -20,15 +20,6 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check && npm test && npm run build
-      - name: Export offline test dependencies
-        if: github.event_name == 'push'
-        run: tar -czf /tmp/dependencies.tar.gz node_modules
-      - uses: actions/upload-artifact@v4
-        if: github.event_name == 'push'
-        with:
-          name: offline-dependencies
-          path: /tmp/dependencies.tar.gz
-          retention-days: 1
       - name: Plan latest-only monitoring
         id: plan
         if: github.event_name == 'push'
@@ -47,6 +38,9 @@ jobs:
           export MODEL_PATH=$(python3 -c "import json;print(json.load(open('.cache/cpu/prepared.json'))['model_path'])")
           export LLAMA_SERVER=$(python3 -c "import json;print(json.load(open('.cache/cpu/prepared.json'))['server_path'])")
           bash scripts/start-cpu.sh
+      - name: Reject obvious semantic misclassification
+        if: steps.plan.outputs.inference == 'true'
+        run: node --import tsx scripts/smoke-auto-ai.ts
       - name: Interpret real latest posts without publishing
         if: github.event_name == 'push'
         env:
@@ -61,6 +55,7 @@ jobs:
           name: automatic-ai-evidence-${{ github.run_attempt }}
           path: |
             .cache/sync-report.json
+            .cache/automatic-ai-smoke.json
             .cache/inference-trace.jsonl
             .cache/evaluation/server.log
             dist/events.json

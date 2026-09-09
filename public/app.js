@@ -28,6 +28,7 @@ function source(item) {
   } else meta.append(el('span', '', '원문 링크 미확인'));
   box.append(meta);
   if (item.interpretation?.method === 'source-only') box.append(el('p', 'quiet interpretation', '원문만 표시 · 공지의 의미와 시각은 아직 검증되지 않았습니다.'));
+  if (item.interpretation?.method === 'cpu-model') box.append(el('p', 'quiet interpretation', `AI 자동 해석 · ${item.interpretation.model || 'CPU 모델'} · 원문 대조 필요`));
   return box;
 }
 
@@ -87,6 +88,12 @@ function tick() {
   document.querySelector('#local-clock').textContent = new Intl.DateTimeFormat('ko-KR', { hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date());
   counters.forEach(({ node, item }) => { node.textContent = countdown(item); });
   if (!dataset) return;
+  const analysis=dataset.analysis;
+  const analysisStatus=document.querySelector('#analysis-status');
+  if(analysisStatus && analysis) {
+    const scope=dataset.collection?.mode==='latest'?` · 최근 ${dataset.collection.lookback_hours}시간 최신 페이지`:'';
+    analysisStatus.textContent=analysis.enabled?`AI 자동 해석 켜짐 · ${analysis.model}${scope}${analysis.failed?' · 일부 해석 실패, 다음 수집에서 재시도':''}${analysis.deferred?` · ${analysis.deferred}건 처리 대기`:''} · AI 판단은 원문 확인이 필요합니다.`:'AI 자동 해석 꺼짐';
+  }
   const stale = isStale(dataset.last_success_at);
   const collectionFailed = dataset.collection?.last_error != null;
   const status = document.querySelector('#status');

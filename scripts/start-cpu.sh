@@ -3,7 +3,7 @@ set -euo pipefail
 mkdir -p .cache/evaluation
 export LD_LIBRARY_PATH="$(dirname "$LLAMA_SERVER"):${LD_LIBRARY_PATH:-}"
 template_args=()
-if [[ "${MODEL_ID:-}" == "qwen3" ]]; then
+if [[ "${MODEL_ID:-}" == "qwen3" || "${MODEL_ID:-}" == "qwen359b" ]]; then
   template_args=(--chat-template-kwargs '{"enable_thinking":false}')
 fi
 "$LLAMA_SERVER" -m "$MODEL_PATH" -ngl 0 -t 4 -c 4096 --parallel 1 --host 127.0.0.1 --port 8080 --jinja "${template_args[@]}" > .cache/evaluation/server.log 2>&1 &
@@ -18,7 +18,6 @@ cleanup() {
   fi
 }
 trap cleanup EXIT
-# Each health request and the complete readiness loop are bounded independently.
 deadline=$((SECONDS+60))
 while (( SECONDS < deadline )); do
   if ! kill -0 "$server_pid" 2>/dev/null; then cat .cache/evaluation/server.log; exit 1; fi
