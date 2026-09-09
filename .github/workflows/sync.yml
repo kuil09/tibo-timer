@@ -1,31 +1,26 @@
-name: Publish Pages (optional collection)
+name: Update and publish Tibo Timer
 on:
   schedule:
     - cron: '7,27,47 * * * *'
-  workflow_run:
-    workflows: ['OpenRouter independent inference and cross-review']
-    types: [completed]
-    branches: [main]
   workflow_dispatch:
     inputs:
       collect:
-        description: Explicitly fetch upstream once (leave off for local data publication)
+        description: Collect the latest page and interpret changed posts
         type: boolean
-        default: false
+        default: true
   push:
     branches: [main]
-    paths-ignore: ['docs/**']
+    paths-ignore: ['docs/**', 'README.md']
 permissions:
-  actions: read
   contents: write
   pages: write
   id-token: write
 concurrency:
-  group: collect-and-pages
+  group: tibo-production
   cancel-in-progress: false
 jobs:
   publish:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.head_repository.full_name == github.repository
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     environment:
@@ -39,64 +34,22 @@ jobs:
         with:
           node-version: '22'
           cache: npm
-      - run: npm ci
+      - run: npm ci --ignore-scripts
       - run: npm run check && npm test
-      - name: Download completed council evidence
-        id: council_artifact
-        if: github.event_name == 'workflow_run'
-        continue-on-error: true
-        uses: actions/download-artifact@v4
-        with:
-          name: openrouter-council
-          path: .cache/council-publication
-          github-token: ${{ github.token }}
-          run-id: ${{ github.event.workflow_run.id }}
-      - name: Project safe public meeting record
-        id: council_publication
-        if: steps.council_artifact.outcome == 'success'
-        continue-on-error: true
-        env:
-          COUNCIL_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.event.workflow_run.id }}
-        run: node --import tsx src/publish-council.ts .cache/council-publication/council.json data/council.json "$COUNCIL_RUN_URL"
-      - name: Fetch and identify changed posts
-        id: plan
-        if: github.event_name == 'schedule' || inputs.collect == true || (github.event_name == 'push' && contains(github.event.head_commit.message, '[collect]'))
-        continue-on-error: true
-        run: node --import tsx src/sync.ts plan
-      - uses: actions/cache@v4
-        if: steps.plan.outputs.inference == 'true'
-        with:
-          path: |
-            .cache/cpu/*.gguf
-            .cache/cpu/runtime.tar.gz
-          key: cpu-v2-${{ runner.os }}-${{ steps.plan.outputs.model }}-${{ hashFiles('config/models.lock.json') }}
-      - name: Prepare and start enabled CPU model
-        id: cpu
-        timeout-minutes: 4
-        if: steps.plan.outputs.inference == 'true'
-        continue-on-error: true
-        run: |
-          python3 scripts/prepare-cpu.py '${{ steps.plan.outputs.model }}'
-          export MODEL_PATH=$(python3 -c "import json;print(json.load(open('.cache/cpu/prepared.json'))['model_path'])")
-          export LLAMA_SERVER=$(python3 -c "import json;print(json.load(open('.cache/cpu/prepared.json'))['server_path'])")
-          bash scripts/start-cpu.sh
-      - name: Normalize and persist
-        if: steps.plan.outcome == 'success'
-        env:
-          SYNC_BUDGET_MS: '240000'
-          CPU_READY: ${{ steps.cpu.outcome }}
-        run: node --import tsx src/sync.ts apply
-      - name: Save collection state
-        if: github.event_name == 'schedule' || inputs.collect == true || (github.event_name == 'push' && contains(github.event.head_commit.message, '[collect]')) || steps.council_publication.outcome == 'success'
+      - name: Configure state persistence
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data
-          if ! git diff --cached --quiet; then
-            git commit -m 'chore: preserve reset feed and sync state'
-            git push origin HEAD:main
-          fi
-      - run: npm run build
+      - name: Collect and interpret latest posts
+        id: sync
+        if: github.event_name != 'workflow_dispatch' || inputs.collect
+        continue-on-error: true
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          PERSIST_STATE: 'true'
+        run: npm run sync
+      - name: Build public snapshot
+        run: GITHUB_SHA="$(git rev-parse HEAD)" npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -107,56 +60,10 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           artifact_name: github-pages-${{ github.run_attempt }}
-      - name: Verify published assets and source data
+      - name: Verify deployed files
+        run: node src/verify.mjs
+      - name: Report upstream or model failure
+        if: steps.sync.outcome == 'failure'
         run: |
-          python3 - <<'PY'
-          import urllib.request, json, pathlib, datetime, os, time
-          base='https://kuil09.github.io/tibo-timer/'
-          expected=json.loads(pathlib.Path('dist/events.json').read_text())
-          def get(path):
-              url=base+path+'?verify='+os.environ['GITHUB_RUN_ID']+'-'+os.environ['GITHUB_RUN_ATTEMPT']
-              req=urllib.request.Request(url,headers={'Cache-Control':'no-cache','User-Agent':'tibo-timer-deployment-verifier/1.0'})
-              with urllib.request.urlopen(req,timeout=20) as response:
-                  assert response.status==200
-                  return response.read(2000000).decode('utf-8')
-          for attempt in range(4):
-              try:
-                  version=json.loads(get('version.json'))
-                  assert version['commit']==os.environ['GITHUB_SHA'],'published_version_mismatch'
-                  data=json.loads(get('events.json'))
-                  assert data==expected,'published_data_mismatch'
-                  assert 'app.js' in get(''),'missing_application'
-                  report={'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'site':base,'version':version,'events':len(data['events']),'collection':data['collection'],'analysis':data.get('analysis'),'last_success_at':data['last_success_at'],'published_data_matches_build':True}
-                  pathlib.Path('.cache').mkdir(exist_ok=True)
-                  pathlib.Path('.cache/page-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
-                  print(json.dumps(report,ensure_ascii=False,indent=2))
-                  break
-              except Exception:
-                  if attempt==3: raise
-                  time.sleep(5)
-          PY
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: sync-report-${{ github.run_id }}-${{ github.run_attempt }}
-          path: |
-            .cache/sync-report.json
-            .cache/inference-trace.jsonl
-            .cache/page-verification.json
-          include-hidden-files: true
-          retention-days: 3
-      - name: Report automatic interpretation failures
-        if: steps.plan.outcome == 'success'
-        run: |
-          node --input-type=module -e "import fs from 'node:fs'; const report=JSON.parse(fs.readFileSync('.cache/sync-report.json','utf8')); if(report.analysis?.failed || (report.analysis?.enabled && report.processed.some(p=>p.reason==='pending_cpu'))) {console.error('Automatic inference failed; source-only data was preserved and will retry.');process.exit(1);}"
-      - name: Report stale upstream
-        if: steps.plan.outcome == 'failure'
-        run: |
-          echo 'The last valid dataset was deployed; upstream refresh failed.'
-          exit 1
-
-      - name: Report missing council evidence
-        if: github.event_name == 'workflow_run' && steps.council_publication.outcome != 'success'
-        run: |
-          echo 'Previous public snapshot preserved; new council evidence could not be published.'
+          echo '::error::Published the safe status snapshot, but source or model processing needs attention.'
           exit 1

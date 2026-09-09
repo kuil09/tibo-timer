@@ -1,6 +1,0 @@
-{
-  "provider": "fxembed",
-  "note": "Monitor only the newest keyless timeline page (50 provider entries, replies included) within 24 hours. No historical pagination or backfill. Existing archive is retained.",
-  "mode": "latest",
-  "lookback_hours": 24
-}

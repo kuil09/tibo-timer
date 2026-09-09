@@ -1,0 +1,11 @@
+import { readFile, writeFile, mkdir, cp, rm } from 'node:fs/promises';
+import { publicSnapshot } from './domain.mjs';
+const state = JSON.parse(await readFile('data/state.json', 'utf8'));
+if (state.schema_version !== 2) throw new Error('invalid_state');
+await rm('dist', { recursive: true, force: true });
+await mkdir('dist', { recursive: true });
+for (const name of ['index.html', 'style.css', 'app.mjs', 'view.mjs']) await cp(`public/${name}`, `dist/${name}`);
+const version = process.env.GITHUB_SHA || 'development';
+await writeFile('dist/status.json', JSON.stringify(publicSnapshot(state, version), null, 2) + '\n');
+await writeFile('dist/version.json', JSON.stringify({ commit: version }) + '\n');
+await writeFile('dist/.nojekyll', '');

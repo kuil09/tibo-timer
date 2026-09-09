@@ -1,30 +1,13 @@
 {
   "name": "tibo-timer",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
-  "engines": {
-    "node": ">=22"
-  },
+  "engines": { "node": ">=22" },
   "scripts": {
-    "test": "node --import tsx --test tests/*.test.ts",
-    "check": "tsc --noEmit",
-    "build": "node --import tsx src/build.ts",
-    "sync": "node --import tsx src/sync.ts",
-    "evaluate": "node --import tsx src/evaluate.ts",
-    "test:browser": "playwright test tests/browser.spec.mjs",
-    "lab": "node --import tsx scripts/local-lab.ts",
-    "evaluate:claims": "node --import tsx scripts/evaluate-claims.ts",
-    "evaluate:verification": "node --import tsx scripts/evaluate-verification.ts",
-    "evaluate:verification-loop": "node --import tsx scripts/evaluate-verification-loop.ts"
-  },
-  "dependencies": {
-    "@js-temporal/polyfill": "0.5.1"
-  },
-  "devDependencies": {
-    "@types/node": "^22.0.0",
-    "tsx": "^4.20.0",
-    "typescript": "^5.9.0",
-    "@playwright/test": "^1.55.0"
+    "check": "node --check src/sync.mjs && node --check src/openrouter.mjs && node --check src/domain.mjs && node --check src/time.mjs && node --check src/build.mjs && node --check src/verify.mjs && node --check public/app.mjs && node --check public/view.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "sync": "node src/sync.mjs",
+    "build": "node src/build.mjs"
   }
 }
