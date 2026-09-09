@@ -1318,11 +1318,172 @@
       }
     },
     {
+      "id": "2095951639320678455",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095951639320678455",
+        "text": "@feedthejim So excited!",
+        "posted_at": "2026-09-04T19:06:26.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095906910168031522",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095906910168031522",
+        "text": "@ikiteo_me Welcome sir",
+        "posted_at": "2026-09-04T16:08:42.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095906427852468428",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095906427852468428",
+        "text": "@GaelBreton Yes. What do you think?",
+        "posted_at": "2026-09-04T16:06:47.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
       "id": "2095899886470463914",
       "source": {
         "url": "https://x.com/thsottiaux/status/2095899886470463914",
         "text": "@jrysana I tested it and you can comfortably do it in the Plus subscription. It takes Astra 10-15 minutes and less than the 15% of the weekly usage.\n\nThis means that you can sell ~6 tables per week. Or 24 tables in a month. Making it less than 85 cents per table.",
         "posted_at": "2026-09-04T15:40:47.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095894897018707989",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095894897018707989",
+        "text": "@stevenheidel Good takes only",
+        "posted_at": "2026-09-04T15:20:57.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095730381437939850",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095730381437939850",
+        "text": "@yz_twitting hahaha",
+        "posted_at": "2026-09-04T04:27:14.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095675376584609935",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095675376584609935",
+        "text": "@alexgetmancom Yes",
+        "posted_at": "2026-09-04T00:48:40.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095659959304569231",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095659959304569231",
+        "text": "@slazaruseth Sam, there is infinite demand for positivity and being nice. I hope you choose to make a difference in the world. Go smell some roses, pick up a book and smile. It's worth it.\n\nLindsay is such as person and I absolutely love working with her every day.",
+        "posted_at": "2026-09-03T23:47:24.000Z",
         "truncated": false
       },
       "event": {
@@ -1364,6 +1525,213 @@
       }
     },
     {
+      "id": "2095642108300501428",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095642108300501428",
+        "text": "@GK3 @OpenAI Get shipping",
+        "posted_at": "2026-09-03T22:36:28.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095638904087232892",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095638904087232892",
+        "text": "@lucas__crespo @OpenAI Such goes OpenAI",
+        "posted_at": "2026-09-03T22:23:44.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095615328483193190",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095615328483193190",
+        "text": "@ajambrosino Astra",
+        "posted_at": "2026-09-03T20:50:03.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095615001432334622",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095615001432334622",
+        "text": "@yacineMTB Significantly",
+        "posted_at": "2026-09-03T20:48:45.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095602657918603621",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095602657918603621",
+        "text": "@mattshumer_ I'm glad you're here, Elias. I'm heading down for a drink.",
+        "posted_at": "2026-09-03T19:59:42.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095601585003073933",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095601585003073933",
+        "text": "@AlexBerish Berish tbh",
+        "posted_at": "2026-09-03T19:55:26.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095601204583928171",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095601204583928171",
+        "text": "@_simonsmith I believe the internet had an outage today sir",
+        "posted_at": "2026-09-03T19:53:56.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095601101701820752",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095601101701820752",
+        "text": "We are going to need a different AGI benchmark. Where is the goalpost moving next? https://t.co/tOmRaIScCt",
+        "posted_at": "2026-09-03T19:53:31.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095600295808283073",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095600295808283073",
+        "text": "@adonis_singh Same as previously\n\n- Bigger number = Better\n- Bigger celestial object = Better\n\nand the scale is Astra &gt; Sol &gt; Terra &gt; Luna.",
+        "posted_at": "2026-09-03T19:50:19.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
       "id": "2095597659545591917",
       "source": {
         "url": "https://x.com/thsottiaux/status/2095597659545591917",
@@ -1387,15 +1755,498 @@
       }
     },
     {
+      "id": "2095597168816226335",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095597168816226335",
+        "text": "We are starting to release GPT-6 Astra and we are doing it as carefully and quickly as possible. It was very important to us that we bring it to all Plus users and not only Pro, Business and Enterprise. \n\nIt will take a few days for the rollout to complete and behind the scenes many novel systems will operate at scale for the first time and we are bringing a lot of compute up.\n\nIt is pure magic.\n\nhttps://t.co/WUdXA3xSoh",
+        "posted_at": "2026-09-03T19:37:54.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095579832935649615",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095579832935649615",
+        "text": "@TokenGremlin Let me sketch that out",
+        "posted_at": "2026-09-03T18:29:00.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095539247923306771",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095539247923306771",
+        "text": "@scaling01 Rumor has it that when we go down, so much traffic has to be absorbed by the rest that they all go down.",
+        "posted_at": "2026-09-03T15:47:44.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095538856296898868",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095538856296898868",
+        "text": "Something was felt across the internet today",
+        "posted_at": "2026-09-03T15:46:11.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095529746855764220",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095529746855764220",
+        "text": "@prashantmital Did you ask Codex?",
+        "posted_at": "2026-09-03T15:09:59.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095529563191406672",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095529563191406672",
+        "text": "@Dimillian Too many",
+        "posted_at": "2026-09-03T15:09:15.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095529092720562180",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095529092720562180",
+        "text": "@ChatGPT What does it mean",
+        "posted_at": "2026-09-03T15:07:23.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095394541725794808",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095394541725794808",
+        "text": "@avirajkhare00 Interesting",
+        "posted_at": "2026-09-03T06:12:43.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
       "id": "2095370639892955269",
       "source": {
         "url": "https://x.com/thsottiaux/status/2095370639892955269",
-        "text": "Which Codex reset?",
+        "text": "@melvindvivas Which Codex reset?",
         "posted_at": "2026-09-03T04:37:45.000Z",
         "truncated": false
       },
       "event": {
         "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095369901137654271",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095369901137654271",
+        "text": "I think the best way to describe OpenAI's culture is as a mega startup. It's hard to believe unless you see it from the inside. Extreme ownership, care and pace.",
+        "posted_at": "2026-09-03T04:34:49.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095368608713199994",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095368608713199994",
+        "text": "@maria_rcks Where is it trying to go",
+        "posted_at": "2026-09-03T04:29:41.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095368053739696143",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095368053739696143",
+        "text": "@ishuagra02 Benefits All",
+        "posted_at": "2026-09-03T04:27:28.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095367738684489861",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095367738684489861",
+        "text": "@fhinkel Godex Podex Todex",
+        "posted_at": "2026-09-03T04:26:13.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095290543790280964",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095290543790280964",
+        "text": "@lucacs Should have been 50'000. I get it.",
+        "posted_at": "2026-09-02T23:19:28.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095288416292487289",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095288416292487289",
+        "text": "The ChatGPT desktop app is now my main browser and my productivity has never been higher",
+        "posted_at": "2026-09-02T23:11:01.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095021298854588615",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095021298854588615",
+        "text": "@TokenGremlin Given how little we sleep during releases, that would be very welcome",
+        "posted_at": "2026-09-02T05:29:35.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2095004327597506707",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2095004327597506707",
+        "text": "@melvindvivas Give us a sec",
+        "posted_at": "2026-09-02T04:22:09.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094988714422542469",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094988714422542469",
+        "text": "@almmaasoglu I’m seeing things about Astra you wouldn’t believe",
+        "posted_at": "2026-09-02T03:20:07.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094988223407886801",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094988223407886801",
+        "text": "@AdamHoltererer Luna!",
+        "posted_at": "2026-09-02T03:18:10.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094939684015317363",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094939684015317363",
+        "text": "Bullish",
+        "posted_at": "2026-09-02T00:05:17.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094826841622348106",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094826841622348106",
+        "text": "https://t.co/DxRAhWI0y8",
+        "posted_at": "2026-09-01T16:36:53.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2094826808114057246",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2094826808114057246",
+        "text": "Should we do a merch line? https://t.co/IgyRywd8yH",
+        "posted_at": "2026-09-01T16:36:45.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
         "state": "unknown",
         "audience": []
       },
