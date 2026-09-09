@@ -1,67 +1,56 @@
-# Codex Reset Local Time
+# Tibo Timer
 
-A Korean, source-linked view of Tibo's public reset announcements in the visitor's browser timezone. General usage resets and banked reset grants are separate. This service cannot inspect personal account quotas.
+Tibo의 최신 Codex 리셋 발언을 수집하고, **OpenRouter 무료 모델 세 개**로 해석해 방문자 시간대의 리셋 예정 시각을 보여주는 정적 웹 서비스입니다.
 
-**Site:** https://kuil09.github.io/tibo-timer/
+**서비스:** https://kuil09.github.io/tibo-timer/
 
-## Current operation
+## 동작
 
-As of the explicit operator request on 2026-09-09, monitoring is **latest-only** and automatic CPU interpretation is **enabled**.
+`최신 발언 수집 → 서로 다른 모델 3개가 독립 해석 → 원문 근거·시각 검증 → 일치 결과 공개 → 브라우저 시간대 변환`
 
-- `config/source.json`: FxEmbed, first timeline page only (50 provider entries, replies included), with a 24-hour lookback. No historical pagination or backfill. Existing archives are retained.
-- `config/selection.json`: the locked `qwen359b` model, Qwen3.5-9B Q4_K_M, running on the standard GitHub-hosted CPU in non-thinking mode. No paid API or visitor browser is required for this interpretation path.
-- Scheduled collection runs every 20 minutes (`7,27,47 * * * *`). New or edited recent originals receive at most five model calls per run. Unchanged processed originals do not start the model. Deferred work and failed inference retry on a later poll while still in the monitored recent window.
-- Invalid or truncated sources remain source-only. A valid AI classification of unrelated text is still a completed interpretation; it does not become a reset announcement.
+FxEmbed에서 `thsottiaux`의 최신 타임라인 한 페이지만 약 20분 간격으로 조회합니다. 작성자 핸들과 숫자 ID를 함께 검증하고 최근 24시간의 원문만 처리합니다. 다른 사람의 발언이나 인용문을 Tibo의 발언으로 취급하지 않습니다. 수집 범위는 첫 페이지이므로 해당 시간대의 모든 발언이 수집된다는 보장은 없습니다.
 
-This is best-effort monitoring of the newest returned page, not a complete 24-hour archive. A quiet recent window is a successful source check if the underlying author timeline is valid. Collection freshness and automatic interpretation status are recorded separately in the public JSON and UI.
+새로 들어오거나 수정된 발언을 최대 8개씩 묶어 모델별 한 번, 총 세 번 요청합니다. 세 결과가 모두 유효하고 사건 종류·상태·조건·계산된 시각이 일치해야 공개합니다. 근거가 없는 시각, 조건부 약속, 모호한 표현, 모델 불일치는 예정 시각으로 확정하지 않습니다. 사용량 리셋과 추가 리셋권 지급을 구분하며, 예정 시각이 지났다는 이유로 리셋 완료로 표시하지 않습니다.
 
-## Reliability
+방문자의 시간대는 `Intl.DateTimeFormat().resolvedOptions().timeZone`으로 읽습니다. 위치 권한, 로그인, 사용자 API 키가 필요하지 않습니다. 서머타임 변환은 브라우저와 Node.js의 시간대 데이터에 따릅니다.
 
-The source adapter checks both the handle and the pinned numeric author ID. Other authors' conversation parents and quote text never become Tibo's own words. Original text, URL and posting timestamp are preserved. Original edits invalidate earlier interpretations, retaining history.
+## 운영 설정
 
-AI selects evidence from original source spans; code validates those selections and normalizes supported time expressions. It does not invent times, borrow unrelated deadlines, or mark a reset complete when a countdown expires. A completion label describes the source's announcement, not independent account verification.
+GitHub 저장소 Secret **`OPENROUTER_API_KEY`** 하나를 등록하고, Pages의 배포 소스를 **GitHub Actions**로 설정합니다. 키는 수집 작업의 서버 환경변수로만 사용하며 웹 파일이나 로그에 포함하지 않습니다. 워크플로는 기본 브랜치에서만 운영 데이터를 갱신합니다.
 
-Automatic interpretation was enabled by the operator, **not by passing the previous experimental acceptance gates**. The configuration retains `activation: operator-enabled`, `acceptance_status: not-approved` and the previous evaluation note. Invalid evidence or runtime failures remain unresolved. Experimental quality reports have not been rewritten to imply success.
+`config/settings.json`의 우선 모델을 실시간 OpenRouter 카탈로그와 대조합니다. 현재 모든 가격 필드가 0인 `:free` 텍스트 모델만 허용하고 서로 다른 제작사와 모델 세 개를 선택합니다. 우선 모델이 이용 불가하면 동일한 무료 검증을 통과한 다른 모델을 다음 실행에서 선택할 수 있습니다. 특정 모델이 없어도 유료 모델로 전환하지 않습니다.
 
-The separate three-model OpenRouter council and its UI remain independent of the automatic CPU interpretation path. A CPU result does not claim approval by three models.
+요청의 입력·출력·요청당 최대 가격을 모두 0으로 지정하고 공급자 폴백을 끕니다. 서비스 자체 한도는 **UTC 하루 45회**입니다. 호출 전에 세 회분을 저장소에 예약하므로 실행 중단도 한도에 포함됩니다. OpenRouter 계정 전체의 무료 한도는 다른 앱의 사용량과 공유될 수 있고, 개별 공급자의 이용 제한도 적용됩니다. 한도와 가격 정책은 [OpenRouter 공식 안내](https://openrouter.ai/pricing)를 확인하십시오.
 
-## Development
+오류 발생 시 같은 발언을 최소 한 시간 간격으로 최대 세 차례 시도합니다. 변경 없는 정상 해석이나 모델 간 불일치는 반복 호출하지 않습니다. 실패한 모델은 한 시간 동안 선택에서 제외합니다. 새 발언이나 원문 수정은 새 처리 대상으로 봅니다. 배포와 수집 실패 상태는 화면에 표시하며, 한 시간 넘게 갱신되지 않은 데이터를 현재 예정 시각으로 안내하지 않습니다.
 
-Requires Node.js 22+.
+## 개발·검증
+
+Node.js 22 이상. 외부 npm 런타임 의존성이 없습니다.
 
 ```sh
-npm ci
+npm ci --ignore-scripts
 npm run check
 npm test
 npm run build
 python3 -m http.server 4173 --directory dist
 ```
 
-For browser regression checks, install Chromium with `npx playwright install chromium`, start the static server above, then run `npm run test:browser`.
+직접 수집하려면 환경에 `OPENROUTER_API_KEY`를 설정하고 `npm run sync`를 실행합니다. 키를 명령 인자나 저장소 파일에 쓰지 마십시오. 로컬 실행은 `data/state.json`만 갱신하며 자동 푸시하지 않습니다. 운영 실행과 동시에 로컬 수집을 돌리면 한도 장부를 공유하지 못하므로 피하십시오.
 
-## Collection and deployment
+## 파일
 
-The Pages workflow collects on a schedule, on manual dispatch with `collect=true`, or on an explicit main push whose commit message contains `[collect]`. Ordinary pushes publish stored data only. Model preparation is skipped unless recent changed, non-truncated originals need inference. Model/runtime revisions and SHA256 hashes are pinned in `config/models.lock.json`.
+| 경로 | 역할 |
+|---|---|
+| `src/domain.mjs`, `src/time.mjs` | 원문·해석 검증과 시각 계산 |
+| `src/openrouter.mjs`, `src/sync.mjs` | 무료 모델 선택·호출·수집·상태 저장 |
+| `public/` | 방문자용 화면과 시간대 변환 |
+| `data/state.json` | 최신 원문, 검증된 모델 응답, 처리·호출 상태 |
+| `.github/workflows/` | 제품 테스트와 수집·배포 |
+| `docs/product.md` | 제품 범위·노출 기준·운영 계약 |
 
-For a local collection, `git pull --ff-only` and run `bash scripts/collect-local.sh` with the configured local CPU service available when interpretation is enabled. Review and commit data changes separately; the command does not push automatically.
+공개 빌드에는 사용자 화면과 `status.json`, `version.json`만 포함됩니다. 모델 응답의 추론 과정, 공급자 오류 본문, 인증정보는 보관하거나 공개하지 않습니다.
 
-Failures preserve the last valid public data. AI failures stay pending rather than being recorded as completed. Every deployment verifies its public HTML and JSON against the build. Artifact names include the attempt number so reruns do not collide. GitHub schedules can be delayed or disabled after prolonged repository inactivity; they are not a precise-time delivery guarantee.
+## 출처와 한계
 
-## Data
-
-`data/events.json` stores original records and interpretations. `data/state.json` stores processing fingerprints, source status and AI status. `data/raw/` stores changed original snapshots; `data/history/` stores superseded interpretations. Full raw snapshots are not served in Pages. Existing archived records are preserved but are not a backlog for latest-only automatic interpretation.
-
-The codex-reset adapter remains available through explicit source configuration. There is no automatic paid fallback, proxy rotation or personal X-cookie dependency.
-
-## Evaluation and provenance
-
-Previous model experiments, local CPU launch settings, frozen evaluation guidance and commands are preserved in [historical operations](docs/evaluation/historical-operations.md) and `docs/evaluation/`. These are historical records, not the current enablement policy. Existing lab scripts remain unchanged; the previously pinned local Qwen model is also included in the production lock.
-
-## Sources
-
-- [FxEmbed timeline API](https://docs.fxembed.com/api/twitter/operations/2profilehandlestatuses/)
-- [Secondary codex-reset feed](https://codex-reset.com/api/feed)
-- [llama.cpp](https://github.com/ggml-org/llama.cpp)
-- [Qwen3.5-9B community GGUF](https://huggingface.co/unsloth/Qwen3.5-9B-GGUF)
-
-Independent community utility; not affiliated with OpenAI or Tibo. Original source and model rights remain with their owners. Public standard runners and Pages avoid additional infrastructure charges, subject to existing storage limits. Third-party availability and complete source coverage are not guaranteed.
+[FxEmbed 타임라인 API](https://docs.fxembed.com/api/twitter/operations/2profilehandlestatuses/), [OpenRouter 모델 API](https://openrouter.ai/api/v1/models), [OpenRouter 공급자 가격 제한](https://openrouter.ai/docs/guides/routing/provider-selection)을 사용합니다. 제3자 서비스와 무료 모델의 가용성은 보장되지 않습니다. 세 모델이 일치해도 발언 해석이 틀릴 수 있으므로 원문을 함께 제공합니다. 이 서비스는 비공식이며 개인 계정의 실제 한도나 리셋 완료 여부를 조회하지 않습니다.

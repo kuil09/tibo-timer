@@ -1,0 +1,13 @@
+{
+  "author": { "handle": "thsottiaux", "id": "1953337039510003712" },
+  "lookbackHours": 24,
+  "batchPosts": 8,
+  "batchCharacters": 16000,
+  "dailyRequests": 45,
+  "preferredModels": [
+    "google/gemma-4-31b-it:free",
+    "cohere/north-mini-code:free",
+    "nvidia/nemotron-3-super-120b-a12b:free"
+  ],
+  "excludedModels": ["thinkingmachines/inkling-small:free", "thinkingmachines/inkling:free"]
+}
