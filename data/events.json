@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_success_at": "2026-09-08T12:52:32.391Z",
+  "last_success_at": "2026-09-09T04:56:05.892Z",
   "events": [
     {
       "id": "2097494113012863197",
@@ -3135,6 +3135,328 @@
       }
     },
     {
+      "id": "2093351054834598354",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093351054834598354",
+        "text": "I do wonder what the record will be of most connected accounts",
+        "posted_at": "2026-08-28T14:52:38.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093223078323196204",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093223078323196204",
+        "text": "@yashmp2004 Codex",
+        "posted_at": "2026-08-28T06:24:06.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093222512155091040",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093222512155091040",
+        "text": "@wholyv People are usually very nice",
+        "posted_at": "2026-08-28T06:21:51.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093221946712592474",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093221946712592474",
+        "text": "@itskevin It’s DevDay soon",
+        "posted_at": "2026-08-28T06:19:36.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093221811169513931",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093221811169513931",
+        "text": "@FelipeFr1702 High praise",
+        "posted_at": "2026-08-28T06:19:04.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093221718903160832",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093221718903160832",
+        "text": "@TokenGremlin Always improving",
+        "posted_at": "2026-08-28T06:18:42.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093214036972474405",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093214036972474405",
+        "text": "@buildwithrajath Just in a good mood",
+        "posted_at": "2026-08-28T05:48:11.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093207264194892263",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093207264194892263",
+        "text": "But flying close to Sol doesn't make it faster, sorry.",
+        "posted_at": "2026-08-28T05:21:16.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093207246977318928",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093207246977318928",
+        "text": "Starting to see more and more Codex users on airplanes and in cafés. Underdog energy gone mainstream.",
+        "posted_at": "2026-08-28T05:21:12.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093155124558569939",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093155124558569939",
+        "text": "@jxnlco I've enjoyed the two decades of work together",
+        "posted_at": "2026-08-28T01:54:05.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093153676269629734",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093153676269629734",
+        "text": "@mitsuhiko Honestly? That's profound",
+        "posted_at": "2026-08-28T01:48:19.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093083036795715817",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093083036795715817",
+        "text": "@mweinbach Teach me",
+        "posted_at": "2026-08-27T21:07:38.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093082909163098306",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093082909163098306",
+        "text": "@dummerspast39 Hi",
+        "posted_at": "2026-08-27T21:07:07.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2093074717590921245",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2093074717590921245",
+        "text": "ChatGPT can now do your groceries, book an Uber, get you that haircut appointment (hint hint), and much more. All without ever seeing your actual credentials and keeping it secure.",
+        "posted_at": "2026-08-27T20:34:34.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
       "id": "2093014447833116908",
       "source": {
         "url": "https://x.com/thsottiaux/status/2093014447833116908",
@@ -3144,6 +3466,75 @@
       },
       "event": {
         "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092997044512378931",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092997044512378931",
+        "text": "@beknabdik Come to Codex, you know you should",
+        "posted_at": "2026-08-27T15:25:56.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092993835953787255",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092993835953787255",
+        "text": "@ShayanSpiel I always deliver",
+        "posted_at": "2026-08-27T15:13:11.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092863071748583492",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092863071748583492",
+        "text": "@Angaisb_ Luna is real",
+        "posted_at": "2026-08-27T06:33:34.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
         "state": "unknown",
         "audience": []
       },
@@ -3181,6 +3572,121 @@
       }
     },
     {
+      "id": "2092818923075092957",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092818923075092957",
+        "text": "@blueemi99 Luna!",
+        "posted_at": "2026-08-27T03:38:08.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092818680698802511",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092818680698802511",
+        "text": "@benjitaylor OpenAI",
+        "posted_at": "2026-08-27T03:37:10.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092817965318308284",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092817965318308284",
+        "text": "@ajambrosino Spacial thing you mean",
+        "posted_at": "2026-08-27T03:34:20.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092817781565935980",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092817781565935980",
+        "text": "@amorriscode Anthony, since when did you become funny",
+        "posted_at": "2026-08-27T03:33:36.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092756702349398036",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092756702349398036",
+        "text": "A few weeks at OpenAI feel like years at other companies in terms of how much gets done. Crazy how much you can age in a few days",
+        "posted_at": "2026-08-26T23:30:54.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
       "id": "2092675679724978506",
       "source": {
         "url": "https://x.com/thsottiaux/status/2092675679724978506",
@@ -3204,15 +3710,291 @@
       }
     },
     {
+      "id": "2092675134666760216",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092675134666760216",
+        "text": "@tickerplus Interesting",
+        "posted_at": "2026-08-26T18:06:46.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092491868189929771",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092491868189929771",
+        "text": "@MichaelM_117 @ChatGPT Open ChatGPT. Click \"Work\". Enjoy.",
+        "posted_at": "2026-08-26T05:58:32.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092491252449366355",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092491252449366355",
+        "text": "@hqmank Both",
+        "posted_at": "2026-08-26T05:56:05.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
       "id": "2092490655864127909",
       "source": {
         "url": "https://x.com/thsottiaux/status/2092490655864127909",
-        "text": "Reseted you mean?",
+        "text": "@_heyglassy Reseted you mean?",
         "posted_at": "2026-08-26T05:53:43.000Z",
         "truncated": false
       },
       "event": {
         "type": "reset",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092490058146414598",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092490058146414598",
+        "text": "@k4cperg Best job in the world",
+        "posted_at": "2026-08-26T05:51:21.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092487667426738179",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092487667426738179",
+        "text": "Good products take time. At least 34 days.",
+        "posted_at": "2026-08-26T05:41:51.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092484711851700478",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092484711851700478",
+        "text": "@tobi Other tools you say 👀",
+        "posted_at": "2026-08-26T05:30:06.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092423122360340611",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092423122360340611",
+        "text": "@IndieQuickTake @damnGruz I would be pretty happy if that's how I look like one day",
+        "posted_at": "2026-08-26T01:25:22.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092422669987963081",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092422669987963081",
+        "text": "@argofowl I need two cool slices of cucumber and a piña colada",
+        "posted_at": "2026-08-26T01:23:34.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092359619075314102",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092359619075314102",
+        "text": "I want to see the polymarket",
+        "posted_at": "2026-08-25T21:13:02.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092345330272780499",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092345330272780499",
+        "text": "So much demand for this one. Works similar to the Pro $100 plan but designed for teams and small companies.\n\n✅ All ChatGPT, ChatGPT Work, and Codex features\n✅ Connect to Google Workspace, Slack, GitHub, Microsoft 365, and more\n✅ Secure workspace with SAML, SSO, and MFA\n✅ Centralized billing and administration\n✅ Usage analytics and spend controls\n✅ No 5h limits",
+        "posted_at": "2026-08-25T20:16:15.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092316228497063958",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092316228497063958",
+        "text": "@s_batzoglou Not so random, but yes",
+        "posted_at": "2026-08-25T18:20:36.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
+        "state": "unknown",
+        "audience": []
+      },
+      "temporal": {
+        "kind": "unresolved",
+        "precision": "unspecified",
+        "original": "",
+        "reason": "model_not_approved"
+      },
+      "interpretation": {
+        "method": "source-only"
+      }
+    },
+    {
+      "id": "2092315945700381084",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2092315945700381084",
+        "text": "Do I need a haircut",
+        "posted_at": "2026-08-25T18:19:29.000Z",
+        "truncated": false
+      },
+      "event": {
+        "type": "unknown",
         "state": "unknown",
         "audience": []
       },
