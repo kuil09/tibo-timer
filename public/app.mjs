@@ -1,3 +1,4 @@
+import { initAsciiPortrait } from './tibo-ascii.mjs';
 import { localTime, headline, countdown } from './view.mjs';
 const $ = id => document.getElementById(id);
 const zone = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
@@ -64,4 +65,5 @@ async function refresh() {
     $('hero-note').textContent = '연결이 복구되면 다시 확인합니다. 이전 시각을 현재 일정으로 안내하지 않습니다.';
   }
 }
+initAsciiPortrait($('tibo-ascii-canvas'), $('tibo-ascii-fallback'));
 refresh(); setInterval(refresh, 60000);

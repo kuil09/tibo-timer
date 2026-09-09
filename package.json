@@ -5,7 +5,7 @@
   "type": "module",
   "engines": { "node": ">=22" },
   "scripts": {
-    "check": "node --check src/sync.mjs && node --check src/openrouter.mjs && node --check src/domain.mjs && node --check src/time.mjs && node --check src/build.mjs && node --check src/verify.mjs && node --check public/app.mjs && node --check public/view.mjs",
+    "check": "node --check src/sync.mjs && node --check src/openrouter.mjs && node --check src/domain.mjs && node --check src/time.mjs && node --check src/build.mjs && node --check src/verify.mjs && node --check public/app.mjs && node --check public/view.mjs && node --check public/tibo-ascii.mjs && node --check public/tibo-ascii-data.mjs",
     "test": "node --test tests/*.test.mjs",
     "sync": "node src/sync.mjs",
     "build": "node src/build.mjs"
