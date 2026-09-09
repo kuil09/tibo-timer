@@ -1,41 +1,57 @@
 {
   "schema_version": 1,
-  "run_at": "2026-09-09T01:08:29.453Z",
+  "run_at": "2026-09-09T05:29:01.627Z",
   "status": "failed",
-  "source_id": "2097043464538264003",
-  "source_hash": "27e5167241ce36d0a057c5fc5a33241fe72579660946cc2e5c241684d0ec6505",
+  "source_id": "2097476797298520292",
+  "source_hash": "564675326dface6b33b91cedec2ef929fee9c72974c844ad4acbe4bf08bdc71e",
   "run_url": "https://github.com/kuil09/tibo-timer/actions/runs/34297448852",
   "attempts": [
     {
       "attempt": 1,
       "models": [
         {
-          "id": "dots-studio/dots-3-note-preview:free",
-          "claim": null,
+          "id": "cohere/north-mini-code:free",
+          "claim": {
+            "event_type": "unknown",
+            "state": "unknown",
+            "conditional": false,
+            "condition": "",
+            "evidence": "",
+            "time_expression": "",
+            "time_basis": "none"
+          },
           "reviews": [
             {
-              "reviewer": "cohere/north-mini-code:free",
-              "verdict": "unavailable"
+              "reviewer": "dots-studio/dots-3-note-preview:free",
+              "verdict": "error"
             },
             {
               "reviewer": "nvidia/nemotron-3-super-120b-a12b:free",
-              "verdict": "unavailable"
+              "verdict": "error"
             }
           ],
           "status": "error",
           "error": "request_failed"
         },
         {
-          "id": "cohere/north-mini-code:free",
-          "claim": null,
+          "id": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "event_type": "unknown",
+            "state": "unknown",
+            "conditional": false,
+            "condition": "",
+            "evidence": "",
+            "time_expression": "",
+            "time_basis": "none"
+          },
           "reviews": [
             {
-              "reviewer": "dots-studio/dots-3-note-preview:free",
-              "verdict": "unavailable"
+              "reviewer": "cohere/north-mini-code:free",
+              "verdict": "error"
             },
             {
               "reviewer": "nvidia/nemotron-3-super-120b-a12b:free",
-              "verdict": "unavailable"
+              "verdict": "error"
             }
           ],
           "status": "error",
@@ -43,15 +59,23 @@
         },
         {
           "id": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": null,
+          "claim": {
+            "event_type": "unknown",
+            "state": "unknown",
+            "conditional": false,
+            "condition": "",
+            "evidence": "",
+            "time_expression": "",
+            "time_basis": "none"
+          },
           "reviews": [
             {
-              "reviewer": "dots-studio/dots-3-note-preview:free",
-              "verdict": "unavailable"
+              "reviewer": "cohere/north-mini-code:free",
+              "verdict": "error"
             },
             {
-              "reviewer": "cohere/north-mini-code:free",
-              "verdict": "unavailable"
+              "reviewer": "dots-studio/dots-3-note-preview:free",
+              "verdict": "error"
             }
           ],
           "status": "error",
@@ -62,5 +86,5 @@
     }
   ],
   "result": "unresolved",
-  "source_last_success_at": "2026-09-08T12:52:32.391Z"
+  "source_last_success_at": "2026-09-09T05:21:55.857Z"
 }
