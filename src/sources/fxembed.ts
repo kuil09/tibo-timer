@@ -6,7 +6,7 @@ export const ENDPOINT = `https://api.fxtwitter.com/2/profile/${AUTHOR.handle}/st
 const MAX_BYTES=2_000_000, MAX_PAGES=3, INITIAL_DAYS=14;
 interface Pending {cursor:string; boundary:string; target:string;}
 export interface Checkpoint {watermark:string|null; pending:Pending|null;}
-interface Page {posts:SourcePost[]; cursor:string|null; raw:unknown[];}
+interface Page {posts:SourcePost[]; cursor:string|null; raw:unknown[]; empty:boolean;}
 type ObjectValue=Record<string,unknown>;
 function object(value:unknown):value is ObjectValue {return !!value && typeof value==='object' && !Array.isArray(value);}
 function numeric(value:unknown):value is string {return typeof value==='string' && /^\d+$/.test(value);}
@@ -52,7 +52,7 @@ export function parseTimeline(value:unknown):Page {
         quote_id:object(entry.quote)&&numeric(entry.quote.id)?entry.quote.id:null});
     }
   }
-  return {posts:[...unique.values()],cursor:bottom==null?null:bottom as string,raw};
+  return {posts:[...unique.values()],cursor:bottom==null?null:bottom as string,raw,empty:value.results.length===0};
 }
 
 async function readPage(cursor:string|null, request:typeof fetch):Promise<Page> {
@@ -106,6 +106,9 @@ export async function collectTimeline(checkpoint?:Checkpoint, request:typeof fet
     if(visited.has(cursor)) throw new Error('fx_cursor_loop');
     visited.add(cursor);
     const page=await readPage(cursor,request);pages.push(page);
+    // FxEmbed can return an empty terminal page with the unchanged cursor.
+    // Count original entries, not author-filtered posts: foreign-only pages are not empty.
+    if(page.empty) {cursor=null;break;}
     if(page.cursor===cursor) throw new Error('fx_cursor_loop');
     cursor=crossed(page,boundary)?null:page.cursor;
   }
@@ -115,5 +118,5 @@ export async function collectTimeline(checkpoint?:Checkpoint, request:typeof fet
   const watermark=checkpoint?.watermark??null;
   return {provider:'fxembed',posts:[...posts.values()],checked_at,upstream_at:null,coverage:cursor?'partial':'complete',
     checkpoint:{watermark:cursor?watermark:[watermark??'',target].sort().at(-1)!,pending:cursor?{cursor,boundary,target}:null},
-    raw:{provider:'fxembed',checked_at,upstream_at:null,pages:pages.map(p=>({posts:p.raw,next_cursor:p.cursor}))}};
+    raw:{provider:'fxembed',checked_at,upstream_at:null,pages:pages.map(p=>({posts:p.raw,next_cursor:p.cursor,empty:p.empty}))}};
 }
