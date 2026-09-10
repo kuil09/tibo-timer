@@ -3,22 +3,23 @@
   "checked_at": "2026-09-10T04:51:08.517Z",
   "last_success_at": "2026-09-10T04:51:08.517Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "error",
   "models": [
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-10T04:51:08.517Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-10T04:51:08.517Z"
     },
     {
       "id": "google/gemma-4-26b-a4b-it:free",
-      "status": "pending",
-      "at": "2026-09-10T04:51:08.517Z"
+      "status": "error",
+      "at": "2026-09-10T04:51:08.517Z",
+      "error": "http_429"
     }
   ],
   "posts": [
@@ -33,11 +34,6 @@
       "attempts": 3,
       "retry_at": "2026-09-10T05:51:08.517Z",
       "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": null,
-          "error": "http_429"
-        },
         {
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
           "claim": {
@@ -61,6 +57,11 @@
             "time_text": "",
             "time": null
           }
+        },
+        {
+          "model": "google/gemma-4-26b-a4b-it:free",
+          "claim": null,
+          "error": "http_429"
         }
       ],
       "result": null
@@ -471,6 +472,7 @@
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
     "cohere/north-mini-code:free": "2026-09-10T08:30:19.841Z",
-    "nex-agi/nex-n2.5-mini:free": "2026-09-10T09:41:44.425Z"
+    "nex-agi/nex-n2.5-mini:free": "2026-09-10T09:41:44.425Z",
+    "google/gemma-4-26b-a4b-it:free": "2026-09-10T10:51:08.517Z"
   }
 }
