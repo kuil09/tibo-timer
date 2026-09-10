@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-10T21:30:25.245Z",
-  "last_success_at": "2026-09-10T21:30:25.245Z",
+  "checked_at": "2026-09-10T21:50:50.353Z",
+  "last_success_at": "2026-09-10T21:50:50.353Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-10T19:50:29.947Z"
+      "status": "pending",
+      "at": "2026-09-10T21:50:50.353Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-10T19:50:29.947Z"
+      "status": "pending",
+      "at": "2026-09-10T21:50:50.353Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-10T19:50:29.947Z"
+      "status": "pending",
+      "at": "2026-09-10T21:50:50.353Z"
     }
   ],
   "posts": [
+    {
+      "id": "2098165551554240764",
+      "text": "Do you pronounce it data or data? This is the way everyone makes dashboards and learns about the business at OpenAI. Can't live without it.",
+      "url": "https://x.com/thsottiaux/status/2098165551554240764",
+      "posted_at": "2026-09-10T21:43:44.000Z",
+      "truncated": false,
+      "hash": "304e441ba4d9a26d8e24cba09e67c4900e49c161acf9ab076b3de057c4087ae0",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-10T22:50:50.353Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2098131108001181952",
       "text": "@TokenGremlin Gremlins being gremlins. No changes were made here. Same Astra as at launch",
@@ -648,7 +661,7 @@
   ],
   "budget": {
     "day": "2026-09-10",
-    "requests": 30
+    "requests": 33
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
