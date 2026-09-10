@@ -1,25 +1,24 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-10T03:25:50.386Z",
-  "last_success_at": "2026-09-10T03:25:50.386Z",
+  "checked_at": "2026-09-10T03:41:44.425Z",
+  "last_success_at": "2026-09-10T03:41:44.425Z",
   "source_status": "ok",
-  "analysis_status": "retry_pending",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-10T02:30:19.841Z"
-    },
-    {
-      "id": "cohere/north-mini-code:free",
-      "status": "error",
-      "at": "2026-09-10T02:30:19.841Z",
-      "error": "invalid_vote"
+      "status": "pending",
+      "at": "2026-09-10T03:41:44.425Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-10T02:30:19.841Z"
+      "status": "pending",
+      "at": "2026-09-10T03:41:44.425Z"
+    },
+    {
+      "id": "dots-studio/dots-3-note-preview:free",
+      "status": "pending",
+      "at": "2026-09-10T03:41:44.425Z"
     }
   ],
   "posts": [
@@ -31,8 +30,8 @@
       "truncated": false,
       "hash": "a7bd1976845210c624b04341259b48a7d766fb2206544cbdfa7ea742dfbf42dc",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-10T03:30:19.841Z",
+      "attempts": 2,
+      "retry_at": "2026-09-10T04:41:44.425Z",
       "votes": [
         {
           "model": "nex-agi/nex-n2.5-mini:free",
@@ -467,7 +466,7 @@
   ],
   "budget": {
     "day": "2026-09-10",
-    "requests": 3
+    "requests": 6
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
