@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-10T19:30:30.717Z",
-  "last_success_at": "2026-09-10T19:30:30.717Z",
+  "checked_at": "2026-09-10T19:50:29.947Z",
+  "last_success_at": "2026-09-10T19:50:29.947Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-10T19:30:30.717Z"
+      "status": "pending",
+      "at": "2026-09-10T19:50:29.947Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-10T19:30:30.717Z"
+      "status": "pending",
+      "at": "2026-09-10T19:50:29.947Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-10T19:30:30.717Z"
+      "status": "pending",
+      "at": "2026-09-10T19:50:29.947Z"
     }
   ],
   "posts": [
@@ -146,8 +146,8 @@
       "truncated": false,
       "hash": "c99c6bf5c0467fb44788094202ac0de5126f3775497ed6c2db36fca2f68f3f0e",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-10T19:38:21.737Z",
+      "attempts": 2,
+      "retry_at": "2026-09-10T20:50:29.947Z",
       "votes": [
         {
           "model": "nex-agi/nex-n2.5-mini:free",
@@ -633,7 +633,7 @@
   ],
   "budget": {
     "day": "2026-09-10",
-    "requests": 27
+    "requests": 30
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
