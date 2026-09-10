@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Tibo의 최신 리셋 공지를 세 개의 AI 모델로 확인하고 내 시간대로 봅니다.">
+  <meta name="description" content="Tibo의 최신 리셋 공지를 확인하고 내 시간대의 예정 시각을 봅니다.">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
   <title>Tibo Timer — 리셋 예정 시각</title>
   <link rel="stylesheet" href="style.css">
@@ -13,19 +13,15 @@
   <main>
     <header>
       <a class="brand" href="./">TIBO</a>
-      <nav aria-label="외부 링크">
-        <a href="https://x.com/thsottiaux" rel="noopener noreferrer" target="_blank">원문 ↗</a>
-        <span aria-hidden="true"></span>
-        <a href="https://github.com/kuil09/tibo-timer" rel="noopener noreferrer" target="_blank">GitHub ↗</a>
-      </nav>
+      <a class="profile-link" href="https://x.com/thsottiaux" rel="noopener noreferrer" target="_blank">Tibo 원문 ↗</a>
     </header>
 
     <section class="hero" aria-labelledby="hero-title">
-      <p class="eyebrow" id="hero-label">NEXT RESET</p>
-      <h1 id="hero-title">공지 불러오는 중</h1>
+      <p class="eyebrow">최근 리셋 공지</p>
+      <h1 id="hero-title">확인 중</h1>
       <p class="time" id="reset-time"></p>
       <p id="countdown" class="countdown"></p>
-      <p id="hero-note" class="hero-note">예정 시각은 실제 계정의 리셋을 보장하지 않습니다.</p>
+      <p class="hero-note">실제 계정 상태와 다를 수 있습니다.</p>
       <a id="hero-source" hidden target="_blank" rel="noopener noreferrer">근거 발언 보기 ↗</a>
     </section>
 
@@ -36,25 +32,12 @@
       </div>
     </section>
 
-    <section class="status" aria-label="서비스 상태">
-      <p id="timezone"></p>
-      <p id="freshness"></p>
-      <p id="analysis"></p>
-    </section>
-
     <section class="posts" aria-labelledby="posts-title">
       <div class="section-heading">
         <h2 id="posts-title">최근 발언</h2>
-        <span>최근 24시간 · 최신 페이지</span>
       </div>
       <div id="posts"></div>
     </section>
-
-    <footer>
-      <p>OpenRouter 무료 모델 3개가 독립적으로 해석합니다. 세 결과가 모두 일치하고 시각을 계산할 근거가 있을 때만 예정 시각을 표시합니다.</p>
-      <p>추가 리셋권과 사용량 리셋은 다릅니다. 개인 계정의 잔여 한도는 조회하지 않습니다.</p>
-      <a href="https://github.com/kuil09/tibo-timer">소스 코드</a><span> · 비공식 커뮤니티 서비스</span>
-    </footer>
   </main>
 </body>
 </html>
