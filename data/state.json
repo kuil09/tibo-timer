@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-10T03:41:44.425Z",
-  "last_success_at": "2026-09-10T03:41:44.425Z",
+  "checked_at": "2026-09-10T03:50:47.556Z",
+  "last_success_at": "2026-09-10T03:50:47.556Z",
   "source_status": "ok",
-  "analysis_status": "error",
+  "analysis_status": "retry_pending",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
