@@ -3,21 +3,21 @@
   "checked_at": "2026-09-10T18:24:43.815Z",
   "last_success_at": "2026-09-10T18:24:43.815Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "unresolved",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-10T18:24:43.815Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-10T18:24:43.815Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-10T18:24:43.815Z"
     }
   ],
@@ -29,11 +29,56 @@
       "posted_at": "2026-09-10T18:17:14.000Z",
       "truncated": false,
       "hash": "d756b16b698ccca714203ba0efb9e2127f2384f19ff075b08f832c5b2451f5cc",
-      "status": "pending",
+      "status": "complete",
       "attempts": 1,
       "retry_at": "2026-09-10T19:24:43.815Z",
-      "votes": [],
-      "result": null
+      "votes": [
+        {
+          "model": "nex-agi/nex-n2.5-mini:free",
+          "claim": {
+            "id": "2098113585683808624",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2098113585683808624",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "claim": {
+            "id": "2098113585683808624",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2098106443748778164",
