@@ -1,27 +1,66 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-10T21:50:50.353Z",
-  "last_success_at": "2026-09-10T21:50:50.353Z",
+  "checked_at": "2026-09-10T22:18:13.954Z",
+  "last_success_at": "2026-09-10T22:18:13.954Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-10T21:50:50.353Z"
+      "status": "pending",
+      "at": "2026-09-10T22:18:13.954Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-10T21:50:50.353Z"
+      "status": "pending",
+      "at": "2026-09-10T22:18:13.954Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-10T21:50:50.353Z"
+      "status": "pending",
+      "at": "2026-09-10T22:18:13.954Z"
     }
   ],
   "posts": [
+    {
+      "id": "2098173464549151061",
+      "text": "@stalkermustang Interesting",
+      "url": "https://x.com/thsottiaux/status/2098173464549151061",
+      "posted_at": "2026-09-10T22:15:10.000Z",
+      "truncated": false,
+      "hash": "122ebfd5583b541740dcceaabe3c84815b193c3675956a82262f66698afe3a1c",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-10T23:18:13.954Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2098170066089267439",
+      "text": "@adonis_singh Our yearly compute bill is quite a bit north of millions",
+      "url": "https://x.com/thsottiaux/status/2098170066089267439",
+      "posted_at": "2026-09-10T22:01:40.000Z",
+      "truncated": false,
+      "hash": "5830520ddeefe69fcf26aa6cef779a5ab7bb351cabe29a48884e46c84b491455",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-10T23:18:13.954Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2098169651956220384",
+      "text": "@SadAlbert10 Don't be sad albert, I'm here",
+      "url": "https://x.com/thsottiaux/status/2098169651956220384",
+      "posted_at": "2026-09-10T22:00:01.000Z",
+      "truncated": false,
+      "hash": "c3b793bfa1debd5fb01f01e9ec7c0bc56d50682b02ff7c05a54ad6c731ac96fc",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-10T23:18:13.954Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2098165551554240764",
       "text": "Do you pronounce it data or data? This is the way everyone makes dashboards and learns about the business at OpenAI. Can't live without it.",
@@ -706,7 +745,7 @@
   ],
   "budget": {
     "day": "2026-09-10",
-    "requests": 33
+    "requests": 36
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
