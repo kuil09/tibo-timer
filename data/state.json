@@ -1,28 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-10T04:51:08.517Z",
-  "last_success_at": "2026-09-10T04:51:08.517Z",
+  "checked_at": "2026-09-10T05:21:15.461Z",
+  "last_success_at": "2026-09-10T05:21:15.461Z",
   "source_status": "ok",
-  "analysis_status": "error",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-10T04:51:08.517Z"
+      "status": "pending",
+      "at": "2026-09-10T05:21:15.461Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-10T04:51:08.517Z"
+      "status": "pending",
+      "at": "2026-09-10T05:21:15.461Z"
     },
     {
-      "id": "google/gemma-4-26b-a4b-it:free",
-      "status": "error",
-      "at": "2026-09-10T04:51:08.517Z",
-      "error": "http_429"
+      "id": "inclusionai/ling-3.0-flash-fin:free",
+      "status": "pending",
+      "at": "2026-09-10T05:21:15.461Z"
     }
   ],
   "posts": [
+    {
+      "id": "2097912273264095536",
+      "text": "One of the greatest joys is debating new model names with researchers. They come up with the most hilarious stuff",
+      "url": "https://x.com/thsottiaux/status/2097912273264095536",
+      "posted_at": "2026-09-10T04:57:17.000Z",
+      "truncated": false,
+      "hash": "51d20f18568d72be10f684a307f4f3c20acfa0c17aafb003d6e8e62a4b145048",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-10T06:21:15.461Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2097911169969213481",
+      "text": "@thdxr Great work.",
+      "url": "https://x.com/thsottiaux/status/2097911169969213481",
+      "posted_at": "2026-09-10T04:52:54.000Z",
+      "truncated": false,
+      "hash": "a582a94cf42e25f91ef06075306444f8d6f59578061c914b0f089404585b2f60",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-10T06:21:15.461Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2097872245532094884",
       "text": "@tldraw @sama Show me. Post tomorrow by EOD",
@@ -467,7 +492,7 @@
   ],
   "budget": {
     "day": "2026-09-10",
-    "requests": 9
+    "requests": 12
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
