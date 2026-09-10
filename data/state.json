@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-10T17:50:54.996Z",
-  "last_success_at": "2026-09-10T17:50:54.996Z",
+  "checked_at": "2026-09-10T18:24:43.815Z",
+  "last_success_at": "2026-09-10T18:24:43.815Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-10T17:50:54.996Z"
+      "status": "pending",
+      "at": "2026-09-10T18:24:43.815Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-10T17:50:54.996Z"
+      "status": "pending",
+      "at": "2026-09-10T18:24:43.815Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-10T17:50:54.996Z"
+      "status": "pending",
+      "at": "2026-09-10T18:24:43.815Z"
     }
   ],
   "posts": [
+    {
+      "id": "2098113585683808624",
+      "text": "To make sure our current users have an incredible experience and continued access to Astra, we are going to pause subscriptions to our $200 Pro plan. These put the most strain on our systems and we wanted to take the smallest step that allows us to continue giving the broadest access possible. All other plans and the api remain available.\n\nThere is no impact to existing accounts and we are working on adding more capacity as fast as we can. Thanks!",
+      "url": "https://x.com/thsottiaux/status/2098113585683808624",
+      "posted_at": "2026-09-10T18:17:14.000Z",
+      "truncated": false,
+      "hash": "d756b16b698ccca714203ba0efb9e2127f2384f19ff075b08f832c5b2451f5cc",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-10T19:24:43.815Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2098106443748778164",
       "text": "@Andy_AJT You could have spelled Astra\n\nAmazon\nStripe\nTesla\nRevolution\nOracle",
@@ -412,119 +425,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2097752790177370535",
-      "text": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex. Everyone who used one in the affected time window is getting another one and an email to apologize.",
-      "url": "https://x.com/thsottiaux/status/2097752790177370535",
-      "posted_at": "2026-09-09T18:23:34.000Z",
-      "truncated": false,
-      "hash": "2b3671c33cf7a738c1e136a64b8c495a02759b4293f122211ac098874fcf306b",
-      "status": "unresolved",
-      "attempts": 1,
-      "retry_at": "2026-09-09T19:26:51.200Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2097752790177370535",
-            "event": "banked_reset",
-            "state": "scheduled",
-            "conditional": false,
-            "evidence": "Everyone who used one in the affected time window is getting another one",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2097752790177370535",
-            "event": "banked_reset",
-            "state": "completed",
-            "conditional": false,
-            "evidence": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex. Everyone who used one in the affected time window is getting another one and an email to apologize.",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2097752790177370535",
-            "event": "banked_reset",
-            "state": "completed",
-            "conditional": false,
-            "evidence": "Everyone who used one in the affected time window is getting another one and an email to apologize.",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": null
-    },
-    {
-      "id": "2097746417012166816",
-      "text": "Worth clarifying that this is flatly false and the two options are just two independent ways to opt-out.\n\nWe respect our users' choice whether to use their data to “improve our models for everyone” regardless of where they express that choice. Users can opt out in the in-app settings or indeed also in our privacy portal. They do not need to opt out in both places, and we will make this clearer in our Help Center.\n\nhttps://t.co/sv4uFuHC3W",
-      "url": "https://x.com/thsottiaux/status/2097746417012166816",
-      "posted_at": "2026-09-09T17:58:14.000Z",
-      "truncated": false,
-      "hash": "06f32e93038ce1096ad8332b74f4964b45252d816d1e0c1afafa8e70aeedb91e",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-09T19:26:51.200Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2097746417012166816",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2097746417012166816",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2097746417012166816",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-09-10",
-    "requests": 15
+    "requests": 18
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
