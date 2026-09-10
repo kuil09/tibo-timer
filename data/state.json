@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-10T05:50:15.478Z",
-  "last_success_at": "2026-09-10T05:50:15.478Z",
+  "checked_at": "2026-09-10T06:36:01.089Z",
+  "last_success_at": "2026-09-10T06:36:01.089Z",
   "source_status": "ok",
-  "analysis_status": "retry_pending",
+  "analysis_status": "unresolved",
   "models": [
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
@@ -145,7 +145,7 @@
       "posted_at": "2026-09-10T02:18:14.000Z",
       "truncated": false,
       "hash": "a7bd1976845210c624b04341259b48a7d766fb2206544cbdfa7ea742dfbf42dc",
-      "status": "error",
+      "status": "unresolved",
       "attempts": 3,
       "retry_at": "2026-09-10T05:51:08.517Z",
       "votes": [
