@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-10T17:30:29.469Z",
-  "last_success_at": "2026-09-10T17:30:29.469Z",
+  "checked_at": "2026-09-10T17:50:54.996Z",
+  "last_success_at": "2026-09-10T17:50:54.996Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
+      "id": "nex-agi/nex-n2.5-mini:free",
+      "status": "pending",
+      "at": "2026-09-10T17:50:54.996Z"
+    },
+    {
+      "id": "cohere/north-mini-code:free",
+      "status": "pending",
+      "at": "2026-09-10T17:50:54.996Z"
+    },
+    {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-10T05:21:15.461Z"
-    },
-    {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-10T05:21:15.461Z"
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash-fin:free",
-      "status": "ok",
-      "at": "2026-09-10T05:21:15.461Z"
+      "status": "pending",
+      "at": "2026-09-10T17:50:54.996Z"
     }
   ],
   "posts": [
+    {
+      "id": "2098106443748778164",
+      "text": "@Andy_AJT You could have spelled Astra\n\nAmazon\nStripe\nTesla\nRevolution\nOracle",
+      "url": "https://x.com/thsottiaux/status/2098106443748778164",
+      "posted_at": "2026-09-10T17:48:51.000Z",
+      "truncated": false,
+      "hash": "5d0128d96b45234035fb5982a229a8f265c0a274193b461094642a566e8e4cb2",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-10T18:50:54.996Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2098105060186374280",
+      "text": "You can now build on top of the same voice system that we shipped to 1B users in ChatGPT.\n\nSo many fun applications of a full duplex system with solid toolcalling. Going back to text-only experiences after this feels harder than I had expected.",
+      "url": "https://x.com/thsottiaux/status/2098105060186374280",
+      "posted_at": "2026-09-10T17:43:21.000Z",
+      "truncated": false,
+      "hash": "b88dcf7b7d43da14ad21ffe5e2f5b676f1e60748c14de9072c378c196d268f3f",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-10T18:50:54.996Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2097912273264095536",
       "text": "One of the greatest joys is debating new model names with researchers. They come up with the most hilarious stuff",
@@ -408,7 +434,7 @@
   ],
   "budget": {
     "day": "2026-09-10",
-    "requests": 12
+    "requests": 15
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
