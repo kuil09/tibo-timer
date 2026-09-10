@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-10T01:55:59.827Z",
-  "last_success_at": "2026-09-10T01:55:59.827Z",
+  "checked_at": "2026-09-10T02:30:19.841Z",
+  "last_success_at": "2026-09-10T02:30:19.841Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-09T23:30:09.525Z"
+      "status": "pending",
+      "at": "2026-09-10T02:30:19.841Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-09T23:30:09.525Z"
+      "status": "pending",
+      "at": "2026-09-10T02:30:19.841Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-09T23:30:09.525Z"
+      "status": "pending",
+      "at": "2026-09-10T02:30:19.841Z"
     }
   ],
   "posts": [
+    {
+      "id": "2097872245532094884",
+      "text": "@tldraw @sama Show me. Post tomorrow by EOD",
+      "url": "https://x.com/thsottiaux/status/2097872245532094884",
+      "posted_at": "2026-09-10T02:18:14.000Z",
+      "truncated": false,
+      "hash": "a7bd1976845210c624b04341259b48a7d766fb2206544cbdfa7ea742dfbf42dc",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-10T03:30:19.841Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2097829053147582782",
       "text": "Happy to be building here with you all. Lots to explore",
@@ -422,8 +435,8 @@
     }
   ],
   "budget": {
-    "day": "2026-09-09",
-    "requests": 18
+    "day": "2026-09-10",
+    "requests": 3
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z"
