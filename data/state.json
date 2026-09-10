@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-10T23:17:11.416Z",
-  "last_success_at": "2026-09-10T23:17:11.416Z",
+  "checked_at": "2026-09-10T23:30:08.991Z",
+  "last_success_at": "2026-09-10T23:30:08.991Z",
   "source_status": "ok",
   "analysis_status": "unresolved",
   "models": [
@@ -760,64 +760,6 @@
         }
       ],
       "result": null
-    },
-    {
-      "id": "2097829053147582782",
-      "text": "Happy to be building here with you all. Lots to explore",
-      "url": "https://x.com/thsottiaux/status/2097829053147582782",
-      "posted_at": "2026-09-09T23:26:36.000Z",
-      "truncated": false,
-      "hash": "7f5dfb466d616cdfdba3fa872e69001e82925b97b0f8b9ab9bc72e14111fbec8",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-10T00:30:09.525Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2097829053147582782",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2097829053147582782",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2097829053147582782",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
