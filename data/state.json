@@ -3,21 +3,22 @@
   "checked_at": "2026-09-10T02:30:19.841Z",
   "last_success_at": "2026-09-10T02:30:19.841Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "error",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-10T02:30:19.841Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
-      "at": "2026-09-10T02:30:19.841Z"
+      "status": "error",
+      "at": "2026-09-10T02:30:19.841Z",
+      "error": "invalid_vote"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-10T02:30:19.841Z"
     }
   ],
@@ -29,10 +30,40 @@
       "posted_at": "2026-09-10T02:18:14.000Z",
       "truncated": false,
       "hash": "a7bd1976845210c624b04341259b48a7d766fb2206544cbdfa7ea742dfbf42dc",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-09-10T03:30:19.841Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "nex-agi/nex-n2.5-mini:free",
+          "claim": {
+            "id": "2097872245532094884",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": null,
+          "error": "invalid_vote"
+        },
+        {
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "claim": {
+            "id": "2097872245532094884",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
       "result": null
     },
     {
@@ -439,6 +470,7 @@
     "requests": 3
   },
   "cooldowns": {
-    "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z"
+    "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
+    "cohere/north-mini-code:free": "2026-09-10T08:30:19.841Z"
   }
 }
