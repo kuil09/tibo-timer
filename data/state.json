@@ -1,28 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-10T18:51:02.724Z",
-  "last_success_at": "2026-09-10T18:51:02.724Z",
+  "checked_at": "2026-09-10T19:16:04.416Z",
+  "last_success_at": "2026-09-10T19:16:04.416Z",
   "source_status": "ok",
-  "analysis_status": "retry_pending",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-10T18:38:21.737Z"
+      "status": "pending",
+      "at": "2026-09-10T19:16:04.416Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-10T18:38:21.737Z"
+      "status": "pending",
+      "at": "2026-09-10T19:16:04.416Z"
     },
     {
-      "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "error",
-      "at": "2026-09-10T18:38:21.737Z",
-      "error": "provider_502"
+      "id": "dots-studio/dots-3-note-preview:free",
+      "status": "pending",
+      "at": "2026-09-10T19:16:04.416Z"
     }
   ],
   "posts": [
+    {
+      "id": "2098127460567232568",
+      "text": "@chetaslua We have made no changes since the launch of Astra.",
+      "url": "https://x.com/thsottiaux/status/2098127460567232568",
+      "posted_at": "2026-09-10T19:12:22.000Z",
+      "truncated": false,
+      "hash": "782003904dbc29452585eb034b0c2a2c87b3d19ff65c2e826f1b5eb7802be0fa",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-10T20:16:04.416Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2098115478644523392",
       "text": "@nudevise Shouldn’t have underestimated Astra",
@@ -518,7 +530,7 @@
   ],
   "budget": {
     "day": "2026-09-10",
-    "requests": 21
+    "requests": 24
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
