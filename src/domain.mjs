@@ -65,5 +65,11 @@ export function reserve(budget, count, now, limit) {
   return true;
 }
 export function publicSnapshot(state, version) {
-  return { schema_version: 2, version, checked_at: state.checked_at, last_success_at: state.last_success_at, source_status: state.source_status, analysis_status: state.analysis_status, models: state.models, posts: state.posts.map(({ id, text, url, posted_at, truncated, status, result, votes }) => ({ id, text, url, posted_at, truncated, status, result, votes })) };
+  return {
+    schema_version: 2,
+    version,
+    last_success_at: state.last_success_at,
+    source_status: state.source_status,
+    posts: state.posts.map(({ id, text, url, posted_at, result }) => ({ id, text, url, posted_at, result }))
+  };
 }
