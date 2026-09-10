@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-10T00:54:07.904Z",
-  "last_success_at": "2026-09-10T00:54:07.904Z",
+  "checked_at": "2026-09-10T01:28:35.808Z",
+  "last_success_at": "2026-09-10T01:28:35.808Z",
   "source_status": "ok",
   "analysis_status": "unresolved",
   "models": [
@@ -401,122 +401,6 @@
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
           "claim": {
             "id": "2097559315150426222",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2097494113012863197",
-      "text": "@DennisonBertram @OpenAI Astra on `ultra` and /fast?",
-      "url": "https://x.com/thsottiaux/status/2097494113012863197",
-      "posted_at": "2026-09-09T01:15:40.000Z",
-      "truncated": false,
-      "hash": "bdeaaa3b6980ac873ccbd4e50102f12cc112ddc536b72587829696e795748476",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-09-09T07:07:29.150Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2097494113012863197",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2097494113012863197",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2097494113012863197",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2097492424474165293",
-      "text": "See you at the Astra party. Excited to meet some of you",
-      "url": "https://x.com/thsottiaux/status/2097492424474165293",
-      "posted_at": "2026-09-09T01:08:58.000Z",
-      "truncated": false,
-      "hash": "a77b3de1ecff9eab78d82bcd24b3c18814d71adc047bfce215b19595b4c66650",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-09-09T07:07:29.150Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2097492424474165293",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2097492424474165293",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2097492424474165293",
             "event": "none",
             "state": "unknown",
             "conditional": false,
