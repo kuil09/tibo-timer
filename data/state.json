@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-11T04:51:25.998Z",
-  "last_success_at": "2026-09-11T04:51:25.998Z",
+  "checked_at": "2026-09-11T05:21:17.433Z",
+  "last_success_at": "2026-09-11T05:21:17.433Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -815,122 +815,6 @@
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
           "claim": {
             "id": "2098105060186374280",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2097912273264095536",
-      "text": "One of the greatest joys is debating new model names with researchers. They come up with the most hilarious stuff",
-      "url": "https://x.com/thsottiaux/status/2097912273264095536",
-      "posted_at": "2026-09-10T04:57:17.000Z",
-      "truncated": false,
-      "hash": "51d20f18568d72be10f684a307f4f3c20acfa0c17aafb003d6e8e62a4b145048",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-10T06:21:15.461Z",
-      "votes": [
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2097912273264095536",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2097912273264095536",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-fin:free",
-          "claim": {
-            "id": "2097912273264095536",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2097911169969213481",
-      "text": "@thdxr Great work.",
-      "url": "https://x.com/thsottiaux/status/2097911169969213481",
-      "posted_at": "2026-09-10T04:52:54.000Z",
-      "truncated": false,
-      "hash": "a582a94cf42e25f91ef06075306444f8d6f59578061c914b0f089404585b2f60",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-10T06:21:15.461Z",
-      "votes": [
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2097911169969213481",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2097911169969213481",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-fin:free",
-          "claim": {
-            "id": "2097911169969213481",
             "event": "none",
             "state": "unknown",
             "conditional": false,
