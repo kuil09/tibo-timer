@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-11T17:30:25.322Z",
-  "last_success_at": "2026-09-11T17:30:25.322Z",
+  "checked_at": "2026-09-11T17:50:37.423Z",
+  "last_success_at": "2026-09-11T17:50:37.423Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -873,122 +873,6 @@
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
           "claim": {
             "id": "2098113585683808624",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2098106443748778164",
-      "text": "@Andy_AJT You could have spelled Astra\n\nAmazon\nStripe\nTesla\nRevolution\nOracle",
-      "url": "https://x.com/thsottiaux/status/2098106443748778164",
-      "posted_at": "2026-09-10T17:48:51.000Z",
-      "truncated": false,
-      "hash": "5d0128d96b45234035fb5982a229a8f265c0a274193b461094642a566e8e4cb2",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-10T18:50:54.996Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2098106443748778164",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2098106443748778164",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2098106443748778164",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2098105060186374280",
-      "text": "You can now build on top of the same voice system that we shipped to 1B users in ChatGPT.\n\nSo many fun applications of a full duplex system with solid toolcalling. Going back to text-only experiences after this feels harder than I had expected.",
-      "url": "https://x.com/thsottiaux/status/2098105060186374280",
-      "posted_at": "2026-09-10T17:43:21.000Z",
-      "truncated": false,
-      "hash": "b88dcf7b7d43da14ad21ffe5e2f5b676f1e60748c14de9072c378c196d268f3f",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-10T18:50:54.996Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2098105060186374280",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2098105060186374280",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2098105060186374280",
             "event": "none",
             "state": "unknown",
             "conditional": false,
