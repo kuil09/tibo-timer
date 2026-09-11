@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-11T21:30:30.817Z",
-  "last_success_at": "2026-09-11T21:30:30.817Z",
+  "checked_at": "2026-09-11T21:50:13.383Z",
+  "last_success_at": "2026-09-11T21:50:13.383Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -583,64 +583,6 @@
           "model": "dots-studio/dots-3-note-preview:free",
           "claim": {
             "id": "2098169651956220384",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2098165551554240764",
-      "text": "Do you pronounce it data or data? This is the way everyone makes dashboards and learns about the business at OpenAI. Can't live without it.",
-      "url": "https://x.com/thsottiaux/status/2098165551554240764",
-      "posted_at": "2026-09-10T21:43:44.000Z",
-      "truncated": false,
-      "hash": "304e441ba4d9a26d8e24cba09e67c4900e49c161acf9ab076b3de057c4087ae0",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-10T22:50:50.353Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2098165551554240764",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2098165551554240764",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2098165551554240764",
             "event": "none",
             "state": "unknown",
             "conditional": false,
