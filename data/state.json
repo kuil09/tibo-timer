@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-11T06:58:05.705Z",
-  "last_success_at": "2026-09-11T06:58:05.705Z",
+  "checked_at": "2026-09-11T07:24:14.148Z",
+  "last_success_at": "2026-09-11T07:24:14.148Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-11T06:58:05.705Z"
+      "status": "pending",
+      "at": "2026-09-11T07:24:14.148Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-11T06:58:05.705Z"
+      "status": "pending",
+      "at": "2026-09-11T07:24:14.148Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-11T06:58:05.705Z"
+      "status": "pending",
+      "at": "2026-09-11T07:24:14.148Z"
     }
   ],
   "posts": [
+    {
+      "id": "2098305309265875210",
+      "text": "@paradite_ “genius”",
+      "url": "https://x.com/thsottiaux/status/2098305309265875210",
+      "posted_at": "2026-09-11T06:59:05.000Z",
+      "truncated": false,
+      "hash": "85ff2fa59507b2dff12fe84639dc0b1447d048777e19c423470f8707ce923fa5",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-11T08:24:14.148Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2098300998968357218",
       "text": "Next week we’ll be retiring GPT-5.3-Codex-Spark. Can you believe we shipped a model named as such!!\n\nIt's had a good run and was a lot of fun, but usage has been declining and we have significantly better models now. Time to make room for the future.",
@@ -953,7 +966,7 @@
   ],
   "budget": {
     "day": "2026-09-11",
-    "requests": 9
+    "requests": 12
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
