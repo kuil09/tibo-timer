@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-11T18:50:34.686Z",
-  "last_success_at": "2026-09-11T18:50:34.686Z",
+  "checked_at": "2026-09-11T19:17:22.820Z",
+  "last_success_at": "2026-09-11T19:17:22.820Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -699,64 +699,6 @@
           "model": "dots-studio/dots-3-note-preview:free",
           "claim": {
             "id": "2098131108001181952",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2098127460567232568",
-      "text": "@chetaslua We have made no changes since the launch of Astra.",
-      "url": "https://x.com/thsottiaux/status/2098127460567232568",
-      "posted_at": "2026-09-10T19:12:22.000Z",
-      "truncated": false,
-      "hash": "782003904dbc29452585eb034b0c2a2c87b3d19ff65c2e826f1b5eb7802be0fa",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-10T20:16:04.416Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2098127460567232568",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2098127460567232568",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2098127460567232568",
             "event": "none",
             "state": "unknown",
             "conditional": false,
