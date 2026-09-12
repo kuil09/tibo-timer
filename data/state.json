@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-12T01:44:38.947Z",
-  "last_success_at": "2026-09-12T01:44:38.947Z",
+  "checked_at": "2026-09-12T01:53:45.727Z",
+  "last_success_at": "2026-09-12T01:53:45.727Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-12T00:53:04.695Z"
+      "status": "pending",
+      "at": "2026-09-12T01:53:45.727Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-12T00:53:04.695Z"
+      "status": "pending",
+      "at": "2026-09-12T01:53:45.727Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-12T00:53:04.695Z"
+      "status": "pending",
+      "at": "2026-09-12T01:53:45.727Z"
     }
   ],
   "posts": [
+    {
+      "id": "2098590070102245712",
+      "text": "@prz_chojecki Hasn’t changed",
+      "url": "https://x.com/thsottiaux/status/2098590070102245712",
+      "posted_at": "2026-09-12T01:50:37.000Z",
+      "truncated": false,
+      "hash": "f44aaeec7500ceb402ad0873348073cd16dbc1678867a1df04318deb127edb78",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-12T02:53:45.727Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2098569976143806918",
       "text": "Excited to welcome Aidan & @\nSasha from the Git AI team to OpenAI! \n\nThey are building in the open and have developed an open-source tool that helps developers understand how coding agents contribute to their codebase. \n\nTogether, we’ll make it easier for businesses to see where Codex is making a difference when working through problems for individuals and teams. We’ll also keep Git AI open source and continue investing in it.",
@@ -547,7 +560,7 @@
   ],
   "budget": {
     "day": "2026-09-12",
-    "requests": 3
+    "requests": 6
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
