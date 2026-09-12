@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-12T01:53:45.727Z",
-  "last_success_at": "2026-09-12T01:53:45.727Z",
+  "checked_at": "2026-09-12T02:29:21.665Z",
+  "last_success_at": "2026-09-12T02:29:21.665Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -467,122 +467,6 @@
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
           "claim": {
             "id": "2098238138334548260",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2098236375770575011",
-      "text": "@aubreystrobel Just checked and we do have a few weekly Codex users in the Vatican now",
-      "url": "https://x.com/thsottiaux/status/2098236375770575011",
-      "posted_at": "2026-09-11T02:25:09.000Z",
-      "truncated": false,
-      "hash": "ec16f88eb978b9c8d2d290de9e40d81a0743eb75da5ca170b529a527ca712d2f",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-11T03:30:18.231Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2098236375770575011",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2098236375770575011",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2098236375770575011",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2098235345964089563",
-      "text": "@thdxr I thought you were not the CEO",
-      "url": "https://x.com/thsottiaux/status/2098235345964089563",
-      "posted_at": "2026-09-11T02:21:04.000Z",
-      "truncated": false,
-      "hash": "d2d158dc482afad152430fe9ad21a5c92e2db0d1efb1426192508f470e7e9f77",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-11T03:30:18.231Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2098235345964089563",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2098235345964089563",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2098235345964089563",
             "event": "none",
             "state": "unknown",
             "conditional": false,
