@@ -2,6 +2,7 @@ export function localTime(instant, zone, locale = 'ko-KR') {
   return new Intl.DateTimeFormat(locale, { timeZone: zone, month: 'long', day: 'numeric', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false, timeZoneName: 'short' }).format(new Date(instant));
 }
 export function historyState(post, now = Date.now()) {
+  if (post?.verdict_status === 'disagreement') return { kind: 'disagreement', event: null, time: null };
   const result = post?.result;
   if (!result) return { kind: 'pending', event: null, time: null };
   if (result.event === 'none') return { kind: 'none', event: 'none', time: null };

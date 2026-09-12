@@ -19,6 +19,7 @@ export const COPY = Object.freeze({
   history: Object.freeze({
     separator: ' · ',
     pending: '판정 대기 중',
+    disagreement: '판정 불일치',
     none: '리셋 공지 아님',
     conditional: '조건부 리셋 공지',
     unknown: '예정 시각 없음',

@@ -64,12 +64,18 @@ export function reserve(budget, count, now, limit) {
   budget.requests += count;
   return true;
 }
+function publicVerdictStatus(post) {
+  if (post.result) return 'resolved';
+  const validVotes = Array.isArray(post.votes) && post.votes.length === 3 && post.votes.every(vote => vote?.claim);
+  if (post.status === 'unresolved' && validVotes && consensus(post.votes) === null) return 'disagreement';
+  return 'pending';
+}
 export function publicSnapshot(state, version) {
   return {
     schema_version: 2,
     version,
     last_success_at: state.last_success_at,
     source_status: state.source_status,
-    posts: state.posts.map(({ id, text, url, posted_at, result }) => ({ id, text, url, posted_at, result }))
+    posts: state.posts.map(post => ({ id: post.id, text: post.text, url: post.url, posted_at: post.posted_at, verdict_status: publicVerdictStatus(post), result: post.result }))
   };
 }

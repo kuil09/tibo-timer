@@ -165,6 +165,9 @@ const snapshot = () => ({ source_status: 'ok', last_success_at: new Date(now).to
 test('UI shows a future announcement, not completion after time passes', () => {
   assert.equal(headline(snapshot(), now).kind, 'scheduled'); const s = snapshot(); s.last_success_at = '2026-09-09T07:00Z'; assert.equal(headline(s, now + 3600000).kind, 'elapsed'); assert.equal(countdown('2026-09-09T05:00Z', now), '0시간 0분 0초');
 });
+test('history shows disagreement without a time', () => {
+  assert.deepEqual(historyState({ verdict_status: 'disagreement', result: null }, now), { kind: 'disagreement', event: null, time: null });
+});
 test('UI suppresses stale or invalid freshness', () => { for (const stamp of ['2026-09-09T00:00Z', 'bad', null]) { const s = snapshot(); s.last_success_at = stamp; assert.equal(headline(s, now).kind, 'stale'); } });
 test('newer pending edit or cancellation supersedes old timer', () => {
   const s = snapshot(); s.posts.unshift({ ...parsed(), id: '2', posted_at: '2026-09-09T05:30Z', status: 'pending', result: null }); assert.equal(headline(s, now).kind, 'pending');
@@ -172,6 +175,24 @@ test('newer pending edit or cancellation supersedes old timer', () => {
 });
 test('public build projection omits budget, attempts and cooldown state', () => {
   const s = initialState(); s.posts = [{ ...parsed(), attempts: 1, retry_at: 'later', votes: [], result: null }]; const pub = publicSnapshot(s, 'sha'); assert.equal(pub.budget, undefined); assert.equal(pub.cooldowns, undefined); assert.equal(pub.posts[0].attempts, undefined);
+  assert.equal(pub.posts[0].verdict_status, 'pending'); assert.equal(pub.posts[0].status, undefined); assert.equal(pub.posts[0].votes, undefined);
+});
+
+test('public build marks valid three-model disagreement without exposing votes', () => {
+  const post = parsed();
+  const reset = validateVote(vote(post), post);
+  const banked = validateVote({ ...vote(post), event: 'banked_reset' }, post);
+  const state = initialState();
+  state.posts = [{ ...post, status: 'unresolved', attempts: 1, votes: [{ model: models[0].id, claim: reset }, { model: models[1].id, claim: reset }, { model: models[2].id, claim: banked }], result: null }];
+  const pub = publicSnapshot(state, 'sha');
+  assert.equal(pub.posts[0].verdict_status, 'disagreement'); assert.equal(pub.posts[0].result, null);
+  assert.equal(pub.posts[0].votes, undefined); assert.equal(pub.posts[0].status, undefined);
+});
+
+test('public build marks an accepted result as resolved', () => {
+  const post = parsed(); const state = initialState();
+  state.posts = [{ ...post, status: 'complete', result: { event: 'reset', state: 'completed', conditional: false, time: null } }];
+  assert.equal(publicSnapshot(state, 'sha').posts[0].verdict_status, 'resolved');
 });
 
 test('interrupted last attempt becomes unresolved after the retry window', async () => {
