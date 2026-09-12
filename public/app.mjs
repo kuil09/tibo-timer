@@ -1,10 +1,10 @@
 import { initAsciiPortrait } from './tibo-ascii.mjs';
 import { COPY } from './copy.mjs';
-import { localTime, headline, countdown } from './view.mjs';
+import { localTime, historyState, headline, countdown } from './view.mjs';
 const $ = id => document.getElementById(id);
 const zone = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
 const sourceURL = url => typeof url === 'string' && /^https:\/\/x\.com\/thsottiaux\/status\/\d+$/.test(url);
-let snapshot, timer;
+let snapshot, timer, historyTimer;
 const timeSuffix = kind => kind === 'approximate' ? COPY.hero.approximate_suffix : kind === 'deadline' ? COPY.hero.deadline_suffix : '';
 function heroTitle(hero) {
   if (hero.kind === 'scheduled') return hero.post?.result?.event === 'banked_reset' ? COPY.hero.titles.scheduled_banked : COPY.hero.titles.scheduled_reset;
@@ -24,18 +24,25 @@ function renderHero() {
   $('hero-source').hidden = !sourceURL(hero.post?.url);
   if (!$('hero-source').hidden) $('hero-source').href = hero.post.url;
 }
-function render() {
-  renderHero();
+function historyTitle(state) {
+  if (!['scheduled', 'elapsed', 'completed', 'cancelled'].includes(state.kind)) return COPY.history[state.kind] ?? COPY.history.unknown;
+  const event = state.event === 'banked_reset' ? 'banked' : 'reset';
+  return COPY.history[`${state.kind}_${event}`] ?? COPY.history.unknown;
+}
+function renderHistory() {
   $('posts').replaceChildren();
   if (!snapshot.posts.length) {
     const p = document.createElement('p');
     p.textContent = COPY.page.no_recent_posts;
     $('posts').append(p);
+    return;
   }
   for (const post of snapshot.posts) {
     const article = document.createElement('article');
     const meta = document.createElement('div');
     const date = document.createElement('a');
+    const result = historyState(post);
+    const resultLine = document.createElement('p');
     const quote = document.createElement('blockquote');
     meta.className = 'meta';
     date.textContent = localTime(post.posted_at, zone);
@@ -45,12 +52,26 @@ function render() {
       date.rel = 'noopener noreferrer';
     }
     meta.append(date);
+    resultLine.className = 'post-result';
+    resultLine.textContent = historyTitle(result);
+    if (result.time && ['scheduled', 'elapsed'].includes(result.kind)) {
+      const time = document.createElement('time');
+      time.dateTime = result.time.at;
+      time.textContent = localTime(result.time.at, zone) + timeSuffix(result.time.kind);
+      resultLine.append(document.createTextNode(COPY.history.separator), time);
+    }
     quote.textContent = post.text;
-    article.append(meta, quote);
+    article.append(meta, resultLine, quote);
     $('posts').append(article);
   }
+}
+function render() {
+  renderHero();
+  renderHistory();
   clearInterval(timer);
+  clearInterval(historyTimer);
   timer = setInterval(renderHero, 1000);
+  historyTimer = setInterval(renderHistory, 60000);
 }
 async function refresh() {
   try {
@@ -62,6 +83,7 @@ async function refresh() {
     render();
   } catch {
     clearInterval(timer);
+    clearInterval(historyTimer);
     $('hero-title').textContent = COPY.page.load_failure_title;
     $('reset-time').textContent = '';
     $('countdown').textContent = '';

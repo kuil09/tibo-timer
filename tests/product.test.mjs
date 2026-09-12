@@ -5,7 +5,7 @@ import { initialState, parseTimeline, reconcile, validateVote, consensus, select
 import { resolveTime, wallClock } from '../src/time.mjs';
 import { isFree, selectModels, requestBody, infer, jsonRequest, safeError } from '../src/openrouter.mjs';
 import { synchronize } from '../src/sync.mjs';
-import { localTime, headline, countdown } from '../public/view.mjs';
+import { localTime, historyState, headline, countdown } from '../public/view.mjs';
 const config = JSON.parse(await readFile(new URL('../config/settings.json', import.meta.url)));
 const now = Date.parse('2026-09-09T06:00:00Z'), posted = '2026-09-09T05:00:00.000Z';
 const model = (id = 'a/one:free') => ({ id, pricing: { prompt: '0', completion: '0' }, supported_parameters: ['max_tokens', 'response_format', 'temperature'], context_length: 32000, architecture: { input_modalities: ['text'], output_modalities: ['text'] } });
@@ -45,6 +45,18 @@ test('DST spring gap and fall fold remain unresolved', () => {
 test('timezone conversion crosses calendar days without geolocation', () => {
   assert.match(localTime('2026-09-09T23:00Z', 'Asia/Seoul'), /10일.*08:00/);
   assert.match(localTime('2026-09-09T23:00Z', 'America/New_York'), /9일.*19:00/);
+});
+test('history state maps every public verdict without exposing model votes', () => {
+  const future = { kind: 'exact', at: '2026-09-09T07:00:00Z' };
+  assert.deepEqual(historyState({ result: null }, now), { kind: 'pending', event: null, time: null });
+  assert.deepEqual(historyState({ result: { event: 'none', state: 'unknown', conditional: false } }, now), { kind: 'none', event: 'none', time: null });
+  assert.deepEqual(historyState({ result: { event: 'reset', state: 'scheduled', conditional: false, time: future } }, now), { kind: 'scheduled', event: 'reset', time: future });
+  assert.deepEqual(historyState({ result: { event: 'banked_reset', state: 'scheduled', conditional: false, time: future } }, now), { kind: 'scheduled', event: 'banked_reset', time: future });
+  assert.deepEqual(historyState({ result: { event: 'reset', state: 'scheduled', conditional: false, time: { ...future, at: '2026-09-09T06:00:00Z' } } }, now), { kind: 'elapsed', event: 'reset', time: { ...future, at: '2026-09-09T06:00:00Z' } });
+  assert.deepEqual(historyState({ result: { event: 'reset', state: 'scheduled', conditional: true, time: null } }, now), { kind: 'conditional', event: 'reset', time: null });
+  assert.deepEqual(historyState({ result: { event: 'reset', state: 'scheduled', conditional: false, time: null } }, now), { kind: 'unknown', event: 'reset', time: null });
+  assert.deepEqual(historyState({ result: { event: 'reset', state: 'completed', conditional: false } }, now), { kind: 'completed', event: 'reset', time: null });
+  assert.deepEqual(historyState({ result: { event: 'banked_reset', state: 'cancelled', conditional: false } }, now), { kind: 'cancelled', event: 'banked_reset', time: null });
 });
 test('source excludes other authors and does not traverse quotes', () => {
   const own = item(), foreign = item('2'); foreign.author = { id: '456', screen_name: 'other' }; foreign.quote = item('3');
