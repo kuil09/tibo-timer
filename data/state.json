@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-12T02:29:21.665Z",
-  "last_success_at": "2026-09-12T02:29:21.665Z",
+  "checked_at": "2026-09-12T02:51:31.252Z",
+  "last_success_at": "2026-09-12T02:51:31.252Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -351,122 +351,6 @@
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
           "claim": {
             "id": "2098300424520687965",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2098242895195275735",
-      "text": "@AzianMike @OpenAI I confirm the assignment was \"please launch this thing in two weeks, good luck\" and look, here we are",
-      "url": "https://x.com/thsottiaux/status/2098242895195275735",
-      "posted_at": "2026-09-11T02:51:04.000Z",
-      "truncated": false,
-      "hash": "54c7ce7f1638e9945eb0cd981e7a2fc6d6187553dfd8cb62aa8ff1b8379c697b",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-11T03:51:43.869Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2098242895195275735",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2098242895195275735",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2098242895195275735",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2098238138334548260",
-      "text": "Scaled agents on demand.\n\nThis is pretty much the infrastructure that runs under the hood for ChatGPT Work, all wrapped up in an API which you can use to get started in &lt; 1 min. Happy building.",
-      "url": "https://x.com/thsottiaux/status/2098238138334548260",
-      "posted_at": "2026-09-11T02:32:10.000Z",
-      "truncated": false,
-      "hash": "83c97895071174a2e213b524a0afc594f1927b9cf52246e33f9799564cf6340a",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-11T03:51:43.869Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2098238138334548260",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2098238138334548260",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2098238138334548260",
             "event": "none",
             "state": "unknown",
             "conditional": false,
