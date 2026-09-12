@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-11T23:50:10.113Z",
-  "last_success_at": "2026-09-11T23:50:10.113Z",
+  "checked_at": "2026-09-12T00:53:04.695Z",
+  "last_success_at": "2026-09-12T00:53:04.695Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-11T07:24:14.148Z"
+      "status": "pending",
+      "at": "2026-09-12T00:53:04.695Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-11T07:24:14.148Z"
+      "status": "pending",
+      "at": "2026-09-12T00:53:04.695Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-11T07:24:14.148Z"
+      "status": "pending",
+      "at": "2026-09-12T00:53:04.695Z"
     }
   ],
   "posts": [
+    {
+      "id": "2098569976143806918",
+      "text": "Excited to welcome Aidan & @\nSasha from the Git AI team to OpenAI! \n\nThey are building in the open and have developed an open-source tool that helps developers understand how coding agents contribute to their codebase. \n\nTogether, we’ll make it easier for businesses to see where Codex is making a difference when working through problems for individuals and teams. We’ll also keep Git AI open source and continue investing in it.",
+      "url": "https://x.com/thsottiaux/status/2098569976143806918",
+      "posted_at": "2026-09-12T00:30:46.000Z",
+      "truncated": false,
+      "hash": "628b263e2f610ad32f563313b3379dca4aaeb48e83eb30c5a48cb65705b2fc3d",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-12T01:53:04.695Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2098569538510180712",
+      "text": "Massive upgrade to creating, sharing and hosting sites directly through ChatGPT.",
+      "url": "https://x.com/thsottiaux/status/2098569538510180712",
+      "posted_at": "2026-09-12T00:29:02.000Z",
+      "truncated": false,
+      "hash": "5e4228f097b2bd6fe50c0736e6106ef5ae99782ca938930e228bbb4120fb1d79",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-12T01:53:04.695Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2098305309265875210",
       "text": "@paradite_ “genius”",
@@ -430,8 +456,8 @@
     }
   ],
   "budget": {
-    "day": "2026-09-11",
-    "requests": 12
+    "day": "2026-09-12",
+    "requests": 3
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
