@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-12T23:50:19.913Z",
-  "last_success_at": "2026-09-12T23:50:19.913Z",
+  "checked_at": "2026-09-13T01:00:46.820Z",
+  "last_success_at": "2026-09-13T01:00:46.820Z",
   "source_status": "ok",
   "analysis_status": "unresolved",
   "models": [
@@ -451,122 +451,6 @@
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
           "claim": {
             "id": "2098590070102245712",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2098569976143806918",
-      "text": "Excited to welcome Aidan & @\nSasha from the Git AI team to OpenAI! \n\nThey are building in the open and have developed an open-source tool that helps developers understand how coding agents contribute to their codebase. \n\nTogether, we’ll make it easier for businesses to see where Codex is making a difference when working through problems for individuals and teams. We’ll also keep Git AI open source and continue investing in it.",
-      "url": "https://x.com/thsottiaux/status/2098569976143806918",
-      "posted_at": "2026-09-12T00:30:46.000Z",
-      "truncated": false,
-      "hash": "628b263e2f610ad32f563313b3379dca4aaeb48e83eb30c5a48cb65705b2fc3d",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-12T01:53:04.695Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2098569976143806918",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2098569976143806918",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2098569976143806918",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2098569538510180712",
-      "text": "Massive upgrade to creating, sharing and hosting sites directly through ChatGPT.",
-      "url": "https://x.com/thsottiaux/status/2098569538510180712",
-      "posted_at": "2026-09-12T00:29:02.000Z",
-      "truncated": false,
-      "hash": "5e4228f097b2bd6fe50c0736e6106ef5ae99782ca938930e228bbb4120fb1d79",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-12T01:53:04.695Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2098569538510180712",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2098569538510180712",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2098569538510180712",
             "event": "none",
             "state": "unknown",
             "conditional": false,
