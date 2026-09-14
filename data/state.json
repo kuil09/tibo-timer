@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-14T01:37:23.306Z",
-  "last_success_at": "2026-09-14T01:37:23.306Z",
+  "checked_at": "2026-09-14T02:01:39.497Z",
+  "last_success_at": "2026-09-14T02:01:39.497Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -21,66 +21,7 @@
       "at": "2026-09-13T01:58:38.239Z"
     }
   ],
-  "posts": [
-    {
-      "id": "2098954268963479958",
-      "text": "@LDT0545 Is that a threat?",
-      "url": "https://x.com/thsottiaux/status/2098954268963479958",
-      "posted_at": "2026-09-13T01:57:49.000Z",
-      "truncated": false,
-      "hash": "51a6e85f0e93eccb21a5c6eefb18004d6ba5afb350fa4c1ea7246c683b194adb",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-13T02:58:38.239Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2098954268963479958",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2098954268963479958",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2098954268963479958",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    }
-  ],
+  "posts": [],
   "budget": {
     "day": "2026-09-13",
     "requests": 3
