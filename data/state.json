@@ -1,29 +1,82 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-14T06:46:27.629Z",
-  "last_success_at": "2026-09-14T06:46:27.629Z",
+  "checked_at": "2026-09-14T07:09:16.984Z",
+  "last_success_at": "2026-09-14T07:09:16.984Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-13T01:58:38.239Z"
+      "status": "pending",
+      "at": "2026-09-14T07:09:16.984Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-13T01:58:38.239Z"
+      "status": "pending",
+      "at": "2026-09-14T07:09:16.984Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-13T01:58:38.239Z"
+      "status": "pending",
+      "at": "2026-09-14T07:09:16.984Z"
     }
   ],
-  "posts": [],
+  "posts": [
+    {
+      "id": "2099394561076568290",
+      "text": "@olegakbarov What’s your actual critique of the design?",
+      "url": "https://x.com/thsottiaux/status/2099394561076568290",
+      "posted_at": "2026-09-14T07:07:22.000Z",
+      "truncated": false,
+      "hash": "96780821bb0ee07ce9d562f1ed7770770c5f48cafb452fd74bfe318baec7cd8a",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-14T08:09:16.984Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2099394367744356554",
+      "text": "@mark_k @ChatGPT @OpenAI We will fix this",
+      "url": "https://x.com/thsottiaux/status/2099394367744356554",
+      "posted_at": "2026-09-14T07:06:36.000Z",
+      "truncated": false,
+      "hash": "da36dff1df709eb8e086f0fc2e609cf8aca7532ab4ebe4d4dbeb8aa69f93068f",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-14T08:09:16.984Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2099393997026582791",
+      "text": "@alexandr_wang lol",
+      "url": "https://x.com/thsottiaux/status/2099393997026582791",
+      "posted_at": "2026-09-14T07:05:08.000Z",
+      "truncated": false,
+      "hash": "db48e6310116f30da8326a9a0f2a8c596680eb59bccebadcba722ffc28cc0487",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-14T08:09:16.984Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2099393115241300166",
+      "text": "What’s a feature we should remove from Codex that isn’t useful anymore?",
+      "url": "https://x.com/thsottiaux/status/2099393115241300166",
+      "posted_at": "2026-09-14T07:01:38.000Z",
+      "truncated": false,
+      "hash": "ee8bd1a662516cb5c478d6f121e18ac70cb75f83dcf31f54afa45a38c00f9d2a",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-14T08:09:16.984Z",
+      "votes": [],
+      "result": null
+    }
+  ],
   "budget": {
-    "day": "2026-09-13",
+    "day": "2026-09-14",
     "requests": 3
   },
   "cooldowns": {
