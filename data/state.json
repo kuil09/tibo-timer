@@ -1,25 +1,24 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-15T16:36:13.611Z",
-  "last_success_at": "2026-09-15T16:36:13.611Z",
+  "checked_at": "2026-09-15T16:51:30.053Z",
+  "last_success_at": "2026-09-15T16:51:30.053Z",
   "source_status": "ok",
-  "analysis_status": "retry_pending",
+  "analysis_status": "running",
   "models": [
     {
-      "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "error",
-      "at": "2026-09-15T15:50:48.916Z",
-      "error": "http_520"
-    },
-    {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-15T15:50:48.916Z"
+      "status": "pending",
+      "at": "2026-09-15T16:51:30.053Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-15T15:50:48.916Z"
+      "status": "pending",
+      "at": "2026-09-15T16:51:30.053Z"
+    },
+    {
+      "id": "dots-studio/dots-3-note-preview:free",
+      "status": "pending",
+      "at": "2026-09-15T16:51:30.053Z"
     }
   ],
   "posts": [
@@ -31,8 +30,8 @@
       "truncated": false,
       "hash": "4587b4b20f9f235e068cd71218372e793f4d78b1a6262eb16cf48d81eb99616d",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-15T16:50:48.916Z",
+      "attempts": 2,
+      "retry_at": "2026-09-15T17:51:30.053Z",
       "votes": [
         {
           "model": "nex-agi/nex-n2.5-mini:free",
@@ -74,8 +73,8 @@
       "truncated": false,
       "hash": "14ebcf70c771c10f2645481634ebdb6c561a525fdad1745196bcc573a5710c24",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-15T16:50:48.916Z",
+      "attempts": 2,
+      "retry_at": "2026-09-15T17:51:30.053Z",
       "votes": [
         {
           "model": "nex-agi/nex-n2.5-mini:free",
@@ -117,8 +116,8 @@
       "truncated": false,
       "hash": "0ec87080a9feee68d71f452a329b00192bb03cc462aa5fe209bea763f54e3898",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-15T16:50:48.916Z",
+      "attempts": 2,
+      "retry_at": "2026-09-15T17:51:30.053Z",
       "votes": [
         {
           "model": "nex-agi/nex-n2.5-mini:free",
@@ -160,8 +159,8 @@
       "truncated": false,
       "hash": "b3a30e10735e8d879c5961383e8c02542c8bc1338e1e4fc3fb0c60c866d78fdb",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-15T16:50:48.916Z",
+      "attempts": 2,
+      "retry_at": "2026-09-15T17:51:30.053Z",
       "votes": [
         {
           "model": "nex-agi/nex-n2.5-mini:free",
@@ -488,7 +487,7 @@
   ],
   "budget": {
     "day": "2026-09-15",
-    "requests": 9
+    "requests": 12
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
