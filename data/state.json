@@ -1,27 +1,66 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-15T05:50:57.653Z",
-  "last_success_at": "2026-09-15T05:50:57.653Z",
+  "checked_at": "2026-09-15T06:37:11.357Z",
+  "last_success_at": "2026-09-15T06:37:11.357Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-14T07:09:16.984Z"
+      "status": "pending",
+      "at": "2026-09-15T06:37:11.357Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-14T07:09:16.984Z"
+      "status": "pending",
+      "at": "2026-09-15T06:37:11.357Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-14T07:09:16.984Z"
+      "status": "pending",
+      "at": "2026-09-15T06:37:11.357Z"
     }
   ],
   "posts": [
+    {
+      "id": "2099745615118991548",
+      "text": "@thdxr I would even say it's over 9000",
+      "url": "https://x.com/thsottiaux/status/2099745615118991548",
+      "posted_at": "2026-09-15T06:22:20.000Z",
+      "truncated": false,
+      "hash": "98ce846bdb3e7a2721989ff95cc836144b06410fae7aa7e3d3245056506c52f8",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-15T07:37:11.357Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2099744972195131850",
+      "text": "This week will also be a level of ships that you could have expected for DevDay 2025. Crazy",
+      "url": "https://x.com/thsottiaux/status/2099744972195131850",
+      "posted_at": "2026-09-15T06:19:47.000Z",
+      "truncated": false,
+      "hash": "c370e30e28f80105fcce1b2a3a4a6f8c8b88e8f6fd9db21e7ed02b6c41335583",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-15T07:37:11.357Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2099741116925096020",
+      "text": "@hanghuang_ So they can play videogames",
+      "url": "https://x.com/thsottiaux/status/2099741116925096020",
+      "posted_at": "2026-09-15T06:04:28.000Z",
+      "truncated": false,
+      "hash": "87574bf667ea53071919a589adacbf42e790bcdda9a78134b1677728aeb779a6",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-15T07:37:11.357Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2099394561076568290",
       "text": "@olegakbarov What’s your actual critique of the design?",
@@ -256,7 +295,7 @@
     }
   ],
   "budget": {
-    "day": "2026-09-14",
+    "day": "2026-09-15",
     "requests": 3
   },
   "cooldowns": {
