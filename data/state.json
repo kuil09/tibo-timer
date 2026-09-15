@@ -1,28 +1,66 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-15T17:51:05.176Z",
-  "last_success_at": "2026-09-15T17:51:05.176Z",
+  "checked_at": "2026-09-15T18:24:27.785Z",
+  "last_success_at": "2026-09-15T18:24:27.785Z",
   "source_status": "ok",
-  "analysis_status": "retry_pending",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-15T16:51:30.053Z"
-    },
-    {
-      "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "error",
-      "at": "2026-09-15T16:51:30.053Z",
-      "error": "invalid_vote"
+      "status": "pending",
+      "at": "2026-09-15T18:24:27.785Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-15T16:51:30.053Z"
+      "status": "pending",
+      "at": "2026-09-15T18:24:27.785Z"
+    },
+    {
+      "id": "google/gemma-4-26b-a4b-it:free",
+      "status": "pending",
+      "at": "2026-09-15T18:24:27.785Z"
     }
   ],
   "posts": [
+    {
+      "id": "2099923055636250714",
+      "text": "@AdamHoltererer Don’t you dare give pets. That’s not necessary",
+      "url": "https://x.com/thsottiaux/status/2099923055636250714",
+      "posted_at": "2026-09-15T18:07:25.000Z",
+      "truncated": false,
+      "hash": "d9b01723e788f6a652645b7e59c5364f559751ef41e61b12205c022b3ccfb062",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-15T19:24:27.785Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2099922755655479624",
+      "text": "2026 is the year of efficiency and Tuesday is for random swag drops on your door handle https://t.co/w68GaYgrmX",
+      "url": "https://x.com/thsottiaux/status/2099922755655479624",
+      "posted_at": "2026-09-15T18:06:14.000Z",
+      "truncated": false,
+      "hash": "289cc3f52853bad0e939e00705a9f4eb8bebe02d89c3390d39d300c575982104",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-15T19:24:27.785Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2099922535521693877",
+      "text": "@OpenRouter The power of the stars",
+      "url": "https://x.com/thsottiaux/status/2099922535521693877",
+      "posted_at": "2026-09-15T18:05:21.000Z",
+      "truncated": false,
+      "hash": "fb8961da307a57c1d75febabf3b1f3efe56fc416db8ae8dd2cf54e2827208b51",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-15T19:24:27.785Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2099887016569876809",
       "text": "@Jaytel Hi 👋",
@@ -31,8 +69,8 @@
       "truncated": false,
       "hash": "4587b4b20f9f235e068cd71218372e793f4d78b1a6262eb16cf48d81eb99616d",
       "status": "error",
-      "attempts": 2,
-      "retry_at": "2026-09-15T17:51:30.053Z",
+      "attempts": 3,
+      "retry_at": "2026-09-15T19:24:27.785Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -74,8 +112,8 @@
       "truncated": false,
       "hash": "14ebcf70c771c10f2645481634ebdb6c561a525fdad1745196bcc573a5710c24",
       "status": "error",
-      "attempts": 2,
-      "retry_at": "2026-09-15T17:51:30.053Z",
+      "attempts": 3,
+      "retry_at": "2026-09-15T19:24:27.785Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -117,8 +155,8 @@
       "truncated": false,
       "hash": "0ec87080a9feee68d71f452a329b00192bb03cc462aa5fe209bea763f54e3898",
       "status": "error",
-      "attempts": 2,
-      "retry_at": "2026-09-15T17:51:30.053Z",
+      "attempts": 3,
+      "retry_at": "2026-09-15T19:24:27.785Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -160,8 +198,8 @@
       "truncated": false,
       "hash": "b3a30e10735e8d879c5961383e8c02542c8bc1338e1e4fc3fb0c60c866d78fdb",
       "status": "error",
-      "attempts": 2,
-      "retry_at": "2026-09-15T17:51:30.053Z",
+      "attempts": 3,
+      "retry_at": "2026-09-15T19:24:27.785Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -488,7 +526,7 @@
   ],
   "budget": {
     "day": "2026-09-15",
-    "requests": 12
+    "requests": 15
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
