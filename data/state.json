@@ -1,28 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-16T18:51:14.714Z",
-  "last_success_at": "2026-09-16T18:51:14.714Z",
+  "checked_at": "2026-09-16T19:18:12.430Z",
+  "last_success_at": "2026-09-16T19:18:12.430Z",
   "source_status": "ok",
-  "analysis_status": "error",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-16T18:51:14.714Z"
+      "status": "pending",
+      "at": "2026-09-16T19:18:12.430Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-16T18:51:14.714Z"
+      "status": "pending",
+      "at": "2026-09-16T19:18:12.430Z"
     },
     {
-      "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "error",
-      "at": "2026-09-16T18:51:14.714Z",
-      "error": "provider_502"
+      "id": "dots-studio/dots-3-note-preview:free",
+      "status": "pending",
+      "at": "2026-09-16T19:18:12.430Z"
     }
   ],
   "posts": [
+    {
+      "id": "2100297380968997327",
+      "text": "Astra\n\n✅ Fast\n✅ Frontier\n✅ Efficient\n✅ For everyone",
+      "url": "https://x.com/thsottiaux/status/2100297380968997327",
+      "posted_at": "2026-09-16T18:54:51.000Z",
+      "truncated": false,
+      "hash": "6e05b1145154ca0266d095223ae8ee9f700f9eb4570af14b34a2f3c4082aa3c0",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-16T20:18:12.430Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2100295443620007993",
       "text": "What is ChatGPT",
@@ -185,7 +197,7 @@
   ],
   "budget": {
     "day": "2026-09-16",
-    "requests": 6
+    "requests": 9
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
