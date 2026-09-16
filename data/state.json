@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-16T18:41:36.671Z",
-  "last_success_at": "2026-09-16T18:41:36.671Z",
+  "checked_at": "2026-09-16T18:51:14.714Z",
+  "last_success_at": "2026-09-16T18:51:14.714Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-16T07:26:13.295Z"
+      "status": "pending",
+      "at": "2026-09-16T18:51:14.714Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-16T07:26:13.295Z"
+      "status": "pending",
+      "at": "2026-09-16T18:51:14.714Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-16T07:26:13.295Z"
+      "status": "pending",
+      "at": "2026-09-16T18:51:14.714Z"
     }
   ],
   "posts": [
+    {
+      "id": "2100295443620007993",
+      "text": "What is ChatGPT",
+      "url": "https://x.com/thsottiaux/status/2100295443620007993",
+      "posted_at": "2026-09-16T18:47:10.000Z",
+      "truncated": false,
+      "hash": "dbbf29a5def96b4375f0f265fb9f51d22e18facfe647811a70eff6b8b3802084",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-16T19:51:14.714Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2100122479947817059",
       "text": "Astra, as seen by Imagegen https://t.co/b3La6ZCY5O",
@@ -141,7 +154,7 @@
   ],
   "budget": {
     "day": "2026-09-16",
-    "requests": 3
+    "requests": 6
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
