@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-16T07:00:34.043Z",
-  "last_success_at": "2026-09-16T07:00:34.043Z",
+  "checked_at": "2026-09-16T07:26:13.295Z",
+  "last_success_at": "2026-09-16T07:26:13.295Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
+      "id": "nex-agi/nex-n2.5-mini:free",
+      "status": "pending",
+      "at": "2026-09-16T07:26:13.295Z"
+    },
+    {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-15T19:30:53.142Z"
+      "status": "pending",
+      "at": "2026-09-16T07:26:13.295Z"
     },
     {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-15T19:30:53.142Z"
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash-fin:free",
-      "status": "ok",
-      "at": "2026-09-15T19:30:53.142Z"
+      "id": "nvidia/nemotron-3-super-120b-a12b:free",
+      "status": "pending",
+      "at": "2026-09-16T07:26:13.295Z"
     }
   ],
   "posts": [
+    {
+      "id": "2100122479947817059",
+      "text": "Astra, as seen by Imagegen https://t.co/b3La6ZCY5O",
+      "url": "https://x.com/thsottiaux/status/2100122479947817059",
+      "posted_at": "2026-09-16T07:19:52.000Z",
+      "truncated": false,
+      "hash": "7369d72c2a76435187937330410470ed22ab500a548ff395086603b7015f1b38",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-16T08:26:13.295Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2100121084817502216",
+      "text": "11pm on a Tuesday, big startup energy https://t.co/JZcrZraqhY",
+      "url": "https://x.com/thsottiaux/status/2100121084817502216",
+      "posted_at": "2026-09-16T07:14:19.000Z",
+      "truncated": false,
+      "hash": "3e20b7aee44b41af7e3636cfcce39f26bd2806788a384ea5fe3328cb82b61eaf",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-16T08:26:13.295Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2099923055636250714",
       "text": "@AdamHoltererer Don’t you dare give pets. That’s not necessary",
@@ -367,127 +393,11 @@
         }
       ],
       "result": null
-    },
-    {
-      "id": "2099757649730691202",
-      "text": "@MikelEcheve Am I talking to Astra or Luna?",
-      "url": "https://x.com/thsottiaux/status/2099757649730691202",
-      "posted_at": "2026-09-15T07:10:09.000Z",
-      "truncated": false,
-      "hash": "76ccab81f2fd5cec0e3d4589d95913a09cc51eba11b6de04bd9202e710500135",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-15T08:26:27.434Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2099757649730691202",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2099757649730691202",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2099757649730691202",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2099756963429245110",
-      "text": "@jxnlco bet",
-      "url": "https://x.com/thsottiaux/status/2099756963429245110",
-      "posted_at": "2026-09-15T07:07:26.000Z",
-      "truncated": false,
-      "hash": "68602c2d81f426902a8f71f147c880800c1e9229c70d6b5fd949c8fc4aa646d2",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-15T08:26:27.434Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2099756963429245110",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2099756963429245110",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2099756963429245110",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
-    "day": "2026-09-15",
-    "requests": 18
+    "day": "2026-09-16",
+    "requests": 3
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
