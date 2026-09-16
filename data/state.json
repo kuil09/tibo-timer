@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-16T22:50:58.489Z",
-  "last_success_at": "2026-09-16T22:50:58.489Z",
+  "checked_at": "2026-09-16T23:18:44.665Z",
+  "last_success_at": "2026-09-16T23:18:44.665Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-16T20:22:14.025Z"
+      "status": "pending",
+      "at": "2026-09-16T23:18:44.665Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-16T20:22:14.025Z"
+      "status": "pending",
+      "at": "2026-09-16T23:18:44.665Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-16T20:22:14.025Z"
+      "status": "pending",
+      "at": "2026-09-16T23:18:44.665Z"
     }
   ],
   "posts": [
+    {
+      "id": "2100363668051603608",
+      "text": "Sometimes physics can't be cheated",
+      "url": "https://x.com/thsottiaux/status/2100363668051603608",
+      "posted_at": "2026-09-16T23:18:15.000Z",
+      "truncated": false,
+      "hash": "c1995f5d8db79757b9960f11cd86c270f7bd7a5b4dab1e64b87eb9f07542eee0",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-17T00:18:44.665Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2100297380968997327",
       "text": "Astra\n\n✅ Fast\n✅ Frontier\n✅ Efficient\n✅ For everyone",
@@ -257,7 +270,7 @@
   ],
   "budget": {
     "day": "2026-09-16",
-    "requests": 12
+    "requests": 15
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
