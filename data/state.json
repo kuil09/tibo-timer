@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-17T07:01:12.656Z",
-  "last_success_at": "2026-09-17T07:01:12.656Z",
+  "checked_at": "2026-09-17T07:27:00.252Z",
+  "last_success_at": "2026-09-17T07:27:00.252Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -467,122 +467,6 @@
           "model": "dots-studio/dots-3-note-preview:free",
           "claim": {
             "id": "2100295443620007993",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2100122479947817059",
-      "text": "Astra, as seen by Imagegen https://t.co/b3La6ZCY5O",
-      "url": "https://x.com/thsottiaux/status/2100122479947817059",
-      "posted_at": "2026-09-16T07:19:52.000Z",
-      "truncated": false,
-      "hash": "7369d72c2a76435187937330410470ed22ab500a548ff395086603b7015f1b38",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-16T08:26:13.295Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2100122479947817059",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2100122479947817059",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2100122479947817059",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2100121084817502216",
-      "text": "11pm on a Tuesday, big startup energy https://t.co/JZcrZraqhY",
-      "url": "https://x.com/thsottiaux/status/2100121084817502216",
-      "posted_at": "2026-09-16T07:14:19.000Z",
-      "truncated": false,
-      "hash": "3e20b7aee44b41af7e3636cfcce39f26bd2806788a384ea5fe3328cb82b61eaf",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-16T08:26:13.295Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2100121084817502216",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2100121084817502216",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2100121084817502216",
             "event": "none",
             "state": "unknown",
             "conditional": false,
