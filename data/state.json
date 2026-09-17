@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-17T18:44:54.785Z",
-  "last_success_at": "2026-09-17T18:44:54.785Z",
+  "checked_at": "2026-09-17T18:54:34.803Z",
+  "last_success_at": "2026-09-17T18:54:34.803Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -525,64 +525,6 @@
           "model": "dots-studio/dots-3-note-preview:free",
           "claim": {
             "id": "2100297380968997327",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2100295443620007993",
-      "text": "What is ChatGPT",
-      "url": "https://x.com/thsottiaux/status/2100295443620007993",
-      "posted_at": "2026-09-16T18:47:10.000Z",
-      "truncated": false,
-      "hash": "dbbf29a5def96b4375f0f265fb9f51d22e18facfe647811a70eff6b8b3802084",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-09-16T21:22:14.025Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2100295443620007993",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2100295443620007993",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2100295443620007993",
             "event": "none",
             "state": "unknown",
             "conditional": false,
