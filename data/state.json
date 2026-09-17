@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-17T17:51:24.461Z",
-  "last_success_at": "2026-09-17T17:51:24.461Z",
+  "checked_at": "2026-09-17T18:27:02.650Z",
+  "last_success_at": "2026-09-17T18:27:02.650Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-17T07:01:12.656Z"
+      "status": "pending",
+      "at": "2026-09-17T18:27:02.650Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-17T07:01:12.656Z"
+      "status": "pending",
+      "at": "2026-09-17T18:27:02.650Z"
     },
     {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-17T07:01:12.656Z"
+      "id": "nvidia/nemotron-3-super-120b-a12b:free",
+      "status": "pending",
+      "at": "2026-09-17T18:27:02.650Z"
     }
   ],
   "posts": [
+    {
+      "id": "2100649624860254629",
+      "text": "@vlinx_soft See you at DevDay",
+      "url": "https://x.com/thsottiaux/status/2100649624860254629",
+      "posted_at": "2026-09-17T18:14:33.000Z",
+      "truncated": false,
+      "hash": "36c5f1fbaba4f8553563656e17bdf2237c0055ccb76b24ff5cc3343007a90bfa",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-17T19:27:02.650Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2100645454245720513",
+      "text": "Has anyone yet tried to get Astra and Fable to agree on the perfect styleguide? And then host it somewhere with a web mcp.",
+      "url": "https://x.com/thsottiaux/status/2100645454245720513",
+      "posted_at": "2026-09-17T17:57:59.000Z",
+      "truncated": false,
+      "hash": "637880794b54a317bb48c3fa7d1f80aded6d3d371d0b65d1659b1a734a897664",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-17T19:27:02.650Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2100474870044016922",
       "text": "@Yuchenj_UW Welcome to the shipping era",
@@ -489,7 +515,7 @@
   ],
   "budget": {
     "day": "2026-09-17",
-    "requests": 9
+    "requests": 12
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
