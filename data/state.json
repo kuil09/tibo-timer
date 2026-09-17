@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-17T06:37:28.494Z",
-  "last_success_at": "2026-09-17T06:37:28.494Z",
+  "checked_at": "2026-09-17T07:01:12.656Z",
+  "last_success_at": "2026-09-17T07:01:12.656Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-17T06:37:28.494Z"
+      "status": "pending",
+      "at": "2026-09-17T07:01:12.656Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-17T06:37:28.494Z"
+      "status": "pending",
+      "at": "2026-09-17T07:01:12.656Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-17T06:37:28.494Z"
+      "status": "pending",
+      "at": "2026-09-17T07:01:12.656Z"
     }
   ],
   "posts": [
+    {
+      "id": "2100474870044016922",
+      "text": "@Yuchenj_UW Welcome to the shipping era",
+      "url": "https://x.com/thsottiaux/status/2100474870044016922",
+      "posted_at": "2026-09-17T06:40:08.000Z",
+      "truncated": false,
+      "hash": "06054932ffc7df01ecc5429858248e6cca13aac59ef59d8adbac98d4b6cd028d",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-17T08:01:12.656Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2100474737420111956",
+      "text": "@ben_issen Welcome",
+      "url": "https://x.com/thsottiaux/status/2100474737420111956",
+      "posted_at": "2026-09-17T06:39:36.000Z",
+      "truncated": false,
+      "hash": "5da9b5d6ce1a739dfde5b14d410b7b3949a431cf7338ecf0824a7032f0ce5ecc",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-17T08:01:12.656Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2100473666635280768",
       "text": "@zdogmode Revenue happened",
@@ -88,8 +114,8 @@
       "truncated": false,
       "hash": "1bfc61b8453a0f00e2f1e0d8cdcb2a01234929296f8f4737da675c9a5b80ba42",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-17T06:50:51.355Z",
+      "attempts": 2,
+      "retry_at": "2026-09-17T08:01:12.656Z",
       "votes": [
         {
           "model": "nex-agi/nex-n2.5-mini:free",
@@ -131,8 +157,8 @@
       "truncated": false,
       "hash": "a5f3a0836879f79a52773234f9e47cad736ed765c8a914d06c764cfdc3d1bbb4",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-17T06:50:51.355Z",
+      "attempts": 2,
+      "retry_at": "2026-09-17T08:01:12.656Z",
       "votes": [
         {
           "model": "nex-agi/nex-n2.5-mini:free",
@@ -459,7 +485,7 @@
   ],
   "budget": {
     "day": "2026-09-17",
-    "requests": 6
+    "requests": 9
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
