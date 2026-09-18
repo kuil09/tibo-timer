@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-18T20:50:41.036Z",
-  "last_success_at": "2026-09-18T20:50:41.036Z",
+  "checked_at": "2026-09-18T21:18:49.550Z",
+  "last_success_at": "2026-09-18T21:18:49.550Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-18T19:18:15.994Z"
+      "status": "pending",
+      "at": "2026-09-18T21:18:49.550Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-18T19:18:15.994Z"
+      "status": "pending",
+      "at": "2026-09-18T21:18:49.550Z"
     },
     {
       "id": "deepseek/deepseek-v4-flash-0731:free",
-      "status": "ok",
-      "at": "2026-09-18T19:18:15.994Z"
+      "status": "pending",
+      "at": "2026-09-18T21:18:49.550Z"
     }
   ],
   "posts": [
+    {
+      "id": "2101055411394904265",
+      "text": "@argofowl 👋",
+      "url": "https://x.com/thsottiaux/status/2101055411394904265",
+      "posted_at": "2026-09-18T21:07:00.000Z",
+      "truncated": false,
+      "hash": "56f10d44defca394d18273ec011ffc9224817d3041baf7fb2deef78c684152d4",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-18T22:18:49.550Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2101054196703522861",
+      "text": "@6monthsAgoInAI I remember that",
+      "url": "https://x.com/thsottiaux/status/2101054196703522861",
+      "posted_at": "2026-09-18T21:02:10.000Z",
+      "truncated": false,
+      "hash": "bb78f53bafa50c5afeb88aaec156635e715d601d1745a6bf352715ca100c3ec7",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-18T22:18:49.550Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2101026876647170092",
       "text": "@trq212 Yay! This is the way. Come to the light",
@@ -199,7 +225,7 @@
   ],
   "budget": {
     "day": "2026-09-18",
-    "requests": 12
+    "requests": 15
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
