@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-18T16:21:51.781Z",
-  "last_success_at": "2026-09-18T16:21:51.781Z",
+  "checked_at": "2026-09-18T16:32:52.970Z",
+  "last_success_at": "2026-09-18T16:32:52.970Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-18T05:50:19.259Z"
+      "status": "pending",
+      "at": "2026-09-18T16:32:52.970Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-18T05:50:19.259Z"
+      "status": "pending",
+      "at": "2026-09-18T16:32:52.970Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-18T05:50:19.259Z"
+      "status": "pending",
+      "at": "2026-09-18T16:32:52.970Z"
     }
   ],
   "posts": [
+    {
+      "id": "2100985777962537277",
+      "text": "@hegargarcia Good prompt",
+      "url": "https://x.com/thsottiaux/status/2100985777962537277",
+      "posted_at": "2026-09-18T16:30:18.000Z",
+      "truncated": false,
+      "hash": "52983c348868a0d19edd8641422943011e336dabf7968b242a4a88b3a354f56a",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-18T17:32:52.970Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2100821375812530458",
       "text": "@RoCastilloF Thanks for having me and nice hoodie Rodrigo 👀",
@@ -199,7 +212,7 @@
   ],
   "budget": {
     "day": "2026-09-18",
-    "requests": 3
+    "requests": 6
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
