@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-18T06:35:47.817Z",
-  "last_success_at": "2026-09-18T06:35:47.817Z",
+  "checked_at": "2026-09-18T06:59:21.530Z",
+  "last_success_at": "2026-09-18T06:59:21.530Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -177,122 +177,6 @@
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
           "claim": {
             "id": "2100645454245720513",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2100474870044016922",
-      "text": "@Yuchenj_UW Welcome to the shipping era",
-      "url": "https://x.com/thsottiaux/status/2100474870044016922",
-      "posted_at": "2026-09-17T06:40:08.000Z",
-      "truncated": false,
-      "hash": "06054932ffc7df01ecc5429858248e6cca13aac59ef59d8adbac98d4b6cd028d",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-17T08:01:12.656Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2100474870044016922",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2100474870044016922",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2100474870044016922",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2100474737420111956",
-      "text": "@ben_issen Welcome",
-      "url": "https://x.com/thsottiaux/status/2100474737420111956",
-      "posted_at": "2026-09-17T06:39:36.000Z",
-      "truncated": false,
-      "hash": "5da9b5d6ce1a739dfde5b14d410b7b3949a431cf7338ecf0824a7032f0ce5ecc",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-17T08:01:12.656Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2100474737420111956",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2100474737420111956",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2100474737420111956",
             "event": "none",
             "state": "unknown",
             "conditional": false,
