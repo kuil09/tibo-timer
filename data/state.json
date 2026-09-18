@@ -1,25 +1,24 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-18T17:30:20.949Z",
-  "last_success_at": "2026-09-18T17:30:20.949Z",
+  "checked_at": "2026-09-18T17:50:25.865Z",
+  "last_success_at": "2026-09-18T17:50:25.865Z",
   "source_status": "ok",
-  "analysis_status": "retry_pending",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-18T16:32:52.970Z"
+      "status": "pending",
+      "at": "2026-09-18T17:50:25.865Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-18T16:32:52.970Z"
+      "status": "pending",
+      "at": "2026-09-18T17:50:25.865Z"
     },
     {
-      "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "error",
-      "at": "2026-09-18T16:32:52.970Z",
-      "error": "provider_503"
+      "id": "deepseek/deepseek-v4-flash-0731:free",
+      "status": "pending",
+      "at": "2026-09-18T17:50:25.865Z"
     }
   ],
   "posts": [
@@ -31,8 +30,8 @@
       "truncated": false,
       "hash": "52983c348868a0d19edd8641422943011e336dabf7968b242a4a88b3a354f56a",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-18T17:32:52.970Z",
+      "attempts": 2,
+      "retry_at": "2026-09-18T18:50:25.865Z",
       "votes": [
         {
           "model": "nex-agi/nex-n2.5-mini:free",
@@ -243,7 +242,7 @@
   ],
   "budget": {
     "day": "2026-09-18",
-    "requests": 6
+    "requests": 9
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
