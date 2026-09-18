@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-18T17:50:25.865Z",
-  "last_success_at": "2026-09-18T17:50:25.865Z",
+  "checked_at": "2026-09-18T18:25:09.979Z",
+  "last_success_at": "2026-09-18T18:25:09.979Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -119,122 +119,6 @@
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
           "claim": {
             "id": "2100821375812530458",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2100649624860254629",
-      "text": "@vlinx_soft See you at DevDay",
-      "url": "https://x.com/thsottiaux/status/2100649624860254629",
-      "posted_at": "2026-09-17T18:14:33.000Z",
-      "truncated": false,
-      "hash": "36c5f1fbaba4f8553563656e17bdf2237c0055ccb76b24ff5cc3343007a90bfa",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-17T19:27:02.650Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2100649624860254629",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2100649624860254629",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2100649624860254629",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2100645454245720513",
-      "text": "Has anyone yet tried to get Astra and Fable to agree on the perfect styleguide? And then host it somewhere with a web mcp.",
-      "url": "https://x.com/thsottiaux/status/2100645454245720513",
-      "posted_at": "2026-09-17T17:57:59.000Z",
-      "truncated": false,
-      "hash": "637880794b54a317bb48c3fa7d1f80aded6d3d371d0b65d1659b1a734a897664",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-17T19:27:02.650Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2100645454245720513",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2100645454245720513",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2100645454245720513",
             "event": "none",
             "state": "unknown",
             "conditional": false,
