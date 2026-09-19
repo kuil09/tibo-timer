@@ -1,27 +1,66 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-19T01:29:20.659Z",
-  "last_success_at": "2026-09-19T01:29:20.659Z",
+  "checked_at": "2026-09-19T01:55:49.199Z",
+  "last_success_at": "2026-09-19T01:55:49.199Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-18T21:18:49.550Z"
+      "status": "pending",
+      "at": "2026-09-19T01:55:49.199Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-18T21:18:49.550Z"
+      "status": "pending",
+      "at": "2026-09-19T01:55:49.199Z"
     },
     {
-      "id": "deepseek/deepseek-v4-flash-0731:free",
-      "status": "ok",
-      "at": "2026-09-18T21:18:49.550Z"
+      "id": "nvidia/nemotron-3-super-120b-a12b:free",
+      "status": "pending",
+      "at": "2026-09-19T01:55:49.199Z"
     }
   ],
   "posts": [
+    {
+      "id": "2101126440469344384",
+      "text": "@ChrisGPT We have content for maybe 3 dev days",
+      "url": "https://x.com/thsottiaux/status/2101126440469344384",
+      "posted_at": "2026-09-19T01:49:15.000Z",
+      "truncated": false,
+      "hash": "7850697bebd58f926e1dfa275d4a4850a671ccc11eaa65823759fd39845cadf9",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-19T02:55:49.199Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2101125563448705092",
+      "text": "@MatthewBerman It's already named chat",
+      "url": "https://x.com/thsottiaux/status/2101125563448705092",
+      "posted_at": "2026-09-19T01:45:46.000Z",
+      "truncated": false,
+      "hash": "fbd22a985137332c5c3d807c130af5ba5f97bf16acb79a6198800c3ba5b2694d",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-19T02:55:49.199Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2101124031567262054",
+      "text": "@pvncher i'm so dev for hype day",
+      "url": "https://x.com/thsottiaux/status/2101124031567262054",
+      "posted_at": "2026-09-19T01:39:40.000Z",
+      "truncated": false,
+      "hash": "e40617f1c13c72e24cb252fe58b2bd04eb073923464445ead56e0202ccf783f5",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-19T02:55:49.199Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2101055411394904265",
       "text": "@argofowl 👋",
@@ -314,8 +353,8 @@
     }
   ],
   "budget": {
-    "day": "2026-09-18",
-    "requests": 15
+    "day": "2026-09-19",
+    "requests": 3
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
