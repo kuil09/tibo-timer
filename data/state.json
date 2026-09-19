@@ -1,84 +1,52 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-19T03:38:25.117Z",
-  "last_success_at": "2026-09-19T03:38:25.117Z",
+  "checked_at": "2026-09-19T03:51:01.626Z",
+  "last_success_at": "2026-09-19T03:51:01.626Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-19T01:55:49.199Z"
+      "status": "pending",
+      "at": "2026-09-19T03:51:01.626Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-19T01:55:49.199Z"
+      "status": "pending",
+      "at": "2026-09-19T03:51:01.626Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-19T01:55:49.199Z"
+      "status": "pending",
+      "at": "2026-09-19T03:51:01.626Z"
     }
   ],
   "posts": [
     {
-      "id": "2101126440469344384",
-      "text": "@ChrisGPT We have content for maybe 3 dev days",
-      "url": "https://x.com/thsottiaux/status/2101126440469344384",
-      "posted_at": "2026-09-19T01:49:15.000Z",
+      "id": "2101156788011962700",
+      "text": "@gadi_neelesh @ChrisGPT What else do you want",
+      "url": "https://x.com/thsottiaux/status/2101156788011962700",
+      "posted_at": "2026-09-19T03:49:50.000Z",
       "truncated": false,
-      "hash": "7850697bebd58f926e1dfa275d4a4850a671ccc11eaa65823759fd39845cadf9",
-      "status": "complete",
+      "hash": "d1ff768a769069e5f2a6581884650754f4f10bc13b53377da82c717b9fd1441a",
+      "status": "pending",
       "attempts": 1,
-      "retry_at": "2026-09-19T02:55:49.199Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2101126440469344384",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2101126440469344384",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2101126440469344384",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
+      "retry_at": "2026-09-19T04:51:01.626Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2101156632088735758",
+      "text": "@noahsolomon I thought you were the instinct noah and was confused",
+      "url": "https://x.com/thsottiaux/status/2101156632088735758",
+      "posted_at": "2026-09-19T03:49:13.000Z",
+      "truncated": false,
+      "hash": "c4c80b7381497a567cb19b0057a66d3df44e0162581c3446dce4fa43359f0925",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-19T04:51:01.626Z",
+      "votes": [],
+      "result": null
     },
     {
       "id": "2101125563448705092",
@@ -489,7 +457,7 @@
   ],
   "budget": {
     "day": "2026-09-19",
-    "requests": 3
+    "requests": 6
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
