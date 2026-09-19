@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-19T22:50:21.969Z",
-  "last_success_at": "2026-09-19T22:50:21.969Z",
+  "checked_at": "2026-09-19T23:17:14.453Z",
+  "last_success_at": "2026-09-19T23:17:14.453Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-19T22:18:14.868Z"
+      "status": "pending",
+      "at": "2026-09-19T23:17:14.453Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-19T22:18:14.868Z"
+      "status": "pending",
+      "at": "2026-09-19T23:17:14.453Z"
     },
     {
-      "id": "deepseek/deepseek-v4-flash-0731:free",
-      "status": "ok",
-      "at": "2026-09-19T22:18:14.868Z"
+      "id": "nvidia/nemotron-3-super-120b-a12b:free",
+      "status": "pending",
+      "at": "2026-09-19T23:17:14.453Z"
     }
   ],
   "posts": [
+    {
+      "id": "2101448279712207203",
+      "text": "@alexandr_wang You missed the long way to go part of the quote",
+      "url": "https://x.com/thsottiaux/status/2101448279712207203",
+      "posted_at": "2026-09-19T23:08:07.000Z",
+      "truncated": false,
+      "hash": "559cc90ea414b67dc97cc43a4f5c9dec5b0690f984c85ea802ce6c158cda7539",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-20T00:17:14.453Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2101432860892901859",
       "text": "@cherry_mx_reds Clearly not me",
@@ -895,7 +908,7 @@
   ],
   "budget": {
     "day": "2026-09-19",
-    "requests": 21
+    "requests": 24
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
