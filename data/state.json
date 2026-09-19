@@ -1,27 +1,66 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-19T03:51:01.626Z",
-  "last_success_at": "2026-09-19T03:51:01.626Z",
+  "checked_at": "2026-09-19T04:23:58.133Z",
+  "last_success_at": "2026-09-19T04:23:58.133Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-19T03:51:01.626Z"
+      "status": "pending",
+      "at": "2026-09-19T04:23:58.133Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-19T03:51:01.626Z"
+      "status": "pending",
+      "at": "2026-09-19T04:23:58.133Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-19T03:51:01.626Z"
+      "status": "pending",
+      "at": "2026-09-19T04:23:58.133Z"
     }
   ],
   "posts": [
+    {
+      "id": "2101158751290233190",
+      "text": "@kr0der Tibo from wish dot com",
+      "url": "https://x.com/thsottiaux/status/2101158751290233190",
+      "posted_at": "2026-09-19T03:57:38.000Z",
+      "truncated": false,
+      "hash": "137d7ff059a9ab2407149a3f0c9b964635b5cc900b370362bd7c715f01f68368",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-19T05:23:58.133Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2101158161994699036",
+      "text": "@stemonteduro You main Sol? And out of curiosity, you never buy credits?",
+      "url": "https://x.com/thsottiaux/status/2101158161994699036",
+      "posted_at": "2026-09-19T03:55:18.000Z",
+      "truncated": false,
+      "hash": "082cd10878d536c3ea4c674a9337197841d4a8960465667bac797c1e551283e6",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-19T05:23:58.133Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2101157729037586694",
+      "text": "We were working on the keynote today with @romainhuet and @sama and most of the fun was trying to figure out how to explain it all to you because there is so much good stuff in there that it's a bit ridiculous all in quick succession. \n\nWe'll have some things next week already to not keep you waiting so long, but very excited to show you all new things we've been working on and how it will all come together in the coming months.",
+      "url": "https://x.com/thsottiaux/status/2101157729037586694",
+      "posted_at": "2026-09-19T03:53:34.000Z",
+      "truncated": false,
+      "hash": "6e5d375e24c63c3b2573dae47f9e5a96cc457b74b0a904b5d7741605bee6a800",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-19T05:23:58.133Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2101156788011962700",
       "text": "@gadi_neelesh @ChrisGPT What else do you want",
@@ -547,7 +586,7 @@
   ],
   "budget": {
     "day": "2026-09-19",
-    "requests": 6
+    "requests": 9
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
