@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-19T20:50:32.540Z",
-  "last_success_at": "2026-09-19T20:50:32.540Z",
+  "checked_at": "2026-09-19T21:17:24.585Z",
+  "last_success_at": "2026-09-19T21:17:24.585Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -699,122 +699,6 @@
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
           "claim": {
             "id": "2101124031567262054",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2101055411394904265",
-      "text": "@argofowl 👋",
-      "url": "https://x.com/thsottiaux/status/2101055411394904265",
-      "posted_at": "2026-09-18T21:07:00.000Z",
-      "truncated": false,
-      "hash": "56f10d44defca394d18273ec011ffc9224817d3041baf7fb2deef78c684152d4",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-18T22:18:49.550Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2101055411394904265",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2101055411394904265",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "deepseek/deepseek-v4-flash-0731:free",
-          "claim": {
-            "id": "2101055411394904265",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2101054196703522861",
-      "text": "@6monthsAgoInAI I remember that",
-      "url": "https://x.com/thsottiaux/status/2101054196703522861",
-      "posted_at": "2026-09-18T21:02:10.000Z",
-      "truncated": false,
-      "hash": "bb78f53bafa50c5afeb88aaec156635e715d601d1745a6bf352715ca100c3ec7",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-18T22:18:49.550Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2101054196703522861",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2101054196703522861",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "deepseek/deepseek-v4-flash-0731:free",
-          "claim": {
-            "id": "2101054196703522861",
             "event": "none",
             "state": "unknown",
             "conditional": false,
