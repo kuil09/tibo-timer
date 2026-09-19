@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-19T16:51:15.941Z",
-  "last_success_at": "2026-09-19T16:51:15.941Z",
+  "checked_at": "2026-09-19T17:16:31.536Z",
+  "last_success_at": "2026-09-19T17:16:31.536Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-19T16:51:15.941Z"
+      "status": "pending",
+      "at": "2026-09-19T17:16:31.536Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-19T16:51:15.941Z"
+      "status": "pending",
+      "at": "2026-09-19T17:16:31.536Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-19T16:51:15.941Z"
+      "status": "pending",
+      "at": "2026-09-19T17:16:31.536Z"
     }
   ],
   "posts": [
+    {
+      "id": "2101354419829010896",
+      "text": "@anah_sahh did you bail or at least show him codex before?",
+      "url": "https://x.com/thsottiaux/status/2101354419829010896",
+      "posted_at": "2026-09-19T16:55:09.000Z",
+      "truncated": false,
+      "hash": "19d80d94a3887f1eed49c1fa62a986cc8bb65adc5031211aa80b4ee2013a5457",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-19T18:16:31.536Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2101353743275135306",
+      "text": "@hiarun02 Always improving",
+      "url": "https://x.com/thsottiaux/status/2101353743275135306",
+      "posted_at": "2026-09-19T16:52:28.000Z",
+      "truncated": false,
+      "hash": "9b1899a571fce4b8170a48d511d349dd318f5b233a058ae88bf1bccea494264d",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-19T18:16:31.536Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2101353058110480808",
       "text": "@willcb I could see Astra and Jev being best friends in real life",
@@ -779,7 +805,7 @@
   ],
   "budget": {
     "day": "2026-09-19",
-    "requests": 12
+    "requests": 15
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
