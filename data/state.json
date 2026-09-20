@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-20T20:31:14.225Z",
-  "last_success_at": "2026-09-20T20:31:14.225Z",
+  "checked_at": "2026-09-20T20:50:50.954Z",
+  "last_success_at": "2026-09-20T20:50:50.954Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-20T18:23:41.581Z"
+      "status": "pending",
+      "at": "2026-09-20T20:50:50.954Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-20T18:23:41.581Z"
+      "status": "pending",
+      "at": "2026-09-20T20:50:50.954Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-20T18:23:41.581Z"
+      "status": "pending",
+      "at": "2026-09-20T20:50:50.954Z"
     }
   ],
   "posts": [
+    {
+      "id": "2101772015028130032",
+      "text": "@Ananth7e Most folks have been very nice! Love this community",
+      "url": "https://x.com/thsottiaux/status/2101772015028130032",
+      "posted_at": "2026-09-20T20:34:32.000Z",
+      "truncated": false,
+      "hash": "0ecc1a926e2f7f986def82e70a06db966e4a9917c09b7f894848bc30ca110362",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-20T21:50:50.954Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2101738915564851585",
       "text": "@alexandr_wang @Muse @joshginsberg Did you make the video or did the corposlops help out",
@@ -431,7 +444,7 @@
   ],
   "budget": {
     "day": "2026-09-20",
-    "requests": 12
+    "requests": 15
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
