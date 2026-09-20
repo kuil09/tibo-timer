@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-20T17:50:26.538Z",
-  "last_success_at": "2026-09-20T17:50:26.538Z",
+  "checked_at": "2026-09-20T18:23:41.581Z",
+  "last_success_at": "2026-09-20T18:23:41.581Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-20T07:50:36.386Z"
+      "status": "pending",
+      "at": "2026-09-20T18:23:41.581Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-20T07:50:36.386Z"
+      "status": "pending",
+      "at": "2026-09-20T18:23:41.581Z"
     },
     {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-20T07:50:36.386Z"
+      "id": "nvidia/nemotron-3-super-120b-a12b:free",
+      "status": "pending",
+      "at": "2026-09-20T18:23:41.581Z"
     }
   ],
   "posts": [
+    {
+      "id": "2101738915564851585",
+      "text": "@alexandr_wang @Muse @joshginsberg Did you make the video or did the corposlops help out",
+      "url": "https://x.com/thsottiaux/status/2101738915564851585",
+      "posted_at": "2026-09-20T18:23:00.000Z",
+      "truncated": false,
+      "hash": "62910763349b0c0f69408456eeca77f65d71770f4f5400c692c5d5cd8c89b188",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-20T19:23:41.581Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2101554478940070162",
       "text": "@argofowl Mind sharing your instructions?",
@@ -373,7 +386,7 @@
   ],
   "budget": {
     "day": "2026-09-20",
-    "requests": 9
+    "requests": 12
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
