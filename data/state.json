@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-20T01:34:40.797Z",
-  "last_success_at": "2026-09-20T01:34:40.797Z",
+  "checked_at": "2026-09-20T01:58:48.068Z",
+  "last_success_at": "2026-09-20T01:58:48.068Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -815,122 +815,6 @@
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
           "claim": {
             "id": "2101156632088735758",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2101125563448705092",
-      "text": "@MatthewBerman It's already named chat",
-      "url": "https://x.com/thsottiaux/status/2101125563448705092",
-      "posted_at": "2026-09-19T01:45:46.000Z",
-      "truncated": false,
-      "hash": "fbd22a985137332c5c3d807c130af5ba5f97bf16acb79a6198800c3ba5b2694d",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-19T02:55:49.199Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2101125563448705092",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2101125563448705092",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2101125563448705092",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2101124031567262054",
-      "text": "@pvncher i'm so dev for hype day",
-      "url": "https://x.com/thsottiaux/status/2101124031567262054",
-      "posted_at": "2026-09-19T01:39:40.000Z",
-      "truncated": false,
-      "hash": "e40617f1c13c72e24cb252fe58b2bd04eb073923464445ead56e0202ccf783f5",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-19T02:55:49.199Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2101124031567262054",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2101124031567262054",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2101124031567262054",
             "event": "none",
             "state": "unknown",
             "conditional": false,
