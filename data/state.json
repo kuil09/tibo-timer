@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-21T20:31:42.928Z",
-  "last_success_at": "2026-09-21T20:31:42.928Z",
+  "checked_at": "2026-09-21T20:50:57.199Z",
+  "last_success_at": "2026-09-21T20:50:57.199Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -177,64 +177,6 @@
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
           "claim": {
             "id": "2101920329346195690",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2101772015028130032",
-      "text": "@Ananth7e Most folks have been very nice! Love this community",
-      "url": "https://x.com/thsottiaux/status/2101772015028130032",
-      "posted_at": "2026-09-20T20:34:32.000Z",
-      "truncated": false,
-      "hash": "0ecc1a926e2f7f986def82e70a06db966e4a9917c09b7f894848bc30ca110362",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-20T21:50:50.954Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2101772015028130032",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2101772015028130032",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2101772015028130032",
             "event": "none",
             "state": "unknown",
             "conditional": false,
