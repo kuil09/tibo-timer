@@ -1,27 +1,66 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-21T05:51:33.195Z",
-  "last_success_at": "2026-09-21T05:51:33.195Z",
+  "checked_at": "2026-09-21T06:47:02.921Z",
+  "last_success_at": "2026-09-21T06:47:02.921Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-20T20:50:50.954Z"
+      "status": "pending",
+      "at": "2026-09-21T06:47:02.921Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-20T20:50:50.954Z"
+      "status": "pending",
+      "at": "2026-09-21T06:47:02.921Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-20T20:50:50.954Z"
+      "status": "pending",
+      "at": "2026-09-21T06:47:02.921Z"
     }
   ],
   "posts": [
+    {
+      "id": "2101921202436702657",
+      "text": "@melvindvivas 👁️codex👁️",
+      "url": "https://x.com/thsottiaux/status/2101921202436702657",
+      "posted_at": "2026-09-21T06:27:21.000Z",
+      "truncated": false,
+      "hash": "b78f96ea1a340da956485df54ec9430f23b29772c64918d120bcfd00f6c1f9d7",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-21T07:47:02.921Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2101920928070562029",
+      "text": "@My_Ai_Bi 3am on a tuesday",
+      "url": "https://x.com/thsottiaux/status/2101920928070562029",
+      "posted_at": "2026-09-21T06:26:15.000Z",
+      "truncated": false,
+      "hash": "175044dcf39efc55f6e7727f4731a8a1092543c279269a1470143f60bd3802df",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-21T07:47:02.921Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2101920329346195690",
+      "text": "@h4nkdog That's cool!!!",
+      "url": "https://x.com/thsottiaux/status/2101920329346195690",
+      "posted_at": "2026-09-21T06:23:52.000Z",
+      "truncated": false,
+      "hash": "6f43ec5a826021658b6fead9b69b63accb902b06166400733e7b550c0999edd6",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-21T07:47:02.921Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2101772015028130032",
       "text": "@Ananth7e Most folks have been very nice! Love this community",
@@ -79,69 +118,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2101554478940070162",
-      "text": "@argofowl Mind sharing your instructions?",
-      "url": "https://x.com/thsottiaux/status/2101554478940070162",
-      "posted_at": "2026-09-20T06:10:07.000Z",
-      "truncated": false,
-      "hash": "0984c8be36cf2217b51c79a32ce39bbdd26d5c57e0ff309a67dae8cc9b3ffa0f",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-09-20T08:50:36.386Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2101554478940070162",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2101554478940070162",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2101554478940070162",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
-    "day": "2026-09-20",
-    "requests": 15
+    "day": "2026-09-21",
+    "requests": 3
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
