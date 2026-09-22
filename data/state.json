@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-22T21:18:38.212Z",
-  "last_success_at": "2026-09-22T21:18:38.212Z",
+  "checked_at": "2026-09-22T21:30:29.326Z",
+  "last_success_at": "2026-09-22T21:30:29.326Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-22T21:18:38.212Z"
+      "status": "pending",
+      "at": "2026-09-22T21:30:29.326Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-22T21:18:38.212Z"
+      "status": "pending",
+      "at": "2026-09-22T21:30:29.326Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-22T21:18:38.212Z"
+      "status": "pending",
+      "at": "2026-09-22T21:30:29.326Z"
     }
   ],
   "posts": [
+    {
+      "id": "2102509629536346422",
+      "text": "@PawelHuryn Interesting results!",
+      "url": "https://x.com/thsottiaux/status/2102509629536346422",
+      "posted_at": "2026-09-22T21:25:33.000Z",
+      "truncated": false,
+      "hash": "5612cd4cee8983562c2278ec863b9a6687f0729308fb68e4e8b76dda0ba3b00f",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-22T22:30:29.326Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2102509507415048245",
+      "text": "Maybe our cutest launch so far. But still packing the biggest punch.",
+      "url": "https://x.com/thsottiaux/status/2102509507415048245",
+      "posted_at": "2026-09-22T21:25:03.000Z",
+      "truncated": false,
+      "hash": "e2a2588a44636c1d8f62ec0133c0d58afb6bbd697651f9fff0e0ccbc34ee7261",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-22T22:30:29.326Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2102501670647472147",
       "text": "@weswinder No benchmaxxing here, just a better model all around.",
@@ -981,7 +1007,7 @@
   ],
   "budget": {
     "day": "2026-09-22",
-    "requests": 36
+    "requests": 39
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
