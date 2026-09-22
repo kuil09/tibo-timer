@@ -3,21 +3,21 @@
   "checked_at": "2026-09-22T07:26:05.361Z",
   "last_success_at": "2026-09-22T07:26:05.361Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "up_to_date",
   "models": [
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-22T07:26:05.361Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-fin:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-22T07:26:05.361Z"
     },
     {
       "id": "nex-agi/nex-n2.5-pro:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-22T07:26:05.361Z"
     }
   ],
@@ -29,11 +29,56 @@
       "posted_at": "2026-09-22T07:02:33.000Z",
       "truncated": false,
       "hash": "30ecd9715ab2c5a97293d8cd6b9dade6cf9502ceb3c1003056ecd1cec0f1b6e1",
-      "status": "pending",
+      "status": "complete",
       "attempts": 1,
       "retry_at": "2026-09-22T08:26:05.361Z",
-      "votes": [],
-      "result": null
+      "votes": [
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2102292452329820272",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "inclusionai/ling-3.0-flash-fin:free",
+          "claim": {
+            "id": "2102292452329820272",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "nex-agi/nex-n2.5-pro:free",
+          "claim": {
+            "id": "2102292452329820272",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2102290126344974551",
