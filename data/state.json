@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-22T04:25:33.414Z",
-  "last_success_at": "2026-09-22T04:25:33.414Z",
+  "checked_at": "2026-09-22T04:41:03.700Z",
+  "last_success_at": "2026-09-22T04:41:03.700Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-21T06:47:02.921Z"
+      "status": "pending",
+      "at": "2026-09-22T04:41:03.700Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-21T06:47:02.921Z"
+      "status": "pending",
+      "at": "2026-09-22T04:41:03.700Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-21T06:47:02.921Z"
+      "status": "pending",
+      "at": "2026-09-22T04:41:03.700Z"
     }
   ],
   "posts": [
+    {
+      "id": "2102254445082116335",
+      "text": "Ladies and gentlemen... start... your... ENGINES. We are almost Tuesday and I promised a reset for Tuesday. Among some other things. See you soon.",
+      "url": "https://x.com/thsottiaux/status/2102254445082116335",
+      "posted_at": "2026-09-22T04:31:32.000Z",
+      "truncated": false,
+      "hash": "5dcb1c276a86ebd138b1ae92937b6cf6d7badce80da9c498f43ba94cca4d6ca2",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-22T05:41:03.700Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2102253723879670183",
+      "text": "@prit4k @noahrshinn Probably nothing, do not worry",
+      "url": "https://x.com/thsottiaux/status/2102253723879670183",
+      "posted_at": "2026-09-22T04:28:40.000Z",
+      "truncated": false,
+      "hash": "8c249dec38b54e468c2d6f4bd11e461a0a8964e18224732b8cd1607ccc198ff5",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-22T05:41:03.700Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2101921202436702657",
       "text": "@melvindvivas 👁️codex👁️",
@@ -198,7 +224,7 @@
     }
   ],
   "budget": {
-    "day": "2026-09-21",
+    "day": "2026-09-22",
     "requests": 3
   },
   "cooldowns": {
