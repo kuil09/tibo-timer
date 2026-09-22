@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-22T19:30:10.024Z",
-  "last_success_at": "2026-09-22T19:30:10.024Z",
+  "checked_at": "2026-09-22T19:51:18.415Z",
+  "last_success_at": "2026-09-22T19:51:18.415Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-22T18:51:44.752Z"
+      "status": "pending",
+      "at": "2026-09-22T19:51:18.415Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-22T18:51:44.752Z"
+      "status": "pending",
+      "at": "2026-09-22T19:51:18.415Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-22T18:51:44.752Z"
+      "status": "pending",
+      "at": "2026-09-22T19:51:18.415Z"
     }
   ],
   "posts": [
+    {
+      "id": "2102484207163584745",
+      "text": "@amorriscode u2!",
+      "url": "https://x.com/thsottiaux/status/2102484207163584745",
+      "posted_at": "2026-09-22T19:44:31.000Z",
+      "truncated": false,
+      "hash": "78516cf9f345f2b400dc8735204726c4b011f6c147c4cd12479aa1b63d5a1a56",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-22T20:51:18.415Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2102466463156285686",
       "text": "@omarbnjl pizza plutot",
@@ -749,7 +762,7 @@
   ],
   "budget": {
     "day": "2026-09-22",
-    "requests": 27
+    "requests": 30
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
