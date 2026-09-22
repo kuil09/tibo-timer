@@ -1,27 +1,66 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-22T06:36:40.085Z",
-  "last_success_at": "2026-09-22T06:36:40.085Z",
+  "checked_at": "2026-09-22T07:00:55.715Z",
+  "last_success_at": "2026-09-22T07:00:55.715Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-22T06:36:40.085Z"
+      "status": "pending",
+      "at": "2026-09-22T07:00:55.715Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-fin:free",
-      "status": "ok",
-      "at": "2026-09-22T06:36:40.085Z"
+      "status": "pending",
+      "at": "2026-09-22T07:00:55.715Z"
     },
     {
       "id": "liquid/lfm-2.5-2.6b:free",
-      "status": "ok",
-      "at": "2026-09-22T06:36:40.085Z"
+      "status": "pending",
+      "at": "2026-09-22T07:00:55.715Z"
     }
   ],
   "posts": [
+    {
+      "id": "2102290126344974551",
+      "text": "@FintechKristen @ajambrosino Negroni is on you",
+      "url": "https://x.com/thsottiaux/status/2102290126344974551",
+      "posted_at": "2026-09-22T06:53:19.000Z",
+      "truncated": false,
+      "hash": "cbd9d92a163dfdb9de5cb3ccfe1d17bfb581e09cd4cedaa9d2962f8673a199a3",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-22T08:00:55.715Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2102289624945352906",
+      "text": "@matteing Sergio is indeed on fire",
+      "url": "https://x.com/thsottiaux/status/2102289624945352906",
+      "posted_at": "2026-09-22T06:51:19.000Z",
+      "truncated": false,
+      "hash": "5048fb26feb21757b611ad86cdbd037bb60931753103c667c38955ce300900a5",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-22T08:00:55.715Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2102289383068180659",
+      "text": "@thdxr ah yes, that elusive and unlimited ambient inference that they don’t want to know you about",
+      "url": "https://x.com/thsottiaux/status/2102289383068180659",
+      "posted_at": "2026-09-22T06:50:22.000Z",
+      "truncated": false,
+      "hash": "a786ad349ba3898cd372f011aec4cd55c17a5923e0912d669fab739e22fa5ec7",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-22T08:00:55.715Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2102284586713522193",
       "text": "@Cch_Chichieh Burn those tokens",
@@ -146,8 +185,8 @@
       "truncated": false,
       "hash": "5dcb1c276a86ebd138b1ae92937b6cf6d7badce80da9c498f43ba94cca4d6ca2",
       "status": "error",
-      "attempts": 2,
-      "retry_at": "2026-09-22T06:51:00.000Z",
+      "attempts": 3,
+      "retry_at": "2026-09-22T08:00:55.715Z",
       "votes": [
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -189,8 +228,8 @@
       "truncated": false,
       "hash": "8c249dec38b54e468c2d6f4bd11e461a0a8964e18224732b8cd1607ccc198ff5",
       "status": "error",
-      "attempts": 2,
-      "retry_at": "2026-09-22T06:51:00.000Z",
+      "attempts": 3,
+      "retry_at": "2026-09-22T08:00:55.715Z",
       "votes": [
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -227,7 +266,7 @@
   ],
   "budget": {
     "day": "2026-09-22",
-    "requests": 9
+    "requests": 12
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
