@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-22T20:32:19.908Z",
-  "last_success_at": "2026-09-22T20:32:19.908Z",
+  "checked_at": "2026-09-22T20:50:31.216Z",
+  "last_success_at": "2026-09-22T20:50:31.216Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-22T19:51:18.415Z"
+      "status": "pending",
+      "at": "2026-09-22T20:50:31.216Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-22T19:51:18.415Z"
+      "status": "pending",
+      "at": "2026-09-22T20:50:31.216Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-22T19:51:18.415Z"
+      "status": "pending",
+      "at": "2026-09-22T20:50:31.216Z"
     }
   ],
   "posts": [
+    {
+      "id": "2102497184805720459",
+      "text": "@viticci It’s good to want it all",
+      "url": "https://x.com/thsottiaux/status/2102497184805720459",
+      "posted_at": "2026-09-22T20:36:06.000Z",
+      "truncated": false,
+      "hash": "972bdd8f37611d7bbaa4bf6f97b5ef83040e28db9d3a609473ef81abb674ced9",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-22T21:50:31.216Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2102484207163584745",
       "text": "@amorriscode u2!",
@@ -807,7 +820,7 @@
   ],
   "budget": {
     "day": "2026-09-22",
-    "requests": 30
+    "requests": 33
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
