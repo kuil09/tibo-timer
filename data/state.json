@@ -3,21 +3,21 @@
   "checked_at": "2026-09-22T18:28:00.324Z",
   "last_success_at": "2026-09-22T18:28:00.324Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "unresolved",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-22T18:28:00.324Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-22T18:28:00.324Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-22T18:28:00.324Z"
     }
   ],
@@ -29,11 +29,56 @@
       "posted_at": "2026-09-22T18:26:31.000Z",
       "truncated": false,
       "hash": "d39fdca85992a5aff45594690a2f176e424c259b2d4f036ad63610fd3d846121",
-      "status": "pending",
+      "status": "complete",
       "attempts": 1,
       "retry_at": "2026-09-22T19:28:00.324Z",
-      "votes": [],
-      "result": null
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2102464575790854290",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "claim": {
+            "id": "2102464575790854290",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2102464575790854290",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2102463847714247142",
@@ -42,11 +87,56 @@
       "posted_at": "2026-09-22T18:23:37.000Z",
       "truncated": false,
       "hash": "20718c0d09a7225397fd41bebbaebde9ed93b879f1b548e5723be39b0383c6d4",
-      "status": "pending",
+      "status": "complete",
       "attempts": 1,
       "retry_at": "2026-09-22T19:28:00.324Z",
-      "votes": [],
-      "result": null
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2102463847714247142",
+            "event": "banked_reset",
+            "state": "scheduled",
+            "conditional": false,
+            "evidence": "We are loading a banked reset into all accounts of our Plus, Pro and Business users.",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "claim": {
+            "id": "2102463847714247142",
+            "event": "banked_reset",
+            "state": "scheduled",
+            "conditional": false,
+            "evidence": "We are loading a banked reset into all accounts of our Plus, Pro and Business users.",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2102463847714247142",
+            "event": "banked_reset",
+            "state": "scheduled",
+            "conditional": false,
+            "evidence": "We are loading a banked reset into all accounts of our Plus, Pro and Business users.",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
+      "result": {
+        "event": "banked_reset",
+        "state": "scheduled",
+        "conditional": false,
+        "time": null,
+        "evidence": "We are loading a banked reset into all accounts of our Plus, Pro and Business users.",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2102440619616682120",
@@ -55,15 +145,10 @@
       "posted_at": "2026-09-22T16:51:19.000Z",
       "truncated": false,
       "hash": "5fb67e33ec26a949eb38b47f265f47bd2bd1d1e22aec50a66063c42272064cef",
-      "status": "error",
+      "status": "complete",
       "attempts": 2,
       "retry_at": "2026-09-22T19:28:00.324Z",
       "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": null,
-          "error": "request_failed"
-        },
         {
           "model": "cohere/north-mini-code:free",
           "claim": {
@@ -87,9 +172,29 @@
             "time_text": "",
             "time": null
           }
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2102440619616682120",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
         }
       ],
-      "result": null
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2102292452329820272",
