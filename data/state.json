@@ -1,24 +1,24 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-22T07:51:29.876Z",
-  "last_success_at": "2026-09-22T07:51:29.876Z",
+  "checked_at": "2026-09-22T08:29:37.946Z",
+  "last_success_at": "2026-09-22T08:29:37.946Z",
   "source_status": "ok",
-  "analysis_status": "retry_pending",
+  "analysis_status": "running",
   "models": [
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-22T07:26:05.361Z"
+      "status": "pending",
+      "at": "2026-09-22T08:29:37.946Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-fin:free",
-      "status": "ok",
-      "at": "2026-09-22T07:26:05.361Z"
+      "status": "pending",
+      "at": "2026-09-22T08:29:37.946Z"
     },
     {
       "id": "nex-agi/nex-n2.5-pro:free",
-      "status": "ok",
-      "at": "2026-09-22T07:26:05.361Z"
+      "status": "pending",
+      "at": "2026-09-22T08:29:37.946Z"
     }
   ],
   "posts": [
@@ -88,8 +88,8 @@
       "truncated": false,
       "hash": "cbd9d92a163dfdb9de5cb3ccfe1d17bfb581e09cd4cedaa9d2962f8673a199a3",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-22T08:00:55.715Z",
+      "attempts": 2,
+      "retry_at": "2026-09-22T09:29:37.946Z",
       "votes": [
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -131,8 +131,8 @@
       "truncated": false,
       "hash": "5048fb26feb21757b611ad86cdbd037bb60931753103c667c38955ce300900a5",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-22T08:00:55.715Z",
+      "attempts": 2,
+      "retry_at": "2026-09-22T09:29:37.946Z",
       "votes": [
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -174,8 +174,8 @@
       "truncated": false,
       "hash": "a786ad349ba3898cd372f011aec4cd55c17a5923e0912d669fab739e22fa5ec7",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-22T08:00:55.715Z",
+      "attempts": 2,
+      "retry_at": "2026-09-22T09:29:37.946Z",
       "votes": [
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -332,7 +332,7 @@
       "posted_at": "2026-09-22T04:31:32.000Z",
       "truncated": false,
       "hash": "5dcb1c276a86ebd138b1ae92937b6cf6d7badce80da9c498f43ba94cca4d6ca2",
-      "status": "error",
+      "status": "unresolved",
       "attempts": 3,
       "retry_at": "2026-09-22T08:00:55.715Z",
       "votes": [
@@ -375,7 +375,7 @@
       "posted_at": "2026-09-22T04:28:40.000Z",
       "truncated": false,
       "hash": "8c249dec38b54e468c2d6f4bd11e461a0a8964e18224732b8cd1607ccc198ff5",
-      "status": "error",
+      "status": "unresolved",
       "attempts": 3,
       "retry_at": "2026-09-22T08:00:55.715Z",
       "votes": [
@@ -414,7 +414,7 @@
   ],
   "budget": {
     "day": "2026-09-22",
-    "requests": 15
+    "requests": 18
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
