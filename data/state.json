@@ -3,21 +3,22 @@
   "checked_at": "2026-09-22T17:19:34.908Z",
   "last_success_at": "2026-09-22T17:19:34.908Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "error",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "pending",
-      "at": "2026-09-22T17:19:34.908Z"
+      "status": "error",
+      "at": "2026-09-22T17:19:34.908Z",
+      "error": "request_failed"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-22T17:19:34.908Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-22T17:19:34.908Z"
     }
   ],
@@ -29,10 +30,40 @@
       "posted_at": "2026-09-22T16:51:19.000Z",
       "truncated": false,
       "hash": "5fb67e33ec26a949eb38b47f265f47bd2bd1d1e22aec50a66063c42272064cef",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-09-22T18:19:34.908Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "nex-agi/nex-n2.5-mini:free",
+          "claim": null,
+          "error": "request_failed"
+        },
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2102440619616682120",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "claim": {
+            "id": "2102440619616682120",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
       "result": null
     },
     {
@@ -477,7 +508,7 @@
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
     "cohere/north-mini-code:free": "2026-09-22T10:41:03.700Z",
-    "nex-agi/nex-n2.5-mini:free": "2026-09-22T10:41:03.700Z",
+    "nex-agi/nex-n2.5-mini:free": "2026-09-22T23:19:34.908Z",
     "google/gemma-4-26b-a4b-it:free": "2026-09-22T11:51:00.000Z",
     "nvidia/nemotron-3-super-120b-a12b:free": "2026-09-22T10:41:03.700Z",
     "liquid/lfm-2.5-2.6b:free": "2026-09-22T13:00:55.715Z"
