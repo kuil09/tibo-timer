@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-22T16:51:15.523Z",
-  "last_success_at": "2026-09-22T16:51:15.523Z",
+  "checked_at": "2026-09-22T17:19:34.908Z",
+  "last_success_at": "2026-09-22T17:19:34.908Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-22T08:29:37.946Z"
+      "id": "nex-agi/nex-n2.5-mini:free",
+      "status": "pending",
+      "at": "2026-09-22T17:19:34.908Z"
     },
     {
-      "id": "inclusionai/ling-3.0-flash-fin:free",
-      "status": "ok",
-      "at": "2026-09-22T08:29:37.946Z"
+      "id": "cohere/north-mini-code:free",
+      "status": "pending",
+      "at": "2026-09-22T17:19:34.908Z"
     },
     {
-      "id": "nex-agi/nex-n2.5-pro:free",
-      "status": "ok",
-      "at": "2026-09-22T08:29:37.946Z"
+      "id": "nvidia/nemotron-3-super-120b-a12b:free",
+      "status": "pending",
+      "at": "2026-09-22T17:19:34.908Z"
     }
   ],
   "posts": [
+    {
+      "id": "2102440619616682120",
+      "text": "We have been focusing on efficiency and intelligence for all. \n\nVery proud of the team. Only possible when you have incredible models at the top end of the capability that you can then use to make a big difference in everything else.",
+      "url": "https://x.com/thsottiaux/status/2102440619616682120",
+      "posted_at": "2026-09-22T16:51:19.000Z",
+      "truncated": false,
+      "hash": "5fb67e33ec26a949eb38b47f265f47bd2bd1d1e22aec50a66063c42272064cef",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-22T18:19:34.908Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2102292452329820272",
       "text": "@steipete Huge!!",
@@ -459,7 +472,7 @@
   ],
   "budget": {
     "day": "2026-09-22",
-    "requests": 18
+    "requests": 21
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
