@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-23T20:50:42.514Z",
-  "last_success_at": "2026-09-23T20:50:42.514Z",
+  "checked_at": "2026-09-23T21:20:28.866Z",
+  "last_success_at": "2026-09-23T21:20:28.866Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -177,122 +177,6 @@
           "model": "dots-studio/dots-3-note-preview:free",
           "claim": {
             "id": "2102509507415048245",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2102501670647472147",
-      "text": "@weswinder No benchmaxxing here, just a better model all around.",
-      "url": "https://x.com/thsottiaux/status/2102501670647472147",
-      "posted_at": "2026-09-22T20:53:55.000Z",
-      "truncated": false,
-      "hash": "c30846cd061bf2e854b1258e9af0bd47953e0b9e52ff16283d5bd05333bca073",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-22T22:18:38.212Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2102501670647472147",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2102501670647472147",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2102501670647472147",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2102501432884891720",
-      "text": "@theo It’s a good day sir",
-      "url": "https://x.com/thsottiaux/status/2102501432884891720",
-      "posted_at": "2026-09-22T20:52:58.000Z",
-      "truncated": false,
-      "hash": "dd85eae7485dafcd0440484bc2f33be1b2bb2b2d2983a29f2fba74f2761ac5de",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-22T22:18:38.212Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2102501432884891720",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2102501432884891720",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2102501432884891720",
             "event": "none",
             "state": "unknown",
             "conditional": false,
