@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-23T17:31:26.369Z",
-  "last_success_at": "2026-09-23T17:31:26.369Z",
+  "checked_at": "2026-09-23T17:50:38.870Z",
+  "last_success_at": "2026-09-23T17:50:38.870Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
+      "id": "nex-agi/nex-n2.5-mini:free",
+      "status": "pending",
+      "at": "2026-09-23T17:50:38.870Z"
+    },
+    {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-22T21:30:29.326Z"
+      "status": "pending",
+      "at": "2026-09-23T17:50:38.870Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-22T21:30:29.326Z"
-    },
-    {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-22T21:30:29.326Z"
+      "status": "pending",
+      "at": "2026-09-23T17:50:38.870Z"
     }
   ],
   "posts": [
+    {
+      "id": "2102814202117411196",
+      "text": "Voice! I've gotten so used to just call ChatGPT and talk about all the work, check on emails, do some coding, manage my calendar and it works across the full ecosystem of plugins, including 3P developed plugins.",
+      "url": "https://x.com/thsottiaux/status/2102814202117411196",
+      "posted_at": "2026-09-23T17:35:48.000Z",
+      "truncated": false,
+      "hash": "cbebbeaff4f5cfb6cb2d72b6a80ebe658282439998774175bc954159e7e9c5dd",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-23T18:50:38.870Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2102509629536346422",
       "text": "@PawelHuryn Interesting results!",
@@ -604,8 +617,8 @@
     }
   ],
   "budget": {
-    "day": "2026-09-22",
-    "requests": 39
+    "day": "2026-09-23",
+    "requests": 3
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
