@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-23T04:26:17.111Z",
-  "last_success_at": "2026-09-23T04:26:17.111Z",
+  "checked_at": "2026-09-23T04:43:25.947Z",
+  "last_success_at": "2026-09-23T04:43:25.947Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "up_to_date",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
@@ -1007,92 +1007,6 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2102254445082116335",
-      "text": "Ladies and gentlemen... start... your... ENGINES. We are almost Tuesday and I promised a reset for Tuesday. Among some other things. See you soon.",
-      "url": "https://x.com/thsottiaux/status/2102254445082116335",
-      "posted_at": "2026-09-22T04:31:32.000Z",
-      "truncated": false,
-      "hash": "5dcb1c276a86ebd138b1ae92937b6cf6d7badce80da9c498f43ba94cca4d6ca2",
-      "status": "unresolved",
-      "attempts": 3,
-      "retry_at": "2026-09-22T08:00:55.715Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2102254445082116335",
-            "event": "reset",
-            "state": "scheduled",
-            "conditional": false,
-            "evidence": "I promised a reset for Tuesday",
-            "time_text": "Tuesday",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-fin:free",
-          "claim": {
-            "id": "2102254445082116335",
-            "event": "reset",
-            "state": "scheduled",
-            "conditional": false,
-            "evidence": "I promised a reset for Tuesday",
-            "time_text": "Tuesday",
-            "time": null
-          }
-        },
-        {
-          "model": "liquid/lfm-2.5-2.6b:free",
-          "claim": null,
-          "error": "http_429"
-        }
-      ],
-      "result": null
-    },
-    {
-      "id": "2102253723879670183",
-      "text": "@prit4k @noahrshinn Probably nothing, do not worry",
-      "url": "https://x.com/thsottiaux/status/2102253723879670183",
-      "posted_at": "2026-09-22T04:28:40.000Z",
-      "truncated": false,
-      "hash": "8c249dec38b54e468c2d6f4bd11e461a0a8964e18224732b8cd1607ccc198ff5",
-      "status": "unresolved",
-      "attempts": 3,
-      "retry_at": "2026-09-22T08:00:55.715Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2102253723879670183",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-fin:free",
-          "claim": {
-            "id": "2102253723879670183",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "liquid/lfm-2.5-2.6b:free",
-          "claim": null,
-          "error": "http_429"
-        }
-      ],
-      "result": null
     }
   ],
   "budget": {
