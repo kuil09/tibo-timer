@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-23T20:33:17.066Z",
-  "last_success_at": "2026-09-23T20:33:17.066Z",
+  "checked_at": "2026-09-23T20:50:42.514Z",
+  "last_success_at": "2026-09-23T20:50:42.514Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -293,64 +293,6 @@
           "model": "dots-studio/dots-3-note-preview:free",
           "claim": {
             "id": "2102501432884891720",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2102497184805720459",
-      "text": "@viticci It’s good to want it all",
-      "url": "https://x.com/thsottiaux/status/2102497184805720459",
-      "posted_at": "2026-09-22T20:36:06.000Z",
-      "truncated": false,
-      "hash": "972bdd8f37611d7bbaa4bf6f97b5ef83040e28db9d3a609473ef81abb674ced9",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-22T21:50:31.216Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2102497184805720459",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2102497184805720459",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2102497184805720459",
             "event": "none",
             "state": "unknown",
             "conditional": false,
