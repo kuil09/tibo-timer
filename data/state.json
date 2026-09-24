@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-24T21:50:53.563Z",
-  "last_success_at": "2026-09-24T21:50:53.563Z",
+  "checked_at": "2026-09-24T22:21:21.558Z",
+  "last_success_at": "2026-09-24T22:21:21.558Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -177,122 +177,6 @@
           "model": "dots-studio/dots-3-note-preview:free",
           "claim": {
             "id": "2102890573481050167",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2102884137749315973",
-      "text": "@trq212 This is the way",
-      "url": "https://x.com/thsottiaux/status/2102884137749315973",
-      "posted_at": "2026-09-23T22:13:42.000Z",
-      "truncated": false,
-      "hash": "6ef66afdf3cc7eac69ddab7ae09e331725b0d5e2e5b78577a452a50a09fae781",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-09-24T00:30:25.242Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2102884137749315973",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2102884137749315973",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2102884137749315973",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2102884039145521487",
-      "text": "@scottstts A bit harder to do when you have 1B users, but we are working to reduce this to only a few hours or minutes in the future",
-      "url": "https://x.com/thsottiaux/status/2102884039145521487",
-      "posted_at": "2026-09-23T22:13:19.000Z",
-      "truncated": false,
-      "hash": "7af1ec18e01a1bd958660a71d547a464086b316b092438ca4d25f09e7bab0929",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-09-24T00:30:25.242Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2102884039145521487",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2102884039145521487",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2102884039145521487",
             "event": "none",
             "state": "unknown",
             "conditional": false,
