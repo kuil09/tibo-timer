@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-24T05:34:25.457Z",
-  "last_success_at": "2026-09-24T05:34:25.457Z",
+  "checked_at": "2026-09-24T05:51:31.644Z",
+  "last_success_at": "2026-09-24T05:51:31.644Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nex-agi/nex-n2.5-mini:free",
-      "status": "ok",
-      "at": "2026-09-24T04:52:14.370Z"
+      "status": "pending",
+      "at": "2026-09-24T05:51:31.644Z"
     },
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-24T04:52:14.370Z"
+      "status": "pending",
+      "at": "2026-09-24T05:51:31.644Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-24T04:52:14.370Z"
+      "status": "pending",
+      "at": "2026-09-24T05:51:31.644Z"
     }
   ],
   "posts": [
+    {
+      "id": "2102996313780736363",
+      "text": "Can't wait for DevDay next Tuesday.\n\nSome really fun stuff, but also many many things that should change the way you work. It's been our most ambitious sprint and Astra has really made new things possible in such short amounts of time.",
+      "url": "https://x.com/thsottiaux/status/2102996313780736363",
+      "posted_at": "2026-09-24T05:39:27.000Z",
+      "truncated": false,
+      "hash": "cb6507c418c61f8adf61244c42f08eb11a0bcfa49a7cad5431abd89ac155d5b0",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-24T06:51:31.644Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2102982591628648784",
       "text": "@alexandr_wang good one",
@@ -315,7 +328,7 @@
   ],
   "budget": {
     "day": "2026-09-24",
-    "requests": 3
+    "requests": 6
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
