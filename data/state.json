@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-24T22:31:31.015Z",
-  "last_success_at": "2026-09-24T22:31:31.015Z",
+  "checked_at": "2026-09-24T22:51:48.957Z",
+  "last_success_at": "2026-09-24T22:51:48.957Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -119,64 +119,6 @@
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
           "claim": {
             "id": "2102982591628648784",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2102890573481050167",
-      "text": "@_simonsmith Seeing the future",
-      "url": "https://x.com/thsottiaux/status/2102890573481050167",
-      "posted_at": "2026-09-23T22:39:17.000Z",
-      "truncated": false,
-      "hash": "e28a352703c796cda2c520844eeae48158e43f40a331ed1906b8b09b4078cc9d",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-23T23:51:07.803Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2102890573481050167",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2102890573481050167",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2102890573481050167",
             "event": "none",
             "state": "unknown",
             "conditional": false,
