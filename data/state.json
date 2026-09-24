@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-24T17:31:14.948Z",
-  "last_success_at": "2026-09-24T17:31:14.948Z",
+  "checked_at": "2026-09-24T17:50:58.714Z",
+  "last_success_at": "2026-09-24T17:50:58.714Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -293,64 +293,6 @@
           "model": "dots-studio/dots-3-note-preview:free",
           "claim": {
             "id": "2102884039145521487",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2102814202117411196",
-      "text": "Voice! I've gotten so used to just call ChatGPT and talk about all the work, check on emails, do some coding, manage my calendar and it works across the full ecosystem of plugins, including 3P developed plugins.",
-      "url": "https://x.com/thsottiaux/status/2102814202117411196",
-      "posted_at": "2026-09-23T17:35:48.000Z",
-      "truncated": false,
-      "hash": "cbebbeaff4f5cfb6cb2d72b6a80ebe658282439998774175bc954159e7e9c5dd",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-23T18:50:38.870Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2102814202117411196",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2102814202117411196",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2102814202117411196",
             "event": "none",
             "state": "unknown",
             "conditional": false,
