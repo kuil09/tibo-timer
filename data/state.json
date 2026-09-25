@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-25T04:44:55.985Z",
-  "last_success_at": "2026-09-25T04:44:55.985Z",
+  "checked_at": "2026-09-25T04:54:25.473Z",
+  "last_success_at": "2026-09-25T04:54:25.473Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -61,64 +61,6 @@
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
           "claim": {
             "id": "2102996313780736363",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2102982591628648784",
-      "text": "@alexandr_wang good one",
-      "url": "https://x.com/thsottiaux/status/2102982591628648784",
-      "posted_at": "2026-09-24T04:44:56.000Z",
-      "truncated": false,
-      "hash": "d25c8d211db0268cff652611379781c0023dea6f74184117b486e12d797e3584",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-24T05:52:14.370Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2102982591628648784",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2102982591628648784",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2102982591628648784",
             "event": "none",
             "state": "unknown",
             "conditional": false,
