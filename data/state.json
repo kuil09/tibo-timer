@@ -1,27 +1,66 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-26T21:31:03.314Z",
-  "last_success_at": "2026-09-26T21:31:03.314Z",
+  "checked_at": "2026-09-26T21:51:01.393Z",
+  "last_success_at": "2026-09-26T21:51:01.393Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-26T21:19:24.056Z"
+      "status": "pending",
+      "at": "2026-09-26T21:51:01.393Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-26T21:19:24.056Z"
+      "status": "pending",
+      "at": "2026-09-26T21:51:01.393Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-26T21:19:24.056Z"
+      "status": "pending",
+      "at": "2026-09-26T21:51:01.393Z"
     }
   ],
   "posts": [
+    {
+      "id": "2103963215885701493",
+      "text": "@giadotai Sorry Gia. More resets coming next week",
+      "url": "https://x.com/thsottiaux/status/2103963215885701493",
+      "posted_at": "2026-09-26T21:41:35.000Z",
+      "truncated": false,
+      "hash": "989be3362a46f98e51efa79ba5af0324d4704dcff6691f1701b4f1e0e6a4aea9",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-26T22:51:01.393Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2103962250885390436",
+      "text": "@angelbrodin Are those Udon or just plain Noodles",
+      "url": "https://x.com/thsottiaux/status/2103962250885390436",
+      "posted_at": "2026-09-26T21:37:44.000Z",
+      "truncated": false,
+      "hash": "24e94a128aeece7bcb1f70cd1a5a09a6a145341cca6632aaa6e1744475c1e73a",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-26T22:51:01.393Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2103961852153913371",
+      "text": "@jorilallo Truth is, there isn’t an org chart",
+      "url": "https://x.com/thsottiaux/status/2103961852153913371",
+      "posted_at": "2026-09-26T21:36:09.000Z",
+      "truncated": false,
+      "hash": "d93e1eb2da12ab98bd80c0d1f09426599f057f648d9e8391f6a932fc297bf918",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-26T22:51:01.393Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2103954577817260036",
       "text": "@antigravity Plan mode was cool in 2025, might still be cool, but was particularly cool in 2025",
@@ -415,7 +454,7 @@
   ],
   "budget": {
     "day": "2026-09-26",
-    "requests": 15
+    "requests": 18
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
