@@ -1,27 +1,66 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-26T20:50:38.385Z",
-  "last_success_at": "2026-09-26T20:50:38.385Z",
+  "checked_at": "2026-09-26T21:19:24.056Z",
+  "last_success_at": "2026-09-26T21:19:24.056Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-26T18:24:58.813Z"
+      "status": "pending",
+      "at": "2026-09-26T21:19:24.056Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-26T18:24:58.813Z"
+      "status": "pending",
+      "at": "2026-09-26T21:19:24.056Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-26T18:24:58.813Z"
+      "status": "pending",
+      "at": "2026-09-26T21:19:24.056Z"
     }
   ],
   "posts": [
+    {
+      "id": "2103954577817260036",
+      "text": "@antigravity Plan mode was cool in 2025, might still be cool, but was particularly cool in 2025",
+      "url": "https://x.com/thsottiaux/status/2103954577817260036",
+      "posted_at": "2026-09-26T21:07:15.000Z",
+      "truncated": false,
+      "hash": "914f285ac0da01b59b1b821c09a872cb009e8b42ed618238dea29bcb78f4fbc6",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-26T22:19:24.056Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2103954313068642787",
+      "text": "@kunchenguid 👋",
+      "url": "https://x.com/thsottiaux/status/2103954313068642787",
+      "posted_at": "2026-09-26T21:06:12.000Z",
+      "truncated": false,
+      "hash": "ce5657fac784bdbc6453fd061a17b4b6802280f43a42d62784c9a00a295f2827",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-26T22:19:24.056Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2103953907278045548",
+      "text": "@NicolasZu DevDay",
+      "url": "https://x.com/thsottiaux/status/2103953907278045548",
+      "posted_at": "2026-09-26T21:04:35.000Z",
+      "truncated": false,
+      "hash": "7b16612f2f98378549d9fb9d699b8e3aa2e687c24108c0301a7d022207eaa3c2",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-26T22:19:24.056Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2103911959544610829",
       "text": "Resets all propagated. That will be all. Have a fantastic weekend.",
@@ -241,7 +280,7 @@
   ],
   "budget": {
     "day": "2026-09-26",
-    "requests": 12
+    "requests": 15
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
