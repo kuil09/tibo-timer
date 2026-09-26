@@ -3,21 +3,21 @@
   "checked_at": "2026-09-26T18:24:58.813Z",
   "last_success_at": "2026-09-26T18:24:58.813Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "unresolved",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-26T18:24:58.813Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-26T18:24:58.813Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-26T18:24:58.813Z"
     }
   ],
@@ -29,10 +29,47 @@
       "posted_at": "2026-09-26T18:17:54.000Z",
       "truncated": false,
       "hash": "909dac50051e4d9eb46d6c7e088cef15cd432f62b824f14d3d5f5fdd70013b58",
-      "status": "pending",
+      "status": "unresolved",
       "attempts": 1,
       "retry_at": "2026-09-26T19:24:58.813Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2103911959544610829",
+            "event": "reset",
+            "state": "completed",
+            "conditional": false,
+            "evidence": "Resets all propagated. That will be all. Have a fantastic weekend.",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "claim": {
+            "id": "2103911959544610829",
+            "event": "reset",
+            "state": "completed",
+            "conditional": false,
+            "evidence": "Resets all propagated",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2103911959544610829",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
       "result": null
     },
     {
