@@ -1,26 +1,24 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-26T22:31:34.036Z",
-  "last_success_at": "2026-09-26T22:31:34.036Z",
+  "checked_at": "2026-09-26T22:51:50.161Z",
+  "last_success_at": "2026-09-26T22:51:50.161Z",
   "source_status": "ok",
-  "analysis_status": "retry_pending",
+  "analysis_status": "running",
   "models": [
     {
-      "id": "cohere/north-mini-code:free",
-      "status": "error",
-      "at": "2026-09-26T21:51:01.393Z",
-      "error": "invalid_vote"
-    },
-    {
-      "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "error",
-      "at": "2026-09-26T21:51:01.393Z",
-      "error": "invalid_vote"
-    },
-    {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-26T21:51:01.393Z"
+      "status": "pending",
+      "at": "2026-09-26T22:51:50.161Z"
+    },
+    {
+      "id": "google/gemma-4-26b-a4b-it:free",
+      "status": "pending",
+      "at": "2026-09-26T22:51:50.161Z"
+    },
+    {
+      "id": "inclusionai/ling-3.0-flash-fin:free",
+      "status": "pending",
+      "at": "2026-09-26T22:51:50.161Z"
     }
   ],
   "posts": [
@@ -32,8 +30,8 @@
       "truncated": false,
       "hash": "989be3362a46f98e51efa79ba5af0324d4704dcff6691f1701b4f1e0e6a4aea9",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-26T22:51:01.393Z",
+      "attempts": 2,
+      "retry_at": "2026-09-26T23:51:50.161Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -68,8 +66,8 @@
       "truncated": false,
       "hash": "24e94a128aeece7bcb1f70cd1a5a09a6a145341cca6632aaa6e1744475c1e73a",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-26T22:51:01.393Z",
+      "attempts": 2,
+      "retry_at": "2026-09-26T23:51:50.161Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -104,8 +102,8 @@
       "truncated": false,
       "hash": "d93e1eb2da12ab98bd80c0d1f09426599f057f648d9e8391f6a932fc297bf918",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-26T22:51:01.393Z",
+      "attempts": 2,
+      "retry_at": "2026-09-26T23:51:50.161Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -525,7 +523,7 @@
   ],
   "budget": {
     "day": "2026-09-26",
-    "requests": 18
+    "requests": 21
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
