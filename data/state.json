@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-26T06:34:05.226Z",
-  "last_success_at": "2026-09-26T06:34:05.226Z",
+  "checked_at": "2026-09-26T06:57:52.481Z",
+  "last_success_at": "2026-09-26T06:57:52.481Z",
   "source_status": "ok",
   "analysis_status": "unresolved",
   "models": [
@@ -169,64 +169,6 @@
           "model": "dots-studio/dots-3-note-preview:free",
           "claim": {
             "id": "2103620061156290622",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2103375711797211460",
-      "text": "Been a bit quiet here because internal Slack has been hilarious lately and because we are all locked in on DevDay. Tuesday will be fun.",
-      "url": "https://x.com/thsottiaux/status/2103375711797211460",
-      "posted_at": "2026-09-25T06:47:03.000Z",
-      "truncated": false,
-      "hash": "2ffe0f373e159e210ec19c3f324a845dc327b6c7f75f7b317e8a7e6b18830736",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-25T08:02:10.741Z",
-      "votes": [
-        {
-          "model": "nex-agi/nex-n2.5-mini:free",
-          "claim": {
-            "id": "2103375711797211460",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2103375711797211460",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2103375711797211460",
             "event": "none",
             "state": "unknown",
             "conditional": false,
