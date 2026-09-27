@@ -1,25 +1,24 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-26T23:51:35.964Z",
-  "last_success_at": "2026-09-26T23:51:35.964Z",
+  "checked_at": "2026-09-27T01:04:07.710Z",
+  "last_success_at": "2026-09-27T01:04:07.710Z",
   "source_status": "ok",
-  "analysis_status": "retry_pending",
+  "analysis_status": "running",
   "models": [
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-26T22:51:50.161Z"
-    },
-    {
-      "id": "google/gemma-4-26b-a4b-it:free",
-      "status": "error",
-      "at": "2026-09-26T22:51:50.161Z",
-      "error": "http_429"
+      "status": "pending",
+      "at": "2026-09-27T01:04:07.710Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-fin:free",
-      "status": "ok",
-      "at": "2026-09-26T22:51:50.161Z"
+      "status": "pending",
+      "at": "2026-09-27T01:04:07.710Z"
+    },
+    {
+      "id": "liquid/lfm-2.5-2.6b:free",
+      "status": "pending",
+      "at": "2026-09-27T01:04:07.710Z"
     }
   ],
   "posts": [
@@ -31,8 +30,8 @@
       "truncated": false,
       "hash": "989be3362a46f98e51efa79ba5af0324d4704dcff6691f1701b4f1e0e6a4aea9",
       "status": "error",
-      "attempts": 2,
-      "retry_at": "2026-09-26T23:51:50.161Z",
+      "attempts": 3,
+      "retry_at": "2026-09-27T02:04:07.710Z",
       "votes": [
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -74,8 +73,8 @@
       "truncated": false,
       "hash": "24e94a128aeece7bcb1f70cd1a5a09a6a145341cca6632aaa6e1744475c1e73a",
       "status": "error",
-      "attempts": 2,
-      "retry_at": "2026-09-26T23:51:50.161Z",
+      "attempts": 3,
+      "retry_at": "2026-09-27T02:04:07.710Z",
       "votes": [
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -117,8 +116,8 @@
       "truncated": false,
       "hash": "d93e1eb2da12ab98bd80c0d1f09426599f057f648d9e8391f6a932fc297bf918",
       "status": "error",
-      "attempts": 2,
-      "retry_at": "2026-09-26T23:51:50.161Z",
+      "attempts": 3,
+      "retry_at": "2026-09-27T02:04:07.710Z",
       "votes": [
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -375,61 +374,11 @@
         }
       ],
       "result": null
-    },
-    {
-      "id": "2103637477760311522",
-      "text": "o yes… we’re back in action and we’ll reset usage limits for all paid users across codex and ChatGPT work\n\nsorry about the brief disruption!\n\n(and yes we have a special spare codex when things are down to help us out)",
-      "url": "https://x.com/thsottiaux/status/2103637477760311522",
-      "posted_at": "2026-09-26T00:07:13.000Z",
-      "truncated": false,
-      "hash": "c17fbfbefa217c8f211ad7a6d946fea5313d7dbed60b7094a4811ebb667e2352",
-      "status": "unresolved",
-      "attempts": 3,
-      "retry_at": "2026-09-26T04:24:46.767Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2103637477760311522",
-            "event": "reset",
-            "state": "scheduled",
-            "conditional": false,
-            "evidence": "we’ll reset usage limits for all paid users across codex and ChatGPT work",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2103637477760311522",
-            "event": "banked_reset",
-            "state": "completed",
-            "conditional": false,
-            "evidence": "we’ll reset usage limits for all paid users across codex and ChatGPT work",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-fin:free",
-          "claim": {
-            "id": "2103637477760311522",
-            "event": "reset",
-            "state": "scheduled",
-            "conditional": false,
-            "evidence": "we’ll reset usage limits for all paid users across codex and ChatGPT work",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": null
     }
   ],
   "budget": {
-    "day": "2026-09-26",
-    "requests": 21
+    "day": "2026-09-27",
+    "requests": 3
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
