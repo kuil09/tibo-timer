@@ -1,28 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-27T06:35:35.456Z",
-  "last_success_at": "2026-09-27T06:35:35.456Z",
+  "checked_at": "2026-09-27T07:00:05.479Z",
+  "last_success_at": "2026-09-27T07:00:05.479Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
+      "id": "cohere/north-mini-code:free",
+      "status": "pending",
+      "at": "2026-09-27T07:00:05.479Z"
+    },
+    {
+      "id": "nvidia/nemotron-3-super-120b-a12b:free",
+      "status": "pending",
+      "at": "2026-09-27T07:00:05.479Z"
+    },
+    {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-27T01:04:07.710Z"
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash-fin:free",
-      "status": "ok",
-      "at": "2026-09-27T01:04:07.710Z"
-    },
-    {
-      "id": "liquid/lfm-2.5-2.6b:free",
-      "status": "error",
-      "at": "2026-09-27T01:04:07.710Z",
-      "error": "http_429"
+      "status": "pending",
+      "at": "2026-09-27T07:00:05.479Z"
     }
   ],
   "posts": [
+    {
+      "id": "2104101496606618082",
+      "text": "@yacineMTB We’re perma locked in. No code red necessary.",
+      "url": "https://x.com/thsottiaux/status/2104101496606618082",
+      "posted_at": "2026-09-27T06:51:03.000Z",
+      "truncated": false,
+      "hash": "2dc8cda668e7b296ee9ee0c4d89b7f4131e44b7226da089e3bc56ee3e8bc5f38",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-27T08:00:05.479Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2104100881100890402",
+      "text": "@anthdm Tell me more. Didn’t see your message, was probably too small and for ants.",
+      "url": "https://x.com/thsottiaux/status/2104100881100890402",
+      "posted_at": "2026-09-27T06:48:37.000Z",
+      "truncated": false,
+      "hash": "7caa8743e2a9c7c1a99c1ee64f336ff4a0d74292a0893b9ed7416dfd109805d5",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-27T08:00:05.479Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2103963215885701493",
       "text": "@giadotai Sorry Gia. More resets coming next week",
@@ -379,7 +404,7 @@
   ],
   "budget": {
     "day": "2026-09-27",
-    "requests": 3
+    "requests": 6
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
