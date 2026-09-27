@@ -1,25 +1,24 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-27T23:19:13.377Z",
-  "last_success_at": "2026-09-27T23:19:13.377Z",
+  "checked_at": "2026-09-27T23:30:50.127Z",
+  "last_success_at": "2026-09-27T23:30:50.127Z",
   "source_status": "ok",
-  "analysis_status": "retry_pending",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-27T22:21:08.627Z"
+      "status": "pending",
+      "at": "2026-09-27T23:30:50.127Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-27T22:21:08.627Z"
+      "status": "pending",
+      "at": "2026-09-27T23:30:50.127Z"
     },
     {
-      "id": "google/gemma-4-26b-a4b-it:free",
-      "status": "error",
-      "at": "2026-09-27T22:21:08.627Z",
-      "error": "http_429"
+      "id": "inclusionai/ling-3.0-flash-fin:free",
+      "status": "pending",
+      "at": "2026-09-27T23:30:50.127Z"
     }
   ],
   "posts": [
@@ -31,8 +30,8 @@
       "truncated": false,
       "hash": "7550c100776129c199c729c97e26c8b882efbb79d16852dcb6866c2deb71daa1",
       "status": "error",
-      "attempts": 2,
-      "retry_at": "2026-09-27T23:21:08.627Z",
+      "attempts": 3,
+      "retry_at": "2026-09-28T00:30:50.127Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -74,8 +73,8 @@
       "truncated": false,
       "hash": "ee74160541a1af8d4a0b47ecc898a66352ff68aff903e8d8a748a0429bda4ffb",
       "status": "error",
-      "attempts": 2,
-      "retry_at": "2026-09-27T23:21:08.627Z",
+      "attempts": 3,
+      "retry_at": "2026-09-28T00:30:50.127Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -117,8 +116,8 @@
       "truncated": false,
       "hash": "478a62266a5eb6dfbec78e079f007685cf3ba370f6b87e1467969c452038d70e",
       "status": "error",
-      "attempts": 2,
-      "retry_at": "2026-09-27T23:21:08.627Z",
+      "attempts": 3,
+      "retry_at": "2026-09-28T00:30:50.127Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -329,7 +328,7 @@
   ],
   "budget": {
     "day": "2026-09-27",
-    "requests": 15
+    "requests": 18
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
