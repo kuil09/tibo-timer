@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-28T20:34:47.692Z",
-  "last_success_at": "2026-09-28T20:34:47.692Z",
+  "checked_at": "2026-09-28T20:53:10.044Z",
+  "last_success_at": "2026-09-28T20:53:10.044Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -583,64 +583,6 @@
           "model": "inclusionai/ling-3.0-flash-fin:free",
           "claim": {
             "id": "2104313502697660428",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104313314901958706",
-      "text": "@scottstts 🙈",
-      "url": "https://x.com/thsottiaux/status/2104313314901958706",
-      "posted_at": "2026-09-27T20:52:45.000Z",
-      "truncated": false,
-      "hash": "478a62266a5eb6dfbec78e079f007685cf3ba370f6b87e1467969c452038d70e",
-      "status": "complete",
-      "attempts": 3,
-      "retry_at": "2026-09-28T00:30:50.127Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2104313314901958706",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104313314901958706",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-fin:free",
-          "claim": {
-            "id": "2104313314901958706",
             "event": "none",
             "state": "unknown",
             "conditional": false,
