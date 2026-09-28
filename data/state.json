@@ -1,27 +1,79 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-28T05:54:55.617Z",
-  "last_success_at": "2026-09-28T05:54:55.617Z",
+  "checked_at": "2026-09-28T06:51:07.091Z",
+  "last_success_at": "2026-09-28T06:51:07.091Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-28T02:05:12.286Z"
+      "status": "pending",
+      "at": "2026-09-28T06:51:07.091Z"
+    },
+    {
+      "id": "nvidia/nemotron-3-super-120b-a12b:free",
+      "status": "pending",
+      "at": "2026-09-28T06:51:07.091Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-28T02:05:12.286Z"
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash-fin:free",
-      "status": "ok",
-      "at": "2026-09-28T02:05:12.286Z"
+      "status": "pending",
+      "at": "2026-09-28T06:51:07.091Z"
     }
   ],
   "posts": [
+    {
+      "id": "2104462923661988233",
+      "text": "@imjustnewatai 007 even",
+      "url": "https://x.com/thsottiaux/status/2104462923661988233",
+      "posted_at": "2026-09-28T06:47:14.000Z",
+      "truncated": false,
+      "hash": "775ecbba9310494dcb7d92152cf2bcf7e4ef494518736a4d735c5776127ffef1",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-28T07:51:07.091Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2104462713296683467",
+      "text": "@mark_k DevDay",
+      "url": "https://x.com/thsottiaux/status/2104462713296683467",
+      "posted_at": "2026-09-28T06:46:24.000Z",
+      "truncated": false,
+      "hash": "919c0c20fa28beba07c96f3af9c8eebca2c2ea085d4b2c2466ab14827068ae23",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-28T07:51:07.091Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2104462572644888780",
+      "text": "@maria_rcks Please don't die",
+      "url": "https://x.com/thsottiaux/status/2104462572644888780",
+      "posted_at": "2026-09-28T06:45:50.000Z",
+      "truncated": false,
+      "hash": "b431b5f57247550079e7187b1f4acea858da6d568784dd92df91dcf1c1fba132",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-28T07:51:07.091Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2104451970983768270",
+      "text": "@melvindvivas olalala",
+      "url": "https://x.com/thsottiaux/status/2104451970983768270",
+      "posted_at": "2026-09-28T06:03:43.000Z",
+      "truncated": false,
+      "hash": "715c36831d0cbeddcb564ba68298f594bc9410fab2dfdb231829da038d657a5b",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-28T07:51:07.091Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2104388401218932888",
       "text": "@ZainManji Sup Arjun",
@@ -369,127 +421,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2104101496606618082",
-      "text": "@yacineMTB We’re perma locked in. No code red necessary.",
-      "url": "https://x.com/thsottiaux/status/2104101496606618082",
-      "posted_at": "2026-09-27T06:51:03.000Z",
-      "truncated": false,
-      "hash": "2dc8cda668e7b296ee9ee0c4d89b7f4131e44b7226da089e3bc56ee3e8bc5f38",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-27T08:00:05.479Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2104101496606618082",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2104101496606618082",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104101496606618082",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104100881100890402",
-      "text": "@anthdm Tell me more. Didn’t see your message, was probably too small and for ants.",
-      "url": "https://x.com/thsottiaux/status/2104100881100890402",
-      "posted_at": "2026-09-27T06:48:37.000Z",
-      "truncated": false,
-      "hash": "7caa8743e2a9c7c1a99c1ee64f336ff4a0d74292a0893b9ed7416dfd109805d5",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-27T08:00:05.479Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2104100881100890402",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2104100881100890402",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104100881100890402",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-09-28",
-    "requests": 6
+    "requests": 9
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
