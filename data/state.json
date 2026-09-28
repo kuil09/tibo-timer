@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-28T01:42:59.205Z",
-  "last_success_at": "2026-09-28T01:42:59.205Z",
+  "checked_at": "2026-09-28T02:05:12.286Z",
+  "last_success_at": "2026-09-28T02:05:12.286Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-28T01:42:59.205Z"
+      "status": "pending",
+      "at": "2026-09-28T02:05:12.286Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-28T01:42:59.205Z"
+      "status": "pending",
+      "at": "2026-09-28T02:05:12.286Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-fin:free",
-      "status": "ok",
-      "at": "2026-09-28T01:42:59.205Z"
+      "status": "pending",
+      "at": "2026-09-28T02:05:12.286Z"
     }
   ],
   "posts": [
+    {
+      "id": "2104388401218932888",
+      "text": "@ZainManji Sup Arjun",
+      "url": "https://x.com/thsottiaux/status/2104388401218932888",
+      "posted_at": "2026-09-28T01:51:07.000Z",
+      "truncated": false,
+      "hash": "23ad0da0230cc88753921923be7673e876f500f74e81782e2209f34448e0be47",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-28T03:05:12.286Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2104383749723128052",
       "text": ". . . . . .",
@@ -431,7 +444,7 @@
   ],
   "budget": {
     "day": "2026-09-28",
-    "requests": 3
+    "requests": 6
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
