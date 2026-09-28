@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-28T20:53:10.044Z",
-  "last_success_at": "2026-09-28T20:53:10.044Z",
+  "checked_at": "2026-09-28T21:21:05.203Z",
+  "last_success_at": "2026-09-28T21:21:05.203Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -467,122 +467,6 @@
           "model": "inclusionai/ling-3.0-flash-fin:free",
           "claim": {
             "id": "2104383749723128052",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104313777013526880",
-      "text": "@Vincent_AINotes Hitting the gym, brb on Tuesday",
-      "url": "https://x.com/thsottiaux/status/2104313777013526880",
-      "posted_at": "2026-09-27T20:54:35.000Z",
-      "truncated": false,
-      "hash": "7550c100776129c199c729c97e26c8b882efbb79d16852dcb6866c2deb71daa1",
-      "status": "complete",
-      "attempts": 3,
-      "retry_at": "2026-09-28T00:30:50.127Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2104313777013526880",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104313777013526880",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-fin:free",
-          "claim": {
-            "id": "2104313777013526880",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104313502697660428",
-      "text": "@yacineMTB O really",
-      "url": "https://x.com/thsottiaux/status/2104313502697660428",
-      "posted_at": "2026-09-27T20:53:29.000Z",
-      "truncated": false,
-      "hash": "ee74160541a1af8d4a0b47ecc898a66352ff68aff903e8d8a748a0429bda4ffb",
-      "status": "complete",
-      "attempts": 3,
-      "retry_at": "2026-09-28T00:30:50.127Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2104313502697660428",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104313502697660428",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-fin:free",
-          "claim": {
-            "id": "2104313502697660428",
             "event": "none",
             "state": "unknown",
             "conditional": false,
