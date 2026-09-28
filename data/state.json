@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-28T01:03:53.126Z",
-  "last_success_at": "2026-09-27T23:51:42.589Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-09-28T01:42:59.205Z",
+  "last_success_at": "2026-09-28T01:42:59.205Z",
+  "source_status": "ok",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-27T23:30:50.127Z"
+      "status": "pending",
+      "at": "2026-09-28T01:42:59.205Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-27T23:30:50.127Z"
+      "status": "pending",
+      "at": "2026-09-28T01:42:59.205Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-fin:free",
-      "status": "ok",
-      "at": "2026-09-27T23:30:50.127Z"
+      "status": "pending",
+      "at": "2026-09-28T01:42:59.205Z"
     }
   ],
   "posts": [
+    {
+      "id": "2104383749723128052",
+      "text": ". . . . . .",
+      "url": "https://x.com/thsottiaux/status/2104383749723128052",
+      "posted_at": "2026-09-28T01:32:38.000Z",
+      "truncated": false,
+      "hash": "e1e5044743dbaafd227b437f3a43f40dbac0a5390b72086c9e948b08aedbe5d3",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-28T02:42:59.205Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2104313777013526880",
       "text": "@Vincent_AINotes Hitting the gym, brb on Tuesday",
@@ -372,8 +385,8 @@
     }
   ],
   "budget": {
-    "day": "2026-09-27",
-    "requests": 18
+    "day": "2026-09-28",
+    "requests": 3
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
