@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-28T06:51:07.091Z",
-  "last_success_at": "2026-09-28T06:51:07.091Z",
+  "checked_at": "2026-09-28T07:40:28.124Z",
+  "last_success_at": "2026-09-28T07:40:28.124Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-28T06:51:07.091Z"
+      "status": "pending",
+      "at": "2026-09-28T07:40:28.124Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-28T06:51:07.091Z"
+      "status": "pending",
+      "at": "2026-09-28T07:40:28.124Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-28T06:51:07.091Z"
+      "status": "pending",
+      "at": "2026-09-28T07:40:28.124Z"
     }
   ],
   "posts": [
+    {
+      "id": "2104467346945675347",
+      "text": "Taken by none other than the incredible @ah20im",
+      "url": "https://x.com/thsottiaux/status/2104467346945675347",
+      "posted_at": "2026-09-28T07:04:49.000Z",
+      "truncated": false,
+      "hash": "9f56bd90dc1ea61fc4ae308a1756203de235b700c8167098b633fa2ed2b7f332",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-28T08:40:28.124Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2104465709384491519",
+      "text": "Sunday vibes. See you at Fort Mason soon 🎮👩‍💻 https://t.co/dIBCN92aS0",
+      "url": "https://x.com/thsottiaux/status/2104465709384491519",
+      "posted_at": "2026-09-28T06:58:18.000Z",
+      "truncated": false,
+      "hash": "7dfe10d73bcf2e04861a2b5978cd7bf691df2f1be7e05c394516f31698e3a98e",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-28T08:40:28.124Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2104462923661988233",
       "text": "@imjustnewatai 007 even",
@@ -543,69 +569,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2104108167806550046",
-      "text": "Code freeze isn’t really a thing anymore before releases and in the future the code might even be generated online per request according to some constraints.",
-      "url": "https://x.com/thsottiaux/status/2104108167806550046",
-      "posted_at": "2026-09-27T07:17:34.000Z",
-      "truncated": false,
-      "hash": "1e0020ab86d3a1a3aba0b5e30d519a395b8987e56bc3f13441205755de2528ad",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-27T08:24:55.735Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2104108167806550046",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2104108167806550046",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104108167806550046",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-09-28",
-    "requests": 9
+    "requests": 12
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
