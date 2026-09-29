@@ -3,21 +3,21 @@
   "checked_at": "2026-09-29T16:27:16.764Z",
   "last_success_at": "2026-09-29T16:27:16.764Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "up_to_date",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-29T16:27:16.764Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-29T16:27:16.764Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-sante:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-29T16:27:16.764Z"
     }
   ],
@@ -85,7 +85,7 @@
       "posted_at": "2026-09-29T15:10:31.000Z",
       "truncated": false,
       "hash": "800e4f32f2875dedd980dbabcde8745ef828b58e7b3eba1a1018a7af4c8a6c19",
-      "status": "error",
+      "status": "complete",
       "attempts": 2,
       "retry_at": "2026-09-29T17:27:16.764Z",
       "votes": [
@@ -102,12 +102,19 @@
           }
         },
         {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": null,
-          "error": "provider_503"
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2104951965184925941",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
         },
         {
-          "model": "dots-studio/dots-3-note-preview:free",
+          "model": "inclusionai/ling-3.0-flash-sante:free",
           "claim": {
             "id": "2104951965184925941",
             "event": "none",
@@ -119,7 +126,15 @@
           }
         }
       ],
-      "result": null
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2104936468624105813",
