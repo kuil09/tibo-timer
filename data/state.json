@@ -3,22 +3,23 @@
   "checked_at": "2026-09-29T17:34:40.693Z",
   "last_success_at": "2026-09-29T17:34:40.693Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "error",
   "models": [
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-29T17:34:40.693Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-sante:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-29T17:34:40.693Z"
     },
     {
       "id": "liquid/lfm-2.5-2.6b:free",
-      "status": "pending",
-      "at": "2026-09-29T17:34:40.693Z"
+      "status": "error",
+      "at": "2026-09-29T17:34:40.693Z",
+      "error": "invalid_vote"
     }
   ],
   "posts": [
@@ -29,10 +30,40 @@
       "posted_at": "2026-09-29T17:33:59.000Z",
       "truncated": false,
       "hash": "4d40d1274c73c75437663e613ae9a3481cfd5445db34c5af252d35f9be5eaee9",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-09-29T18:34:40.693Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2104988071188148495",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "inclusionai/ling-3.0-flash-sante:free",
+          "claim": {
+            "id": "2104988071188148495",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "liquid/lfm-2.5-2.6b:free",
+          "claim": null,
+          "error": "invalid_vote"
+        }
+      ],
       "result": null
     },
     {
@@ -42,10 +73,40 @@
       "posted_at": "2026-09-29T17:32:06.000Z",
       "truncated": false,
       "hash": "a28100d23c16af1eeacff39400551ba0ea3d250b8110a00e1d1df68cf09efb4b",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-09-29T18:34:40.693Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2104987594719461796",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "inclusionai/ling-3.0-flash-sante:free",
+          "claim": {
+            "id": "2104987594719461796",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "liquid/lfm-2.5-2.6b:free",
+          "claim": null,
+          "error": "invalid_vote"
+        }
+      ],
       "result": null
     },
     {
@@ -55,10 +116,40 @@
       "posted_at": "2026-09-29T17:27:32.000Z",
       "truncated": false,
       "hash": "7e4b4a0062173c70fedaae2f026ab7457e5cf9739f2417b969c4ea50d945a611",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-09-29T18:34:40.693Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2104986448269279399",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "inclusionai/ling-3.0-flash-sante:free",
+          "claim": {
+            "id": "2104986448269279399",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "liquid/lfm-2.5-2.6b:free",
+          "claim": null,
+          "error": "invalid_vote"
+        }
+      ],
       "result": null
     },
     {
@@ -68,10 +159,40 @@
       "posted_at": "2026-09-29T17:25:52.000Z",
       "truncated": false,
       "hash": "13de693c7ce33bd2b154a31d60af108657c906e3c5cd5aa6f41bacb6ebd511c5",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-09-29T18:34:40.693Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2104986027953930613",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "inclusionai/ling-3.0-flash-sante:free",
+          "claim": {
+            "id": "2104986027953930613",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "liquid/lfm-2.5-2.6b:free",
+          "claim": null,
+          "error": "invalid_vote"
+        }
+      ],
       "result": null
     },
     {
@@ -590,6 +711,6 @@
     "nex-agi/nex-n2.5-mini:free": "2026-09-22T23:19:34.908Z",
     "google/gemma-4-26b-a4b-it:free": "2026-09-29T21:53:02.491Z",
     "nvidia/nemotron-3-super-120b-a12b:free": "2026-09-29T21:24:24.070Z",
-    "liquid/lfm-2.5-2.6b:free": "2026-09-27T07:04:07.710Z"
+    "liquid/lfm-2.5-2.6b:free": "2026-09-29T23:34:40.693Z"
   }
 }
