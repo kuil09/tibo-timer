@@ -1,28 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-29T15:39:24.851Z",
-  "last_success_at": "2026-09-29T15:39:24.851Z",
+  "checked_at": "2026-09-29T15:53:02.491Z",
+  "last_success_at": "2026-09-29T15:53:02.491Z",
   "source_status": "ok",
-  "analysis_status": "retry_pending",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-29T15:24:24.070Z"
-    },
-    {
-      "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "error",
-      "at": "2026-09-29T15:24:24.070Z",
-      "error": "provider_503"
+      "status": "pending",
+      "at": "2026-09-29T15:53:02.491Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-29T15:24:24.070Z"
+      "status": "pending",
+      "at": "2026-09-29T15:53:02.491Z"
+    },
+    {
+      "id": "google/gemma-4-26b-a4b-it:free",
+      "status": "pending",
+      "at": "2026-09-29T15:53:02.491Z"
     }
   ],
   "posts": [
+    {
+      "id": "2104961497055240633",
+      "text": "https://t.co/3zfRsyb9A9",
+      "url": "https://x.com/thsottiaux/status/2104961497055240633",
+      "posted_at": "2026-09-29T15:48:23.000Z",
+      "truncated": false,
+      "hash": "769047407e76d93664b73cf6170bb74a973c46ea7e12042a82dc10397f27ac1d",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T16:53:02.491Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2104952602710638877",
       "text": "@jukan05 Hello, this is Tibo, you’ve reached the wrong company. Let me redirect you to …",
@@ -372,7 +384,7 @@
   ],
   "budget": {
     "day": "2026-09-29",
-    "requests": 12
+    "requests": 15
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
