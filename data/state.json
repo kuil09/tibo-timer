@@ -1,28 +1,79 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-29T17:21:10.182Z",
-  "last_success_at": "2026-09-29T17:21:10.182Z",
+  "checked_at": "2026-09-29T17:34:40.693Z",
+  "last_success_at": "2026-09-29T17:34:40.693Z",
   "source_status": "ok",
-  "analysis_status": "error",
+  "analysis_status": "running",
   "models": [
     {
-      "id": "cohere/north-mini-code:free",
-      "status": "error",
-      "at": "2026-09-29T17:21:10.182Z",
-      "error": "invalid_json"
-    },
-    {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-29T17:21:10.182Z"
+      "status": "pending",
+      "at": "2026-09-29T17:34:40.693Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-sante:free",
-      "status": "ok",
-      "at": "2026-09-29T17:21:10.182Z"
+      "status": "pending",
+      "at": "2026-09-29T17:34:40.693Z"
+    },
+    {
+      "id": "liquid/lfm-2.5-2.6b:free",
+      "status": "pending",
+      "at": "2026-09-29T17:34:40.693Z"
     }
   ],
   "posts": [
+    {
+      "id": "2104988071188148495",
+      "text": "Token traffic on responses API has increased 100X compared to today last year. Meanwhile the team improved reliability with 99.9% uptime and improving performance significantly.",
+      "url": "https://x.com/thsottiaux/status/2104988071188148495",
+      "posted_at": "2026-09-29T17:33:59.000Z",
+      "truncated": false,
+      "hash": "4d40d1274c73c75437663e613ae9a3481cfd5445db34c5af252d35f9be5eaee9",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T18:34:40.693Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2104987594719461796",
+      "text": "Launching a new Codex Cloud, much improved from last year. With configurable cloud environments, it’s impossible to go back to building on your laptop once you’ve taken the time to configure it.\n\nAgents API, the same tech powering all our cloud agents, including dots, is also now in preview and supports computer use. It allows you to build the same incredible products we are making available today.",
+      "url": "https://x.com/thsottiaux/status/2104987594719461796",
+      "posted_at": "2026-09-29T17:32:06.000Z",
+      "truncated": false,
+      "hash": "a28100d23c16af1eeacff39400551ba0ea3d250b8110a00e1d1df68cf09efb4b",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T18:34:40.693Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2104986448269279399",
+      "text": "Decisions API, for lightning fast constrained decision making powered by Luna. Supports visual inputs, and tuned to be able to make decisions in less than a few hundreds of milliseconds end to end.",
+      "url": "https://x.com/thsottiaux/status/2104986448269279399",
+      "posted_at": "2026-09-29T17:27:32.000Z",
+      "truncated": false,
+      "hash": "7e4b4a0062173c70fedaae2f026ab7457e5cf9739f2417b969c4ea50d945a611",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T18:34:40.693Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2104986027953930613",
+      "text": "Introducing 6.1 Sol, near Astra intelligence at one fifth of the price of Astra and 95% cache read discount. It is an absolute workhorse.\n\nCombined with ultrafast for 8X speeded available today for Astra and coming soon for 6.1 Sol.",
+      "url": "https://x.com/thsottiaux/status/2104986027953930613",
+      "posted_at": "2026-09-29T17:25:52.000Z",
+      "truncated": false,
+      "hash": "13de693c7ce33bd2b154a31d60af108657c906e3c5cd5aa6f41bacb6ebd511c5",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T18:34:40.693Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2104983716049379472",
       "text": "Announcing ChatGPT Space, a collection of new collaborative experiences right in ChatGPT. \n\nEdit rich notes with live visualizations together with others and your dots. Whether it’s a TODO list to delegate, a product plan or meeting notes. Working with others and your agents is seamless and they also be automatically kept up to date in the background. For developers, this is AGENTS.md taken one step further.",
@@ -531,7 +582,7 @@
   ],
   "budget": {
     "day": "2026-09-29",
-    "requests": 24
+    "requests": 27
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
