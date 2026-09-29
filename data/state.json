@@ -1,25 +1,24 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-29T15:53:02.491Z",
-  "last_success_at": "2026-09-29T15:53:02.491Z",
+  "checked_at": "2026-09-29T16:27:16.764Z",
+  "last_success_at": "2026-09-29T16:27:16.764Z",
   "source_status": "ok",
-  "analysis_status": "error",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-29T15:53:02.491Z"
+      "status": "pending",
+      "at": "2026-09-29T16:27:16.764Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-29T15:53:02.491Z"
+      "status": "pending",
+      "at": "2026-09-29T16:27:16.764Z"
     },
     {
-      "id": "google/gemma-4-26b-a4b-it:free",
-      "status": "error",
-      "at": "2026-09-29T15:53:02.491Z",
-      "error": "http_429"
+      "id": "inclusionai/ling-3.0-flash-sante:free",
+      "status": "pending",
+      "at": "2026-09-29T16:27:16.764Z"
     }
   ],
   "posts": [
@@ -87,8 +86,8 @@
       "truncated": false,
       "hash": "800e4f32f2875dedd980dbabcde8745ef828b58e7b3eba1a1018a7af4c8a6c19",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-29T16:24:24.070Z",
+      "attempts": 2,
+      "retry_at": "2026-09-29T17:27:16.764Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -415,7 +414,7 @@
   ],
   "budget": {
     "day": "2026-09-29",
-    "requests": 15
+    "requests": 18
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
