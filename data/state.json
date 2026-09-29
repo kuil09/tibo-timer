@@ -3,21 +3,21 @@
   "checked_at": "2026-09-29T16:53:46.605Z",
   "last_success_at": "2026-09-29T16:53:46.605Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "up_to_date",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-29T16:53:46.605Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-29T16:53:46.605Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-sante:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-29T16:53:46.605Z"
     }
   ],
@@ -29,7 +29,7 @@
       "posted_at": "2026-09-29T15:48:23.000Z",
       "truncated": false,
       "hash": "769047407e76d93664b73cf6170bb74a973c46ea7e12042a82dc10397f27ac1d",
-      "status": "error",
+      "status": "complete",
       "attempts": 2,
       "retry_at": "2026-09-29T17:53:46.605Z",
       "votes": [
@@ -58,12 +58,27 @@
           }
         },
         {
-          "model": "google/gemma-4-26b-a4b-it:free",
-          "claim": null,
-          "error": "http_429"
+          "model": "inclusionai/ling-3.0-flash-sante:free",
+          "claim": {
+            "id": "2104961497055240633",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
         }
       ],
-      "result": null
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2104952602710638877",
