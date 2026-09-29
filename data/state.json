@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-29T18:55:17.227Z",
-  "last_success_at": "2026-09-29T18:55:17.227Z",
+  "checked_at": "2026-09-29T19:21:09.359Z",
+  "last_success_at": "2026-09-29T19:21:09.359Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-29T18:55:17.227Z"
+      "status": "pending",
+      "at": "2026-09-29T19:21:09.359Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-sante:free",
-      "status": "ok",
-      "at": "2026-09-29T18:55:17.227Z"
+      "status": "pending",
+      "at": "2026-09-29T19:21:09.359Z"
     },
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
-      "status": "ok",
-      "at": "2026-09-29T18:55:17.227Z"
+      "status": "pending",
+      "at": "2026-09-29T19:21:09.359Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105013661534454145",
+      "text": "@badlogicgames yw, keep on rocking",
+      "url": "https://x.com/thsottiaux/status/2105013661534454145",
+      "posted_at": "2026-09-29T19:15:40.000Z",
+      "truncated": false,
+      "hash": "e371025ec36a9f36a50c024969aafabf01fa28969b2df363b28cc5e2e6b953e6",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T20:21:09.359Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105007775676072381",
       "text": "https://t.co/iGEVhhzt9V",
@@ -552,8 +565,8 @@
       "truncated": false,
       "hash": "7e4b4a0062173c70fedaae2f026ab7457e5cf9739f2417b969c4ea50d945a611",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-29T18:34:40.693Z",
+      "attempts": 2,
+      "retry_at": "2026-09-29T20:21:09.359Z",
       "votes": [
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -595,8 +608,8 @@
       "truncated": false,
       "hash": "13de693c7ce33bd2b154a31d60af108657c906e3c5cd5aa6f41bacb6ebd511c5",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-29T18:34:40.693Z",
+      "attempts": 2,
+      "retry_at": "2026-09-29T20:21:09.359Z",
       "votes": [
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -990,69 +1003,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2104838506363408740",
-      "text": "That was yesterday, today is DevDay. And it's all good news. I'm surprised we've kept it all under wraps.",
-      "url": "https://x.com/thsottiaux/status/2104838506363408740",
-      "posted_at": "2026-09-29T07:39:40.000Z",
-      "truncated": false,
-      "hash": "856e814e4275fab3978279628ce2f397c8a73467e21c4ba4f6b5773c729022c6",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-29T08:56:09.761Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2104838506363408740",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2104838506363408740",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104838506363408740",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-09-29",
-    "requests": 36
+    "requests": 39
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
