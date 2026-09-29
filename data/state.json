@@ -1,28 +1,79 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-29T17:34:40.693Z",
-  "last_success_at": "2026-09-29T17:34:40.693Z",
+  "checked_at": "2026-09-29T17:52:03.469Z",
+  "last_success_at": "2026-09-29T17:52:03.469Z",
   "source_status": "ok",
-  "analysis_status": "error",
+  "analysis_status": "running",
   "models": [
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-29T17:34:40.693Z"
+      "status": "pending",
+      "at": "2026-09-29T17:52:03.469Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-sante:free",
-      "status": "ok",
-      "at": "2026-09-29T17:34:40.693Z"
+      "status": "pending",
+      "at": "2026-09-29T17:52:03.469Z"
     },
     {
-      "id": "liquid/lfm-2.5-2.6b:free",
-      "status": "error",
-      "at": "2026-09-29T17:34:40.693Z",
-      "error": "invalid_vote"
+      "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "status": "pending",
+      "at": "2026-09-29T17:52:03.469Z"
     }
   ],
   "posts": [
+    {
+      "id": "2104992080095564111",
+      "text": "Little summary https://t.co/HQ9Ut3cgSh",
+      "url": "https://x.com/thsottiaux/status/2104992080095564111",
+      "posted_at": "2026-09-29T17:49:55.000Z",
+      "truncated": false,
+      "hash": "c5992c5f7d6531316c0fdc826976721cb924dac3a53f0d9e772d311df48597d2",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T18:52:03.469Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2104991765904375896",
+      "text": "We are opening up our platform and you can now build full native apps with plugin extensions, and ship them right in ChatGPT. We have over 1.2B weekly users and will surface relevant plugins right in the conversations.",
+      "url": "https://x.com/thsottiaux/status/2104991765904375896",
+      "posted_at": "2026-09-29T17:48:40.000Z",
+      "truncated": false,
+      "hash": "91d531a32f1ef9ac4cc64905bd6bbeaeb7e79728742955a0481311b41fdfb27f",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T18:52:03.469Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2104991529416999243",
+      "text": "You can now use your ChatGPT subscription directly in over 60 partners products. No little rules, you can just use all your included usage right there. This includes things such as Devin, OpenCode, Lovable, and many more.\n\nSign in with ChatGPT and go.",
+      "url": "https://x.com/thsottiaux/status/2104991529416999243",
+      "posted_at": "2026-09-29T17:47:44.000Z",
+      "truncated": false,
+      "hash": "21e9e59ba6317bccc1e7bbdd692aa538e4aacd82eaa2a0de1fb15f4ba2744ed4",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T18:52:03.469Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2104989161774322009",
+      "text": "Dots are included in all Pro, Business Premium and Enterprise plans. This includes the Pro 100 plan. We’ll be looking to further expand access soon.",
+      "url": "https://x.com/thsottiaux/status/2104989161774322009",
+      "posted_at": "2026-09-29T17:38:19.000Z",
+      "truncated": false,
+      "hash": "658c5736386507e819166ed8514252bd55392946dc4e78f0f6bc9d5ad943c260",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T18:52:03.469Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2104988071188148495",
       "text": "Token traffic on responses API has increased 100X compared to today last year. Meanwhile the team improved reliability with 99.9% uptime and improving performance significantly.",
@@ -703,7 +754,7 @@
   ],
   "budget": {
     "day": "2026-09-29",
-    "requests": 27
+    "requests": 30
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
