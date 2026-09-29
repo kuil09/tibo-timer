@@ -1,27 +1,118 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-29T20:51:54.723Z",
-  "last_success_at": "2026-09-29T20:51:54.723Z",
+  "checked_at": "2026-09-29T21:21:31.990Z",
+  "last_success_at": "2026-09-29T21:21:31.990Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-29T20:25:08.086Z"
+      "status": "pending",
+      "at": "2026-09-29T21:21:31.990Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-sante:free",
-      "status": "ok",
-      "at": "2026-09-29T20:25:08.086Z"
+      "status": "pending",
+      "at": "2026-09-29T21:21:31.990Z"
     },
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
-      "status": "ok",
-      "at": "2026-09-29T20:25:08.086Z"
+      "status": "pending",
+      "at": "2026-09-29T21:21:31.990Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105041299934187874",
+      "text": "Full recap of all the announcements\n\nhttps://t.co/KGwZP3g6UC",
+      "url": "https://x.com/thsottiaux/status/2105041299934187874",
+      "posted_at": "2026-09-29T21:05:30.000Z",
+      "truncated": false,
+      "hash": "92f859ffe3f76cd7c754c6864e8254b21db10299990c3be48d35e7fd7431c1f8",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T22:21:31.990Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105040722613412135",
+      "text": "@alexandr_wang I had a different one in mind, but not going to post",
+      "url": "https://x.com/thsottiaux/status/2105040722613412135",
+      "posted_at": "2026-09-29T21:03:12.000Z",
+      "truncated": false,
+      "hash": "77c1601a01396075e7376004a5c9155300570ebd52bcd0d4555dbb11187b8080",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T22:21:31.990Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105040569924002048",
+      "text": "@LLMJunky @OpenAIDevs The one thing we planned 3 months ago.",
+      "url": "https://x.com/thsottiaux/status/2105040569924002048",
+      "posted_at": "2026-09-29T21:02:36.000Z",
+      "truncated": false,
+      "hash": "4ac4a97b701db06f30c2e7eac6623d467b4fab934444f9e3ae293c4816d4c3bb",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T22:21:31.990Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105040486314696737",
+      "text": "@DeryaTR_ Hey, I've seen you somewhere!",
+      "url": "https://x.com/thsottiaux/status/2105040486314696737",
+      "posted_at": "2026-09-29T21:02:16.000Z",
+      "truncated": false,
+      "hash": "525bd16f3f5c3d33577e47a254601d32e17d95726ccce6780a37827156d9797d",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T22:21:31.990Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105039816438227206",
+      "text": "Proud of this. Open is the way.",
+      "url": "https://x.com/thsottiaux/status/2105039816438227206",
+      "posted_at": "2026-09-29T20:59:36.000Z",
+      "truncated": false,
+      "hash": "9d1f7fdb1efe40f7a26f0d1fdd2249d97af2bfdb30c8214d5ce247e8ab5e0d45",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T22:21:31.990Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105039500149948878",
+      "text": "https://t.co/Sxz6BvUjXr",
+      "url": "https://x.com/thsottiaux/status/2105039500149948878",
+      "posted_at": "2026-09-29T20:58:21.000Z",
+      "truncated": false,
+      "hash": "77732fd559505164a335e71144cd62edc90f58d8abbc3edccf509f59a9c2bdf3",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T22:21:31.990Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105039482013757749",
+      "text": "Plugin discovery on ChatGPT leads to massive adoption opportunity. Open ecosystems will win. https://t.co/Tl1859D6oU",
+      "url": "https://x.com/thsottiaux/status/2105039482013757749",
+      "posted_at": "2026-09-29T20:58:16.000Z",
+      "truncated": false,
+      "hash": "d64ea21eaaaa9040e50eb35ecab346723c31ef0d909556f21d5876e2ae559156",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T22:21:31.990Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105028036240552179",
       "text": "Read this on thread on ChatGPT Space if you only read one thing about it.",
@@ -717,372 +808,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2104986027953930613",
-      "text": "Introducing 6.1 Sol, near Astra intelligence at one fifth of the price of Astra and 95% cache read discount. It is an absolute workhorse.\n\nCombined with ultrafast for 8X speeded available today for Astra and coming soon for 6.1 Sol.",
-      "url": "https://x.com/thsottiaux/status/2104986027953930613",
-      "posted_at": "2026-09-29T17:25:52.000Z",
-      "truncated": false,
-      "hash": "13de693c7ce33bd2b154a31d60af108657c906e3c5cd5aa6f41bacb6ebd511c5",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-09-29T20:21:09.359Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104986027953930613",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2104986027953930613",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "id": "2104986027953930613",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104983716049379472",
-      "text": "Announcing ChatGPT Space, a collection of new collaborative experiences right in ChatGPT. \n\nEdit rich notes with live visualizations together with others and your dots. Whether it’s a TODO list to delegate, a product plan or meeting notes. Working with others and your agents is seamless and they also be automatically kept up to date in the background. For developers, this is AGENTS.md taken one step further.",
-      "url": "https://x.com/thsottiaux/status/2104983716049379472",
-      "posted_at": "2026-09-29T17:16:41.000Z",
-      "truncated": false,
-      "hash": "4dac9640995e6b692e6a5f4e7a0462c9aae196ca8de804246503daeff0851eb9",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-09-29T19:29:13.551Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104983716049379472",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2104983716049379472",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "id": "2104983716049379472",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104981170685616361",
-      "text": "Announcing dots. Dots work 24/7 for you, learn from your feedback, have their own computer, browser and can be connected to over 4k apps in our ecosystem.\n\nThey’re powered by Astra our best model yet. Included in your Pro plan, without drawing down on any of your usage. You can even call a dot while it’s working.\n\nWe’re getting you started with your primary dot today and soon you’ll be able to create entire teams of them.",
-      "url": "https://x.com/thsottiaux/status/2104981170685616361",
-      "posted_at": "2026-09-29T17:06:34.000Z",
-      "truncated": false,
-      "hash": "a9554b5f8de97430c03a8473f70ca9e994889a03d207824f94fcfe6101fc0bda",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-09-29T19:29:13.551Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104981170685616361",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2104981170685616361",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "id": "2104981170685616361",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104961497055240633",
-      "text": "https://t.co/3zfRsyb9A9",
-      "url": "https://x.com/thsottiaux/status/2104961497055240633",
-      "posted_at": "2026-09-29T15:48:23.000Z",
-      "truncated": false,
-      "hash": "769047407e76d93664b73cf6170bb74a973c46ea7e12042a82dc10397f27ac1d",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-09-29T17:53:46.605Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2104961497055240633",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104961497055240633",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2104961497055240633",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104952602710638877",
-      "text": "@jukan05 Hello, this is Tibo, you’ve reached the wrong company. Let me redirect you to …",
-      "url": "https://x.com/thsottiaux/status/2104952602710638877",
-      "posted_at": "2026-09-29T15:13:03.000Z",
-      "truncated": true,
-      "hash": "85fff1e888f5f4832ff404498272976666d6e72629713f1458094f5b142a798f",
-      "status": "source_only",
-      "attempts": 0,
-      "retry_at": null,
-      "votes": [],
-      "result": null
-    },
-    {
-      "id": "2104951965184925941",
-      "text": "I’ll explain the new Pro 200 plan differently, before I start live tweeting from DevDay on things that are going out!\n\nToday we are going to ship a number of things that increase what you can do across the Plus and Pro plans. A lot of compute is online for this increase. As we increase the floor, we are changing the relative difference between plans to be\n\nPlus = 1X\nPro 100 = 5X\nPro 200 = 10X\n\nand we are reopening subscriptions for Pro 200 (we had paused it). If you have an existing plan you will keep the 20X multiplier for a bit and also receive a lot of additional credits because we know changes are hard even if it means that everyone will get more in the end.",
-      "url": "https://x.com/thsottiaux/status/2104951965184925941",
-      "posted_at": "2026-09-29T15:10:31.000Z",
-      "truncated": false,
-      "hash": "800e4f32f2875dedd980dbabcde8745ef828b58e7b3eba1a1018a7af4c8a6c19",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-09-29T17:27:16.764Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2104951965184925941",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104951965184925941",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2104951965184925941",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104936468624105813",
-      "text": "@imnotchalk 👀",
-      "url": "https://x.com/thsottiaux/status/2104936468624105813",
-      "posted_at": "2026-09-29T14:08:56.000Z",
-      "truncated": false,
-      "hash": "f8aceffc4e8861680d1c403f3dba4ec0d8b0043da802d8df497d6802021bfcf1",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-29T15:24:25.808Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2104936468624105813",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2104936468624105813",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104936468624105813",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-09-29",
-    "requests": 42
+    "requests": 45
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
