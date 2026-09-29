@@ -3,21 +3,22 @@
   "checked_at": "2026-09-29T17:21:10.182Z",
   "last_success_at": "2026-09-29T17:21:10.182Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "error",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
-      "at": "2026-09-29T17:21:10.182Z"
+      "status": "error",
+      "at": "2026-09-29T17:21:10.182Z",
+      "error": "invalid_json"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-29T17:21:10.182Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-sante:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-29T17:21:10.182Z"
     }
   ],
@@ -29,10 +30,40 @@
       "posted_at": "2026-09-29T17:16:41.000Z",
       "truncated": false,
       "hash": "4dac9640995e6b692e6a5f4e7a0462c9aae196ca8de804246503daeff0851eb9",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-09-29T18:21:10.182Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": null,
+          "error": "invalid_json"
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2104983716049379472",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "inclusionai/ling-3.0-flash-sante:free",
+          "claim": {
+            "id": "2104983716049379472",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
       "result": null
     },
     {
@@ -42,10 +73,40 @@
       "posted_at": "2026-09-29T17:06:34.000Z",
       "truncated": false,
       "hash": "a9554b5f8de97430c03a8473f70ca9e994889a03d207824f94fcfe6101fc0bda",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-09-29T18:21:10.182Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": null,
+          "error": "invalid_json"
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2104981170685616361",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "inclusionai/ling-3.0-flash-sante:free",
+          "claim": {
+            "id": "2104981170685616361",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
       "result": null
     },
     {
@@ -474,7 +535,7 @@
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
-    "cohere/north-mini-code:free": "2026-09-27T03:51:01.393Z",
+    "cohere/north-mini-code:free": "2026-09-29T23:21:10.182Z",
     "nex-agi/nex-n2.5-mini:free": "2026-09-22T23:19:34.908Z",
     "google/gemma-4-26b-a4b-it:free": "2026-09-29T21:53:02.491Z",
     "nvidia/nemotron-3-super-120b-a12b:free": "2026-09-29T21:24:24.070Z",
