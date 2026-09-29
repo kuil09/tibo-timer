@@ -1,28 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-29T17:52:03.469Z",
-  "last_success_at": "2026-09-29T17:52:03.469Z",
+  "checked_at": "2026-09-29T18:29:13.551Z",
+  "last_success_at": "2026-09-29T18:29:13.551Z",
   "source_status": "ok",
-  "analysis_status": "error",
+  "analysis_status": "running",
   "models": [
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-29T17:52:03.469Z"
+      "status": "pending",
+      "at": "2026-09-29T18:29:13.551Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-sante:free",
-      "status": "ok",
-      "at": "2026-09-29T17:52:03.469Z"
+      "status": "pending",
+      "at": "2026-09-29T18:29:13.551Z"
     },
     {
-      "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-      "status": "error",
-      "at": "2026-09-29T17:52:03.469Z",
-      "error": "invalid_json"
+      "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "status": "pending",
+      "at": "2026-09-29T18:29:13.551Z"
     }
   ],
   "posts": [
+    {
+      "id": "2104994835212226681",
+      "text": "Live demos suffered from rolling out all the updates at the same time, but were committed to keep doing these live in the future. \n\nAlmost all the things we announced will be available today. Can’t see what you will do with it.",
+      "url": "https://x.com/thsottiaux/status/2104994835212226681",
+      "posted_at": "2026-09-29T18:00:52.000Z",
+      "truncated": false,
+      "hash": "4998d9160ff4fb5476d694434b168313582b910fd36e0bb12785d692886bfd5c",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T19:29:13.551Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2104992080095564111",
       "text": "Little summary https://t.co/HQ9Ut3cgSh",
@@ -375,8 +387,8 @@
       "truncated": false,
       "hash": "4dac9640995e6b692e6a5f4e7a0462c9aae196ca8de804246503daeff0851eb9",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-29T18:21:10.182Z",
+      "attempts": 2,
+      "retry_at": "2026-09-29T19:29:13.551Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -418,8 +430,8 @@
       "truncated": false,
       "hash": "a9554b5f8de97430c03a8473f70ca9e994889a03d207824f94fcfe6101fc0bda",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-29T18:21:10.182Z",
+      "attempts": 2,
+      "retry_at": "2026-09-29T19:29:13.551Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -875,7 +887,7 @@
   ],
   "budget": {
     "day": "2026-09-29",
-    "requests": 30
+    "requests": 33
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
