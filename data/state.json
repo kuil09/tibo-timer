@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-29T13:54:14.152Z",
-  "last_success_at": "2026-09-29T13:54:14.152Z",
+  "checked_at": "2026-09-29T14:24:25.808Z",
+  "last_success_at": "2026-09-29T14:24:25.808Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-29T07:56:09.761Z"
+      "status": "pending",
+      "at": "2026-09-29T14:24:25.808Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-29T07:56:09.761Z"
+      "status": "pending",
+      "at": "2026-09-29T14:24:25.808Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-29T07:56:09.761Z"
+      "status": "pending",
+      "at": "2026-09-29T14:24:25.808Z"
     }
   ],
   "posts": [
+    {
+      "id": "2104936468624105813",
+      "text": "@imnotchalk 👀",
+      "url": "https://x.com/thsottiaux/status/2104936468624105813",
+      "posted_at": "2026-09-29T14:08:56.000Z",
+      "truncated": false,
+      "hash": "f8aceffc4e8861680d1c403f3dba4ec0d8b0043da802d8df497d6802021bfcf1",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T15:24:25.808Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2104934849970913519",
+      "text": "@theo And then I ran to Theo and whispered in his right ear “wake up Theo, it’s DevDay today”",
+      "url": "https://x.com/thsottiaux/status/2104934849970913519",
+      "posted_at": "2026-09-29T14:02:30.000Z",
+      "truncated": false,
+      "hash": "59fbed45c1230d91188d9daaad8c2d81f4e1f6ab68d275e8989bbc32658c0d2c",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T15:24:25.808Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2104838506363408740",
       "text": "That was yesterday, today is DevDay. And it's all good news. I'm surprised we've kept it all under wraps.",
@@ -199,7 +225,7 @@
   ],
   "budget": {
     "day": "2026-09-29",
-    "requests": 6
+    "requests": 9
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
