@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-29T19:51:46.900Z",
-  "last_success_at": "2026-09-29T19:51:46.900Z",
+  "checked_at": "2026-09-29T20:25:08.086Z",
+  "last_success_at": "2026-09-29T20:25:08.086Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-29T19:21:09.359Z"
+      "status": "pending",
+      "at": "2026-09-29T20:25:08.086Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-sante:free",
-      "status": "ok",
-      "at": "2026-09-29T19:21:09.359Z"
+      "status": "pending",
+      "at": "2026-09-29T20:25:08.086Z"
     },
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
-      "status": "ok",
-      "at": "2026-09-29T19:21:09.359Z"
+      "status": "pending",
+      "at": "2026-09-29T20:25:08.086Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105028036240552179",
+      "text": "Read this on thread on ChatGPT Space if you only read one thing about it.",
+      "url": "https://x.com/thsottiaux/status/2105028036240552179",
+      "posted_at": "2026-09-29T20:12:48.000Z",
+      "truncated": false,
+      "hash": "8bd598c412987070f5540cd6b6eb519f4bc8c3fd4e4f4de8108977e8abfab5cc",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T21:25:08.086Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105013661534454145",
       "text": "@badlogicgames yw, keep on rocking",
@@ -1020,69 +1033,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2104934849970913519",
-      "text": "@theo And then I ran to Theo and whispered in his right ear “wake up Theo, it’s DevDay today”",
-      "url": "https://x.com/thsottiaux/status/2104934849970913519",
-      "posted_at": "2026-09-29T14:02:30.000Z",
-      "truncated": false,
-      "hash": "59fbed45c1230d91188d9daaad8c2d81f4e1f6ab68d275e8989bbc32658c0d2c",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-29T15:24:25.808Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2104934849970913519",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2104934849970913519",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104934849970913519",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-09-29",
-    "requests": 39
+    "requests": 42
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
