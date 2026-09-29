@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-29T16:53:46.605Z",
-  "last_success_at": "2026-09-29T16:53:46.605Z",
+  "checked_at": "2026-09-29T17:21:10.182Z",
+  "last_success_at": "2026-09-29T17:21:10.182Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-29T16:53:46.605Z"
+      "status": "pending",
+      "at": "2026-09-29T17:21:10.182Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-29T16:53:46.605Z"
+      "status": "pending",
+      "at": "2026-09-29T17:21:10.182Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-sante:free",
-      "status": "ok",
-      "at": "2026-09-29T16:53:46.605Z"
+      "status": "pending",
+      "at": "2026-09-29T17:21:10.182Z"
     }
   ],
   "posts": [
+    {
+      "id": "2104983716049379472",
+      "text": "Announcing ChatGPT Space, a collection of new collaborative experiences right in ChatGPT. \n\nEdit rich notes with live visualizations together with others and your dots. Whether it’s a TODO list to delegate, a product plan or meeting notes. Working with others and your agents is seamless and they also be automatically kept up to date in the background. For developers, this is AGENTS.md taken one step further.",
+      "url": "https://x.com/thsottiaux/status/2104983716049379472",
+      "posted_at": "2026-09-29T17:16:41.000Z",
+      "truncated": false,
+      "hash": "4dac9640995e6b692e6a5f4e7a0462c9aae196ca8de804246503daeff0851eb9",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T18:21:10.182Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2104981170685616361",
+      "text": "Announcing dots. Dots work 24/7 for you, learn from your feedback, have their own computer, browser and can be connected to over 4k apps in our ecosystem.\n\nThey’re powered by Astra our best model yet. Included in your Pro plan, without drawing down on any of your usage. You can even call a dot while it’s working.\n\nWe’re getting you started with your primary dot today and soon you’ll be able to create entire teams of them.",
+      "url": "https://x.com/thsottiaux/status/2104981170685616361",
+      "posted_at": "2026-09-29T17:06:34.000Z",
+      "truncated": false,
+      "hash": "a9554b5f8de97430c03a8473f70ca9e994889a03d207824f94fcfe6101fc0bda",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T18:21:10.182Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2104961497055240633",
       "text": "https://t.co/3zfRsyb9A9",
@@ -444,7 +470,7 @@
   ],
   "budget": {
     "day": "2026-09-29",
-    "requests": 21
+    "requests": 24
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
