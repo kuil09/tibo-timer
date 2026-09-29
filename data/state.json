@@ -1,321 +1,57 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-29T06:40:35.225Z",
-  "last_success_at": "2026-09-29T06:40:35.225Z",
+  "checked_at": "2026-09-29T07:06:00.523Z",
+  "last_success_at": "2026-09-29T07:06:00.523Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-28T07:40:28.124Z"
+      "status": "pending",
+      "at": "2026-09-29T07:06:00.523Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-28T07:40:28.124Z"
+      "status": "pending",
+      "at": "2026-09-29T07:06:00.523Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-28T07:40:28.124Z"
+      "status": "pending",
+      "at": "2026-09-29T07:06:00.523Z"
     }
   ],
   "posts": [
     {
-      "id": "2104467346945675347",
-      "text": "Taken by none other than the incredible @ah20im",
-      "url": "https://x.com/thsottiaux/status/2104467346945675347",
-      "posted_at": "2026-09-28T07:04:49.000Z",
+      "id": "2104827790440935508",
+      "text": "@mecp Agreed",
+      "url": "https://x.com/thsottiaux/status/2104827790440935508",
+      "posted_at": "2026-09-29T06:57:05.000Z",
       "truncated": false,
-      "hash": "9f56bd90dc1ea61fc4ae308a1756203de235b700c8167098b633fa2ed2b7f332",
-      "status": "complete",
+      "hash": "9f450ec1e2cc1d6fd301ecee233d9c6e5f024450cb34a7b39ab9467d6b991d6d",
+      "status": "pending",
       "attempts": 1,
-      "retry_at": "2026-09-28T08:40:28.124Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2104467346945675347",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2104467346945675347",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104467346945675347",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
+      "retry_at": "2026-09-29T08:06:00.523Z",
+      "votes": [],
+      "result": null
     },
     {
-      "id": "2104465709384491519",
-      "text": "Sunday vibes. See you at Fort Mason soon 🎮👩‍💻 https://t.co/dIBCN92aS0",
-      "url": "https://x.com/thsottiaux/status/2104465709384491519",
-      "posted_at": "2026-09-28T06:58:18.000Z",
+      "id": "2104823812042940713",
+      "text": "Hi,\n\nTomorrow we are re-opening the Pro $200 subscriptions to new subscribers, but together with it we are also changing how we calculate the usage for it. In effect, if you do the math, it will net out at half the dollar in API spend compared to the old Pro $200 plan. \n\nNow that it's said, let me explain why this is happening and why you will still get more work done than if you were on the Pro $200 subscription one month ago.\n\n(a) We didn't want to compromise in other ways and are committing to not reintroducing the 5h limit, so that you can fully use the weekly usage when you want.\n(b) On the subscription, we guarantee that over time you always get more work done and with an increasing level of quality. This means that you will continue to get more value per dollar spent as a result of models getting more efficient and us passing down the improvements in the form of API price reductions.\n(c) We don't want to put an incentive on ourselves to artificially inflate the API list prices to make it look like you are getting a lot (and workaround it through discounts, etc). Instead we want to continue to both rapidly reduce prices and increase capabilities of models on the API. This week we introduced GPT-6 Sol and GPT-6 Luna at 50% of their previous price. Over time, we see prices go low enough that it makes sense for most to buy usage as needed without there being a significant gap between what you get in a subscription and what you get in the API for a dollar spent.\n(d) Tomorrow, we are adding more things to the subscription that won't draw on the usage, I won't reveal what that is yet.\n\nI wanted to be transparent before all the big announcements tomorrow. Lots of new exciting things are coming to the subscriptions that will make it super compelling, but I wanted to make sure to share this change ahead of time so you can all understand it before we shower you with good news.\n\nCodexingly,\nTibo",
+      "url": "https://x.com/thsottiaux/status/2104823812042940713",
+      "posted_at": "2026-09-29T06:41:17.000Z",
       "truncated": false,
-      "hash": "7dfe10d73bcf2e04861a2b5978cd7bf691df2f1be7e05c394516f31698e3a98e",
-      "status": "complete",
+      "hash": "30d0c9236c1a6cd5fefc0acb64b2fcdf386894585a180bf77081c9b2f71a7065",
+      "status": "pending",
       "attempts": 1,
-      "retry_at": "2026-09-28T08:40:28.124Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2104465709384491519",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2104465709384491519",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104465709384491519",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104462923661988233",
-      "text": "@imjustnewatai 007 even",
-      "url": "https://x.com/thsottiaux/status/2104462923661988233",
-      "posted_at": "2026-09-28T06:47:14.000Z",
-      "truncated": false,
-      "hash": "775ecbba9310494dcb7d92152cf2bcf7e4ef494518736a4d735c5776127ffef1",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-28T07:51:07.091Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2104462923661988233",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2104462923661988233",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104462923661988233",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104462713296683467",
-      "text": "@mark_k DevDay",
-      "url": "https://x.com/thsottiaux/status/2104462713296683467",
-      "posted_at": "2026-09-28T06:46:24.000Z",
-      "truncated": false,
-      "hash": "919c0c20fa28beba07c96f3af9c8eebca2c2ea085d4b2c2466ab14827068ae23",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-28T07:51:07.091Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2104462713296683467",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2104462713296683467",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104462713296683467",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104462572644888780",
-      "text": "@maria_rcks Please don't die",
-      "url": "https://x.com/thsottiaux/status/2104462572644888780",
-      "posted_at": "2026-09-28T06:45:50.000Z",
-      "truncated": false,
-      "hash": "b431b5f57247550079e7187b1f4acea858da6d568784dd92df91dcf1c1fba132",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-28T07:51:07.091Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2104462572644888780",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2104462572644888780",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104462572644888780",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
+      "retry_at": "2026-09-29T08:06:00.523Z",
+      "votes": [],
+      "result": null
     }
   ],
   "budget": {
-    "day": "2026-09-28",
-    "requests": 12
+    "day": "2026-09-29",
+    "requests": 3
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
