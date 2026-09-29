@@ -1,27 +1,66 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-29T18:29:13.551Z",
-  "last_success_at": "2026-09-29T18:29:13.551Z",
+  "checked_at": "2026-09-29T18:55:17.227Z",
+  "last_success_at": "2026-09-29T18:55:17.227Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-29T18:29:13.551Z"
+      "status": "pending",
+      "at": "2026-09-29T18:55:17.227Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-sante:free",
-      "status": "ok",
-      "at": "2026-09-29T18:29:13.551Z"
+      "status": "pending",
+      "at": "2026-09-29T18:55:17.227Z"
     },
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
-      "status": "ok",
-      "at": "2026-09-29T18:29:13.551Z"
+      "status": "pending",
+      "at": "2026-09-29T18:55:17.227Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105007775676072381",
+      "text": "https://t.co/iGEVhhzt9V",
+      "url": "https://x.com/thsottiaux/status/2105007775676072381",
+      "posted_at": "2026-09-29T18:52:17.000Z",
+      "truncated": false,
+      "hash": "64531feac8b6adaeff264c9347afd6dced0fe67f9a263c80c4d804bea1064154",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T19:55:17.227Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105007628460109953",
+      "text": "GPT-6.1 is a good model. And it’s unbelievably efficient. Included in all paid plans and on the API today. https://t.co/XateucqneE",
+      "url": "https://x.com/thsottiaux/status/2105007628460109953",
+      "posted_at": "2026-09-29T18:51:42.000Z",
+      "truncated": false,
+      "hash": "7e767f7c3f30a9328e216731bb7b11028c9572b982854275085f7e6f2076746e",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T19:55:17.227Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105006253986738615",
+      "text": "You can now use your ChatGPT subscription directly in over 16 partners products. No little rules, you can just use all your included usage right there. This includes things such as Devin, OpenCode, Notion, and many more.\n\nSign in with ChatGPT and go.",
+      "url": "https://x.com/thsottiaux/status/2105006253986738615",
+      "posted_at": "2026-09-29T18:46:14.000Z",
+      "truncated": false,
+      "hash": "f1931819819351c35941595e594096f89abf9b3feb4ee1eb57559eba5391e47b",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T19:55:17.227Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2104994835212226681",
       "text": "Live demos suffered from rolling out all the updates at the same time, but were committed to keep doing these live in the future. \n\nAlmost all the things we announced will be available today. Can’t see what you will do with it.",
@@ -88,8 +127,8 @@
       "truncated": false,
       "hash": "c5992c5f7d6531316c0fdc826976721cb924dac3a53f0d9e772d311df48597d2",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-29T18:52:03.469Z",
+      "attempts": 2,
+      "retry_at": "2026-09-29T19:55:17.227Z",
       "votes": [
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -131,8 +170,8 @@
       "truncated": false,
       "hash": "91d531a32f1ef9ac4cc64905bd6bbeaeb7e79728742955a0481311b41fdfb27f",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-29T18:52:03.469Z",
+      "attempts": 2,
+      "retry_at": "2026-09-29T19:55:17.227Z",
       "votes": [
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -150,49 +189,6 @@
           "model": "inclusionai/ling-3.0-flash-sante:free",
           "claim": {
             "id": "2104991765904375896",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "claim": null,
-          "error": "invalid_json"
-        }
-      ],
-      "result": null
-    },
-    {
-      "id": "2104991529416999243",
-      "text": "You can now use your ChatGPT subscription directly in over 60 partners products. No little rules, you can just use all your included usage right there. This includes things such as Devin, OpenCode, Lovable, and many more.\n\nSign in with ChatGPT and go.",
-      "url": "https://x.com/thsottiaux/status/2104991529416999243",
-      "posted_at": "2026-09-29T17:47:44.000Z",
-      "truncated": false,
-      "hash": "21e9e59ba6317bccc1e7bbdd692aa538e4aacd82eaa2a0de1fb15f4ba2744ed4",
-      "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-29T18:52:03.469Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104991529416999243",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2104991529416999243",
             "event": "none",
             "state": "unknown",
             "conditional": false,
@@ -217,8 +213,8 @@
       "truncated": false,
       "hash": "658c5736386507e819166ed8514252bd55392946dc4e78f0f6bc9d5ad943c260",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-29T18:52:03.469Z",
+      "attempts": 2,
+      "retry_at": "2026-09-29T19:55:17.227Z",
       "votes": [
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -260,8 +256,8 @@
       "truncated": false,
       "hash": "4d40d1274c73c75437663e613ae9a3481cfd5445db34c5af252d35f9be5eaee9",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-29T18:34:40.693Z",
+      "attempts": 2,
+      "retry_at": "2026-09-29T19:55:17.227Z",
       "votes": [
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -303,8 +299,8 @@
       "truncated": false,
       "hash": "a28100d23c16af1eeacff39400551ba0ea3d250b8110a00e1d1df68cf09efb4b",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-09-29T18:34:40.693Z",
+      "attempts": 2,
+      "retry_at": "2026-09-29T19:55:17.227Z",
       "votes": [
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -842,127 +838,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2104827790440935508",
-      "text": "@mecp Agreed",
-      "url": "https://x.com/thsottiaux/status/2104827790440935508",
-      "posted_at": "2026-09-29T06:57:05.000Z",
-      "truncated": false,
-      "hash": "9f450ec1e2cc1d6fd301ecee233d9c6e5f024450cb34a7b39ab9467d6b991d6d",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-29T08:06:00.523Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2104827790440935508",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2104827790440935508",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104827790440935508",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104823812042940713",
-      "text": "Hi,\n\nTomorrow we are re-opening the Pro $200 subscriptions to new subscribers, but together with it we are also changing how we calculate the usage for it. In effect, if you do the math, it will net out at half the dollar in API spend compared to the old Pro $200 plan. \n\nNow that it's said, let me explain why this is happening and why you will still get more work done than if you were on the Pro $200 subscription one month ago.\n\n(a) We didn't want to compromise in other ways and are committing to not reintroducing the 5h limit, so that you can fully use the weekly usage when you want.\n(b) On the subscription, we guarantee that over time you always get more work done and with an increasing level of quality. This means that you will continue to get more value per dollar spent as a result of models getting more efficient and us passing down the improvements in the form of API price reductions.\n(c) We don't want to put an incentive on ourselves to artificially inflate the API list prices to make it look like you are getting a lot (and workaround it through discounts, etc). Instead we want to continue to both rapidly reduce prices and increase capabilities of models on the API. This week we introduced GPT-6 Sol and GPT-6 Luna at 50% of their previous price. Over time, we see prices go low enough that it makes sense for most to buy usage as needed without there being a significant gap between what you get in a subscription and what you get in the API for a dollar spent.\n(d) Tomorrow, we are adding more things to the subscription that won't draw on the usage, I won't reveal what that is yet.\n\nI wanted to be transparent before all the big announcements tomorrow. Lots of new exciting things are coming to the subscriptions that will make it super compelling, but I wanted to make sure to share this change ahead of time so you can all understand it before we shower you with good news.\n\nCodexingly,\nTibo",
-      "url": "https://x.com/thsottiaux/status/2104823812042940713",
-      "posted_at": "2026-09-29T06:41:17.000Z",
-      "truncated": false,
-      "hash": "30d0c9236c1a6cd5fefc0acb64b2fcdf386894585a180bf77081c9b2f71a7065",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-29T08:06:00.523Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2104823812042940713",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2104823812042940713",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104823812042940713",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-09-29",
-    "requests": 33
+    "requests": 36
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
