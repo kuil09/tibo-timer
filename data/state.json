@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-29T14:53:35.064Z",
-  "last_success_at": "2026-09-29T14:53:35.064Z",
+  "checked_at": "2026-09-29T15:24:24.070Z",
+  "last_success_at": "2026-09-29T15:24:24.070Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-29T14:24:25.808Z"
+      "status": "pending",
+      "at": "2026-09-29T15:24:24.070Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-29T14:24:25.808Z"
+      "status": "pending",
+      "at": "2026-09-29T15:24:24.070Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-29T14:24:25.808Z"
+      "status": "pending",
+      "at": "2026-09-29T15:24:24.070Z"
     }
   ],
   "posts": [
+    {
+      "id": "2104952602710638877",
+      "text": "@jukan05 Hello, this is Tibo, you’ve reached the wrong company. Let me redirect you to …",
+      "url": "https://x.com/thsottiaux/status/2104952602710638877",
+      "posted_at": "2026-09-29T15:13:03.000Z",
+      "truncated": true,
+      "hash": "85fff1e888f5f4832ff404498272976666d6e72629713f1458094f5b142a798f",
+      "status": "source_only",
+      "attempts": 0,
+      "retry_at": null,
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2104951965184925941",
+      "text": "I’ll explain the new Pro 200 plan differently, before I start live tweeting from DevDay on things that are going out!\n\nToday we are going to ship a number of things that increase what you can do across the Plus and Pro plans. A lot of compute is online for this increase. As we increase the floor, we are changing the relative difference between plans to be\n\nPlus = 1X\nPro 100 = 5X\nPro 200 = 10X\n\nand we are reopening subscriptions for Pro 200 (we had paused it). If you have an existing plan you will keep the 20X multiplier for a bit and also receive a lot of additional credits because we know changes are hard even if it means that everyone will get more in the end.",
+      "url": "https://x.com/thsottiaux/status/2104951965184925941",
+      "posted_at": "2026-09-29T15:10:31.000Z",
+      "truncated": false,
+      "hash": "800e4f32f2875dedd980dbabcde8745ef828b58e7b3eba1a1018a7af4c8a6c19",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T16:24:24.070Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2104936468624105813",
       "text": "@imnotchalk 👀",
@@ -315,7 +341,7 @@
   ],
   "budget": {
     "day": "2026-09-29",
-    "requests": 9
+    "requests": 12
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
