@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-29T07:33:02.489Z",
-  "last_success_at": "2026-09-29T07:33:02.489Z",
+  "checked_at": "2026-09-29T07:56:09.761Z",
+  "last_success_at": "2026-09-29T07:56:09.761Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-29T07:06:00.523Z"
+      "status": "pending",
+      "at": "2026-09-29T07:56:09.761Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-29T07:06:00.523Z"
+      "status": "pending",
+      "at": "2026-09-29T07:56:09.761Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-29T07:06:00.523Z"
+      "status": "pending",
+      "at": "2026-09-29T07:56:09.761Z"
     }
   ],
   "posts": [
+    {
+      "id": "2104838506363408740",
+      "text": "That was yesterday, today is DevDay. And it's all good news. I'm surprised we've kept it all under wraps.",
+      "url": "https://x.com/thsottiaux/status/2104838506363408740",
+      "posted_at": "2026-09-29T07:39:40.000Z",
+      "truncated": false,
+      "hash": "856e814e4275fab3978279628ce2f397c8a73467e21c4ba4f6b5773c729022c6",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-29T08:56:09.761Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2104827790440935508",
       "text": "@mecp Agreed",
@@ -141,7 +154,7 @@
   ],
   "budget": {
     "day": "2026-09-29",
-    "requests": 3
+    "requests": 6
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
