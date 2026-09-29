@@ -3,22 +3,23 @@
   "checked_at": "2026-09-29T17:52:03.469Z",
   "last_success_at": "2026-09-29T17:52:03.469Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "error",
   "models": [
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-29T17:52:03.469Z"
     },
     {
       "id": "inclusionai/ling-3.0-flash-sante:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-09-29T17:52:03.469Z"
     },
     {
       "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-      "status": "pending",
-      "at": "2026-09-29T17:52:03.469Z"
+      "status": "error",
+      "at": "2026-09-29T17:52:03.469Z",
+      "error": "invalid_json"
     }
   ],
   "posts": [
@@ -29,10 +30,40 @@
       "posted_at": "2026-09-29T17:49:55.000Z",
       "truncated": false,
       "hash": "c5992c5f7d6531316c0fdc826976721cb924dac3a53f0d9e772d311df48597d2",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-09-29T18:52:03.469Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2104992080095564111",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "inclusionai/ling-3.0-flash-sante:free",
+          "claim": {
+            "id": "2104992080095564111",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "claim": null,
+          "error": "invalid_json"
+        }
+      ],
       "result": null
     },
     {
@@ -42,10 +73,40 @@
       "posted_at": "2026-09-29T17:48:40.000Z",
       "truncated": false,
       "hash": "91d531a32f1ef9ac4cc64905bd6bbeaeb7e79728742955a0481311b41fdfb27f",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-09-29T18:52:03.469Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2104991765904375896",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "inclusionai/ling-3.0-flash-sante:free",
+          "claim": {
+            "id": "2104991765904375896",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "claim": null,
+          "error": "invalid_json"
+        }
+      ],
       "result": null
     },
     {
@@ -55,10 +116,40 @@
       "posted_at": "2026-09-29T17:47:44.000Z",
       "truncated": false,
       "hash": "21e9e59ba6317bccc1e7bbdd692aa538e4aacd82eaa2a0de1fb15f4ba2744ed4",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-09-29T18:52:03.469Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2104991529416999243",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "inclusionai/ling-3.0-flash-sante:free",
+          "claim": {
+            "id": "2104991529416999243",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "claim": null,
+          "error": "invalid_json"
+        }
+      ],
       "result": null
     },
     {
@@ -68,10 +159,40 @@
       "posted_at": "2026-09-29T17:38:19.000Z",
       "truncated": false,
       "hash": "658c5736386507e819166ed8514252bd55392946dc4e78f0f6bc9d5ad943c260",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-09-29T18:52:03.469Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2104989161774322009",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "inclusionai/ling-3.0-flash-sante:free",
+          "claim": {
+            "id": "2104989161774322009",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "claim": null,
+          "error": "invalid_json"
+        }
+      ],
       "result": null
     },
     {
@@ -762,6 +883,7 @@
     "nex-agi/nex-n2.5-mini:free": "2026-09-22T23:19:34.908Z",
     "google/gemma-4-26b-a4b-it:free": "2026-09-29T21:53:02.491Z",
     "nvidia/nemotron-3-super-120b-a12b:free": "2026-09-29T21:24:24.070Z",
-    "liquid/lfm-2.5-2.6b:free": "2026-09-29T23:34:40.693Z"
+    "liquid/lfm-2.5-2.6b:free": "2026-09-29T23:34:40.693Z",
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": "2026-09-29T23:52:03.469Z"
   }
 }
