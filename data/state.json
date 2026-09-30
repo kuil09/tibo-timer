@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-30T14:27:30.735Z",
-  "last_success_at": "2026-09-30T14:27:30.735Z",
+  "checked_at": "2026-09-30T14:47:32.865Z",
+  "last_success_at": "2026-09-30T14:47:32.865Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-30T07:05:56.850Z"
+      "status": "pending",
+      "at": "2026-09-30T14:47:32.865Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-30T07:05:56.850Z"
+      "status": "pending",
+      "at": "2026-09-30T14:47:32.865Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-30T07:05:56.850Z"
+      "status": "pending",
+      "at": "2026-09-30T14:47:32.865Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105305239398285514",
+      "text": "@charlielamb @OpenAI I watched it live while reading through the oncall channel my dot had just flagged to me. Prod went down 5 mins before the demo. Memorable for sure.",
+      "url": "https://x.com/thsottiaux/status/2105305239398285514",
+      "posted_at": "2026-09-30T14:34:18.000Z",
+      "truncated": false,
+      "hash": "d3fad39bc8bce811983249389ad950f895473082387830551e435394457fee25",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T15:47:32.865Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105189201679630385",
       "text": "@_ak_111 Basically",
@@ -235,64 +248,6 @@
           "model": "dots-studio/dots-3-note-preview:free",
           "claim": {
             "id": "2105176545304436942",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105176198469087516",
-      "text": "@fildotai Glad you like it, I agree it’s better than the others out there.\n\nAlso, if you could redirect to the right site instead of committing a felony, that would be extra nice.",
-      "url": "https://x.com/thsottiaux/status/2105176198469087516",
-      "posted_at": "2026-09-30T06:01:32.000Z",
-      "truncated": false,
-      "hash": "2cf00a6891a65b44d6d2b62c745b6d31d6e0fccb61f91cba7f3800e384fdba21",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-30T07:39:21.306Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105176198469087516",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105176198469087516",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105176198469087516",
             "event": "none",
             "state": "unknown",
             "conditional": false,
@@ -1243,7 +1198,7 @@
   ],
   "budget": {
     "day": "2026-09-30",
-    "requests": 27
+    "requests": 30
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
