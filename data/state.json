@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-30T06:39:21.306Z",
-  "last_success_at": "2026-09-30T06:39:21.306Z",
+  "checked_at": "2026-09-30T07:05:56.850Z",
+  "last_success_at": "2026-09-30T07:05:56.850Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-30T06:39:21.306Z"
+      "status": "pending",
+      "at": "2026-09-30T07:05:56.850Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-30T06:39:21.306Z"
+      "status": "pending",
+      "at": "2026-09-30T07:05:56.850Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-30T06:39:21.306Z"
+      "status": "pending",
+      "at": "2026-09-30T07:05:56.850Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105189201679630385",
+      "text": "@_ak_111 Basically",
+      "url": "https://x.com/thsottiaux/status/2105189201679630385",
+      "posted_at": "2026-09-30T06:53:12.000Z",
+      "truncated": false,
+      "hash": "39baddbcb3e64fb1080c9e7161a63fe0c4eec430a121d6f61d605b447f022569",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T08:05:56.850Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105188957437002208",
+      "text": "@ChrisGPT Don’t ask",
+      "url": "https://x.com/thsottiaux/status/2105188957437002208",
+      "posted_at": "2026-09-30T06:52:14.000Z",
+      "truncated": false,
+      "hash": "3bc5307db6a9c37ee36db8ead2bfa130b379843073cf7a0d8b93c72e2e9e70b3",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T08:05:56.850Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105178959327756396",
       "text": "What’s up dot",
@@ -1067,64 +1093,6 @@
       }
     },
     {
-      "id": "2105106052874375281",
-      "text": "@NickADobos Sleeper hit",
-      "url": "https://x.com/thsottiaux/status/2105106052874375281",
-      "posted_at": "2026-09-30T01:22:48.000Z",
-      "truncated": false,
-      "hash": "1db2ed012a590fa385fc0d2cf35074093b7fe5d99371c148353782f61ebf0c61",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-30T02:40:53.119Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105106052874375281",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105106052874375281",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105106052874375281",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
       "id": "2105105086506840421",
       "text": "We will have a few million dots online within days, working on all sorts of things across such a diverse and large community. \n\nExcited to learn from all of you on what you love and what doesn’t yet feel magical. Personally I felt a jump after 2-3 days of use after teaching it more about my preferences and things on my mind. It learns very quickly to be most useful and it can take on surprisingly ambitious tasks on its own.\n\nWe’re learning from how you all use your primary dot before releasing the ability to create an entire team of them.",
       "url": "https://x.com/thsottiaux/status/2105105086506840421",
@@ -1185,7 +1153,7 @@
   ],
   "budget": {
     "day": "2026-09-30",
-    "requests": 24
+    "requests": 27
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
