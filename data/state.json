@@ -1,27 +1,92 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-30T02:04:52.519Z",
-  "last_success_at": "2026-09-30T02:04:52.519Z",
+  "checked_at": "2026-09-30T02:36:15.161Z",
+  "last_success_at": "2026-09-30T02:36:15.161Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-30T02:04:52.519Z"
+      "status": "pending",
+      "at": "2026-09-30T02:36:15.161Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-30T02:04:52.519Z"
+      "status": "pending",
+      "at": "2026-09-30T02:36:15.161Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-30T02:04:52.519Z"
+      "status": "pending",
+      "at": "2026-09-30T02:36:15.161Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105122693721010600",
+      "text": "@The_Alex That’s Dippin’",
+      "url": "https://x.com/thsottiaux/status/2105122693721010600",
+      "posted_at": "2026-09-30T02:28:56.000Z",
+      "truncated": false,
+      "hash": "ee60eee420af250e4270b1ffcba29cf8bab067d4e9d94eaafd33c8ee352d2579",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T03:36:15.161Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105122298646888806",
+      "text": "@cmd_shiftbusra Could barely believe it when Busra made this come to life. Pure talent",
+      "url": "https://x.com/thsottiaux/status/2105122298646888806",
+      "posted_at": "2026-09-30T02:27:21.000Z",
+      "truncated": false,
+      "hash": "a81c2336847712187f5431942aeeb9656ca7a3bd7b0e228e853c1e2f38e7a7e2",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T03:36:15.161Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105121970883076422",
+      "text": "@hollllyli always the damn wifi\nlive demos or bust!",
+      "url": "https://x.com/thsottiaux/status/2105121970883076422",
+      "posted_at": "2026-09-30T02:26:03.000Z",
+      "truncated": false,
+      "hash": "49ea5e6f0b9e3d9faa095377f0dca6396be58bf69e567c71855b9dd852111442",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T03:36:15.161Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105120499177230798",
+      "text": "@nnennahacks @MaxHudlberger @OpenAIDevs @OpenAI 👋",
+      "url": "https://x.com/thsottiaux/status/2105120499177230798",
+      "posted_at": "2026-09-30T02:20:12.000Z",
+      "truncated": false,
+      "hash": "905ca5a23a5177ec25d46df591b13ca256f19dee62885b575f2d58d4d9f8232c",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T03:36:15.161Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105120226027450685",
+      "text": "@theo Shhhhhh",
+      "url": "https://x.com/thsottiaux/status/2105120226027450685",
+      "posted_at": "2026-09-30T02:19:07.000Z",
+      "truncated": false,
+      "hash": "b9ca551f671a01cbfb942f08883b25b52246dcc03820fc809544f0a32bab106a",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T03:36:15.161Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105109005135962589",
       "text": "@danshipper @every @sama Always fun working with you!",
@@ -891,359 +956,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2105039500149948878",
-      "text": "https://t.co/Sxz6BvUjXr",
-      "url": "https://x.com/thsottiaux/status/2105039500149948878",
-      "posted_at": "2026-09-29T20:58:21.000Z",
-      "truncated": false,
-      "hash": "77732fd559505164a335e71144cd62edc90f58d8abbc3edccf509f59a9c2bdf3",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-29T22:21:31.990Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105039500149948878",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2105039500149948878",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "id": "2105039500149948878",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105039482013757749",
-      "text": "Plugin discovery on ChatGPT leads to massive adoption opportunity. Open ecosystems will win. https://t.co/Tl1859D6oU",
-      "url": "https://x.com/thsottiaux/status/2105039482013757749",
-      "posted_at": "2026-09-29T20:58:16.000Z",
-      "truncated": false,
-      "hash": "d64ea21eaaaa9040e50eb35ecab346723c31ef0d909556f21d5876e2ae559156",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-29T22:21:31.990Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105039482013757749",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2105039482013757749",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "id": "2105039482013757749",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105028036240552179",
-      "text": "Read this on thread on ChatGPT Space if you only read one thing about it.",
-      "url": "https://x.com/thsottiaux/status/2105028036240552179",
-      "posted_at": "2026-09-29T20:12:48.000Z",
-      "truncated": false,
-      "hash": "8bd598c412987070f5540cd6b6eb519f4bc8c3fd4e4f4de8108977e8abfab5cc",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-29T21:25:08.086Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105028036240552179",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2105028036240552179",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "id": "2105028036240552179",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105013661534454145",
-      "text": "@badlogicgames yw, keep on rocking",
-      "url": "https://x.com/thsottiaux/status/2105013661534454145",
-      "posted_at": "2026-09-29T19:15:40.000Z",
-      "truncated": false,
-      "hash": "e371025ec36a9f36a50c024969aafabf01fa28969b2df363b28cc5e2e6b953e6",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-29T20:21:09.359Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105013661534454145",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2105013661534454145",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "id": "2105013661534454145",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105007775676072381",
-      "text": "https://t.co/iGEVhhzt9V",
-      "url": "https://x.com/thsottiaux/status/2105007775676072381",
-      "posted_at": "2026-09-29T18:52:17.000Z",
-      "truncated": false,
-      "hash": "64531feac8b6adaeff264c9347afd6dced0fe67f9a263c80c4d804bea1064154",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-29T19:55:17.227Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105007775676072381",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2105007775676072381",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "id": "2105007775676072381",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105007628460109953",
-      "text": "GPT-6.1 is a good model. And it’s unbelievably efficient. Included in all paid plans and on the API today. https://t.co/XateucqneE",
-      "url": "https://x.com/thsottiaux/status/2105007628460109953",
-      "posted_at": "2026-09-29T18:51:42.000Z",
-      "truncated": false,
-      "hash": "7e767f7c3f30a9328e216731bb7b11028c9572b982854275085f7e6f2076746e",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-29T19:55:17.227Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105007628460109953",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2105007628460109953",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "id": "2105007628460109953",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-09-30",
-    "requests": 9
+    "requests": 12
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
