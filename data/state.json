@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-30T02:36:15.161Z",
-  "last_success_at": "2026-09-30T02:36:15.161Z",
+  "checked_at": "2026-09-30T02:59:55.863Z",
+  "last_success_at": "2026-09-30T02:59:55.863Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-30T02:36:15.161Z"
+      "status": "pending",
+      "at": "2026-09-30T02:59:55.863Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-30T02:36:15.161Z"
+      "status": "pending",
+      "at": "2026-09-30T02:59:55.863Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-30T02:36:15.161Z"
+      "status": "pending",
+      "at": "2026-09-30T02:59:55.863Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105124771310739821",
+      "text": "@iruletheworldmo The tokens must flow",
+      "url": "https://x.com/thsottiaux/status/2105124771310739821",
+      "posted_at": "2026-09-30T02:37:11.000Z",
+      "truncated": false,
+      "hash": "9a367b4846f7db147f4f828ae3fdde0eee0be7d0f1691160d3e229cbb7e78ee2",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T03:59:55.863Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105122693721010600",
       "text": "@The_Alex That’s Dippin’",
@@ -1123,69 +1136,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2105039816438227206",
-      "text": "Proud of this. Open is the way.",
-      "url": "https://x.com/thsottiaux/status/2105039816438227206",
-      "posted_at": "2026-09-29T20:59:36.000Z",
-      "truncated": false,
-      "hash": "9d1f7fdb1efe40f7a26f0d1fdd2249d97af2bfdb30c8214d5ce247e8ab5e0d45",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-29T22:21:31.990Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105039816438227206",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2105039816438227206",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "id": "2105039816438227206",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-09-30",
-    "requests": 12
+    "requests": 15
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
