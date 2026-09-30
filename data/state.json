@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-29T23:51:13.753Z",
-  "last_success_at": "2026-09-29T23:31:26.472Z",
-  "source_status": "http_500",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-09-30T01:02:10.597Z",
+  "last_success_at": "2026-09-30T01:02:10.597Z",
+  "source_status": "ok",
+  "analysis_status": "running",
   "models": [
     {
+      "id": "cohere/north-mini-code:free",
+      "status": "pending",
+      "at": "2026-09-30T01:02:10.597Z"
+    },
+    {
+      "id": "nvidia/nemotron-3-super-120b-a12b:free",
+      "status": "pending",
+      "at": "2026-09-30T01:02:10.597Z"
+    },
+    {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-29T21:21:31.990Z"
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash-sante:free",
-      "status": "ok",
-      "at": "2026-09-29T21:21:31.990Z"
-    },
-    {
-      "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
-      "status": "ok",
-      "at": "2026-09-29T21:21:31.990Z"
+      "status": "pending",
+      "at": "2026-09-30T01:02:10.597Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105097443847332188",
+      "text": "@signulll Transparency is important to me",
+      "url": "https://x.com/thsottiaux/status/2105097443847332188",
+      "posted_at": "2026-09-30T00:48:36.000Z",
+      "truncated": false,
+      "hash": "c9bf352ed0ae77135ac0b8eb4ca15c735793376d0a843690425ab735e075e8c7",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T02:02:10.597Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105041299934187874",
       "text": "Full recap of all the announcements\n\nhttps://t.co/KGwZP3g6UC",
@@ -1065,69 +1078,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2104986448269279399",
-      "text": "Decisions API, for lightning fast constrained decision making powered by Luna. Supports visual inputs, and tuned to be able to make decisions in less than a few hundreds of milliseconds end to end.",
-      "url": "https://x.com/thsottiaux/status/2104986448269279399",
-      "posted_at": "2026-09-29T17:27:32.000Z",
-      "truncated": false,
-      "hash": "7e4b4a0062173c70fedaae2f026ab7457e5cf9739f2417b969c4ea50d945a611",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-09-29T20:21:09.359Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104986448269279399",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2104986448269279399",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "id": "2104986448269279399",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
-    "day": "2026-09-29",
-    "requests": 45
+    "day": "2026-09-30",
+    "requests": 3
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
