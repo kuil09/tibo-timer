@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-30T20:38:22.025Z",
-  "last_success_at": "2026-09-30T20:24:35.251Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-09-30T20:51:33.650Z",
+  "last_success_at": "2026-09-30T20:51:33.650Z",
+  "source_status": "ok",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-30T17:34:04.677Z"
+      "status": "pending",
+      "at": "2026-09-30T20:51:33.650Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-30T17:34:04.677Z"
+      "status": "pending",
+      "at": "2026-09-30T20:51:33.650Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-30T17:34:04.677Z"
+      "status": "pending",
+      "at": "2026-09-30T20:51:33.650Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105395200248156556",
+      "text": "Asked my dot to paint me. After sending me something cartoonish, I asked it to try a bit harder and to find a recent picture of me on the internet. It did better.\n\nBelow video is me clicking through my dot's computer. https://t.co/AutVg2erlh",
+      "url": "https://x.com/thsottiaux/status/2105395200248156556",
+      "posted_at": "2026-09-30T20:31:46.000Z",
+      "truncated": false,
+      "hash": "002665129a0b5134cd934a4dddc0f60ee608549dc3dbf6908b6ecaa2285454fd",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T21:51:33.650Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105394405238886517",
+      "text": "@AbdoKerdawy @OpenAI @OpenAIDevs Agree, except with the cursing, be nice to your dot!",
+      "url": "https://x.com/thsottiaux/status/2105394405238886517",
+      "posted_at": "2026-09-30T20:28:37.000Z",
+      "truncated": false,
+      "hash": "6e60cdc78d9cac6e1ddfdc9331c48533ac5292ac08492edf9747f954b223682b",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T21:51:33.650Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105348026416140781",
       "text": "Hi! What would you like to see us ship for dots and space in the next two weeks? Or how can we improve things in other parts of the product.",
@@ -1065,127 +1091,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2105122693721010600",
-      "text": "@The_Alex That’s Dippin’",
-      "url": "https://x.com/thsottiaux/status/2105122693721010600",
-      "posted_at": "2026-09-30T02:28:56.000Z",
-      "truncated": false,
-      "hash": "ee60eee420af250e4270b1ffcba29cf8bab067d4e9d94eaafd33c8ee352d2579",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-30T03:36:15.161Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105122693721010600",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105122693721010600",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105122693721010600",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105122298646888806",
-      "text": "@cmd_shiftbusra Could barely believe it when Busra made this come to life. Pure talent",
-      "url": "https://x.com/thsottiaux/status/2105122298646888806",
-      "posted_at": "2026-09-30T02:27:21.000Z",
-      "truncated": false,
-      "hash": "a81c2336847712187f5431942aeeb9656ca7a3bd7b0e228e853c1e2f38e7a7e2",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-30T03:36:15.161Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105122298646888806",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105122298646888806",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105122298646888806",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-09-30",
-    "requests": 36
+    "requests": 39
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
