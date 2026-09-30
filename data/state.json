@@ -1,27 +1,144 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-09-30T01:02:10.597Z",
-  "last_success_at": "2026-09-30T01:02:10.597Z",
+  "checked_at": "2026-09-30T01:40:53.119Z",
+  "last_success_at": "2026-09-30T01:40:53.119Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-30T01:02:10.597Z"
+      "status": "pending",
+      "at": "2026-09-30T01:40:53.119Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-30T01:02:10.597Z"
+      "status": "pending",
+      "at": "2026-09-30T01:40:53.119Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-30T01:02:10.597Z"
+      "status": "pending",
+      "at": "2026-09-30T01:40:53.119Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105109005135962589",
+      "text": "@danshipper @every @sama Always fun working with you!",
+      "url": "https://x.com/thsottiaux/status/2105109005135962589",
+      "posted_at": "2026-09-30T01:34:32.000Z",
+      "truncated": false,
+      "hash": "66914b3b220140825a134122b906fcac907a091945ccacd9bf037af1b8683170",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T02:40:53.119Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105108807693246808",
+      "text": "@The_Alex All rolling out within 12 hours. Pretty insane operation!",
+      "url": "https://x.com/thsottiaux/status/2105108807693246808",
+      "posted_at": "2026-09-30T01:33:45.000Z",
+      "truncated": false,
+      "hash": "428d5e04e36186a213e274104b6d7e5c3b840d65bdbab8e1604db93363029b6a",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T02:40:53.119Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105108212219572319",
+      "text": "@abdellahbrc No delays, all rolled out today. Just a question of how many of you adopt a dot.",
+      "url": "https://x.com/thsottiaux/status/2105108212219572319",
+      "posted_at": "2026-09-30T01:31:23.000Z",
+      "truncated": false,
+      "hash": "e631d3256d21543ef6673255feb4f682b4e35e9559de5cbee23b2581d42dcf71",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T02:40:53.119Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105106575866364103",
+      "text": "@tenobrus Why are you shilling OpenAI. Must be paid or something",
+      "url": "https://x.com/thsottiaux/status/2105106575866364103",
+      "posted_at": "2026-09-30T01:24:53.000Z",
+      "truncated": false,
+      "hash": "79410b33de506f194a0e2ab84a5f24f61caf47ce443fab17b48ce53c53859c39",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T02:40:53.119Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105106052874375281",
+      "text": "@NickADobos Sleeper hit",
+      "url": "https://x.com/thsottiaux/status/2105106052874375281",
+      "posted_at": "2026-09-30T01:22:48.000Z",
+      "truncated": false,
+      "hash": "1db2ed012a590fa385fc0d2cf35074093b7fe5d99371c148353782f61ebf0c61",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T02:40:53.119Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105105086506840421",
+      "text": "We will have a few million dots online within days, working on all sorts of things across such a diverse and large community. \n\nExcited to learn from all of you on what you love and what doesn’t yet feel magical. Personally I felt a jump after 2-3 days of use after teaching it more about my preferences and things on my mind. It learns very quickly to be most useful and it can take on surprisingly ambitious tasks on its own.\n\nWe’re learning from how you all use your primary dot before releasing the ability to create an entire team of them.",
+      "url": "https://x.com/thsottiaux/status/2105105086506840421",
+      "posted_at": "2026-09-30T01:18:58.000Z",
+      "truncated": false,
+      "hash": "165c7840a42a7bf2934aad7d9c9def5d130c6d75ec2ee9acebdd9b5f817b5abd",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T02:40:53.119Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105103752185458869",
+      "text": "@kunchenguid Good coverage!!! Thank you for tuning in and re-sharing this nicely",
+      "url": "https://x.com/thsottiaux/status/2105103752185458869",
+      "posted_at": "2026-09-30T01:13:40.000Z",
+      "truncated": false,
+      "hash": "85a223a4cb5619cc291cc88c0639d6bc02df94ecf69f3d0eae0879a41026b6a4",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T02:40:53.119Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105102820706058498",
+      "text": "It was so nice to connect with so many of you in person at DevDay. Immaculate vibes from the crowd and fun to see so many build things throughout the day.",
+      "url": "https://x.com/thsottiaux/status/2105102820706058498",
+      "posted_at": "2026-09-30T01:09:58.000Z",
+      "truncated": false,
+      "hash": "0bb5f15036a3c46c6da254519d6f39364fe68622fa877f4c58a2cb57cba1c9fd",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-09-30T02:40:53.119Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105102312167575701",
+      "text": "I got community noted, but the note is wrong 😅\n\nYour primary dot is included in your plan and will be available 24/7. If you ask it to create a codex task for you, that one will be drawing usage as usual. But when your dot does work directly, that uses nothing and is all on top of your plans usage. In the future you will be able to increase the speed and allow your dot to have more bandwidth, this will be a paid feature, but the baseline functionality will always just be included in your plan.",
+      "url": "https://x.com/thsottiaux/status/2105102312167575701",
+      "posted_at": "2026-09-30T01:07:56.000Z",
+      "truncated": false,
+      "hash": "f4b2a465802e1af6ca8bddf9f22e622e2192541c881bfb4e4b31937bcfcdf885",
+      "status": "pending",
+      "attempts": 0,
+      "retry_at": null,
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105097443847332188",
       "text": "@signulll Transparency is important to me",
@@ -717,417 +834,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2105006253986738615",
-      "text": "You can now use your ChatGPT subscription directly in over 16 partners products. No little rules, you can just use all your included usage right there. This includes things such as Devin, OpenCode, Notion, and many more.\n\nSign in with ChatGPT and go.",
-      "url": "https://x.com/thsottiaux/status/2105006253986738615",
-      "posted_at": "2026-09-29T18:46:14.000Z",
-      "truncated": false,
-      "hash": "f1931819819351c35941595e594096f89abf9b3feb4ee1eb57559eba5391e47b",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-29T19:55:17.227Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105006253986738615",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2105006253986738615",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "id": "2105006253986738615",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104994835212226681",
-      "text": "Live demos suffered from rolling out all the updates at the same time, but were committed to keep doing these live in the future. \n\nAlmost all the things we announced will be available today. Can’t see what you will do with it.",
-      "url": "https://x.com/thsottiaux/status/2104994835212226681",
-      "posted_at": "2026-09-29T18:00:52.000Z",
-      "truncated": false,
-      "hash": "4998d9160ff4fb5476d694434b168313582b910fd36e0bb12785d692886bfd5c",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-29T19:29:13.551Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104994835212226681",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2104994835212226681",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "id": "2104994835212226681",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104992080095564111",
-      "text": "Little summary https://t.co/HQ9Ut3cgSh",
-      "url": "https://x.com/thsottiaux/status/2104992080095564111",
-      "posted_at": "2026-09-29T17:49:55.000Z",
-      "truncated": false,
-      "hash": "c5992c5f7d6531316c0fdc826976721cb924dac3a53f0d9e772d311df48597d2",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-09-29T19:55:17.227Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104992080095564111",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2104992080095564111",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "id": "2104992080095564111",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104991765904375896",
-      "text": "We are opening up our platform and you can now build full native apps with plugin extensions, and ship them right in ChatGPT. We have over 1.2B weekly users and will surface relevant plugins right in the conversations.",
-      "url": "https://x.com/thsottiaux/status/2104991765904375896",
-      "posted_at": "2026-09-29T17:48:40.000Z",
-      "truncated": false,
-      "hash": "91d531a32f1ef9ac4cc64905bd6bbeaeb7e79728742955a0481311b41fdfb27f",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-09-29T19:55:17.227Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104991765904375896",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2104991765904375896",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "id": "2104991765904375896",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104989161774322009",
-      "text": "Dots are included in all Pro, Business Premium and Enterprise plans. This includes the Pro 100 plan. We’ll be looking to further expand access soon.",
-      "url": "https://x.com/thsottiaux/status/2104989161774322009",
-      "posted_at": "2026-09-29T17:38:19.000Z",
-      "truncated": false,
-      "hash": "658c5736386507e819166ed8514252bd55392946dc4e78f0f6bc9d5ad943c260",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-09-29T19:55:17.227Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104989161774322009",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2104989161774322009",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "id": "2104989161774322009",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104988071188148495",
-      "text": "Token traffic on responses API has increased 100X compared to today last year. Meanwhile the team improved reliability with 99.9% uptime and improving performance significantly.",
-      "url": "https://x.com/thsottiaux/status/2104988071188148495",
-      "posted_at": "2026-09-29T17:33:59.000Z",
-      "truncated": false,
-      "hash": "4d40d1274c73c75437663e613ae9a3481cfd5445db34c5af252d35f9be5eaee9",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-09-29T19:55:17.227Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104988071188148495",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2104988071188148495",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "id": "2104988071188148495",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2104987594719461796",
-      "text": "Launching a new Codex Cloud, much improved from last year. With configurable cloud environments, it’s impossible to go back to building on your laptop once you’ve taken the time to configure it.\n\nAgents API, the same tech powering all our cloud agents, including dots, is also now in preview and supports computer use. It allows you to build the same incredible products we are making available today.",
-      "url": "https://x.com/thsottiaux/status/2104987594719461796",
-      "posted_at": "2026-09-29T17:32:06.000Z",
-      "truncated": false,
-      "hash": "a28100d23c16af1eeacff39400551ba0ea3d250b8110a00e1d1df68cf09efb4b",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-09-29T19:55:17.227Z",
-      "votes": [
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2104987594719461796",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "claim": {
-            "id": "2104987594719461796",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "claim": {
-            "id": "2104987594719461796",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-09-30",
-    "requests": 3
+    "requests": 6
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
