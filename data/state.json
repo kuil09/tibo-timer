@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-01T18:30:26.952Z",
-  "last_success_at": "2026-10-01T18:30:26.952Z",
+  "checked_at": "2026-10-01T18:55:05.270Z",
+  "last_success_at": "2026-10-01T18:55:05.270Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-01T18:30:26.952Z"
+      "status": "pending",
+      "at": "2026-10-01T18:55:05.270Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-01T18:30:26.952Z"
+      "status": "pending",
+      "at": "2026-10-01T18:55:05.270Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "ok",
-      "at": "2026-10-01T18:30:26.952Z"
+      "status": "pending",
+      "at": "2026-10-01T18:55:05.270Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105727933579137159",
+      "text": "@vigyso Good thread on details of Sign in with ChatGPT and how the subscription can be used in my partner products",
+      "url": "https://x.com/thsottiaux/status/2105727933579137159",
+      "posted_at": "2026-10-01T18:33:56.000Z",
+      "truncated": false,
+      "hash": "f05889018671147baf052bef8b735cf0a6861e121a5477bf8fc742ab47740c48",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-01T19:55:05.270Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105718931235508277",
       "text": "@midotalks He gets it",
@@ -837,7 +850,7 @@
   ],
   "budget": {
     "day": "2026-10-01",
-    "requests": 21
+    "requests": 24
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
