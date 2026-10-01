@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-01T05:54:07.530Z",
-  "last_success_at": "2026-10-01T05:54:07.530Z",
+  "checked_at": "2026-10-01T06:40:28.423Z",
+  "last_success_at": "2026-10-01T06:40:28.423Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -1047,122 +1047,6 @@
           "model": "dots-studio/dots-3-note-preview:free",
           "claim": {
             "id": "2105188957437002208",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105178959327756396",
-      "text": "What’s up dot",
-      "url": "https://x.com/thsottiaux/status/2105178959327756396",
-      "posted_at": "2026-09-30T06:12:30.000Z",
-      "truncated": false,
-      "hash": "206fe53fecaffb23884c94c3343e5ff51a9ddc3751cbd5ce0e0b478df4dd9a89",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-30T07:39:21.306Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105178959327756396",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105178959327756396",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105178959327756396",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105176545304436942",
-      "text": "@rennsong Rennie and Benny are unstoppable",
-      "url": "https://x.com/thsottiaux/status/2105176545304436942",
-      "posted_at": "2026-09-30T06:02:55.000Z",
-      "truncated": false,
-      "hash": "660c12af156801678e0cd7254c028498f7b51fc3f5b12ec0d93d95d227f3479b",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-30T07:39:21.306Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105176545304436942",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105176545304436942",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105176545304436942",
             "event": "none",
             "state": "unknown",
             "conditional": false,
