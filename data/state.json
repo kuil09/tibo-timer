@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-01T04:28:54.099Z",
-  "last_success_at": "2026-10-01T04:28:54.099Z",
+  "checked_at": "2026-10-01T04:55:34.914Z",
+  "last_success_at": "2026-10-01T04:55:34.914Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-01T03:00:59.067Z"
+      "status": "pending",
+      "at": "2026-10-01T04:55:34.914Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-01T03:00:59.067Z"
+      "status": "pending",
+      "at": "2026-10-01T04:55:34.914Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-10-01T03:00:59.067Z"
+      "status": "pending",
+      "at": "2026-10-01T04:55:34.914Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105519686280790252",
+      "text": "@imjustnewatai For the Pro 200 shenanigans",
+      "url": "https://x.com/thsottiaux/status/2105519686280790252",
+      "posted_at": "2026-10-01T04:46:26.000Z",
+      "truncated": false,
+      "hash": "b267acb24966ccc45ab67822f43e72ee170a7c7562a2f8fa093d3ae6fcbfcc2a",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-01T05:55:34.914Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105519215092584786",
+      "text": "One more thing, you can now build and deploy MCP servers right through ChatGPT. And restrict its access to anyone you want or share it with the world.",
+      "url": "https://x.com/thsottiaux/status/2105519215092584786",
+      "posted_at": "2026-10-01T04:44:34.000Z",
+      "truncated": false,
+      "hash": "419a8c8f308c408dff1758fd690895abd61554d97e75e0e5ba55b813acd4fb36",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-01T05:55:34.914Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105489877727064272",
       "text": "@_bgian @OpenAI Thanks for playing",
@@ -1065,127 +1091,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2105174607439544669",
-      "text": "@morganlinton You get it. It’s a little dot that could.",
-      "url": "https://x.com/thsottiaux/status/2105174607439544669",
-      "posted_at": "2026-09-30T05:55:13.000Z",
-      "truncated": false,
-      "hash": "d7fa01b87bacba90544ac1a4ae9e7c8d993fb5ffc66bb53c940af2eed06cac38",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-30T07:39:21.306Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105174607439544669",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105174607439544669",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105174607439544669",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105173168281506088",
-      "text": "@kr0der Yes, check email",
-      "url": "https://x.com/thsottiaux/status/2105173168281506088",
-      "posted_at": "2026-09-30T05:49:30.000Z",
-      "truncated": false,
-      "hash": "4746320dfefa64ff77ba427eaf6a8ff427c2175de18fb62d25385c065ce60294",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-30T06:52:57.904Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105173168281506088",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105173168281506088",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105173168281506088",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-10-01",
-    "requests": 6
+    "requests": 9
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
