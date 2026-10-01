@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-01T02:40:09.561Z",
-  "last_success_at": "2026-10-01T02:40:09.561Z",
+  "checked_at": "2026-10-01T03:00:59.067Z",
+  "last_success_at": "2026-10-01T03:00:59.067Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-01T01:53:59.162Z"
+      "status": "pending",
+      "at": "2026-10-01T03:00:59.067Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-01T01:53:59.162Z"
+      "status": "pending",
+      "at": "2026-10-01T03:00:59.067Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-10-01T01:53:59.162Z"
+      "status": "pending",
+      "at": "2026-10-01T03:00:59.067Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105489877727064272",
+      "text": "@_bgian @OpenAI Thanks for playing",
+      "url": "https://x.com/thsottiaux/status/2105489877727064272",
+      "posted_at": "2026-10-01T02:47:59.000Z",
+      "truncated": false,
+      "hash": "ddb5cbf73e726175cb05c9c510a9c5a568aa2a988bebe1601094b1b212513ddc",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-01T04:00:59.067Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105464274747527543",
       "text": "GPT-6.1 Sol is our most demanded model pretty much ever both across both the API and subscriptions. \n\nWithin ChatGPT & Codex, we were under heavy load, but have brough more capacity online and the speed should get much better in the coming hours, reaching almost twice the speed compared to what we served yesterday.",
@@ -1123,69 +1136,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2105172665095069886",
-      "text": "@NicolasZu Well said",
-      "url": "https://x.com/thsottiaux/status/2105172665095069886",
-      "posted_at": "2026-09-30T05:47:30.000Z",
-      "truncated": false,
-      "hash": "9a8f88a72e2249d6845e0a7e66b1fc6d72d1f77096baa876d9a3501e3e1bc010",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-30T06:52:57.904Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105172665095069886",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105172665095069886",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105172665095069886",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-10-01",
-    "requests": 3
+    "requests": 6
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
