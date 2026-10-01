@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-01T04:55:34.914Z",
-  "last_success_at": "2026-10-01T04:55:34.914Z",
+  "checked_at": "2026-10-01T05:24:39.144Z",
+  "last_success_at": "2026-10-01T05:24:39.144Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-01T04:55:34.914Z"
+      "status": "pending",
+      "at": "2026-10-01T05:24:39.144Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-01T04:55:34.914Z"
+      "status": "pending",
+      "at": "2026-10-01T05:24:39.144Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-10-01T04:55:34.914Z"
+      "status": "pending",
+      "at": "2026-10-01T05:24:39.144Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105522533139452359",
+      "text": "@jxnlco I was going to say, last year. But no… it was this year.",
+      "url": "https://x.com/thsottiaux/status/2105522533139452359",
+      "posted_at": "2026-10-01T04:57:45.000Z",
+      "truncated": false,
+      "hash": "424eff3eb4c05e9947210d774622c1ed37a224325a7356eab3dc774ba1bed120",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-01T06:24:39.144Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105519686280790252",
       "text": "@imjustnewatai For the Pro 200 shenanigans",
@@ -1123,69 +1136,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2105175197821399122",
-      "text": "@neuroswish Your mental model is wrong. Your dot might be busy, just like you sometimes are.",
-      "url": "https://x.com/thsottiaux/status/2105175197821399122",
-      "posted_at": "2026-09-30T05:57:34.000Z",
-      "truncated": false,
-      "hash": "019d7fd818809078eb4450e61b21b5e6a385d6f4b3f63024f38958be7d5e8265",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-30T07:39:21.306Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105175197821399122",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105175197821399122",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105175197821399122",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-10-01",
-    "requests": 9
+    "requests": 12
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
