@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-01T15:52:50.602Z",
-  "last_success_at": "2026-10-01T15:52:50.602Z",
+  "checked_at": "2026-10-01T16:24:48.158Z",
+  "last_success_at": "2026-10-01T16:24:48.158Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-01T14:54:25.573Z"
+      "status": "pending",
+      "at": "2026-10-01T16:24:48.158Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-01T14:54:25.573Z"
+      "status": "pending",
+      "at": "2026-10-01T16:24:48.158Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-10-01T14:54:25.573Z"
+      "status": "pending",
+      "at": "2026-10-01T16:24:48.158Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105689875655897093",
+      "text": "@The_Alex We’re going to fix this but it’s a bit funny as your dot literally has to decide whether to pick up or not and sometimes it might just be busy with something else 👀",
+      "url": "https://x.com/thsottiaux/status/2105689875655897093",
+      "posted_at": "2026-10-01T16:02:42.000Z",
+      "truncated": false,
+      "hash": "5ab70778b0b5fe471ae914600426d2d3416df81acef85ddbd6a0e6a200177bce",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-01T17:24:48.158Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105689002905153761",
+      "text": "@rileybrown Love it thank you",
+      "url": "https://x.com/thsottiaux/status/2105689002905153761",
+      "posted_at": "2026-10-01T15:59:14.000Z",
+      "truncated": false,
+      "hash": "56e11e61e9abfabe05b556f8aff4865299319212cc0260ab3a1efa3a87b59002",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-01T17:24:48.158Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105672058269212820",
       "text": "Because usage on your primary dot is virtually unlimited at the moment, I can’t really give a reset. I need to come up with something new fast.",
@@ -779,7 +805,7 @@
   ],
   "budget": {
     "day": "2026-10-01",
-    "requests": 15
+    "requests": 18
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
