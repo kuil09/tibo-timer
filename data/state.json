@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-01T01:10:07.548Z",
-  "last_success_at": "2026-09-30T23:50:49.617Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-10-01T01:53:59.162Z",
+  "last_success_at": "2026-10-01T01:53:59.162Z",
+  "source_status": "ok",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-09-30T20:51:33.650Z"
+      "status": "pending",
+      "at": "2026-10-01T01:53:59.162Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-09-30T20:51:33.650Z"
+      "status": "pending",
+      "at": "2026-10-01T01:53:59.162Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-09-30T20:51:33.650Z"
+      "status": "pending",
+      "at": "2026-10-01T01:53:59.162Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105464274747527543",
+      "text": "GPT-6.1 Sol is our most demanded model pretty much ever both across both the API and subscriptions. \n\nWithin ChatGPT & Codex, we were under heavy load, but have brough more capacity online and the speed should get much better in the coming hours, reaching almost twice the speed compared to what we served yesterday.",
+      "url": "https://x.com/thsottiaux/status/2105464274747527543",
+      "posted_at": "2026-10-01T01:06:15.000Z",
+      "truncated": false,
+      "hash": "d10ec54f8c2ba21d3d8f15193ffbd2d7ddcfd2dcf64275ffe6785faf2c530578",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-01T02:53:59.162Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105456105954648292",
+      "text": "@OdraivK Hi, what can I do for you today",
+      "url": "https://x.com/thsottiaux/status/2105456105954648292",
+      "posted_at": "2026-10-01T00:33:47.000Z",
+      "truncated": false,
+      "hash": "5ed1098182ab6a3e2c13896d11db5e0562b69a8d46de7f09a2f6ca39025a11ab",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-01T02:53:59.162Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105395200248156556",
       "text": "Asked my dot to paint me. After sending me something cartoonish, I asked it to try a bit harder and to find a recent picture of me on the internet. It did better.\n\nBelow video is me clicking through my dot's computer. https://t.co/AutVg2erlh",
@@ -1065,127 +1091,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2105141623315374507",
-      "text": "@frantzfries Outfluffed",
-      "url": "https://x.com/thsottiaux/status/2105141623315374507",
-      "posted_at": "2026-09-30T03:44:09.000Z",
-      "truncated": false,
-      "hash": "e9aa9f5d38a3e8c0811e02d99cacf931de42d17f5c5084722ab004a8849106c4",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-30T04:56:05.682Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105141623315374507",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105141623315374507",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105141623315374507",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105124771310739821",
-      "text": "@iruletheworldmo The tokens must flow",
-      "url": "https://x.com/thsottiaux/status/2105124771310739821",
-      "posted_at": "2026-09-30T02:37:11.000Z",
-      "truncated": false,
-      "hash": "9a367b4846f7db147f4f828ae3fdde0eee0be7d0f1691160d3e229cbb7e78ee2",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-09-30T03:59:55.863Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105124771310739821",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105124771310739821",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105124771310739821",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
-    "day": "2026-09-30",
-    "requests": 39
+    "day": "2026-10-01",
+    "requests": 3
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
