@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-01T17:52:41.708Z",
-  "last_success_at": "2026-10-01T17:52:41.708Z",
+  "checked_at": "2026-10-01T18:30:26.952Z",
+  "last_success_at": "2026-10-01T18:30:26.952Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-01T16:24:48.158Z"
+      "status": "pending",
+      "at": "2026-10-01T18:30:26.952Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-01T16:24:48.158Z"
+      "status": "pending",
+      "at": "2026-10-01T18:30:26.952Z"
     },
     {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-10-01T16:24:48.158Z"
+      "id": "apodex/apodex-1.1-mini:free",
+      "status": "pending",
+      "at": "2026-10-01T18:30:26.952Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105718931235508277",
+      "text": "@midotalks He gets it",
+      "url": "https://x.com/thsottiaux/status/2105718931235508277",
+      "posted_at": "2026-10-01T17:58:10.000Z",
+      "truncated": false,
+      "hash": "cb985f1ed9c9a79eed7c894b9e48e42691795c2ef88ff39a685ca5a764990a91",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-01T19:30:26.952Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105718728658993153",
+      "text": "Damn WiFi",
+      "url": "https://x.com/thsottiaux/status/2105718728658993153",
+      "posted_at": "2026-10-01T17:57:21.000Z",
+      "truncated": false,
+      "hash": "89666eda5c4747bc43390a53d2bbcd7fcb91e6689237bda3647e54c3852f4bf5",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-01T19:30:26.952Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105689875655897093",
       "text": "@The_Alex We’re going to fix this but it’s a bit funny as your dot literally has to decide whether to pick up or not and sometimes it might just be busy with something else 👀",
@@ -721,7 +747,7 @@
   ],
   "budget": {
     "day": "2026-10-01",
-    "requests": 18
+    "requests": 21
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
