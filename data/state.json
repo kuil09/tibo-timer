@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-02T20:52:44.543Z",
-  "last_success_at": "2026-10-02T20:52:44.543Z",
+  "checked_at": "2026-10-02T21:20:50.844Z",
+  "last_success_at": "2026-10-02T21:20:50.844Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-02T15:52:33.330Z"
+      "status": "pending",
+      "at": "2026-10-02T21:20:50.844Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-02T15:52:33.330Z"
+      "status": "pending",
+      "at": "2026-10-02T21:20:50.844Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "ok",
-      "at": "2026-10-02T15:52:33.330Z"
+      "status": "pending",
+      "at": "2026-10-02T21:20:50.844Z"
     }
   ],
   "posts": [
+    {
+      "id": "2106131810921136451",
+      "text": "Reset all propagated. Enjoy.",
+      "url": "https://x.com/thsottiaux/status/2106131810921136451",
+      "posted_at": "2026-10-02T21:18:48.000Z",
+      "truncated": false,
+      "hash": "78242ed2b739e4c71342b4a478173fbe885d179d190e0571d994e46ac8b4958f",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-02T22:20:50.844Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2106046594277954010",
       "text": "@koltregaskes Team is working on most of these, stay tuned!",
@@ -548,7 +561,7 @@
   ],
   "budget": {
     "day": "2026-10-02",
-    "requests": 21
+    "requests": 24
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
