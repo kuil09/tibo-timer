@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-02T15:38:43.266Z",
-  "last_success_at": "2026-10-02T15:38:43.266Z",
+  "checked_at": "2026-10-02T15:52:33.330Z",
+  "last_success_at": "2026-10-02T15:52:33.330Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-02T06:38:53.271Z"
+      "status": "pending",
+      "at": "2026-10-02T15:52:33.330Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-02T06:38:53.271Z"
+      "status": "pending",
+      "at": "2026-10-02T15:52:33.330Z"
     },
     {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-10-02T06:38:53.271Z"
+      "id": "apodex/apodex-1.1-mini:free",
+      "status": "pending",
+      "at": "2026-10-02T15:52:33.330Z"
     }
   ],
   "posts": [
+    {
+      "id": "2106046594277954010",
+      "text": "@koltregaskes Team is working on most of these, stay tuned!",
+      "url": "https://x.com/thsottiaux/status/2106046594277954010",
+      "posted_at": "2026-10-02T15:40:11.000Z",
+      "truncated": false,
+      "hash": "ddbfe8672c59417123b067d8984c76342d570cae1de5c12e91cba9e50c8de5ed",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-02T16:52:33.330Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105899634032025682",
       "text": "Down to 6110 unread from the over 9000 unread emails just earlier. Will get to inbox zero with clean filters within the next 48 hours. Dot has accepted the challenge.",
@@ -780,7 +793,7 @@
   ],
   "budget": {
     "day": "2026-10-02",
-    "requests": 18
+    "requests": 21
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
