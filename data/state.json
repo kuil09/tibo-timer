@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-02T16:25:29.077Z",
-  "last_success_at": "2026-10-02T15:52:33.330Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-10-02T16:42:05.668Z",
+  "last_success_at": "2026-10-02T16:42:05.668Z",
+  "source_status": "ok",
+  "analysis_status": "unresolved",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
@@ -700,122 +700,6 @@
           "model": "apodex/apodex-1.1-mini:free",
           "claim": {
             "id": "2105718728658993153",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105689875655897093",
-      "text": "@The_Alex We’re going to fix this but it’s a bit funny as your dot literally has to decide whether to pick up or not and sometimes it might just be busy with something else 👀",
-      "url": "https://x.com/thsottiaux/status/2105689875655897093",
-      "posted_at": "2026-10-01T16:02:42.000Z",
-      "truncated": false,
-      "hash": "5ab70778b0b5fe471ae914600426d2d3416df81acef85ddbd6a0e6a200177bce",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-01T17:24:48.158Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105689875655897093",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105689875655897093",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105689875655897093",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105689002905153761",
-      "text": "@rileybrown Love it thank you",
-      "url": "https://x.com/thsottiaux/status/2105689002905153761",
-      "posted_at": "2026-10-01T15:59:14.000Z",
-      "truncated": false,
-      "hash": "56e11e61e9abfabe05b556f8aff4865299319212cc0260ab3a1efa3a87b59002",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-01T17:24:48.158Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105689002905153761",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105689002905153761",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105689002905153761",
             "event": "none",
             "state": "unknown",
             "conditional": false,
