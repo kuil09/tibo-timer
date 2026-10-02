@@ -1,28 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-02T02:58:09.990Z",
-  "last_success_at": "2026-10-02T02:58:09.990Z",
+  "checked_at": "2026-10-02T03:28:29.066Z",
+  "last_success_at": "2026-10-02T03:28:29.066Z",
   "source_status": "ok",
-  "analysis_status": "error",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-02T02:58:09.990Z"
+      "status": "pending",
+      "at": "2026-10-02T03:28:29.066Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-02T02:58:09.990Z"
+      "status": "pending",
+      "at": "2026-10-02T03:28:29.066Z"
     },
     {
-      "id": "apodex/apodex-1.1-mini:free",
-      "status": "error",
-      "at": "2026-10-02T02:58:09.990Z",
-      "error": "invalid_vote"
+      "id": "dots-studio/dots-3-note-preview:free",
+      "status": "pending",
+      "at": "2026-10-02T03:28:29.066Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105862010521219406",
+      "text": "You can ask your dot to \"create a pet and set it as your avatar\". It can be based on an idea, an image or pretty much anything. Here is my dot https://t.co/OhwcfuwfQJ",
+      "url": "https://x.com/thsottiaux/status/2105862010521219406",
+      "posted_at": "2026-10-02T03:26:42.000Z",
+      "truncated": false,
+      "hash": "f1d4d8541a94213107191b233b79546834b7f3372e362c015cf34b07592fd4bf",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-02T04:28:29.066Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105844753522938214",
       "text": "@ziwenxu_ Sir Dot Claw",
@@ -799,7 +811,7 @@
   ],
   "budget": {
     "day": "2026-10-02",
-    "requests": 6
+    "requests": 9
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
