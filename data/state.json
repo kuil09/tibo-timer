@@ -3,22 +3,23 @@
   "checked_at": "2026-10-02T02:58:09.990Z",
   "last_success_at": "2026-10-02T02:58:09.990Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "error",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-10-02T02:58:09.990Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-10-02T02:58:09.990Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "pending",
-      "at": "2026-10-02T02:58:09.990Z"
+      "status": "error",
+      "at": "2026-10-02T02:58:09.990Z",
+      "error": "invalid_vote"
     }
   ],
   "posts": [
@@ -29,10 +30,40 @@
       "posted_at": "2026-10-02T02:18:08.000Z",
       "truncated": false,
       "hash": "61ef1b8c93c73b740573f73160f16bc26ebbecc480b34f443ec00eae8ded2345",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-10-02T03:58:09.990Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2105844753522938214",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "claim": {
+            "id": "2105844753522938214",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "apodex/apodex-1.1-mini:free",
+          "claim": null,
+          "error": "invalid_vote"
+        }
+      ],
       "result": null
     },
     {
@@ -42,10 +73,46 @@
       "posted_at": "2026-10-02T02:14:51.000Z",
       "truncated": false,
       "hash": "de777f5ee85d942306dc62008c814ada9c9a59065a13282654039e4007646f75",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-10-02T03:58:09.990Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2105843926221660585",
+            "event": "reset",
+            "state": "scheduled",
+            "conditional": false,
+            "evidence": "Global reset landing tomorrow 10am PST for all paid ChatGPT accounts. Apologies for the slow start with GPT-6.1 Sol, it's now back to running at expected speeds after the massive load spike in the first two days.",
+            "time_text": "tomorrow 10am PST",
+            "time": {
+              "kind": "exact",
+              "at": "2026-10-02T18:00:00.000Z"
+            }
+          }
+        },
+        {
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "claim": {
+            "id": "2105843926221660585",
+            "event": "reset",
+            "state": "scheduled",
+            "conditional": false,
+            "evidence": "Global reset landing tomorrow 10am PST for all paid ChatGPT accounts.",
+            "time_text": "tomorrow 10am PST",
+            "time": {
+              "kind": "exact",
+              "at": "2026-10-02T18:00:00.000Z"
+            }
+          }
+        },
+        {
+          "model": "apodex/apodex-1.1-mini:free",
+          "claim": null,
+          "error": "invalid_vote"
+        }
+      ],
       "result": null
     },
     {
@@ -55,10 +122,40 @@
       "posted_at": "2026-10-02T02:13:21.000Z",
       "truncated": false,
       "hash": "7fb750ce0a0d3c0a8d25b2cfa7b8a297932139aa4f4b687f2f8f2a19f88583f2",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-10-02T03:58:09.990Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2105843550936302055",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "claim": {
+            "id": "2105843550936302055",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "apodex/apodex-1.1-mini:free",
+          "claim": null,
+          "error": "invalid_vote"
+        }
+      ],
       "result": null
     },
     {
@@ -711,6 +808,7 @@
     "google/gemma-4-26b-a4b-it:free": "2026-09-29T21:53:02.491Z",
     "nvidia/nemotron-3-super-120b-a12b:free": "2026-09-29T21:24:24.070Z",
     "liquid/lfm-2.5-2.6b:free": "2026-09-29T23:34:40.693Z",
-    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": "2026-09-29T23:52:03.469Z"
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": "2026-09-29T23:52:03.469Z",
+    "apodex/apodex-1.1-mini:free": "2026-10-02T08:58:09.990Z"
   }
 }
