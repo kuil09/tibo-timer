@@ -1,27 +1,66 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-02T02:34:14.872Z",
-  "last_success_at": "2026-10-02T02:04:12.956Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-10-02T02:58:09.990Z",
+  "last_success_at": "2026-10-02T02:58:09.990Z",
+  "source_status": "ok",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-02T01:38:22.160Z"
+      "status": "pending",
+      "at": "2026-10-02T02:58:09.990Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-02T01:38:22.160Z"
+      "status": "pending",
+      "at": "2026-10-02T02:58:09.990Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "ok",
-      "at": "2026-10-02T01:38:22.160Z"
+      "status": "pending",
+      "at": "2026-10-02T02:58:09.990Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105844753522938214",
+      "text": "@ziwenxu_ Sir Dot Claw",
+      "url": "https://x.com/thsottiaux/status/2105844753522938214",
+      "posted_at": "2026-10-02T02:18:08.000Z",
+      "truncated": false,
+      "hash": "61ef1b8c93c73b740573f73160f16bc26ebbecc480b34f443ec00eae8ded2345",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-02T03:58:09.990Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105843926221660585",
+      "text": "Global reset landing tomorrow 10am PST for all paid ChatGPT accounts. Apologies for the slow start with GPT-6.1 Sol, it's now back to running at expected speeds after the massive load spike in the first two days.",
+      "url": "https://x.com/thsottiaux/status/2105843926221660585",
+      "posted_at": "2026-10-02T02:14:51.000Z",
+      "truncated": false,
+      "hash": "de777f5ee85d942306dc62008c814ada9c9a59065a13282654039e4007646f75",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-02T03:58:09.990Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105843550936302055",
+      "text": "@_simonsmith Codex Manhattan Project 👀",
+      "url": "https://x.com/thsottiaux/status/2105843550936302055",
+      "posted_at": "2026-10-02T02:13:21.000Z",
+      "truncated": false,
+      "hash": "7fb750ce0a0d3c0a8d25b2cfa7b8a297932139aa4f4b687f2f8f2a19f88583f2",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-02T03:58:09.990Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105828364879876207",
       "text": "@QuinnyPig And it will get better every day",
@@ -659,69 +698,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2105489877727064272",
-      "text": "@_bgian @OpenAI Thanks for playing",
-      "url": "https://x.com/thsottiaux/status/2105489877727064272",
-      "posted_at": "2026-10-01T02:47:59.000Z",
-      "truncated": false,
-      "hash": "ddb5cbf73e726175cb05c9c510a9c5a568aa2a988bebe1601094b1b212513ddc",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-01T04:00:59.067Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105489877727064272",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105489877727064272",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105489877727064272",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-10-02",
-    "requests": 3
+    "requests": 6
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
