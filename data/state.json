@@ -3,21 +3,21 @@
   "checked_at": "2026-10-02T05:23:58.127Z",
   "last_success_at": "2026-10-02T05:23:58.127Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "unresolved",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-10-02T05:23:58.127Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-10-02T05:23:58.127Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-10-02T05:23:58.127Z"
     }
   ],
@@ -203,7 +203,7 @@
       "posted_at": "2026-10-02T02:18:08.000Z",
       "truncated": false,
       "hash": "61ef1b8c93c73b740573f73160f16bc26ebbecc480b34f443ec00eae8ded2345",
-      "status": "error",
+      "status": "complete",
       "attempts": 2,
       "retry_at": "2026-10-02T06:23:58.127Z",
       "votes": [
@@ -232,12 +232,27 @@
           }
         },
         {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": null,
-          "error": "invalid_vote"
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2105844753522938214",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
         }
       ],
-      "result": null
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2105843926221660585",
@@ -246,7 +261,7 @@
       "posted_at": "2026-10-02T02:14:51.000Z",
       "truncated": false,
       "hash": "de777f5ee85d942306dc62008c814ada9c9a59065a13282654039e4007646f75",
-      "status": "error",
+      "status": "unresolved",
       "attempts": 2,
       "retry_at": "2026-10-02T06:23:58.127Z",
       "votes": [
@@ -281,9 +296,19 @@
           }
         },
         {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": null,
-          "error": "invalid_vote"
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2105843926221660585",
+            "event": "banked_reset",
+            "state": "scheduled",
+            "conditional": false,
+            "evidence": "Global reset landing tomorrow 10am PST for all paid ChatGPT accounts.",
+            "time_text": "tomorrow 10am PST",
+            "time": {
+              "kind": "exact",
+              "at": "2026-10-02T18:00:00.000Z"
+            }
+          }
         }
       ],
       "result": null
@@ -295,7 +320,7 @@
       "posted_at": "2026-10-02T02:13:21.000Z",
       "truncated": false,
       "hash": "7fb750ce0a0d3c0a8d25b2cfa7b8a297932139aa4f4b687f2f8f2a19f88583f2",
-      "status": "error",
+      "status": "complete",
       "attempts": 2,
       "retry_at": "2026-10-02T06:23:58.127Z",
       "votes": [
@@ -324,12 +349,27 @@
           }
         },
         {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": null,
-          "error": "invalid_vote"
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2105843550936302055",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
         }
       ],
-      "result": null
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2105828364879876207",
