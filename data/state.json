@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-01T23:50:42.870Z",
-  "last_success_at": "2026-10-01T23:32:06.698Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-10-02T00:59:23.159Z",
+  "last_success_at": "2026-10-02T00:59:23.159Z",
+  "source_status": "ok",
+  "analysis_status": "up_to_date",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
@@ -699,64 +699,6 @@
           "model": "dots-studio/dots-3-note-preview:free",
           "claim": {
             "id": "2105464274747527543",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105456105954648292",
-      "text": "@OdraivK Hi, what can I do for you today",
-      "url": "https://x.com/thsottiaux/status/2105456105954648292",
-      "posted_at": "2026-10-01T00:33:47.000Z",
-      "truncated": false,
-      "hash": "5ed1098182ab6a3e2c13896d11db5e0562b69a8d46de7f09a2f6ca39025a11ab",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-01T02:53:59.162Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105456105954648292",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105456105954648292",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105456105954648292",
             "event": "none",
             "state": "unknown",
             "conditional": false,
