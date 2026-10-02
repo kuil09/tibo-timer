@@ -3,21 +3,21 @@
   "checked_at": "2026-10-02T21:20:50.844Z",
   "last_success_at": "2026-10-02T21:20:50.844Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "unresolved",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-10-02T21:20:50.844Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-10-02T21:20:50.844Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-10-02T21:20:50.844Z"
     }
   ],
@@ -29,10 +29,47 @@
       "posted_at": "2026-10-02T21:18:48.000Z",
       "truncated": false,
       "hash": "78242ed2b739e4c71342b4a478173fbe885d179d190e0571d994e46ac8b4958f",
-      "status": "pending",
+      "status": "unresolved",
       "attempts": 1,
       "retry_at": "2026-10-02T22:20:50.844Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2106131810921136451",
+            "event": "reset",
+            "state": "completed",
+            "conditional": false,
+            "evidence": "Reset all propagated. Enjoy.",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "claim": {
+            "id": "2106131810921136451",
+            "event": "reset",
+            "state": "completed",
+            "conditional": false,
+            "evidence": "Reset all propagated. Enjoy.",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "apodex/apodex-1.1-mini:free",
+          "claim": {
+            "id": "2106131810921136451",
+            "event": "banked_reset",
+            "state": "completed",
+            "conditional": false,
+            "evidence": "Reset all propagated. Enjoy.",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
       "result": null
     },
     {
