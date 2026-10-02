@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-02T03:28:29.066Z",
-  "last_success_at": "2026-10-02T03:28:29.066Z",
+  "checked_at": "2026-10-02T03:55:13.239Z",
+  "last_success_at": "2026-10-02T03:55:13.239Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-02T03:28:29.066Z"
+      "status": "pending",
+      "at": "2026-10-02T03:55:13.239Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-02T03:28:29.066Z"
+      "status": "pending",
+      "at": "2026-10-02T03:55:13.239Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-10-02T03:28:29.066Z"
+      "status": "pending",
+      "at": "2026-10-02T03:55:13.239Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105863620433453166",
+      "text": "@hugospdx Wrong strategy?",
+      "url": "https://x.com/thsottiaux/status/2105863620433453166",
+      "posted_at": "2026-10-02T03:33:06.000Z",
+      "truncated": false,
+      "hash": "b6478e3b61611617a68e269eb57115d6630cf80a1f27f37728cf51da1c63d7eb",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-02T04:55:13.239Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2105863294267560169",
+      "text": "@dextune Please bask",
+      "url": "https://x.com/thsottiaux/status/2105863294267560169",
+      "posted_at": "2026-10-02T03:31:49.000Z",
+      "truncated": false,
+      "hash": "9747d1fe92980341146207205561232478462cb1bb5ded7a55d13703f424a966",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-02T04:55:13.239Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105862010521219406",
       "text": "You can ask your dot to \"create a pet and set it as your avatar\". It can be based on an idea, an image or pretty much anything. Here is my dot https://t.co/OhwcfuwfQJ",
@@ -856,7 +882,7 @@
   ],
   "budget": {
     "day": "2026-10-02",
-    "requests": 9
+    "requests": 12
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
