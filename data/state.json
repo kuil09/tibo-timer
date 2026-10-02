@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-02T18:29:07.928Z",
-  "last_success_at": "2026-10-02T18:29:07.928Z",
+  "checked_at": "2026-10-02T18:54:21.274Z",
+  "last_success_at": "2026-10-02T18:54:21.274Z",
   "source_status": "ok",
   "analysis_status": "unresolved",
   "models": [
@@ -526,64 +526,6 @@
           "model": "apodex/apodex-1.1-mini:free",
           "claim": {
             "id": "2105828364879876207",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105727933579137159",
-      "text": "@vigyso Good thread on details of Sign in with ChatGPT and how the subscription can be used in my partner products",
-      "url": "https://x.com/thsottiaux/status/2105727933579137159",
-      "posted_at": "2026-10-01T18:33:56.000Z",
-      "truncated": false,
-      "hash": "f05889018671147baf052bef8b735cf0a6861e121a5477bf8fc742ab47740c48",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-01T19:55:05.270Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105727933579137159",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105727933579137159",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2105727933579137159",
             "event": "none",
             "state": "unknown",
             "conditional": false,
