@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-02T00:59:23.159Z",
-  "last_success_at": "2026-10-02T00:59:23.159Z",
+  "checked_at": "2026-10-02T01:38:22.160Z",
+  "last_success_at": "2026-10-02T01:38:22.160Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-01T18:55:05.270Z"
+      "status": "pending",
+      "at": "2026-10-02T01:38:22.160Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-01T18:55:05.270Z"
+      "status": "pending",
+      "at": "2026-10-02T01:38:22.160Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "ok",
-      "at": "2026-10-01T18:55:05.270Z"
+      "status": "pending",
+      "at": "2026-10-02T01:38:22.160Z"
     }
   ],
   "posts": [
+    {
+      "id": "2105828364879876207",
+      "text": "@QuinnyPig And it will get better every day",
+      "url": "https://x.com/thsottiaux/status/2105828364879876207",
+      "posted_at": "2026-10-02T01:13:01.000Z",
+      "truncated": false,
+      "hash": "6151380dc16d0a78fb2dd35d582ee8d436119bfa5755173865ade22717e454c9",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-02T02:38:22.160Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2105727933579137159",
       "text": "@vigyso Good thread on details of Sign in with ChatGPT and how the subscription can be used in my partner products",
@@ -659,69 +672,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2105464274747527543",
-      "text": "GPT-6.1 Sol is our most demanded model pretty much ever both across both the API and subscriptions. \n\nWithin ChatGPT & Codex, we were under heavy load, but have brough more capacity online and the speed should get much better in the coming hours, reaching almost twice the speed compared to what we served yesterday.",
-      "url": "https://x.com/thsottiaux/status/2105464274747527543",
-      "posted_at": "2026-10-01T01:06:15.000Z",
-      "truncated": false,
-      "hash": "d10ec54f8c2ba21d3d8f15193ffbd2d7ddcfd2dcf64275ffe6785faf2c530578",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-01T02:53:59.162Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105464274747527543",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105464274747527543",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105464274747527543",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
-    "day": "2026-10-01",
-    "requests": 24
+    "day": "2026-10-02",
+    "requests": 3
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
