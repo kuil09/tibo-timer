@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-02T14:43:13.018Z",
-  "last_success_at": "2026-10-02T14:43:13.018Z",
+  "checked_at": "2026-10-02T14:54:11.734Z",
+  "last_success_at": "2026-10-02T14:54:11.734Z",
   "source_status": "ok",
   "analysis_status": "unresolved",
   "models": [
@@ -758,122 +758,6 @@
           "model": "dots-studio/dots-3-note-preview:free",
           "claim": {
             "id": "2105689002905153761",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105672058269212820",
-      "text": "Because usage on your primary dot is virtually unlimited at the moment, I can’t really give a reset. I need to come up with something new fast.",
-      "url": "https://x.com/thsottiaux/status/2105672058269212820",
-      "posted_at": "2026-10-01T14:51:54.000Z",
-      "truncated": false,
-      "hash": "77176c25a6ca3faece303b2bea5a6b0fa86b2da5be2573d48f01996103ca2baa",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-01T15:54:25.573Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105672058269212820",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105672058269212820",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105672058269212820",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105670256094326849",
-      "text": "@_simonsmith We built dots to help get real work done. Lots to come that will improve them further over the days and weeks.",
-      "url": "https://x.com/thsottiaux/status/2105670256094326849",
-      "posted_at": "2026-10-01T14:44:45.000Z",
-      "truncated": false,
-      "hash": "ffd7dcc690c870c5e223ba4f3f8b64f7aeaec645da8718dcc0befcb51cdcb179",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-01T15:54:25.573Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105670256094326849",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105670256094326849",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105670256094326849",
             "event": "none",
             "state": "unknown",
             "conditional": false,
