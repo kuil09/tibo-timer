@@ -3,22 +3,23 @@
   "checked_at": "2026-10-03T04:28:15.857Z",
   "last_success_at": "2026-10-03T04:28:15.857Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "error",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-10-03T04:28:15.857Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-10-03T04:28:15.857Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "pending",
-      "at": "2026-10-03T04:28:15.857Z"
+      "status": "error",
+      "at": "2026-10-03T04:28:15.857Z",
+      "error": "inconsistent_vote"
     }
   ],
   "posts": [
@@ -29,10 +30,40 @@
       "posted_at": "2026-10-03T04:26:28.000Z",
       "truncated": false,
       "hash": "f2764a8045ad5c2f9cec8dfd8f9332fb1cafaff46f51c88ca6d62c67eef83b8f",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-10-03T05:28:15.857Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2106239435461579088",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "claim": {
+            "id": "2106239435461579088",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "apodex/apodex-1.1-mini:free",
+          "claim": null,
+          "error": "inconsistent_vote"
+        }
+      ],
       "result": null
     },
     {
@@ -42,10 +73,40 @@
       "posted_at": "2026-10-03T04:01:28.000Z",
       "truncated": false,
       "hash": "0761ba821a9ae4869b0d4abaa8217d48ce9d0a66a9af12b533322f1300d3f35c",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-10-03T05:28:15.857Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2106233145163141249",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "claim": {
+            "id": "2106233145163141249",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "apodex/apodex-1.1-mini:free",
+          "claim": null,
+          "error": "inconsistent_vote"
+        }
+      ],
       "result": null
     },
     {
@@ -401,6 +462,6 @@
     "nvidia/nemotron-3-super-120b-a12b:free": "2026-09-29T21:24:24.070Z",
     "liquid/lfm-2.5-2.6b:free": "2026-09-29T23:34:40.693Z",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": "2026-09-29T23:52:03.469Z",
-    "apodex/apodex-1.1-mini:free": "2026-10-02T08:58:09.990Z"
+    "apodex/apodex-1.1-mini:free": "2026-10-03T10:28:15.857Z"
   }
 }
