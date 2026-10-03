@@ -1,28 +1,79 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-03T04:54:26.361Z",
-  "last_success_at": "2026-10-03T04:28:15.857Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-10-03T05:28:33.828Z",
+  "last_success_at": "2026-10-03T05:28:33.828Z",
+  "source_status": "ok",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-03T04:28:15.857Z"
+      "status": "pending",
+      "at": "2026-10-03T05:28:33.828Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-03T04:28:15.857Z"
+      "status": "pending",
+      "at": "2026-10-03T05:28:33.828Z"
     },
     {
-      "id": "apodex/apodex-1.1-mini:free",
-      "status": "error",
-      "at": "2026-10-03T04:28:15.857Z",
-      "error": "inconsistent_vote"
+      "id": "dots-studio/dots-3-note-preview:free",
+      "status": "pending",
+      "at": "2026-10-03T05:28:33.828Z"
     }
   ],
   "posts": [
+    {
+      "id": "2106253534132089110",
+      "text": "@Shekswess Unlimited atm",
+      "url": "https://x.com/thsottiaux/status/2106253534132089110",
+      "posted_at": "2026-10-03T05:22:29.000Z",
+      "truncated": false,
+      "hash": "8c337053e5b03af4b63682a6609b3b1d88c383b0052dd958f3d4fe357b7a5115",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-03T06:28:33.828Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106252868307271752",
+      "text": "Fortunately our future models will be much better at code deletion and simplification. Just in time",
+      "url": "https://x.com/thsottiaux/status/2106252868307271752",
+      "posted_at": "2026-10-03T05:19:50.000Z",
+      "truncated": false,
+      "hash": "36a4c704f4504bc28b713a1ba9ea9f37cffd73b27be45d32a5dfe11679660d50",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-03T06:28:33.828Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106250124863389920",
+      "text": "@rileybrown You’re hired",
+      "url": "https://x.com/thsottiaux/status/2106250124863389920",
+      "posted_at": "2026-10-03T05:08:56.000Z",
+      "truncated": false,
+      "hash": "6282b3ef24f1ed97c2fc1f6304e4767abb74e1e8a6ab9bc26e2eb5e6d3f3c05b",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-03T06:28:33.828Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106239912932692085",
+      "text": "@_architected Yeah no, that was my bad for not propagating it at 10am quite perfectly. This is something that will be better planned next time, apologies.",
+      "url": "https://x.com/thsottiaux/status/2106239912932692085",
+      "posted_at": "2026-10-03T04:28:21.000Z",
+      "truncated": false,
+      "hash": "3c9c2329c7baa43c1036e7f2ceeb1b2cc5ec63ce9ab15ba1186fc7779fa2b197",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-03T06:28:33.828Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2106239435461579088",
       "text": "All fixed. Surprising number of Pro 500 users on here.",
@@ -31,8 +82,8 @@
       "truncated": false,
       "hash": "f2764a8045ad5c2f9cec8dfd8f9332fb1cafaff46f51c88ca6d62c67eef83b8f",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-10-03T05:28:15.857Z",
+      "attempts": 2,
+      "retry_at": "2026-10-03T06:28:33.828Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -74,8 +125,8 @@
       "truncated": false,
       "hash": "0761ba821a9ae4869b0d4abaa8217d48ce9d0a66a9af12b533322f1300d3f35c",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-10-03T05:28:15.857Z",
+      "attempts": 2,
+      "retry_at": "2026-10-03T06:28:33.828Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -452,7 +503,7 @@
   ],
   "budget": {
     "day": "2026-10-03",
-    "requests": 6
+    "requests": 9
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
