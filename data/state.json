@@ -1,27 +1,66 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-03T21:31:31.009Z",
-  "last_success_at": "2026-10-03T21:31:31.009Z",
+  "checked_at": "2026-10-03T22:42:03.836Z",
+  "last_success_at": "2026-10-03T22:42:03.836Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-03T18:17:32.763Z"
+      "status": "pending",
+      "at": "2026-10-03T22:42:03.836Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-03T18:17:32.763Z"
+      "status": "pending",
+      "at": "2026-10-03T22:42:03.836Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "ok",
-      "at": "2026-10-03T18:17:32.763Z"
+      "status": "pending",
+      "at": "2026-10-03T22:42:03.836Z"
     }
   ],
   "posts": [
+    {
+      "id": "2106501204285239560",
+      "text": "If we were to add one more sidebar, what should be in it",
+      "url": "https://x.com/thsottiaux/status/2106501204285239560",
+      "posted_at": "2026-10-03T21:46:38.000Z",
+      "truncated": false,
+      "hash": "9c0d6287acccb3c10c867c54cc139a96ab64af5e42d1ad2301fc2c59487f4c56",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-03T23:42:03.836Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106500823253754004",
+      "text": "@maria_rcks wait",
+      "url": "https://x.com/thsottiaux/status/2106500823253754004",
+      "posted_at": "2026-10-03T21:45:07.000Z",
+      "truncated": false,
+      "hash": "d0b773c40c76b4103b215862a5132815754b7126ea9554797b23bc5d719c4edb",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-03T23:42:03.836Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106499926956060984",
+      "text": "@poteto i had french fries for lunch",
+      "url": "https://x.com/thsottiaux/status/2106499926956060984",
+      "posted_at": "2026-10-03T21:41:34.000Z",
+      "truncated": false,
+      "hash": "9467ca997761c8940fbffa6bc230b1dd99c2da11591d0f5d0889378d35edffb0",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-03T23:42:03.836Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2106439068557144179",
       "text": "What’s one thing that’s missing in codex that you wish we had?",
@@ -713,7 +752,7 @@
   ],
   "budget": {
     "day": "2026-10-03",
-    "requests": 15
+    "requests": 18
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
