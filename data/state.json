@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-03T15:27:57.475Z",
-  "last_success_at": "2026-10-03T15:27:57.475Z",
+  "checked_at": "2026-10-03T17:06:35.150Z",
+  "last_success_at": "2026-10-03T17:06:35.150Z",
   "source_status": "ok",
   "analysis_status": "unresolved",
   "models": [
@@ -701,64 +701,6 @@
         }
       ],
       "result": null
-    },
-    {
-      "id": "2106046594277954010",
-      "text": "@koltregaskes Team is working on most of these, stay tuned!",
-      "url": "https://x.com/thsottiaux/status/2106046594277954010",
-      "posted_at": "2026-10-02T15:40:11.000Z",
-      "truncated": false,
-      "hash": "ddbfe8672c59417123b067d8984c76342d570cae1de5c12e91cba9e50c8de5ed",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-02T16:52:33.330Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2106046594277954010",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106046594277954010",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2106046594277954010",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
