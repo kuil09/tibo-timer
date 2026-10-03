@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-03T03:52:52.276Z",
-  "last_success_at": "2026-10-03T03:52:52.276Z",
+  "checked_at": "2026-10-03T04:28:15.857Z",
+  "last_success_at": "2026-10-03T04:28:15.857Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-03T03:52:52.276Z"
+      "status": "pending",
+      "at": "2026-10-03T04:28:15.857Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-03T03:52:52.276Z"
+      "status": "pending",
+      "at": "2026-10-03T04:28:15.857Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "ok",
-      "at": "2026-10-03T03:52:52.276Z"
+      "status": "pending",
+      "at": "2026-10-03T04:28:15.857Z"
     }
   ],
   "posts": [
+    {
+      "id": "2106239435461579088",
+      "text": "All fixed. Surprising number of Pro 500 users on here.",
+      "url": "https://x.com/thsottiaux/status/2106239435461579088",
+      "posted_at": "2026-10-03T04:26:28.000Z",
+      "truncated": false,
+      "hash": "f2764a8045ad5c2f9cec8dfd8f9332fb1cafaff46f51c88ca6d62c67eef83b8f",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-03T05:28:15.857Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106233145163141249",
+      "text": "Seeing some reports that the Pro 500 didn’t get the reset as expected earlier. Investigating and will make up for it",
+      "url": "https://x.com/thsottiaux/status/2106233145163141249",
+      "posted_at": "2026-10-03T04:01:28.000Z",
+      "truncated": false,
+      "hash": "0761ba821a9ae4869b0d4abaa8217d48ce9d0a66a9af12b533322f1300d3f35c",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-03T05:28:15.857Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2106227571088392653",
       "text": "@atelicinvest Pretty bad for the GPUs. We’re going to need more compute",
@@ -365,7 +391,7 @@
   ],
   "budget": {
     "day": "2026-10-03",
-    "requests": 3
+    "requests": 6
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
