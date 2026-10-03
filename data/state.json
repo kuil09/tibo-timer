@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-03T17:06:35.150Z",
-  "last_success_at": "2026-10-03T17:06:35.150Z",
+  "checked_at": "2026-10-03T18:17:32.763Z",
+  "last_success_at": "2026-10-03T18:17:32.763Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-03T05:54:45.648Z"
+      "status": "pending",
+      "at": "2026-10-03T18:17:32.763Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-03T05:54:45.648Z"
+      "status": "pending",
+      "at": "2026-10-03T18:17:32.763Z"
     },
     {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-10-03T05:54:45.648Z"
+      "id": "apodex/apodex-1.1-mini:free",
+      "status": "pending",
+      "at": "2026-10-03T18:17:32.763Z"
     }
   ],
   "posts": [
+    {
+      "id": "2106439068557144179",
+      "text": "What’s one thing that’s missing in codex that you wish we had?",
+      "url": "https://x.com/thsottiaux/status/2106439068557144179",
+      "posted_at": "2026-10-03T17:39:44.000Z",
+      "truncated": false,
+      "hash": "580b34aacb7cb2cf681a4180d2628d57215cf1012743143c2cc7a03d51f29796",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-03T19:17:32.763Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2106257453679808676",
       "text": "@poteto Hey now. You don’t know what we’re releasing next week",
@@ -705,7 +718,7 @@
   ],
   "budget": {
     "day": "2026-10-03",
-    "requests": 12
+    "requests": 15
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
