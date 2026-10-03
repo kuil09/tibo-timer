@@ -1,27 +1,66 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-03T03:08:27.332Z",
-  "last_success_at": "2026-10-03T03:08:27.332Z",
+  "checked_at": "2026-10-03T03:52:52.276Z",
+  "last_success_at": "2026-10-03T03:52:52.276Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-02T21:20:50.844Z"
+      "status": "pending",
+      "at": "2026-10-03T03:52:52.276Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-02T21:20:50.844Z"
+      "status": "pending",
+      "at": "2026-10-03T03:52:52.276Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "ok",
-      "at": "2026-10-02T21:20:50.844Z"
+      "status": "pending",
+      "at": "2026-10-03T03:52:52.276Z"
     }
   ],
   "posts": [
+    {
+      "id": "2106227571088392653",
+      "text": "@atelicinvest Pretty bad for the GPUs. We’re going to need more compute",
+      "url": "https://x.com/thsottiaux/status/2106227571088392653",
+      "posted_at": "2026-10-03T03:39:19.000Z",
+      "truncated": false,
+      "hash": "985e1650e521be7502577590ecefc7647558b5792170301827a2c0cff5e03b04",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-03T04:52:52.276Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106226725428572371",
+      "text": "Pretty sure there are more dots than bots already in this little world.\n\nCool thing is that we’re improving them everyday and they learn directly from your feedback.",
+      "url": "https://x.com/thsottiaux/status/2106226725428572371",
+      "posted_at": "2026-10-03T03:35:57.000Z",
+      "truncated": false,
+      "hash": "64ecdd779d7bd4d8dc015933c828e70aa88d07ea1cecdf11e85a7999bbba07b1",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-03T04:52:52.276Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106224612271112207",
+      "text": "@charliermarsh Good dot",
+      "url": "https://x.com/thsottiaux/status/2106224612271112207",
+      "posted_at": "2026-10-03T03:27:33.000Z",
+      "truncated": false,
+      "hash": "46aefff0f4671eebd7831c443543ac7b2fc0ee05964217e14ee5d0371e543ab7",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-03T04:52:52.276Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2106131810921136451",
       "text": "Reset all propagated. Enjoy.",
@@ -187,185 +226,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2105863620433453166",
-      "text": "@hugospdx Wrong strategy?",
-      "url": "https://x.com/thsottiaux/status/2105863620433453166",
-      "posted_at": "2026-10-02T03:33:06.000Z",
-      "truncated": false,
-      "hash": "b6478e3b61611617a68e269eb57115d6630cf80a1f27f37728cf51da1c63d7eb",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-02T04:55:13.239Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105863620433453166",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105863620433453166",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105863620433453166",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105863294267560169",
-      "text": "@dextune Please bask",
-      "url": "https://x.com/thsottiaux/status/2105863294267560169",
-      "posted_at": "2026-10-02T03:31:49.000Z",
-      "truncated": false,
-      "hash": "9747d1fe92980341146207205561232478462cb1bb5ded7a55d13703f424a966",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-02T04:55:13.239Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105863294267560169",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105863294267560169",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105863294267560169",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2105862010521219406",
-      "text": "You can ask your dot to \"create a pet and set it as your avatar\". It can be based on an idea, an image or pretty much anything. Here is my dot https://t.co/OhwcfuwfQJ",
-      "url": "https://x.com/thsottiaux/status/2105862010521219406",
-      "posted_at": "2026-10-02T03:26:42.000Z",
-      "truncated": false,
-      "hash": "f1d4d8541a94213107191b233b79546834b7f3372e362c015cf34b07592fd4bf",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-02T04:28:29.066Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2105862010521219406",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2105862010521219406",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2105862010521219406",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
-    "day": "2026-10-02",
-    "requests": 24
+    "day": "2026-10-03",
+    "requests": 3
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
