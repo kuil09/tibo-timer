@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-03T20:09:52.604Z",
-  "last_success_at": "2026-10-03T19:14:18.770Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-10-03T21:31:31.009Z",
+  "last_success_at": "2026-10-03T21:31:31.009Z",
+  "source_status": "ok",
+  "analysis_status": "unresolved",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
@@ -709,56 +709,6 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2106131810921136451",
-      "text": "Reset all propagated. Enjoy.",
-      "url": "https://x.com/thsottiaux/status/2106131810921136451",
-      "posted_at": "2026-10-02T21:18:48.000Z",
-      "truncated": false,
-      "hash": "78242ed2b739e4c71342b4a478173fbe885d179d190e0571d994e46ac8b4958f",
-      "status": "unresolved",
-      "attempts": 1,
-      "retry_at": "2026-10-02T22:20:50.844Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2106131810921136451",
-            "event": "reset",
-            "state": "completed",
-            "conditional": false,
-            "evidence": "Reset all propagated. Enjoy.",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106131810921136451",
-            "event": "reset",
-            "state": "completed",
-            "conditional": false,
-            "evidence": "Reset all propagated. Enjoy.",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2106131810921136451",
-            "event": "banked_reset",
-            "state": "completed",
-            "conditional": false,
-            "evidence": "Reset all propagated. Enjoy.",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": null
     }
   ],
   "budget": {
