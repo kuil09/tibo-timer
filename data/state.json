@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-04T16:45:13.267Z",
-  "last_success_at": "2026-10-04T16:45:13.267Z",
+  "checked_at": "2026-10-04T17:59:14.543Z",
+  "last_success_at": "2026-10-04T17:59:14.543Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
@@ -873,64 +873,6 @@
           "model": "apodex/apodex-1.1-mini:free",
           "claim": {
             "id": "2106499926956060984",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2106439068557144179",
-      "text": "What’s one thing that’s missing in codex that you wish we had?",
-      "url": "https://x.com/thsottiaux/status/2106439068557144179",
-      "posted_at": "2026-10-03T17:39:44.000Z",
-      "truncated": false,
-      "hash": "580b34aacb7cb2cf681a4180d2628d57215cf1012743143c2cc7a03d51f29796",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-03T19:17:32.763Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2106439068557144179",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106439068557144179",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2106439068557144179",
             "event": "none",
             "state": "unknown",
             "conditional": false,
