@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-04T19:12:34.129Z",
-  "last_success_at": "2026-10-04T19:12:34.129Z",
+  "checked_at": "2026-10-04T20:23:12.245Z",
+  "last_success_at": "2026-10-04T20:23:12.245Z",
   "source_status": "ok",
   "analysis_status": "up_to_date",
   "models": [
