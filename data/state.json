@@ -3,21 +3,22 @@
   "checked_at": "2026-10-04T22:21:08.331Z",
   "last_success_at": "2026-10-04T22:21:08.331Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "error",
   "models": [
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-10-04T22:21:08.331Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "pending",
-      "at": "2026-10-04T22:21:08.331Z"
+      "status": "error",
+      "at": "2026-10-04T22:21:08.331Z",
+      "error": "invalid_vote"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-10-04T22:21:08.331Z"
     }
   ],
@@ -150,31 +151,31 @@
       "retry_at": "2026-10-04T23:21:08.331Z",
       "votes": [
         {
-          "model": "cohere/north-mini-code:free",
-          "claim": null,
-          "error": "invalid_vote"
-        },
-        {
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
           "claim": {
             "id": "2106845241357824205",
-            "event": "banked_reset",
-            "state": "scheduled",
+            "event": "none",
+            "state": "unknown",
             "conditional": false,
-            "evidence": "Over the next 28 days, each day we’ll either ship one thing that is a clear improvement and relevant for most codex/work users or ship a full reset. Let the improvements begin.",
-            "time_text": "Over the next 28 days",
+            "evidence": "",
+            "time_text": "",
             "time": null
           }
         },
         {
           "model": "apodex/apodex-1.1-mini:free",
+          "claim": null,
+          "error": "invalid_vote"
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
           "claim": {
             "id": "2106845241357824205",
-            "event": "banked_reset",
-            "state": "scheduled",
+            "event": "none",
+            "state": "unknown",
             "conditional": false,
-            "evidence": "Over the next 28 days, each day we’ll either ship one thing that is a clear improvement and relevant for most codex/work users or ship a full reset",
-            "time_text": "Over the next 28 days",
+            "evidence": "",
+            "time_text": "",
             "time": null
           }
         }
@@ -193,11 +194,6 @@
       "retry_at": "2026-10-04T23:21:08.331Z",
       "votes": [
         {
-          "model": "cohere/north-mini-code:free",
-          "claim": null,
-          "error": "invalid_vote"
-        },
-        {
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
           "claim": {
             "id": "2106842998214717876",
@@ -211,6 +207,11 @@
         },
         {
           "model": "apodex/apodex-1.1-mini:free",
+          "claim": null,
+          "error": "invalid_vote"
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
           "claim": {
             "id": "2106842998214717876",
             "event": "none",
@@ -933,6 +934,6 @@
     "nvidia/nemotron-3-super-120b-a12b:free": "2026-09-29T21:24:24.070Z",
     "liquid/lfm-2.5-2.6b:free": "2026-09-29T23:34:40.693Z",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": "2026-09-29T23:52:03.469Z",
-    "apodex/apodex-1.1-mini:free": "2026-10-03T10:28:15.857Z"
+    "apodex/apodex-1.1-mini:free": "2026-10-05T04:21:08.331Z"
   }
 }
