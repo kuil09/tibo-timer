@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-04T03:06:23.949Z",
+  "checked_at": "2026-10-04T04:29:53.413Z",
   "last_success_at": "2026-10-04T03:06:23.949Z",
-  "source_status": "ok",
-  "analysis_status": "unresolved",
+  "source_status": "http_404",
+  "analysis_status": "source_unavailable",
   "models": [
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
