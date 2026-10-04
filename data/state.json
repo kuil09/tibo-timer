@@ -3,21 +3,22 @@
   "checked_at": "2026-10-04T21:10:42.610Z",
   "last_success_at": "2026-10-04T21:10:42.610Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "error",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
-      "at": "2026-10-04T21:10:42.610Z"
+      "status": "error",
+      "at": "2026-10-04T21:10:42.610Z",
+      "error": "invalid_vote"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-10-04T21:10:42.610Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-10-04T21:10:42.610Z"
     }
   ],
@@ -29,10 +30,40 @@
       "posted_at": "2026-10-04T20:35:42.000Z",
       "truncated": false,
       "hash": "f9958cadf609c3931dc6c54aecc300cb54e8575b142918fa30afe205a83101dc",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-10-04T22:10:42.610Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": null,
+          "error": "invalid_vote"
+        },
+        {
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "claim": {
+            "id": "2106845738814849339",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "apodex/apodex-1.1-mini:free",
+          "claim": {
+            "id": "2106845738814849339",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
       "result": null
     },
     {
@@ -42,10 +73,40 @@
       "posted_at": "2026-10-04T20:33:43.000Z",
       "truncated": false,
       "hash": "982e6894de73958eb2d9dc8b41e20a43b5097ce2d31b0c7228bc866009349f79",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-10-04T22:10:42.610Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": null,
+          "error": "invalid_vote"
+        },
+        {
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "claim": {
+            "id": "2106845241357824205",
+            "event": "banked_reset",
+            "state": "scheduled",
+            "conditional": false,
+            "evidence": "Over the next 28 days, each day we’ll either ship one thing that is a clear improvement and relevant for most codex/work users or ship a full reset. Let the improvements begin.",
+            "time_text": "Over the next 28 days",
+            "time": null
+          }
+        },
+        {
+          "model": "apodex/apodex-1.1-mini:free",
+          "claim": {
+            "id": "2106845241357824205",
+            "event": "banked_reset",
+            "state": "scheduled",
+            "conditional": false,
+            "evidence": "Over the next 28 days, each day we’ll either ship one thing that is a clear improvement and relevant for most codex/work users or ship a full reset",
+            "time_text": "Over the next 28 days",
+            "time": null
+          }
+        }
+      ],
       "result": null
     },
     {
@@ -55,10 +116,40 @@
       "posted_at": "2026-10-04T20:24:48.000Z",
       "truncated": false,
       "hash": "23ae7474f373a3938f690e1dd76a2b9e2e61c7451816055af3674b270b796166",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-10-04T22:10:42.610Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": null,
+          "error": "invalid_vote"
+        },
+        {
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "claim": {
+            "id": "2106842998214717876",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "apodex/apodex-1.1-mini:free",
+          "claim": {
+            "id": "2106842998214717876",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
       "result": null
     },
     {
@@ -938,7 +1029,7 @@
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
-    "cohere/north-mini-code:free": "2026-10-04T07:55:53.209Z",
+    "cohere/north-mini-code:free": "2026-10-05T03:10:42.610Z",
     "nex-agi/nex-n2.5-mini:free": "2026-09-22T23:19:34.908Z",
     "google/gemma-4-26b-a4b-it:free": "2026-09-29T21:53:02.491Z",
     "nvidia/nemotron-3-super-120b-a12b:free": "2026-09-29T21:24:24.070Z",
