@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-04T15:04:36.531Z",
-  "last_success_at": "2026-10-04T13:07:18.133Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-10-04T16:45:13.267Z",
+  "last_success_at": "2026-10-04T16:45:13.267Z",
+  "source_status": "ok",
+  "analysis_status": "running",
   "models": [
     {
+      "id": "cohere/north-mini-code:free",
+      "status": "pending",
+      "at": "2026-10-04T16:45:13.267Z"
+    },
+    {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-04T06:35:44.546Z"
+      "status": "pending",
+      "at": "2026-10-04T16:45:13.267Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "ok",
-      "at": "2026-10-04T06:35:44.546Z"
-    },
-    {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-10-04T06:35:44.546Z"
+      "status": "pending",
+      "at": "2026-10-04T16:45:13.267Z"
     }
   ],
   "posts": [
+    {
+      "id": "2106769163620671823",
+      "text": "@argofowl Heard",
+      "url": "https://x.com/thsottiaux/status/2106769163620671823",
+      "posted_at": "2026-10-04T15:31:25.000Z",
+      "truncated": false,
+      "hash": "c030d2942ef6b9ecbda0b69fef3829860664b9478437ef715f857ab55b81533e",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-04T17:45:13.267Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2106610099720720811",
       "text": "All right, we’re locking in. Only things being worked on are simplifications, more efficiency for more usage, groundbreaking features or new models. \n\nSometimes you have to invest ahead of the curve, but feedback is clear that you all want things to get simpler. On it.",
@@ -895,7 +908,7 @@
   ],
   "budget": {
     "day": "2026-10-04",
-    "requests": 12
+    "requests": 15
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
