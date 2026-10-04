@@ -1,28 +1,79 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-04T23:33:00.507Z",
-  "last_success_at": "2026-10-04T23:33:00.507Z",
+  "checked_at": "2026-10-04T23:50:32.094Z",
+  "last_success_at": "2026-10-04T23:50:32.094Z",
   "source_status": "ok",
-  "analysis_status": "error",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-04T23:33:00.507Z"
+      "status": "pending",
+      "at": "2026-10-04T23:50:32.094Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-10-04T23:33:00.507Z"
+      "status": "pending",
+      "at": "2026-10-04T23:50:32.094Z"
     },
     {
-      "id": "google/gemma-4-26b-a4b-it:free",
-      "status": "error",
-      "at": "2026-10-04T23:33:00.507Z",
-      "error": "http_429"
+      "id": "inclusionai/ling-3.0-flash-sante:free",
+      "status": "pending",
+      "at": "2026-10-04T23:50:32.094Z"
     }
   ],
   "posts": [
+    {
+      "id": "2106894683523928229",
+      "text": "@Yuchenj_UW We're still early indeed!",
+      "url": "https://x.com/thsottiaux/status/2106894683523928229",
+      "posted_at": "2026-10-04T23:50:11.000Z",
+      "truncated": false,
+      "hash": "e694d08d59edbb36f93bc4301d5315c120fc294a7b8411d30dd930863e8f5200",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-05T00:50:32.094Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106894238541918707",
+      "text": "@mattlam_ &gt; some easy wins: it takes 3 clicks on my phone to open dots from ChatGPT app, and there should be shortcut to dictation to it.\n\nTeam is on it",
+      "url": "https://x.com/thsottiaux/status/2106894238541918707",
+      "posted_at": "2026-10-04T23:48:25.000Z",
+      "truncated": false,
+      "hash": "8ada315915fd9e1310dbef9a08f82706283908b798163355081fe06502bda64d",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-05T00:50:32.094Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106893863663321520",
+      "text": "@karrisaarinen Always loved linear!",
+      "url": "https://x.com/thsottiaux/status/2106893863663321520",
+      "posted_at": "2026-10-04T23:46:55.000Z",
+      "truncated": false,
+      "hash": "9808565819861f9a18406f74b6716d188ec9672a44bc7b5e00951f58853a53da",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-05T00:50:32.094Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106893559962144962",
+      "text": "@ZryMiller Interestingly, user and sub count is growing nicely. But feedback was clear.",
+      "url": "https://x.com/thsottiaux/status/2106893559962144962",
+      "posted_at": "2026-10-04T23:45:43.000Z",
+      "truncated": false,
+      "hash": "fc6c5409c9f731b9d0da389332e8a9c6863ae896e051a6e7b49c41c40631543b",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-05T00:50:32.094Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2106858787151995288",
       "text": "@buildwithsid You're hired",
@@ -862,69 +913,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2106541589007114420",
-      "text": "@Voxyz_ai Glad you like it! Anything we can improve?",
-      "url": "https://x.com/thsottiaux/status/2106541589007114420",
-      "posted_at": "2026-10-04T00:27:07.000Z",
-      "truncated": false,
-      "hash": "6ec0f3bc99ca394d0d0ad558928b8648618621f5ab9ecf653a7a09a799de4f12",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-04T01:35:56.123Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2106541589007114420",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106541589007114420",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2106541589007114420",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-10-04",
-    "requests": 27
+    "requests": 30
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
