@@ -1,25 +1,24 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-04T01:55:53.209Z",
-  "last_success_at": "2026-10-04T01:55:53.209Z",
+  "checked_at": "2026-10-04T03:06:23.949Z",
+  "last_success_at": "2026-10-04T03:06:23.949Z",
   "source_status": "ok",
-  "analysis_status": "error",
+  "analysis_status": "running",
   "models": [
     {
-      "id": "cohere/north-mini-code:free",
-      "status": "error",
-      "at": "2026-10-04T01:55:53.209Z",
-      "error": "invalid_json"
-    },
-    {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-04T01:55:53.209Z"
+      "status": "pending",
+      "at": "2026-10-04T03:06:23.949Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "ok",
-      "at": "2026-10-04T01:55:53.209Z"
+      "status": "pending",
+      "at": "2026-10-04T03:06:23.949Z"
+    },
+    {
+      "id": "dots-studio/dots-3-note-preview:free",
+      "status": "pending",
+      "at": "2026-10-04T03:06:23.949Z"
     }
   ],
   "posts": [
@@ -31,8 +30,8 @@
       "truncated": false,
       "hash": "635e854e607bdf73e6dd6babc973d46d4e3054d6f5b44495b9efde231708e21a",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-10-04T02:55:53.209Z",
+      "attempts": 2,
+      "retry_at": "2026-10-04T04:06:23.949Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -74,8 +73,8 @@
       "truncated": false,
       "hash": "8a327655b8cdf67d18e64290ed4cb31aab8d3d1267d73ce09d839781bd43871c",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-10-04T02:55:53.209Z",
+      "attempts": 2,
+      "retry_at": "2026-10-04T04:06:23.949Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -1090,7 +1089,7 @@
   ],
   "budget": {
     "day": "2026-10-04",
-    "requests": 6
+    "requests": 9
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
