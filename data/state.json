@@ -1,25 +1,24 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-04T23:19:49.965Z",
-  "last_success_at": "2026-10-04T22:50:37.353Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-10-04T23:33:00.507Z",
+  "last_success_at": "2026-10-04T23:33:00.507Z",
+  "source_status": "ok",
+  "analysis_status": "running",
   "models": [
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-04T22:21:08.331Z"
-    },
-    {
-      "id": "apodex/apodex-1.1-mini:free",
-      "status": "error",
-      "at": "2026-10-04T22:21:08.331Z",
-      "error": "invalid_vote"
+      "status": "pending",
+      "at": "2026-10-04T23:33:00.507Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-10-04T22:21:08.331Z"
+      "status": "pending",
+      "at": "2026-10-04T23:33:00.507Z"
+    },
+    {
+      "id": "google/gemma-4-26b-a4b-it:free",
+      "status": "pending",
+      "at": "2026-10-04T23:33:00.507Z"
     }
   ],
   "posts": [
@@ -147,8 +146,8 @@
       "truncated": false,
       "hash": "982e6894de73958eb2d9dc8b41e20a43b5097ce2d31b0c7228bc866009349f79",
       "status": "error",
-      "attempts": 2,
-      "retry_at": "2026-10-04T23:21:08.331Z",
+      "attempts": 3,
+      "retry_at": "2026-10-05T00:33:00.507Z",
       "votes": [
         {
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
@@ -190,8 +189,8 @@
       "truncated": false,
       "hash": "23ae7474f373a3938f690e1dd76a2b9e2e61c7451816055af3674b270b796166",
       "status": "error",
-      "attempts": 2,
-      "retry_at": "2026-10-04T23:21:08.331Z",
+      "attempts": 3,
+      "retry_at": "2026-10-05T00:33:00.507Z",
       "votes": [
         {
           "model": "nvidia/nemotron-3-super-120b-a12b:free",
@@ -924,7 +923,7 @@
   ],
   "budget": {
     "day": "2026-10-04",
-    "requests": 24
+    "requests": 27
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
