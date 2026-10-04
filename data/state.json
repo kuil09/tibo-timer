@@ -1,27 +1,66 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-04T20:23:12.245Z",
-  "last_success_at": "2026-10-04T20:23:12.245Z",
+  "checked_at": "2026-10-04T21:10:42.610Z",
+  "last_success_at": "2026-10-04T21:10:42.610Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-04T16:45:13.267Z"
+      "status": "pending",
+      "at": "2026-10-04T21:10:42.610Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-04T16:45:13.267Z"
+      "status": "pending",
+      "at": "2026-10-04T21:10:42.610Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "ok",
-      "at": "2026-10-04T16:45:13.267Z"
+      "status": "pending",
+      "at": "2026-10-04T21:10:42.610Z"
     }
   ],
   "posts": [
+    {
+      "id": "2106845738814849339",
+      "text": "@poteto I challenge you to do the same\n\nhttps://t.co/aUNDJbJ9y2",
+      "url": "https://x.com/thsottiaux/status/2106845738814849339",
+      "posted_at": "2026-10-04T20:35:42.000Z",
+      "truncated": false,
+      "hash": "f9958cadf609c3931dc6c54aecc300cb54e8575b142918fa30afe205a83101dc",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-04T22:10:42.610Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106845241357824205",
+      "text": "Over the next 28 days, each day we’ll either ship one thing that is a clear improvement and relevant for most codex/work users or ship a full reset. Let the improvements begin.",
+      "url": "https://x.com/thsottiaux/status/2106845241357824205",
+      "posted_at": "2026-10-04T20:33:43.000Z",
+      "truncated": false,
+      "hash": "982e6894de73958eb2d9dc8b41e20a43b5097ce2d31b0c7228bc866009349f79",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-04T22:10:42.610Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106842998214717876",
+      "text": "@nabeelqu Locked in",
+      "url": "https://x.com/thsottiaux/status/2106842998214717876",
+      "posted_at": "2026-10-04T20:24:48.000Z",
+      "truncated": false,
+      "hash": "23ae7474f373a3938f690e1dd76a2b9e2e61c7451816055af3674b270b796166",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-04T22:10:42.610Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2106769163620671823",
       "text": "@argofowl Heard",
@@ -895,7 +934,7 @@
   ],
   "budget": {
     "day": "2026-10-04",
-    "requests": 15
+    "requests": 18
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
