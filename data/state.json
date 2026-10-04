@@ -1,69 +1,51 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-04T21:10:42.610Z",
-  "last_success_at": "2026-10-04T21:10:42.610Z",
+  "checked_at": "2026-10-04T21:40:52.329Z",
+  "last_success_at": "2026-10-04T21:40:52.329Z",
   "source_status": "ok",
-  "analysis_status": "error",
+  "analysis_status": "running",
   "models": [
     {
-      "id": "cohere/north-mini-code:free",
-      "status": "error",
-      "at": "2026-10-04T21:10:42.610Z",
-      "error": "invalid_vote"
-    },
-    {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-04T21:10:42.610Z"
+      "status": "pending",
+      "at": "2026-10-04T21:40:52.329Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "ok",
-      "at": "2026-10-04T21:10:42.610Z"
+      "status": "pending",
+      "at": "2026-10-04T21:40:52.329Z"
+    },
+    {
+      "id": "dots-studio/dots-3-note-preview:free",
+      "status": "pending",
+      "at": "2026-10-04T21:40:52.329Z"
     }
   ],
   "posts": [
     {
-      "id": "2106845738814849339",
-      "text": "@poteto I challenge you to do the same\n\nhttps://t.co/aUNDJbJ9y2",
-      "url": "https://x.com/thsottiaux/status/2106845738814849339",
-      "posted_at": "2026-10-04T20:35:42.000Z",
+      "id": "2106858787151995288",
+      "text": "@buildwithsid You're hired",
+      "url": "https://x.com/thsottiaux/status/2106858787151995288",
+      "posted_at": "2026-10-04T21:27:33.000Z",
       "truncated": false,
-      "hash": "f9958cadf609c3931dc6c54aecc300cb54e8575b142918fa30afe205a83101dc",
-      "status": "error",
+      "hash": "5de96954ceb8a93154dec199e1fa2859bc8d85ba4cc18ac78c943af765cfa2c0",
+      "status": "pending",
       "attempts": 1,
-      "retry_at": "2026-10-04T22:10:42.610Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": null,
-          "error": "invalid_vote"
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106845738814849339",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2106845738814849339",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
+      "retry_at": "2026-10-04T22:40:52.329Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106858395370389784",
+      "text": "@poteto that was a really quick fold",
+      "url": "https://x.com/thsottiaux/status/2106858395370389784",
+      "posted_at": "2026-10-04T21:25:59.000Z",
+      "truncated": false,
+      "hash": "921b4d8b7ff3a2ad140e88be876d1862b0f009c4184b71588b038100d3b6edc1",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-04T22:40:52.329Z",
+      "votes": [],
       "result": null
     },
     {
@@ -1025,7 +1007,7 @@
   ],
   "budget": {
     "day": "2026-10-04",
-    "requests": 18
+    "requests": 21
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
