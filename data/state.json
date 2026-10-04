@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-04T00:35:56.123Z",
-  "last_success_at": "2026-10-04T00:35:56.123Z",
+  "checked_at": "2026-10-04T01:55:53.209Z",
+  "last_success_at": "2026-10-04T01:55:53.209Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-04T00:35:56.123Z"
+      "status": "pending",
+      "at": "2026-10-04T01:55:53.209Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-04T00:35:56.123Z"
+      "status": "pending",
+      "at": "2026-10-04T01:55:53.209Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "ok",
-      "at": "2026-10-04T00:35:56.123Z"
+      "status": "pending",
+      "at": "2026-10-04T01:55:53.209Z"
     }
   ],
   "posts": [
+    {
+      "id": "2106546689012281771",
+      "text": "@Baconbrix Interesting position you’re taking there mister Bacon. Now let’s see what someone can do with the ChatGPT subscription or the Grok subscription. 👀",
+      "url": "https://x.com/thsottiaux/status/2106546689012281771",
+      "posted_at": "2026-10-04T00:47:23.000Z",
+      "truncated": false,
+      "hash": "635e854e607bdf73e6dd6babc973d46d4e3054d6f5b44495b9efde231708e21a",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-04T02:55:53.209Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106544544892518815",
+      "text": "@atelicinvest Dots are persistent agents that carry context across the single conversation. You can call it in the middle of work and then catch it later via slack or text in the app, it’s the same dot talking to you.",
+      "url": "https://x.com/thsottiaux/status/2106544544892518815",
+      "posted_at": "2026-10-04T00:38:51.000Z",
+      "truncated": false,
+      "hash": "8a327655b8cdf67d18e64290ed4cb31aab8d3d1267d73ce09d839781bd43871c",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-04T02:55:53.209Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2106543375088488596",
       "text": "@davis7 6.1 coming soon",
@@ -1003,7 +1029,7 @@
   ],
   "budget": {
     "day": "2026-10-04",
-    "requests": 3
+    "requests": 6
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
