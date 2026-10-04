@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-03T23:41:11.024Z",
-  "last_success_at": "2026-10-03T23:41:11.024Z",
+  "checked_at": "2026-10-04T00:35:56.123Z",
+  "last_success_at": "2026-10-04T00:35:56.123Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-03T22:42:03.836Z"
+      "status": "pending",
+      "at": "2026-10-04T00:35:56.123Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-03T22:42:03.836Z"
+      "status": "pending",
+      "at": "2026-10-04T00:35:56.123Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "ok",
-      "at": "2026-10-03T22:42:03.836Z"
+      "status": "pending",
+      "at": "2026-10-04T00:35:56.123Z"
     }
   ],
   "posts": [
+    {
+      "id": "2106543375088488596",
+      "text": "@davis7 6.1 coming soon",
+      "url": "https://x.com/thsottiaux/status/2106543375088488596",
+      "posted_at": "2026-10-04T00:34:12.000Z",
+      "truncated": false,
+      "hash": "ff7a3edf7ea4b85b5ed476ba3a187664c8b137fcbd87af6cbc6d9d624016d130",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-04T01:35:56.123Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106541589007114420",
+      "text": "@Voxyz_ai Glad you like it! Anything we can improve?",
+      "url": "https://x.com/thsottiaux/status/2106541589007114420",
+      "posted_at": "2026-10-04T00:27:07.000Z",
+      "truncated": false,
+      "hash": "6ec0f3bc99ca394d0d0ad558928b8648618621f5ab9ecf653a7a09a799de4f12",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-04T01:35:56.123Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2106501204285239560",
       "text": "If we were to add one more sidebar, what should be in it",
@@ -886,8 +912,8 @@
     }
   ],
   "budget": {
-    "day": "2026-10-03",
-    "requests": 18
+    "day": "2026-10-04",
+    "requests": 3
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
