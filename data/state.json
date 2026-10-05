@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-05T05:17:05.098Z",
-  "last_success_at": "2026-10-05T04:34:29.814Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-10-05T05:48:05.875Z",
+  "last_success_at": "2026-10-05T05:48:05.875Z",
+  "source_status": "ok",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-05T04:34:29.814Z"
+      "status": "pending",
+      "at": "2026-10-05T05:48:05.875Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-05T04:34:29.814Z"
+      "status": "pending",
+      "at": "2026-10-05T05:48:05.875Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "ok",
-      "at": "2026-10-05T04:34:29.814Z"
+      "status": "pending",
+      "at": "2026-10-05T05:48:05.875Z"
     }
   ],
   "posts": [
+    {
+      "id": "2106967126250791091",
+      "text": "@hiarun02 Facts",
+      "url": "https://x.com/thsottiaux/status/2106967126250791091",
+      "posted_at": "2026-10-05T04:38:03.000Z",
+      "truncated": false,
+      "hash": "66386f718bdd235bce55f7f1a0e3346b8789b340be8466c352a8592402b4643b",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-05T06:48:05.875Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106966244314567159",
+      "text": "@alexkehr Congrats!!",
+      "url": "https://x.com/thsottiaux/status/2106966244314567159",
+      "posted_at": "2026-10-05T04:34:32.000Z",
+      "truncated": false,
+      "hash": "cb60c03d1bce500f902083b90f86b2005a41c56e9fe33e607ee4211c1f071cc4",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-05T06:48:05.875Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2106963521561083946",
       "text": "@AlexBerish @OpenAI @sama Everything is indeed coordinated through Slack",
@@ -745,301 +771,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2106610099720720811",
-      "text": "All right, we’re locking in. Only things being worked on are simplifications, more efficiency for more usage, groundbreaking features or new models. \n\nSometimes you have to invest ahead of the curve, but feedback is clear that you all want things to get simpler. On it.",
-      "url": "https://x.com/thsottiaux/status/2106610099720720811",
-      "posted_at": "2026-10-04T04:59:21.000Z",
-      "truncated": false,
-      "hash": "363f2f572dda863608a902af3b94537fadef565b7a068d47962778b4f6d58d3d",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-04T07:35:44.546Z",
-      "votes": [
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106610099720720811",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2106610099720720811",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2106610099720720811",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2106609390577156384",
-      "text": "@hiarun02 There is a full usage dashboard in the app now! Let me know what’s missing if anything, will fix",
-      "url": "https://x.com/thsottiaux/status/2106609390577156384",
-      "posted_at": "2026-10-04T04:56:32.000Z",
-      "truncated": false,
-      "hash": "2356126decd3fe23b7ef592bdff179ae8fbce5bb1e5465a104cdcf2f6e574a4b",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-04T07:35:44.546Z",
-      "votes": [
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106609390577156384",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2106609390577156384",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2106609390577156384",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2106607456130592861",
-      "text": "@_ak_111 6.1 sol ultrafast",
-      "url": "https://x.com/thsottiaux/status/2106607456130592861",
-      "posted_at": "2026-10-04T04:48:51.000Z",
-      "truncated": false,
-      "hash": "b6a850c6e78db25c079a4cff4a8245a5aa72a4b2369eb5e5126129bf7e81813d",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-04T07:35:44.546Z",
-      "votes": [
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106607456130592861",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2106607456130592861",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2106607456130592861",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2106605571168510149",
-      "text": "@davis7 6.1 sol ultrafast that is",
-      "url": "https://x.com/thsottiaux/status/2106605571168510149",
-      "posted_at": "2026-10-04T04:41:21.000Z",
-      "truncated": false,
-      "hash": "15120bce5ac6132f4a63b7e0939835bdaf81547931cef099786356d0d842a962",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-04T07:35:44.546Z",
-      "votes": [
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106605571168510149",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2106605571168510149",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2106605571168510149",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2106603980386394123",
-      "text": "What it did\n\n- delete all categories of email that were not needed for me to keep, validating them in batch\n- identify labels for types of work that I do and label all the emails appropriately\n- walked me through emails that needed a reply, searching for relevant context in the background to help get things right\n\nand in the process I was able to go through a lot of feedback and requests people send me directly through email. It was a good Saturday.",
-      "url": "https://x.com/thsottiaux/status/2106603980386394123",
-      "posted_at": "2026-10-04T04:35:02.000Z",
-      "truncated": false,
-      "hash": "b687c1a173775cb1ca18cc7357a04a59834f648480bcbbdd3041c7d66130e490",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-04T07:35:44.546Z",
-      "votes": [
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106603980386394123",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2106603980386394123",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2106603980386394123",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-10-05",
-    "requests": 3
+    "requests": 6
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
