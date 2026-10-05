@@ -1,27 +1,79 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-05T04:04:40.174Z",
-  "last_success_at": "2026-10-05T03:33:51.349Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-10-05T04:34:29.814Z",
+  "last_success_at": "2026-10-05T04:34:29.814Z",
+  "source_status": "ok",
+  "analysis_status": "running",
   "models": [
     {
+      "id": "cohere/north-mini-code:free",
+      "status": "pending",
+      "at": "2026-10-05T04:34:29.814Z"
+    },
+    {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-04T23:50:32.094Z"
+      "status": "pending",
+      "at": "2026-10-05T04:34:29.814Z"
     },
     {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-10-04T23:50:32.094Z"
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash-sante:free",
-      "status": "ok",
-      "at": "2026-10-04T23:50:32.094Z"
+      "id": "apodex/apodex-1.1-mini:free",
+      "status": "pending",
+      "at": "2026-10-05T04:34:29.814Z"
     }
   ],
   "posts": [
+    {
+      "id": "2106963521561083946",
+      "text": "@AlexBerish @OpenAI @sama Everything is indeed coordinated through Slack",
+      "url": "https://x.com/thsottiaux/status/2106963521561083946",
+      "posted_at": "2026-10-05T04:23:43.000Z",
+      "truncated": false,
+      "hash": "cb4f7aaa48ea6c03161b6723fe5f75a770316860dbc5834b3fc4cc8fab84b992",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-05T05:34:29.814Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106959403782184960",
+      "text": "@ai_for_success Claudex AI Space by Google",
+      "url": "https://x.com/thsottiaux/status/2106959403782184960",
+      "posted_at": "2026-10-05T04:07:21.000Z",
+      "truncated": false,
+      "hash": "3761ccc55d545da1eaa780ffe2f81094588cfd51d2c3daf2d552fb18e30e871f",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-05T05:34:29.814Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106958559695282202",
+      "text": "@makeamarkery Not fixes. Significant improvements. Let’s have some fun!",
+      "url": "https://x.com/thsottiaux/status/2106958559695282202",
+      "posted_at": "2026-10-05T04:04:00.000Z",
+      "truncated": false,
+      "hash": "1f5bd2be17a080b04350cf6d4131afb287f9bf60f991c9c6ff4c60a4c30d946f",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-05T05:34:29.814Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2106957975147676025",
+      "text": "@fawnunwrap Don’t feel bad. It’s part of the fun and I’m here for it.",
+      "url": "https://x.com/thsottiaux/status/2106957975147676025",
+      "posted_at": "2026-10-05T04:01:41.000Z",
+      "truncated": false,
+      "hash": "2a7bb1f50c2ac1ec7b4731a9adfbaeca9936d17fa53c78a721d65fdb3d9a89f2",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-05T05:34:29.814Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2106894683523928229",
       "text": "@Yuchenj_UW We're still early indeed!",
@@ -803,127 +855,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2106602729875685780",
-      "text": "I have never in my life achieved inbox zero until I just made it an active goal for my dot to help get it done. Let’s see how long it lasts, but it’s a great feeling. https://t.co/qHlFmfSIX5",
-      "url": "https://x.com/thsottiaux/status/2106602729875685780",
-      "posted_at": "2026-10-04T04:30:04.000Z",
-      "truncated": false,
-      "hash": "e105b3bc50480ba100e221c39f62811f5b01d43e7105801745970a4f8b19ba16",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-04T07:35:44.546Z",
-      "votes": [
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106602729875685780",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2106602729875685780",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2106602729875685780",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2106593009806815429",
-      "text": "@macintogdev Ah, perfection",
-      "url": "https://x.com/thsottiaux/status/2106593009806815429",
-      "posted_at": "2026-10-04T03:51:26.000Z",
-      "truncated": false,
-      "hash": "3f7e738759c9d2bc94086a5686c33d3bcbf7e6f558a86d2dbcc0919120407bd8",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-04T07:35:44.546Z",
-      "votes": [
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106593009806815429",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2106593009806815429",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2106593009806815429",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
-    "day": "2026-10-04",
-    "requests": 30
+    "day": "2026-10-05",
+    "requests": 3
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
