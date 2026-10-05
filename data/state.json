@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-05T16:56:40.951Z",
-  "last_success_at": "2026-10-05T16:56:40.951Z",
+  "checked_at": "2026-10-05T17:21:06.879Z",
+  "last_success_at": "2026-10-05T17:21:06.879Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-05T05:48:05.875Z"
+      "status": "pending",
+      "at": "2026-10-05T17:21:06.879Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-05T05:48:05.875Z"
+      "status": "pending",
+      "at": "2026-10-05T17:21:06.879Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "ok",
-      "at": "2026-10-05T05:48:05.875Z"
+      "status": "pending",
+      "at": "2026-10-05T17:21:06.879Z"
     }
   ],
   "posts": [
+    {
+      "id": "2107159119107146237",
+      "text": "Reaching 50 TPS instead of 30TPS, with also the most optimized tokenizer out there. And the models are quite the efficient ones in terms of number of tokens needed to get things done!",
+      "url": "https://x.com/thsottiaux/status/2107159119107146237",
+      "posted_at": "2026-10-05T17:20:57.000Z",
+      "truncated": false,
+      "hash": "a669e61264e03b018d8b78cf0d3464d0c7fcf49d097728d34ec092fdf04af431",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-05T18:21:06.879Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2107158998495748264",
+      "text": "Day 1/\n\nWe have optimized the default speed to be ~50% faster across GPT-6 Astra and GPT-6.1 Sol through the subscription across all our products and partners using Sign in With ChatGPT (including OpenCode, Pi, Amp, Devin, ...).\n\nNo changes needed on your end and this should be felt within the next two hours.",
+      "url": "https://x.com/thsottiaux/status/2107158998495748264",
+      "posted_at": "2026-10-05T17:20:29.000Z",
+      "truncated": false,
+      "hash": "ddcfab85d5a7d5fa61b508768b5b9e2311a19a99f0405c55add8a4c951bc0092",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-05T18:21:06.879Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2106967126250791091",
       "text": "@hiarun02 Facts",
@@ -807,7 +833,7 @@
   ],
   "budget": {
     "day": "2026-10-05",
-    "requests": 6
+    "requests": 9
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
