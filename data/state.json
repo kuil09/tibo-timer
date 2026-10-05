@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-04T23:50:32.094Z",
-  "last_success_at": "2026-10-04T23:50:32.094Z",
+  "checked_at": "2026-10-05T01:05:22.989Z",
+  "last_success_at": "2026-10-05T01:05:22.989Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "unresolved",
   "models": [
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
@@ -377,7 +377,7 @@
       "posted_at": "2026-10-04T20:33:43.000Z",
       "truncated": false,
       "hash": "982e6894de73958eb2d9dc8b41e20a43b5097ce2d31b0c7228bc866009349f79",
-      "status": "error",
+      "status": "unresolved",
       "attempts": 3,
       "retry_at": "2026-10-05T00:33:00.507Z",
       "votes": [
@@ -420,7 +420,7 @@
       "posted_at": "2026-10-04T20:24:48.000Z",
       "truncated": false,
       "hash": "23ae7474f373a3938f690e1dd76a2b9e2e61c7451816055af3674b270b796166",
-      "status": "error",
+      "status": "unresolved",
       "attempts": 3,
       "retry_at": "2026-10-05T00:33:00.507Z",
       "votes": [
@@ -901,180 +901,6 @@
           "model": "dots-studio/dots-3-note-preview:free",
           "claim": {
             "id": "2106593009806815429",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2106546689012281771",
-      "text": "@Baconbrix Interesting position you’re taking there mister Bacon. Now let’s see what someone can do with the ChatGPT subscription or the Grok subscription. 👀",
-      "url": "https://x.com/thsottiaux/status/2106546689012281771",
-      "posted_at": "2026-10-04T00:47:23.000Z",
-      "truncated": false,
-      "hash": "635e854e607bdf73e6dd6babc973d46d4e3054d6f5b44495b9efde231708e21a",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-10-04T04:06:23.949Z",
-      "votes": [
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106546689012281771",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2106546689012281771",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2106546689012281771",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2106544544892518815",
-      "text": "@atelicinvest Dots are persistent agents that carry context across the single conversation. You can call it in the middle of work and then catch it later via slack or text in the app, it’s the same dot talking to you.",
-      "url": "https://x.com/thsottiaux/status/2106544544892518815",
-      "posted_at": "2026-10-04T00:38:51.000Z",
-      "truncated": false,
-      "hash": "8a327655b8cdf67d18e64290ed4cb31aab8d3d1267d73ce09d839781bd43871c",
-      "status": "complete",
-      "attempts": 2,
-      "retry_at": "2026-10-04T04:06:23.949Z",
-      "votes": [
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106544544892518815",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2106544544892518815",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2106544544892518815",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2106543375088488596",
-      "text": "@davis7 6.1 coming soon",
-      "url": "https://x.com/thsottiaux/status/2106543375088488596",
-      "posted_at": "2026-10-04T00:34:12.000Z",
-      "truncated": false,
-      "hash": "ff7a3edf7ea4b85b5ed476ba3a187664c8b137fcbd87af6cbc6d9d624016d130",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-04T01:35:56.123Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2106543375088488596",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106543375088488596",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2106543375088488596",
             "event": "none",
             "state": "unknown",
             "conditional": false,
