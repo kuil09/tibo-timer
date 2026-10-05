@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-05T20:36:08.037Z",
-  "last_success_at": "2026-10-05T19:35:34.429Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-10-05T20:43:39.714Z",
+  "last_success_at": "2026-10-05T20:43:39.714Z",
+  "source_status": "ok",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-05T19:22:48.882Z"
+      "status": "pending",
+      "at": "2026-10-05T20:43:39.714Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-05T19:22:48.882Z"
+      "status": "pending",
+      "at": "2026-10-05T20:43:39.714Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "ok",
-      "at": "2026-10-05T19:22:48.882Z"
+      "status": "pending",
+      "at": "2026-10-05T20:43:39.714Z"
     }
   ],
   "posts": [
+    {
+      "id": "2107200530477101461",
+      "text": "Sergio is cooking up magic with collaborative space right in ChatGPT. Improving leaps and bounds every day.",
+      "url": "https://x.com/thsottiaux/status/2107200530477101461",
+      "posted_at": "2026-10-05T20:05:31.000Z",
+      "truncated": false,
+      "hash": "702d2c83d3d96486785d1af01d453a4b3835fcf745d4913594fd430f0ea5feef",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-05T21:43:39.714Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2107185534359761051",
       "text": "@karrisaarinen @OpenAI @linear Nice avatar",
@@ -891,97 +904,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2106845241357824205",
-      "text": "Over the next 28 days, each day we’ll either ship one thing that is a clear improvement and relevant for most codex/work users or ship a full reset. Let the improvements begin.",
-      "url": "https://x.com/thsottiaux/status/2106845241357824205",
-      "posted_at": "2026-10-04T20:33:43.000Z",
-      "truncated": false,
-      "hash": "982e6894de73958eb2d9dc8b41e20a43b5097ce2d31b0c7228bc866009349f79",
-      "status": "unresolved",
-      "attempts": 3,
-      "retry_at": "2026-10-05T00:33:00.507Z",
-      "votes": [
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106845241357824205",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2106845241357824205",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "google/gemma-4-26b-a4b-it:free",
-          "claim": null,
-          "error": "http_429"
-        }
-      ],
-      "result": null
-    },
-    {
-      "id": "2106842998214717876",
-      "text": "@nabeelqu Locked in",
-      "url": "https://x.com/thsottiaux/status/2106842998214717876",
-      "posted_at": "2026-10-04T20:24:48.000Z",
-      "truncated": false,
-      "hash": "23ae7474f373a3938f690e1dd76a2b9e2e61c7451816055af3674b270b796166",
-      "status": "unresolved",
-      "attempts": 3,
-      "retry_at": "2026-10-05T00:33:00.507Z",
-      "votes": [
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106842998214717876",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2106842998214717876",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "google/gemma-4-26b-a4b-it:free",
-          "claim": null,
-          "error": "http_429"
-        }
-      ],
-      "result": null
     }
   ],
   "budget": {
     "day": "2026-10-05",
-    "requests": 12
+    "requests": 15
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
