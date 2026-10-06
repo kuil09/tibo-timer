@@ -1,27 +1,66 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-06T03:28:56.472Z",
-  "last_success_at": "2026-10-06T03:28:56.472Z",
+  "checked_at": "2026-10-06T03:56:50.818Z",
+  "last_success_at": "2026-10-06T03:56:50.818Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-06T03:28:56.472Z"
+      "status": "pending",
+      "at": "2026-10-06T03:56:50.818Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-06T03:28:56.472Z"
+      "status": "pending",
+      "at": "2026-10-06T03:56:50.818Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "ok",
-      "at": "2026-10-06T03:28:56.472Z"
+      "status": "pending",
+      "at": "2026-10-06T03:56:50.818Z"
     }
   ],
   "posts": [
+    {
+      "id": "2107314912963989821",
+      "text": "@KolinHuang A few things",
+      "url": "https://x.com/thsottiaux/status/2107314912963989821",
+      "posted_at": "2026-10-06T03:40:01.000Z",
+      "truncated": false,
+      "hash": "663aacb894e3389851a0c702f27d1d8a5a43ba98b55e40a08318931aac46af96",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-06T04:56:50.818Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2107314411975381479",
+      "text": "@DhruvJain08 @poteto Let’s call upon the @poteto",
+      "url": "https://x.com/thsottiaux/status/2107314411975381479",
+      "posted_at": "2026-10-06T03:38:02.000Z",
+      "truncated": false,
+      "hash": "5149478ab5d8c69eafecbe5098acd0df54f74555e0221ad23a17c0c96b9e4475",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-06T04:56:50.818Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2107314076993155297",
+      "text": "@gazzzzzzman 3 cups a day",
+      "url": "https://x.com/thsottiaux/status/2107314076993155297",
+      "posted_at": "2026-10-06T03:36:42.000Z",
+      "truncated": false,
+      "hash": "89b663142262ddcdaa1d876cdab4c7b707a5580062a893de44bc177bb201e7ee",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-06T04:56:50.818Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2107311729768353844",
       "text": "This might have been my best day so far at oai. Ridiculous amounts of fun and intensity. Future is bright",
@@ -949,127 +988,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2106958559695282202",
-      "text": "@makeamarkery Not fixes. Significant improvements. Let’s have some fun!",
-      "url": "https://x.com/thsottiaux/status/2106958559695282202",
-      "posted_at": "2026-10-05T04:04:00.000Z",
-      "truncated": false,
-      "hash": "1f5bd2be17a080b04350cf6d4131afb287f9bf60f991c9c6ff4c60a4c30d946f",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-05T05:34:29.814Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2106958559695282202",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106958559695282202",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2106958559695282202",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2106957975147676025",
-      "text": "@fawnunwrap Don’t feel bad. It’s part of the fun and I’m here for it.",
-      "url": "https://x.com/thsottiaux/status/2106957975147676025",
-      "posted_at": "2026-10-05T04:01:41.000Z",
-      "truncated": false,
-      "hash": "2a7bb1f50c2ac1ec7b4731a9adfbaeca9936d17fa53c78a721d65fdb3d9a89f2",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-05T05:34:29.814Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2106957975147676025",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2106957975147676025",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2106957975147676025",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-10-06",
-    "requests": 9
+    "requests": 12
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
