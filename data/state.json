@@ -1,27 +1,79 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-10-06T07:06:00.836Z",
-  "last_success_at": "2026-10-06T07:06:00.836Z",
+  "checked_at": "2026-10-06T07:32:52.215Z",
+  "last_success_at": "2026-10-06T07:32:52.215Z",
   "source_status": "ok",
-  "analysis_status": "up_to_date",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-10-06T04:28:40.766Z"
+      "status": "pending",
+      "at": "2026-10-06T07:32:52.215Z"
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "status": "ok",
-      "at": "2026-10-06T04:28:40.766Z"
+      "status": "pending",
+      "at": "2026-10-06T07:32:52.215Z"
     },
     {
       "id": "apodex/apodex-1.1-mini:free",
-      "status": "ok",
-      "at": "2026-10-06T04:28:40.766Z"
+      "status": "pending",
+      "at": "2026-10-06T07:32:52.215Z"
     }
   ],
   "posts": [
+    {
+      "id": "2107370852564021582",
+      "text": "Use auto-review instead of full-access. Not a trade-off anymore and you'll sleep more peacefully",
+      "url": "https://x.com/thsottiaux/status/2107370852564021582",
+      "posted_at": "2026-10-06T07:22:18.000Z",
+      "truncated": false,
+      "hash": "437e0b5a7eb9acec4326f982515d3bafdc44f6095f19d114b71f58e99f1536c3",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-06T08:32:52.215Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2107370001837773172",
+      "text": "@poteto won't comment about this one because it's about safety",
+      "url": "https://x.com/thsottiaux/status/2107370001837773172",
+      "posted_at": "2026-10-06T07:18:56.000Z",
+      "truncated": false,
+      "hash": "72f362137d0608543612acb5569876adeabc5457430ff2a6de1fe206e31f01e2",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-06T08:32:52.215Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2107368786353398184",
+      "text": "You can read about the feature here: https://t.co/bbJM07iNtf",
+      "url": "https://x.com/thsottiaux/status/2107368786353398184",
+      "posted_at": "2026-10-06T07:14:06.000Z",
+      "truncated": false,
+      "hash": "10b8a917ca260bf9e05e2581343b57f9356cc3dcb37c0f51abc0d6d3d844a843",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-06T08:32:52.215Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2107368734981517634",
+      "text": "Day 2.1/\n\nWe have made Auto-review free for all users signed in through a ChatGPT account. You can enable it in settings > permissions > auto-review. Auto-review improves upon the default sandbox setting that requires you to approve everything, which is prone to decision fatigue unless you spend a lot of time configuring specific rules.\n\nIt allows you to run long tasks while having a second agent review all actions taken by the primary agent. Its only goal is to prevent high-risk actions from being taken and to protect against unwanted actions that are not aligned with the original user intent. This  Auto-review feature is now free and does not draw usage from your plan.",
+      "url": "https://x.com/thsottiaux/status/2107368734981517634",
+      "posted_at": "2026-10-06T07:13:54.000Z",
+      "truncated": false,
+      "hash": "10b0e56cc68b37637201dc239328caac62b14881e6dd051b8cdce5e1eb2f93bc",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-10-06T08:32:52.215Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2107320918200693212",
       "text": "@badlogicgames Blackboard",
@@ -891,127 +943,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2107159119107146237",
-      "text": "Reaching 50 TPS instead of 30TPS, with also the most optimized tokenizer out there. And the models are quite the efficient ones in terms of number of tokens needed to get things done!",
-      "url": "https://x.com/thsottiaux/status/2107159119107146237",
-      "posted_at": "2026-10-05T17:20:57.000Z",
-      "truncated": false,
-      "hash": "a669e61264e03b018d8b78cf0d3464d0c7fcf49d097728d34ec092fdf04af431",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-05T18:21:06.879Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2107159119107146237",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2107159119107146237",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2107159119107146237",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2107158998495748264",
-      "text": "Day 1/\n\nWe have optimized the default speed to be ~50% faster across GPT-6 Astra and GPT-6.1 Sol through the subscription across all our products and partners using Sign in With ChatGPT (including OpenCode, Pi, Amp, Devin, ...).\n\nNo changes needed on your end and this should be felt within the next two hours.",
-      "url": "https://x.com/thsottiaux/status/2107158998495748264",
-      "posted_at": "2026-10-05T17:20:29.000Z",
-      "truncated": false,
-      "hash": "ddcfab85d5a7d5fa61b508768b5b9e2311a19a99f0405c55add8a4c951bc0092",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-10-05T18:21:06.879Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2107158998495748264",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-super-120b-a12b:free",
-          "claim": {
-            "id": "2107158998495748264",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "apodex/apodex-1.1-mini:free",
-          "claim": {
-            "id": "2107158998495748264",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-10-06",
-    "requests": 15
+    "requests": 18
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
