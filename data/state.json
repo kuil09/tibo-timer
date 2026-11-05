@@ -1,28 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-05T15:50:21.825Z",
-  "last_success_at": "2026-11-05T15:50:21.825Z",
+  "checked_at": "2026-11-05T16:18:31.793Z",
+  "last_success_at": "2026-11-05T16:18:31.793Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-11-05T11:30:37.660Z"
+      "status": "pending",
+      "at": "2026-11-05T16:18:31.793Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-11-05T11:30:37.660Z"
+      "status": "pending",
+      "at": "2026-11-05T16:18:31.793Z"
     },
     {
-      "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-      "status": "error",
-      "at": "2026-11-05T11:30:37.660Z",
-      "error": "invalid_json"
+      "id": "google/gemma-4-26b-a4b-it:free",
+      "status": "pending",
+      "at": "2026-11-05T16:18:31.793Z"
     }
   ],
   "posts": [
+    {
+      "id": "2118376946652557613",
+      "text": "@ohayou792 Who comes up with these haha. Dane Starbuck. Haha",
+      "url": "https://x.com/thsottiaux/status/2118376946652557613",
+      "posted_at": "2026-11-05T16:16:36.000Z",
+      "truncated": false,
+      "hash": "fdc17098cb791400876358c75ff54a4d3342ef265240e1535c9eec0e3a30de76",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-05T17:18:31.793Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2118255144836161582",
       "text": "@theo @thdxr Congrats I guess",
@@ -946,69 +958,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2118024484594803084",
-      "text": "@theo Which team were you on?",
-      "url": "https://x.com/thsottiaux/status/2118024484594803084",
-      "posted_at": "2026-11-04T16:56:02.000Z",
-      "truncated": false,
-      "hash": "2b00c700a7ffbbd629e951861d1de3fbe4dc7cf4dd6f709e8e2055b002dc2b27",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-11-05T10:50:18.535Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118024484594803084",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118024484594803084",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "liquid/lfm-2.5-2.6b:free",
-          "claim": {
-            "id": "2118024484594803084",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-11-05",
-    "requests": 15
+    "requests": 18
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
