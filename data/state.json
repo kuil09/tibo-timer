@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-05T16:52:14.304Z",
-  "last_success_at": "2026-11-05T16:52:14.304Z",
+  "checked_at": "2026-11-05T17:13:35.296Z",
+  "last_success_at": "2026-11-05T17:13:35.296Z",
   "source_status": "ok",
   "analysis_status": "retry_pending",
   "models": [
@@ -913,64 +913,6 @@
           "model": "liquid/lfm-2.5-2.6b:free",
           "claim": {
             "id": "2118138648214585591",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2118024737070957009",
-      "text": "@AnikaCodes I was moved to the basement yesterday",
-      "url": "https://x.com/thsottiaux/status/2118024737070957009",
-      "posted_at": "2026-11-04T16:57:02.000Z",
-      "truncated": false,
-      "hash": "839dd832a6f94bd862012633a921eb7e2f739753e7d76456d8948639cf0b703a",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-11-05T10:50:18.535Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118024737070957009",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118024737070957009",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "liquid/lfm-2.5-2.6b:free",
-          "claim": {
-            "id": "2118024737070957009",
             "event": "none",
             "state": "unknown",
             "conditional": false,
