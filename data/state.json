@@ -3,21 +3,21 @@
   "checked_at": "2026-11-05T08:56:58.981Z",
   "last_success_at": "2026-11-05T08:56:58.981Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "pending",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-11-05T08:56:58.981Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-11-05T08:56:58.981Z"
     },
     {
       "id": "google/gemma-4-26b-a4b-it:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-11-05T08:56:58.981Z"
     }
   ],
@@ -29,11 +29,56 @@
       "posted_at": "2026-11-05T08:12:36.000Z",
       "truncated": false,
       "hash": "38926bae297a85e544d24d5a641fb14d7383b759ded551c83850ebe27f483f2e",
-      "status": "pending",
+      "status": "complete",
       "attempts": 1,
       "retry_at": "2026-11-05T09:56:58.981Z",
-      "votes": [],
-      "result": null
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2118255144836161582",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2118255144836161582",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "google/gemma-4-26b-a4b-it:free",
+          "claim": {
+            "id": "2118255144836161582",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2118254289894445278",
@@ -42,11 +87,56 @@
       "posted_at": "2026-11-05T08:09:12.000Z",
       "truncated": false,
       "hash": "5b1b2f6433c7e69b4b5e3470c28011f54e59ffae951fff7d2f9d880e72c801e4",
-      "status": "pending",
+      "status": "complete",
       "attempts": 1,
       "retry_at": "2026-11-05T09:56:58.981Z",
-      "votes": [],
-      "result": null
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2118254289894445278",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2118254289894445278",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "google/gemma-4-26b-a4b-it:free",
+          "claim": {
+            "id": "2118254289894445278",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2118253609272177047",
@@ -55,11 +145,56 @@
       "posted_at": "2026-11-05T08:06:30.000Z",
       "truncated": false,
       "hash": "d7b187ed804d3469f470037e2c12137d96441ac20b112643040224bdddeeb1d4",
-      "status": "pending",
+      "status": "complete",
       "attempts": 1,
       "retry_at": "2026-11-05T09:56:58.981Z",
-      "votes": [],
-      "result": null
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2118253609272177047",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2118253609272177047",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "google/gemma-4-26b-a4b-it:free",
+          "claim": {
+            "id": "2118253609272177047",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2118252192536973501",
@@ -68,11 +203,56 @@
       "posted_at": "2026-11-05T08:00:52.000Z",
       "truncated": false,
       "hash": "b744189afadae071ac1f313597430aedddc8667970d845affaeb83994eb2279a",
-      "status": "pending",
+      "status": "complete",
       "attempts": 1,
       "retry_at": "2026-11-05T09:56:58.981Z",
-      "votes": [],
-      "result": null
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2118252192536973501",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2118252192536973501",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "google/gemma-4-26b-a4b-it:free",
+          "claim": {
+            "id": "2118252192536973501",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2118251848297783385",
@@ -81,11 +261,56 @@
       "posted_at": "2026-11-05T07:59:30.000Z",
       "truncated": false,
       "hash": "15ed4424a5bb03844afbfbfb0d740b5fe6171928042d1ff293c0252924854bef",
-      "status": "pending",
+      "status": "complete",
       "attempts": 1,
       "retry_at": "2026-11-05T09:56:58.981Z",
-      "votes": [],
-      "result": null
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2118251848297783385",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2118251848297783385",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "google/gemma-4-26b-a4b-it:free",
+          "claim": {
+            "id": "2118251848297783385",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2118250631165300747",
@@ -94,11 +319,56 @@
       "posted_at": "2026-11-05T07:54:40.000Z",
       "truncated": false,
       "hash": "eb31156be36af4a51bae15abd849e0bafcb158d6cb81066cc1367fd476c3bad3",
-      "status": "pending",
+      "status": "complete",
       "attempts": 1,
       "retry_at": "2026-11-05T09:56:58.981Z",
-      "votes": [],
-      "result": null
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2118250631165300747",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2118250631165300747",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "google/gemma-4-26b-a4b-it:free",
+          "claim": {
+            "id": "2118250631165300747",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2118250462092914736",
@@ -107,11 +377,56 @@
       "posted_at": "2026-11-05T07:54:00.000Z",
       "truncated": false,
       "hash": "12f686eb87e5777174a2c908b44330fd685b9bc0687f1e85df0091c65a72c83a",
-      "status": "pending",
+      "status": "complete",
       "attempts": 1,
       "retry_at": "2026-11-05T09:56:58.981Z",
-      "votes": [],
-      "result": null
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2118250462092914736",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2118250462092914736",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "google/gemma-4-26b-a4b-it:free",
+          "claim": {
+            "id": "2118250462092914736",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2118249806875533399",
@@ -120,11 +435,56 @@
       "posted_at": "2026-11-05T07:51:23.000Z",
       "truncated": false,
       "hash": "0f9fce132b6ffe4d5862fbd9548f75cb3c023492a6b2e0ef2e6f6566f8a7676c",
-      "status": "pending",
+      "status": "complete",
       "attempts": 1,
       "retry_at": "2026-11-05T09:56:58.981Z",
-      "votes": [],
-      "result": null
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2118249806875533399",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2118249806875533399",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "google/gemma-4-26b-a4b-it:free",
+          "claim": {
+            "id": "2118249806875533399",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2118248900381536740",
