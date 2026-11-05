@@ -1,28 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-05T18:30:24.475Z",
-  "last_success_at": "2026-11-05T17:50:38.668Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-11-05T18:50:41.686Z",
+  "last_success_at": "2026-11-05T18:50:41.686Z",
+  "source_status": "ok",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-11-05T17:30:13.544Z"
+      "status": "pending",
+      "at": "2026-11-05T18:50:41.686Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-11-05T17:30:13.544Z"
+      "status": "pending",
+      "at": "2026-11-05T18:50:41.686Z"
     },
     {
-      "id": "liquid/lfm-2.5-2.6b:free",
-      "status": "error",
-      "at": "2026-11-05T17:30:13.544Z",
-      "error": "http_429"
+      "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "status": "pending",
+      "at": "2026-11-05T18:50:41.686Z"
     }
   ],
   "posts": [
+    {
+      "id": "2118402103907655903",
+      "text": "Our latest cyber-specialized model is out. It's in its own league on many cyber-specific use cases. Available through Daybreak Red access.",
+      "url": "https://x.com/thsottiaux/status/2118402103907655903",
+      "posted_at": "2026-11-05T17:56:34.000Z",
+      "truncated": false,
+      "hash": "604c3fb4efbddc0aa1be2358bc3f2514ad7625c72afe477afb2e6163cfe07143",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-05T19:50:41.686Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2118401691032973416",
+      "text": "@ajambrosino Bunch of interesting buttons here: https://t.co/Qe9q3hPcGx",
+      "url": "https://x.com/thsottiaux/status/2118401691032973416",
+      "posted_at": "2026-11-05T17:54:55.000Z",
+      "truncated": false,
+      "hash": "ed84ac1b16815d5e9eea4ce507c6522ed87e5d93793f26050dc0aef73b84b8f6",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-05T19:50:41.686Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2118376946652557613",
       "text": "@ohayou792 Who comes up with these haha. Dane Starbuck. Haha",
@@ -31,8 +56,8 @@
       "truncated": false,
       "hash": "fdc17098cb791400876358c75ff54a4d3342ef265240e1535c9eec0e3a30de76",
       "status": "error",
-      "attempts": 2,
-      "retry_at": "2026-11-05T18:30:13.544Z",
+      "attempts": 3,
+      "retry_at": "2026-11-05T19:50:41.686Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -935,7 +960,7 @@
   ],
   "budget": {
     "day": "2026-11-05",
-    "requests": 21
+    "requests": 24
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
