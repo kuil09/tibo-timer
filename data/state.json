@@ -1,25 +1,24 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-05T17:13:35.296Z",
-  "last_success_at": "2026-11-05T17:13:35.296Z",
+  "checked_at": "2026-11-05T17:30:13.544Z",
+  "last_success_at": "2026-11-05T17:30:13.544Z",
   "source_status": "ok",
-  "analysis_status": "retry_pending",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-11-05T16:18:31.793Z"
+      "status": "pending",
+      "at": "2026-11-05T17:30:13.544Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-11-05T16:18:31.793Z"
+      "status": "pending",
+      "at": "2026-11-05T17:30:13.544Z"
     },
     {
-      "id": "google/gemma-4-26b-a4b-it:free",
-      "status": "error",
-      "at": "2026-11-05T16:18:31.793Z",
-      "error": "http_429"
+      "id": "liquid/lfm-2.5-2.6b:free",
+      "status": "pending",
+      "at": "2026-11-05T17:30:13.544Z"
     }
   ],
   "posts": [
@@ -31,8 +30,8 @@
       "truncated": false,
       "hash": "fdc17098cb791400876358c75ff54a4d3342ef265240e1535c9eec0e3a30de76",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-11-05T17:18:31.793Z",
+      "attempts": 2,
+      "retry_at": "2026-11-05T18:30:13.544Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -935,7 +934,7 @@
   ],
   "budget": {
     "day": "2026-11-05",
-    "requests": 18
+    "requests": 21
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
