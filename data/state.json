@@ -1,27 +1,66 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-05T22:14:13.684Z",
-  "last_success_at": "2026-11-05T22:14:13.684Z",
+  "checked_at": "2026-11-05T22:30:56.532Z",
+  "last_success_at": "2026-11-05T22:30:56.532Z",
   "source_status": "ok",
-  "analysis_status": "unresolved",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-11-05T20:50:18.277Z"
+      "status": "pending",
+      "at": "2026-11-05T22:30:56.532Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-11-05T20:50:18.277Z"
+      "status": "pending",
+      "at": "2026-11-05T22:30:56.532Z"
     },
     {
-      "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-      "status": "ok",
-      "at": "2026-11-05T20:50:18.277Z"
+      "id": "google/gemma-4-26b-a4b-it:free",
+      "status": "pending",
+      "at": "2026-11-05T22:30:56.532Z"
     }
   ],
   "posts": [
+    {
+      "id": "2118470016127598724",
+      "text": "If I count well, that's more than 500M images per day.",
+      "url": "https://x.com/thsottiaux/status/2118470016127598724",
+      "posted_at": "2026-11-05T22:26:25.000Z",
+      "truncated": false,
+      "hash": "79e380da20dc4fdf784982937288ee1f0718c8ac48bca4317fdef0618c80f840",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-05T23:30:56.532Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2118469869423526046",
+      "text": "@JustinBleuel @ChatGPT 👀",
+      "url": "https://x.com/thsottiaux/status/2118469869423526046",
+      "posted_at": "2026-11-05T22:25:50.000Z",
+      "truncated": false,
+      "hash": "0f2444da7ca67e54a5482d7b39fea7661a0ff551d7dad40ac4d720b0895aabf0",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-05T23:30:56.532Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2118469621011677521",
+      "text": "Wild stat. We are now generate more than 4B images per week across ChatGPT and the API, up from the more than 3B per week only 8 weeks ago.",
+      "url": "https://x.com/thsottiaux/status/2118469621011677521",
+      "posted_at": "2026-11-05T22:24:51.000Z",
+      "truncated": false,
+      "hash": "208389fa33b26d86a6c4b1bdf744ae113882a3b1dc612052941b0923d5cd3efa",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-05T23:30:56.532Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2118444105969926407",
       "text": "Come push the frontier of fluffiness",
@@ -947,97 +986,11 @@
         }
       ],
       "result": null
-    },
-    {
-      "id": "2118146834325733453",
-      "text": "Reach out to @clintgibler if you want to work on securing the world.",
-      "url": "https://x.com/thsottiaux/status/2118146834325733453",
-      "posted_at": "2026-11-05T01:02:13.000Z",
-      "truncated": false,
-      "hash": "b9626f39b5c3a3e5cd05b09e287418d0061b90a25392a9c1440a140ff7bd6923",
-      "status": "unresolved",
-      "attempts": 3,
-      "retry_at": "2026-11-05T12:30:37.660Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118146834325733453",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118146834325733453",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "claim": null,
-          "error": "invalid_json"
-        }
-      ],
-      "result": null
-    },
-    {
-      "id": "2118146794362405231",
-      "text": "We’ve assembled a world class cyber team and I’m excited for us to share more about our work over the weeks and months.",
-      "url": "https://x.com/thsottiaux/status/2118146794362405231",
-      "posted_at": "2026-11-05T01:02:03.000Z",
-      "truncated": false,
-      "hash": "7b9fffaa46fb13b2c4bf6f6f83c8f456bdc04a783053b82428a5de0b8fba857b",
-      "status": "unresolved",
-      "attempts": 3,
-      "retry_at": "2026-11-05T12:30:37.660Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118146794362405231",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118146794362405231",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "claim": null,
-          "error": "invalid_json"
-        }
-      ],
-      "result": null
     }
   ],
   "budget": {
     "day": "2026-11-05",
-    "requests": 27
+    "requests": 30
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
