@@ -1,27 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-05T20:30:27.846Z",
-  "last_success_at": "2026-11-05T20:14:02.743Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-11-05T20:50:18.277Z",
+  "last_success_at": "2026-11-05T20:50:18.277Z",
+  "source_status": "ok",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-11-05T18:50:41.686Z"
+      "status": "pending",
+      "at": "2026-11-05T20:50:18.277Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-11-05T18:50:41.686Z"
+      "status": "pending",
+      "at": "2026-11-05T20:50:18.277Z"
     },
     {
       "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-      "status": "ok",
-      "at": "2026-11-05T18:50:41.686Z"
+      "status": "pending",
+      "at": "2026-11-05T20:50:18.277Z"
     }
   ],
   "posts": [
+    {
+      "id": "2118444105969926407",
+      "text": "Come push the frontier of fluffiness",
+      "url": "https://x.com/thsottiaux/status/2118444105969926407",
+      "posted_at": "2026-11-05T20:43:28.000Z",
+      "truncated": false,
+      "hash": "e28f0709e470a83fd7779a62f0c4054df7940ca6d59bf2f837f90bfd321d968e",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-05T21:50:18.277Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2118443570298568886",
+      "text": "@kimmonismus Don't know, I live in the basement now",
+      "url": "https://x.com/thsottiaux/status/2118443570298568886",
+      "posted_at": "2026-11-05T20:41:20.000Z",
+      "truncated": false,
+      "hash": "5b239927b4e3b430e0f71212a94c0fc75e6ac9fc9e69972c2b736ddec2b21b2a",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-05T21:50:18.277Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2118402103907655903",
       "text": "Our latest cyber-specialized model is out. It's in its own league on many cyber-specific use cases. Available through Daybreak Red access.",
@@ -917,155 +943,11 @@
         }
       ],
       "result": null
-    },
-    {
-      "id": "2118139067636568305",
-      "text": "@_samirism Dots just got a massive set of improvements",
-      "url": "https://x.com/thsottiaux/status/2118139067636568305",
-      "posted_at": "2026-11-05T00:31:21.000Z",
-      "truncated": false,
-      "hash": "6b8c8243b63b051b51a43e2c50c0cf3ef26fbb82a0975bef745af2419e4fec50",
-      "status": "unresolved",
-      "attempts": 3,
-      "retry_at": "2026-11-05T12:30:37.660Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118139067636568305",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118139067636568305",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "claim": null,
-          "error": "invalid_json"
-        }
-      ],
-      "result": null
-    },
-    {
-      "id": "2118138764161913278",
-      "text": "CatGPT",
-      "url": "https://x.com/thsottiaux/status/2118138764161913278",
-      "posted_at": "2026-11-05T00:30:09.000Z",
-      "truncated": false,
-      "hash": "f064d8f09bc3477c9446aa6c45316483c6261bd62d95dc061ebd55748fbb9dcd",
-      "status": "unresolved",
-      "attempts": 3,
-      "retry_at": "2026-11-05T12:30:37.660Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118138764161913278",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118138764161913278",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "claim": null,
-          "error": "invalid_json"
-        }
-      ],
-      "result": null
-    },
-    {
-      "id": "2118138648214585591",
-      "text": "Welcome Cat. Stoked to be building together soon.",
-      "url": "https://x.com/thsottiaux/status/2118138648214585591",
-      "posted_at": "2026-11-05T00:29:41.000Z",
-      "truncated": false,
-      "hash": "12da87cd6ae7d144776de9754fb91a575c28a6e2dec5dc518f11911b5fe6e9b3",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-11-05T10:50:18.535Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118138648214585591",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118138648214585591",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "liquid/lfm-2.5-2.6b:free",
-          "claim": {
-            "id": "2118138648214585591",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-11-05",
-    "requests": 24
+    "requests": 27
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
