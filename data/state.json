@@ -3,21 +3,21 @@
   "checked_at": "2026-11-05T09:50:18.535Z",
   "last_success_at": "2026-11-05T09:50:18.535Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "up_to_date",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-11-05T09:50:18.535Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-11-05T09:50:18.535Z"
     },
     {
       "id": "liquid/lfm-2.5-2.6b:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-11-05T09:50:18.535Z"
     }
   ],
@@ -837,11 +837,56 @@
       "posted_at": "2026-11-05T00:29:41.000Z",
       "truncated": false,
       "hash": "12da87cd6ae7d144776de9754fb91a575c28a6e2dec5dc518f11911b5fe6e9b3",
-      "status": "pending",
+      "status": "complete",
       "attempts": 1,
       "retry_at": "2026-11-05T10:50:18.535Z",
-      "votes": [],
-      "result": null
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2118138648214585591",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2118138648214585591",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "liquid/lfm-2.5-2.6b:free",
+          "claim": {
+            "id": "2118138648214585591",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2118024737070957009",
@@ -850,11 +895,56 @@
       "posted_at": "2026-11-04T16:57:02.000Z",
       "truncated": false,
       "hash": "839dd832a6f94bd862012633a921eb7e2f739753e7d76456d8948639cf0b703a",
-      "status": "pending",
+      "status": "complete",
       "attempts": 1,
       "retry_at": "2026-11-05T10:50:18.535Z",
-      "votes": [],
-      "result": null
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2118024737070957009",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2118024737070957009",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "liquid/lfm-2.5-2.6b:free",
+          "claim": {
+            "id": "2118024737070957009",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     },
     {
       "id": "2118024484594803084",
@@ -863,11 +953,56 @@
       "posted_at": "2026-11-04T16:56:02.000Z",
       "truncated": false,
       "hash": "2b00c700a7ffbbd629e951861d1de3fbe4dc7cf4dd6f709e8e2055b002dc2b27",
-      "status": "pending",
+      "status": "complete",
       "attempts": 1,
       "retry_at": "2026-11-05T10:50:18.535Z",
-      "votes": [],
-      "result": null
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2118024484594803084",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2118024484594803084",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "liquid/lfm-2.5-2.6b:free",
+          "claim": {
+            "id": "2118024484594803084",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        }
+      ],
+      "result": {
+        "event": "none",
+        "state": "unknown",
+        "conditional": false,
+        "time": null,
+        "evidence": "",
+        "time_text": "",
+        "agreement": "3/3"
+      }
     }
   ],
   "budget": {
