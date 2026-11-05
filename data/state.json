@@ -1,25 +1,24 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-05T09:30:16.730Z",
-  "last_success_at": "2026-11-05T09:16:43.020Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-11-05T09:50:18.535Z",
+  "last_success_at": "2026-11-05T09:50:18.535Z",
+  "source_status": "ok",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-11-05T09:16:43.020Z"
+      "status": "pending",
+      "at": "2026-11-05T09:50:18.535Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-11-05T09:16:43.020Z"
+      "status": "pending",
+      "at": "2026-11-05T09:50:18.535Z"
     },
     {
-      "id": "google/gemma-4-26b-a4b-it:free",
-      "status": "error",
-      "at": "2026-11-05T09:16:43.020Z",
-      "error": "http_429"
+      "id": "liquid/lfm-2.5-2.6b:free",
+      "status": "pending",
+      "at": "2026-11-05T09:50:18.535Z"
     }
   ],
   "posts": [
@@ -839,8 +838,8 @@
       "truncated": false,
       "hash": "12da87cd6ae7d144776de9754fb91a575c28a6e2dec5dc518f11911b5fe6e9b3",
       "status": "pending",
-      "attempts": 0,
-      "retry_at": null,
+      "attempts": 1,
+      "retry_at": "2026-11-05T10:50:18.535Z",
       "votes": [],
       "result": null
     },
@@ -852,8 +851,8 @@
       "truncated": false,
       "hash": "839dd832a6f94bd862012633a921eb7e2f739753e7d76456d8948639cf0b703a",
       "status": "pending",
-      "attempts": 0,
-      "retry_at": null,
+      "attempts": 1,
+      "retry_at": "2026-11-05T10:50:18.535Z",
       "votes": [],
       "result": null
     },
@@ -865,15 +864,15 @@
       "truncated": false,
       "hash": "2b00c700a7ffbbd629e951861d1de3fbe4dc7cf4dd6f709e8e2055b002dc2b27",
       "status": "pending",
-      "attempts": 0,
-      "retry_at": null,
+      "attempts": 1,
+      "retry_at": "2026-11-05T10:50:18.535Z",
       "votes": [],
       "result": null
     }
   ],
   "budget": {
     "day": "2026-11-05",
-    "requests": 6
+    "requests": 9
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
