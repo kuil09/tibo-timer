@@ -3,22 +3,23 @@
   "checked_at": "2026-11-05T22:30:56.532Z",
   "last_success_at": "2026-11-05T22:30:56.532Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "error",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-11-05T22:30:56.532Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-11-05T22:30:56.532Z"
     },
     {
       "id": "google/gemma-4-26b-a4b-it:free",
-      "status": "pending",
-      "at": "2026-11-05T22:30:56.532Z"
+      "status": "error",
+      "at": "2026-11-05T22:30:56.532Z",
+      "error": "http_429"
     }
   ],
   "posts": [
@@ -29,10 +30,40 @@
       "posted_at": "2026-11-05T22:26:25.000Z",
       "truncated": false,
       "hash": "79e380da20dc4fdf784982937288ee1f0718c8ac48bca4317fdef0618c80f840",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-11-05T23:30:56.532Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2118470016127598724",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2118470016127598724",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "google/gemma-4-26b-a4b-it:free",
+          "claim": null,
+          "error": "http_429"
+        }
+      ],
       "result": null
     },
     {
@@ -42,10 +73,40 @@
       "posted_at": "2026-11-05T22:25:50.000Z",
       "truncated": false,
       "hash": "0f2444da7ca67e54a5482d7b39fea7661a0ff551d7dad40ac4d720b0895aabf0",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-11-05T23:30:56.532Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2118469869423526046",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2118469869423526046",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "google/gemma-4-26b-a4b-it:free",
+          "claim": null,
+          "error": "http_429"
+        }
+      ],
       "result": null
     },
     {
@@ -55,10 +116,40 @@
       "posted_at": "2026-11-05T22:24:51.000Z",
       "truncated": false,
       "hash": "208389fa33b26d86a6c4b1bdf744ae113882a3b1dc612052941b0923d5cd3efa",
-      "status": "pending",
+      "status": "error",
       "attempts": 1,
       "retry_at": "2026-11-05T23:30:56.532Z",
-      "votes": [],
+      "votes": [
+        {
+          "model": "cohere/north-mini-code:free",
+          "claim": {
+            "id": "2118469621011677521",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "dots-studio/dots-3-note-preview:free",
+          "claim": {
+            "id": "2118469621011677521",
+            "event": "none",
+            "state": "unknown",
+            "conditional": false,
+            "evidence": "",
+            "time_text": "",
+            "time": null
+          }
+        },
+        {
+          "model": "google/gemma-4-26b-a4b-it:free",
+          "claim": null,
+          "error": "http_429"
+        }
+      ],
       "result": null
     },
     {
@@ -996,7 +1087,7 @@
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
     "cohere/north-mini-code:free": "2026-10-05T03:10:42.610Z",
     "nex-agi/nex-n2.5-mini:free": "2026-09-22T23:19:34.908Z",
-    "google/gemma-4-26b-a4b-it:free": "2026-11-05T22:18:31.793Z",
+    "google/gemma-4-26b-a4b-it:free": "2026-11-06T04:30:56.532Z",
     "nvidia/nemotron-3-super-120b-a12b:free": "2026-09-29T21:24:24.070Z",
     "liquid/lfm-2.5-2.6b:free": "2026-11-05T23:30:13.544Z",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": "2026-11-05T17:30:37.660Z",
