@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-06T01:50:11.243Z",
-  "last_success_at": "2026-11-06T01:50:11.243Z",
+  "checked_at": "2026-11-06T02:18:51.583Z",
+  "last_success_at": "2026-11-06T02:18:51.583Z",
   "source_status": "ok",
   "analysis_status": "unresolved",
   "models": [
@@ -1035,49 +1035,6 @@
           "model": "dots-studio/dots-3-note-preview:free",
           "claim": {
             "id": "2118248900381536740",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "claim": null,
-          "error": "invalid_json"
-        }
-      ],
-      "result": null
-    },
-    {
-      "id": "2118165504955494695",
-      "text": "@jonoalford We needed the eyeballs",
-      "url": "https://x.com/thsottiaux/status/2118165504955494695",
-      "posted_at": "2026-11-05T02:16:24.000Z",
-      "truncated": false,
-      "hash": "67c896e6a37abc9147083ea0d6a344602b23f641e57c0da55e1241c23de5e040",
-      "status": "unresolved",
-      "attempts": 3,
-      "retry_at": "2026-11-05T12:30:37.660Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118165504955494695",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118165504955494695",
             "event": "none",
             "state": "unknown",
             "conditional": false,
