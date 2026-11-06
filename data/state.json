@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-06T16:15:52.060Z",
-  "last_success_at": "2026-11-06T16:15:52.060Z",
+  "checked_at": "2026-11-06T16:30:23.194Z",
+  "last_success_at": "2026-11-06T16:30:23.194Z",
   "source_status": "ok",
   "analysis_status": "unresolved",
   "models": [
@@ -769,64 +769,6 @@
           "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
           "claim": {
             "id": "2118401691032973416",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2118376946652557613",
-      "text": "@ohayou792 Who comes up with these haha. Dane Starbuck. Haha",
-      "url": "https://x.com/thsottiaux/status/2118376946652557613",
-      "posted_at": "2026-11-05T16:16:36.000Z",
-      "truncated": false,
-      "hash": "fdc17098cb791400876358c75ff54a4d3342ef265240e1535c9eec0e3a30de76",
-      "status": "complete",
-      "attempts": 3,
-      "retry_at": "2026-11-05T19:50:41.686Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118376946652557613",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118376946652557613",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "claim": {
-            "id": "2118376946652557613",
             "event": "none",
             "state": "unknown",
             "conditional": false,
