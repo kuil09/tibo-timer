@@ -1,28 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-06T20:50:29.550Z",
-  "last_success_at": "2026-11-06T20:14:02.464Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-11-06T21:11:38.205Z",
+  "last_success_at": "2026-11-06T21:11:38.205Z",
+  "source_status": "ok",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-11-06T08:18:48.017Z"
+      "status": "pending",
+      "at": "2026-11-06T21:11:38.205Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-11-06T08:18:48.017Z"
+      "status": "pending",
+      "at": "2026-11-06T21:11:38.205Z"
     },
     {
-      "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-      "status": "error",
-      "at": "2026-11-06T08:18:48.017Z",
-      "error": "invalid_json"
+      "id": "google/gemma-4-26b-a4b-it:free",
+      "status": "pending",
+      "at": "2026-11-06T21:11:38.205Z"
     }
   ],
   "posts": [
+    {
+      "id": "2118802895604994463",
+      "text": "More things to come, join our Cyber at the Frontier livestream on November 12, 10am PT: https://t.co/GiwgmJXL1t",
+      "url": "https://x.com/thsottiaux/status/2118802895604994463",
+      "posted_at": "2026-11-06T20:29:10.000Z",
+      "truncated": false,
+      "hash": "d135737c6e96ec83e71479cebb95b98542b7468f249be780680cdbcf2b1460a3",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-06T22:11:38.205Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2118802796749508830",
+      "text": "@andrewcshin7 No",
+      "url": "https://x.com/thsottiaux/status/2118802796749508830",
+      "posted_at": "2026-11-06T20:28:46.000Z",
+      "truncated": false,
+      "hash": "9b566a2f45c024461988789f5c1e93255ef2c827d4c912a8364d77e935b2dd71",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-06T22:11:38.205Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2118574897542922697",
       "text": "@ThePrimeagen My loop caught this. It's the future",
@@ -555,127 +580,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2118444105969926407",
-      "text": "Come push the frontier of fluffiness",
-      "url": "https://x.com/thsottiaux/status/2118444105969926407",
-      "posted_at": "2026-11-05T20:43:28.000Z",
-      "truncated": false,
-      "hash": "e28f0709e470a83fd7779a62f0c4054df7940ca6d59bf2f837f90bfd321d968e",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-11-05T21:50:18.277Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118444105969926407",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118444105969926407",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "claim": {
-            "id": "2118444105969926407",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2118443570298568886",
-      "text": "@kimmonismus Don't know, I live in the basement now",
-      "url": "https://x.com/thsottiaux/status/2118443570298568886",
-      "posted_at": "2026-11-05T20:41:20.000Z",
-      "truncated": false,
-      "hash": "5b239927b4e3b430e0f71212a94c0fc75e6ac9fc9e69972c2b736ddec2b21b2a",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-11-05T21:50:18.277Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118443570298568886",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118443570298568886",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "claim": {
-            "id": "2118443570298568886",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
     }
   ],
   "budget": {
     "day": "2026-11-06",
-    "requests": 9
+    "requests": 12
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
