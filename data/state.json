@@ -1,27 +1,118 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-06T05:14:35.283Z",
-  "last_success_at": "2026-11-06T04:50:48.708Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-11-06T05:30:30.365Z",
+  "last_success_at": "2026-11-06T05:30:30.365Z",
+  "source_status": "ok",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-11-05T23:50:13.956Z"
+      "status": "pending",
+      "at": "2026-11-06T05:30:30.365Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-11-05T23:50:13.956Z"
+      "status": "pending",
+      "at": "2026-11-06T05:30:30.365Z"
     },
     {
-      "id": "liquid/lfm-2.5-2.6b:free",
-      "status": "ok",
-      "at": "2026-11-05T23:50:13.956Z"
+      "id": "google/gemma-4-26b-a4b-it:free",
+      "status": "pending",
+      "at": "2026-11-06T05:30:30.365Z"
     }
   ],
   "posts": [
+    {
+      "id": "2118574897542922697",
+      "text": "@ThePrimeagen My loop caught this. It's the future",
+      "url": "https://x.com/thsottiaux/status/2118574897542922697",
+      "posted_at": "2026-11-06T05:23:11.000Z",
+      "truncated": false,
+      "hash": "1b69f4af212edb69b6524df4f372f8062d7aa6c042f9e153bed7f5ba937446a6",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-06T06:30:30.365Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2118572184679710964",
+      "text": "@ajambrosino @pablostanley Feedback is a gift",
+      "url": "https://x.com/thsottiaux/status/2118572184679710964",
+      "posted_at": "2026-11-06T05:12:24.000Z",
+      "truncated": false,
+      "hash": "4d410349ccdce48f301384410df314c41f7ac85655103f1bc1b50ec8bfedaf46",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-06T06:30:30.365Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2118569868278796680",
+      "text": "@Sergey_Rura There is no going back. Software is changed forever.",
+      "url": "https://x.com/thsottiaux/status/2118569868278796680",
+      "posted_at": "2026-11-06T05:03:12.000Z",
+      "truncated": false,
+      "hash": "6e244ec5546997dda058f7d9b785a41f43f577448017a14854da0672c4faf960",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-06T06:30:30.365Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2118569441860723112",
+      "text": "Formal proofs of tens of millions of lines of code are not a ridiculous thing anymore and within the realm of what should be considered when designing new systems.",
+      "url": "https://x.com/thsottiaux/status/2118569441860723112",
+      "posted_at": "2026-11-06T05:01:30.000Z",
+      "truncated": false,
+      "hash": "fb78e387f5c6e416d3738d2b65d646b55d9b60ffe1c36f8656377dc5a1d546ad",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-06T06:30:30.365Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2118569235953893573",
+      "text": "I can confidently say that humans were not very good at writing secure infrastructure. The endstate will be hypersecure infrastructure and software for all, but we're going to go through some turbulence before we reach that.",
+      "url": "https://x.com/thsottiaux/status/2118569235953893573",
+      "posted_at": "2026-11-06T05:00:41.000Z",
+      "truncated": false,
+      "hash": "2d31145f4734b50e924c56cfd34c13424d375c54264ae9be96a4165a00764a29",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-06T06:30:30.365Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2118567894309306654",
+      "text": "@maxleiter Hi Max 👀",
+      "url": "https://x.com/thsottiaux/status/2118567894309306654",
+      "posted_at": "2026-11-06T04:55:21.000Z",
+      "truncated": false,
+      "hash": "2eaca3d15f8b1b08863eabef8f7a23bd6f8e8ace2d3ca384c320373242ad57cd",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-06T06:30:30.365Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2118567451596300778",
+      "text": "@Layton_Gott Basement is full of wonders",
+      "url": "https://x.com/thsottiaux/status/2118567451596300778",
+      "posted_at": "2026-11-06T04:53:36.000Z",
+      "truncated": false,
+      "hash": "f4fdfa4c7672649e8cddd775de539935c582026e5e92ac9558d17142327698a1",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-06T06:30:30.365Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2118473288368406582",
       "text": "Generating*",
@@ -775,286 +866,11 @@
         "time_text": "",
         "agreement": "3/3"
       }
-    },
-    {
-      "id": "2118251848297783385",
-      "text": "@amix3k In 6 months this will look quite funny in retrospect",
-      "url": "https://x.com/thsottiaux/status/2118251848297783385",
-      "posted_at": "2026-11-05T07:59:30.000Z",
-      "truncated": false,
-      "hash": "15ed4424a5bb03844afbfbfb0d740b5fe6171928042d1ff293c0252924854bef",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-11-05T09:56:58.981Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118251848297783385",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118251848297783385",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "google/gemma-4-26b-a4b-it:free",
-          "claim": {
-            "id": "2118251848297783385",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2118250631165300747",
-      "text": "Follow Samir for dot updates",
-      "url": "https://x.com/thsottiaux/status/2118250631165300747",
-      "posted_at": "2026-11-05T07:54:40.000Z",
-      "truncated": false,
-      "hash": "eb31156be36af4a51bae15abd849e0bafcb158d6cb81066cc1367fd476c3bad3",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-11-05T09:56:58.981Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118250631165300747",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118250631165300747",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "google/gemma-4-26b-a4b-it:free",
-          "claim": {
-            "id": "2118250631165300747",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2118250462092914736",
-      "text": "@rileybrown Yes and\n\nhttps://t.co/jgEYox5nYJ",
-      "url": "https://x.com/thsottiaux/status/2118250462092914736",
-      "posted_at": "2026-11-05T07:54:00.000Z",
-      "truncated": false,
-      "hash": "12f686eb87e5777174a2c908b44330fd685b9bc0687f1e85df0091c65a72c83a",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-11-05T09:56:58.981Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118250462092914736",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118250462092914736",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "google/gemma-4-26b-a4b-it:free",
-          "claim": {
-            "id": "2118250462092914736",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2118249806875533399",
-      "text": "@dani_avila7 Codex",
-      "url": "https://x.com/thsottiaux/status/2118249806875533399",
-      "posted_at": "2026-11-05T07:51:23.000Z",
-      "truncated": false,
-      "hash": "0f9fce132b6ffe4d5862fbd9548f75cb3c023492a6b2e0ef2e6f6566f8a7676c",
-      "status": "complete",
-      "attempts": 1,
-      "retry_at": "2026-11-05T09:56:58.981Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118249806875533399",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118249806875533399",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "google/gemma-4-26b-a4b-it:free",
-          "claim": {
-            "id": "2118249806875533399",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        }
-      ],
-      "result": {
-        "event": "none",
-        "state": "unknown",
-        "conditional": false,
-        "time": null,
-        "evidence": "",
-        "time_text": "",
-        "agreement": "3/3"
-      }
-    },
-    {
-      "id": "2118248900381536740",
-      "text": "Privilege to work alongside so many amazing people who won’t rest until we materialize a better future.",
-      "url": "https://x.com/thsottiaux/status/2118248900381536740",
-      "posted_at": "2026-11-05T07:47:47.000Z",
-      "truncated": false,
-      "hash": "644345d181ddf5a9c3bc6527c6434e7316048a44b8e3d076eef6f890827098bd",
-      "status": "unresolved",
-      "attempts": 3,
-      "retry_at": "2026-11-05T12:30:37.660Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118248900381536740",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118248900381536740",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "claim": null,
-          "error": "invalid_json"
-        }
-      ],
-      "result": null
     }
   ],
   "budget": {
-    "day": "2026-11-05",
-    "requests": 36
+    "day": "2026-11-06",
+    "requests": 3
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
