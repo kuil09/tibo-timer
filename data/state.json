@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-06T00:52:38.675Z",
-  "last_success_at": "2026-11-06T00:52:38.675Z",
+  "checked_at": "2026-11-06T01:16:27.751Z",
+  "last_success_at": "2026-11-06T01:16:27.751Z",
   "source_status": "ok",
   "analysis_status": "unresolved",
   "models": [
@@ -1078,49 +1078,6 @@
           "model": "dots-studio/dots-3-note-preview:free",
           "claim": {
             "id": "2118165504955494695",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "claim": null,
-          "error": "invalid_json"
-        }
-      ],
-      "result": null
-    },
-    {
-      "id": "2118147545931374976",
-      "text": "@fly3nn @grok Reports of my retirement have been greatly exaggerated",
-      "url": "https://x.com/thsottiaux/status/2118147545931374976",
-      "posted_at": "2026-11-05T01:05:02.000Z",
-      "truncated": false,
-      "hash": "17e3b7a6c133859646727c276d3b7e23cc431c30c1cc8f698f37c8d266d1629b",
-      "status": "unresolved",
-      "attempts": 3,
-      "retry_at": "2026-11-05T12:30:37.660Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118147545931374976",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118147545931374976",
             "event": "none",
             "state": "unknown",
             "conditional": false,
