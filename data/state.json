@@ -3,22 +3,23 @@
   "checked_at": "2026-11-06T06:37:15.287Z",
   "last_success_at": "2026-11-06T06:37:15.287Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "error",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-11-06T06:37:15.287Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-11-06T06:37:15.287Z"
     },
     {
       "id": "liquid/lfm-2.5-2.6b:free",
-      "status": "pending",
-      "at": "2026-11-06T06:37:15.287Z"
+      "status": "error",
+      "at": "2026-11-06T06:37:15.287Z",
+      "error": "http_429"
     }
   ],
   "posts": [
@@ -58,7 +59,7 @@
           }
         },
         {
-          "model": "google/gemma-4-26b-a4b-it:free",
+          "model": "liquid/lfm-2.5-2.6b:free",
           "claim": null,
           "error": "http_429"
         }
@@ -101,7 +102,7 @@
           }
         },
         {
-          "model": "google/gemma-4-26b-a4b-it:free",
+          "model": "liquid/lfm-2.5-2.6b:free",
           "claim": null,
           "error": "http_429"
         }
@@ -144,7 +145,7 @@
           }
         },
         {
-          "model": "google/gemma-4-26b-a4b-it:free",
+          "model": "liquid/lfm-2.5-2.6b:free",
           "claim": null,
           "error": "http_429"
         }
@@ -187,7 +188,7 @@
           }
         },
         {
-          "model": "google/gemma-4-26b-a4b-it:free",
+          "model": "liquid/lfm-2.5-2.6b:free",
           "claim": null,
           "error": "http_429"
         }
@@ -230,7 +231,7 @@
           }
         },
         {
-          "model": "google/gemma-4-26b-a4b-it:free",
+          "model": "liquid/lfm-2.5-2.6b:free",
           "claim": null,
           "error": "http_429"
         }
@@ -273,7 +274,7 @@
           }
         },
         {
-          "model": "google/gemma-4-26b-a4b-it:free",
+          "model": "liquid/lfm-2.5-2.6b:free",
           "claim": null,
           "error": "http_429"
         }
@@ -316,7 +317,7 @@
           }
         },
         {
-          "model": "google/gemma-4-26b-a4b-it:free",
+          "model": "liquid/lfm-2.5-2.6b:free",
           "claim": null,
           "error": "http_429"
         }
@@ -1088,7 +1089,7 @@
     "nex-agi/nex-n2.5-mini:free": "2026-09-22T23:19:34.908Z",
     "google/gemma-4-26b-a4b-it:free": "2026-11-06T11:30:30.365Z",
     "nvidia/nemotron-3-super-120b-a12b:free": "2026-09-29T21:24:24.070Z",
-    "liquid/lfm-2.5-2.6b:free": "2026-11-05T23:30:13.544Z",
+    "liquid/lfm-2.5-2.6b:free": "2026-11-06T12:37:15.287Z",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": "2026-11-05T17:30:37.660Z",
     "apodex/apodex-1.1-mini:free": "2026-10-06T13:32:52.215Z"
   }
