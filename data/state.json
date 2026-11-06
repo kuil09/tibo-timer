@@ -1,25 +1,24 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-06T06:24:05.717Z",
-  "last_success_at": "2026-11-06T06:24:05.717Z",
+  "checked_at": "2026-11-06T06:37:15.287Z",
+  "last_success_at": "2026-11-06T06:37:15.287Z",
   "source_status": "ok",
-  "analysis_status": "retry_pending",
+  "analysis_status": "running",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "ok",
-      "at": "2026-11-06T05:30:30.365Z"
+      "status": "pending",
+      "at": "2026-11-06T06:37:15.287Z"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-11-06T05:30:30.365Z"
+      "status": "pending",
+      "at": "2026-11-06T06:37:15.287Z"
     },
     {
-      "id": "google/gemma-4-26b-a4b-it:free",
-      "status": "error",
-      "at": "2026-11-06T05:30:30.365Z",
-      "error": "http_429"
+      "id": "liquid/lfm-2.5-2.6b:free",
+      "status": "pending",
+      "at": "2026-11-06T06:37:15.287Z"
     }
   ],
   "posts": [
@@ -31,8 +30,8 @@
       "truncated": false,
       "hash": "1b69f4af212edb69b6524df4f372f8062d7aa6c042f9e153bed7f5ba937446a6",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-11-06T06:30:30.365Z",
+      "attempts": 2,
+      "retry_at": "2026-11-06T07:37:15.287Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -74,8 +73,8 @@
       "truncated": false,
       "hash": "4d410349ccdce48f301384410df314c41f7ac85655103f1bc1b50ec8bfedaf46",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-11-06T06:30:30.365Z",
+      "attempts": 2,
+      "retry_at": "2026-11-06T07:37:15.287Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -117,8 +116,8 @@
       "truncated": false,
       "hash": "6e244ec5546997dda058f7d9b785a41f43f577448017a14854da0672c4faf960",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-11-06T06:30:30.365Z",
+      "attempts": 2,
+      "retry_at": "2026-11-06T07:37:15.287Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -160,8 +159,8 @@
       "truncated": false,
       "hash": "fb78e387f5c6e416d3738d2b65d646b55d9b60ffe1c36f8656377dc5a1d546ad",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-11-06T06:30:30.365Z",
+      "attempts": 2,
+      "retry_at": "2026-11-06T07:37:15.287Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -203,8 +202,8 @@
       "truncated": false,
       "hash": "2d31145f4734b50e924c56cfd34c13424d375c54264ae9be96a4165a00764a29",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-11-06T06:30:30.365Z",
+      "attempts": 2,
+      "retry_at": "2026-11-06T07:37:15.287Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -246,8 +245,8 @@
       "truncated": false,
       "hash": "2eaca3d15f8b1b08863eabef8f7a23bd6f8e8ace2d3ca384c320373242ad57cd",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-11-06T06:30:30.365Z",
+      "attempts": 2,
+      "retry_at": "2026-11-06T07:37:15.287Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -289,8 +288,8 @@
       "truncated": false,
       "hash": "f4fdfa4c7672649e8cddd775de539935c582026e5e92ac9558d17142327698a1",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-11-06T06:30:30.365Z",
+      "attempts": 2,
+      "retry_at": "2026-11-06T07:37:15.287Z",
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
@@ -1081,7 +1080,7 @@
   ],
   "budget": {
     "day": "2026-11-06",
-    "requests": 3
+    "requests": 6
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
