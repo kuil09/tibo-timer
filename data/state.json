@@ -3,22 +3,24 @@
   "checked_at": "2026-11-06T23:50:25.555Z",
   "last_success_at": "2026-11-06T23:50:25.555Z",
   "source_status": "ok",
-  "analysis_status": "running",
+  "analysis_status": "error",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
-      "status": "pending",
-      "at": "2026-11-06T23:50:25.555Z"
+      "status": "error",
+      "at": "2026-11-06T23:50:25.555Z",
+      "error": "invalid_vote"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "pending",
+      "status": "ok",
       "at": "2026-11-06T23:50:25.555Z"
     },
     {
       "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-      "status": "pending",
-      "at": "2026-11-06T23:50:25.555Z"
+      "status": "error",
+      "at": "2026-11-06T23:50:25.555Z",
+      "error": "invalid_json"
     }
   ],
   "posts": [
@@ -35,15 +37,8 @@
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118802895604994463",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
+          "claim": null,
+          "error": "invalid_vote"
         },
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -58,9 +53,9 @@
           }
         },
         {
-          "model": "liquid/lfm-2.5-2.6b:free",
+          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
           "claim": null,
-          "error": "http_429"
+          "error": "invalid_json"
         }
       ],
       "result": null
@@ -78,15 +73,8 @@
       "votes": [
         {
           "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118802796749508830",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
+          "claim": null,
+          "error": "invalid_vote"
         },
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -101,9 +89,9 @@
           }
         },
         {
-          "model": "liquid/lfm-2.5-2.6b:free",
+          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
           "claim": null,
-          "error": "http_429"
+          "error": "invalid_json"
         }
       ],
       "result": null
@@ -416,12 +404,12 @@
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
-    "cohere/north-mini-code:free": "2026-10-05T03:10:42.610Z",
+    "cohere/north-mini-code:free": "2026-11-07T05:50:25.555Z",
     "nex-agi/nex-n2.5-mini:free": "2026-09-22T23:19:34.908Z",
     "google/gemma-4-26b-a4b-it:free": "2026-11-07T03:11:38.205Z",
     "nvidia/nemotron-3-super-120b-a12b:free": "2026-09-29T21:24:24.070Z",
     "liquid/lfm-2.5-2.6b:free": "2026-11-07T04:30:23.730Z",
-    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": "2026-11-06T14:18:48.017Z",
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": "2026-11-07T05:50:25.555Z",
     "apodex/apodex-1.1-mini:free": "2026-10-06T13:32:52.215Z"
   }
 }
