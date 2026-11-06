@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-06T09:16:27.120Z",
-  "last_success_at": "2026-11-06T09:16:27.120Z",
+  "checked_at": "2026-11-06T09:30:15.155Z",
+  "last_success_at": "2026-11-06T09:30:15.155Z",
   "source_status": "ok",
-  "analysis_status": "retry_pending",
+  "analysis_status": "unresolved",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
@@ -30,7 +30,7 @@
       "posted_at": "2026-11-06T05:23:11.000Z",
       "truncated": false,
       "hash": "1b69f4af212edb69b6524df4f372f8062d7aa6c042f9e153bed7f5ba937446a6",
-      "status": "error",
+      "status": "unresolved",
       "attempts": 3,
       "retry_at": "2026-11-06T09:18:48.017Z",
       "votes": [
@@ -73,7 +73,7 @@
       "posted_at": "2026-11-06T05:12:24.000Z",
       "truncated": false,
       "hash": "4d410349ccdce48f301384410df314c41f7ac85655103f1bc1b50ec8bfedaf46",
-      "status": "error",
+      "status": "unresolved",
       "attempts": 3,
       "retry_at": "2026-11-06T09:18:48.017Z",
       "votes": [
@@ -116,7 +116,7 @@
       "posted_at": "2026-11-06T05:03:12.000Z",
       "truncated": false,
       "hash": "6e244ec5546997dda058f7d9b785a41f43f577448017a14854da0672c4faf960",
-      "status": "error",
+      "status": "unresolved",
       "attempts": 3,
       "retry_at": "2026-11-06T09:18:48.017Z",
       "votes": [
@@ -159,7 +159,7 @@
       "posted_at": "2026-11-06T05:01:30.000Z",
       "truncated": false,
       "hash": "fb78e387f5c6e416d3738d2b65d646b55d9b60ffe1c36f8656377dc5a1d546ad",
-      "status": "error",
+      "status": "unresolved",
       "attempts": 3,
       "retry_at": "2026-11-06T09:18:48.017Z",
       "votes": [
@@ -202,7 +202,7 @@
       "posted_at": "2026-11-06T05:00:41.000Z",
       "truncated": false,
       "hash": "2d31145f4734b50e924c56cfd34c13424d375c54264ae9be96a4165a00764a29",
-      "status": "error",
+      "status": "unresolved",
       "attempts": 3,
       "retry_at": "2026-11-06T09:18:48.017Z",
       "votes": [
@@ -245,7 +245,7 @@
       "posted_at": "2026-11-06T04:55:21.000Z",
       "truncated": false,
       "hash": "2eaca3d15f8b1b08863eabef8f7a23bd6f8e8ace2d3ca384c320373242ad57cd",
-      "status": "error",
+      "status": "unresolved",
       "attempts": 3,
       "retry_at": "2026-11-06T09:18:48.017Z",
       "votes": [
@@ -288,7 +288,7 @@
       "posted_at": "2026-11-06T04:53:36.000Z",
       "truncated": false,
       "hash": "f4fdfa4c7672649e8cddd775de539935c582026e5e92ac9558d17142327698a1",
-      "status": "error",
+      "status": "unresolved",
       "attempts": 3,
       "retry_at": "2026-11-06T09:18:48.017Z",
       "votes": [
