@@ -1,27 +1,105 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-07T06:31:43.554Z",
-  "last_success_at": "2026-11-07T05:50:12.601Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-11-07T06:50:08.430Z",
+  "last_success_at": "2026-11-07T06:50:08.430Z",
+  "source_status": "ok",
+  "analysis_status": "running",
   "models": [
     {
+      "id": "cohere/north-mini-code:free",
+      "status": "pending",
+      "at": "2026-11-07T06:50:08.430Z"
+    },
+    {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-11-07T05:50:12.601Z"
+      "status": "pending",
+      "at": "2026-11-07T06:50:08.430Z"
     },
     {
-      "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
-      "status": "ok",
-      "at": "2026-11-07T05:50:12.601Z"
-    },
-    {
-      "id": "recursive/flint-v1.0:free",
-      "status": "ok",
-      "at": "2026-11-07T05:50:12.601Z"
+      "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "status": "pending",
+      "at": "2026-11-07T06:50:08.430Z"
     }
   ],
   "posts": [
+    {
+      "id": "2118953661820977315",
+      "text": "@theo Also, you really died 25 times? 😭",
+      "url": "https://x.com/thsottiaux/status/2118953661820977315",
+      "posted_at": "2026-11-07T06:28:15.000Z",
+      "truncated": false,
+      "hash": "8538f5d270cc0f4f90d4b3eaea508358e8fcf25acddba553bd3254d79694d3ae",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-07T07:50:08.430Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2118953500432650621",
+      "text": "@theo Show us your skills",
+      "url": "https://x.com/thsottiaux/status/2118953500432650621",
+      "posted_at": "2026-11-07T06:27:37.000Z",
+      "truncated": false,
+      "hash": "e0cc1b208a343d1ecd87305ee9be785114a459989273aa0a55033b19a45d9c47",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-07T07:50:08.430Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2118953362725159104",
+      "text": "Cyber",
+      "url": "https://x.com/thsottiaux/status/2118953362725159104",
+      "posted_at": "2026-11-07T06:27:04.000Z",
+      "truncated": false,
+      "hash": "d013baec5a78c20054b0c0e5624dc056ff2d01f96a0a1baa3101016de9c4000f",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-07T07:50:08.430Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2118953187344560319",
+      "text": "@thdxr ?",
+      "url": "https://x.com/thsottiaux/status/2118953187344560319",
+      "posted_at": "2026-11-07T06:26:22.000Z",
+      "truncated": false,
+      "hash": "42cf5306d12cf24933c0adfe24545e0560ed0ecb2192bd9eaea6021468f8c686",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-07T07:50:08.430Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2118952992644960524",
+      "text": "@maria_rcks What if it was Opus 5.5",
+      "url": "https://x.com/thsottiaux/status/2118952992644960524",
+      "posted_at": "2026-11-07T06:25:36.000Z",
+      "truncated": false,
+      "hash": "71f2e4413baff9222296f9e3c73d6b2c5a6b83f9ea04445a959a936d4a00ceba",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-07T07:50:08.430Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2118944211169063121",
+      "text": "@thorstenball Odd, the y axis is flipped ?",
+      "url": "https://x.com/thsottiaux/status/2118944211169063121",
+      "posted_at": "2026-11-07T05:50:42.000Z",
+      "truncated": false,
+      "hash": "b46d5a2f6e32e755fbeb30488166dae2b67b7822adc5798ae8c7d4083a3a96cc",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-07T07:50:08.430Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2118943165092970764",
       "text": "@TsoiNotes Well done",
@@ -320,8 +398,8 @@
       "truncated": false,
       "hash": "5773268c1e2cc1de2bfd5a9429f277ed1b5884a310873addfc14153b992aefe6",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-11-07T05:50:15.393Z",
+      "attempts": 2,
+      "retry_at": "2026-11-07T07:50:08.430Z",
       "votes": [
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -539,7 +617,7 @@
   ],
   "budget": {
     "day": "2026-11-07",
-    "requests": 15
+    "requests": 18
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
