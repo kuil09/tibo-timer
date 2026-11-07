@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-06T23:50:25.555Z",
-  "last_success_at": "2026-11-06T23:50:25.555Z",
+  "checked_at": "2026-11-07T00:32:47.986Z",
+  "last_success_at": "2026-11-07T00:32:47.986Z",
   "source_status": "ok",
-  "analysis_status": "error",
+  "analysis_status": "retry_pending",
   "models": [
     {
       "id": "cohere/north-mini-code:free",
