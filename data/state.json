@@ -1,29 +1,53 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-07T00:50:13.892Z",
-  "last_success_at": "2026-11-07T00:50:13.892Z",
+  "checked_at": "2026-11-07T01:13:44.610Z",
+  "last_success_at": "2026-11-07T01:13:44.610Z",
   "source_status": "ok",
-  "analysis_status": "retry_pending",
+  "analysis_status": "running",
   "models": [
     {
-      "id": "cohere/north-mini-code:free",
-      "status": "error",
-      "at": "2026-11-06T23:50:25.555Z",
-      "error": "invalid_vote"
-    },
-    {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-11-06T23:50:25.555Z"
+      "status": "pending",
+      "at": "2026-11-07T01:13:44.610Z"
     },
     {
-      "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-      "status": "error",
-      "at": "2026-11-06T23:50:25.555Z",
-      "error": "invalid_json"
+      "id": "liquid/lfm-3-1.7b:free",
+      "status": "pending",
+      "at": "2026-11-07T01:13:44.610Z"
+    },
+    {
+      "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "status": "pending",
+      "at": "2026-11-07T01:13:44.610Z"
     }
   ],
   "posts": [
+    {
+      "id": "2118874107341389982",
+      "text": "@ritu_twts Love that you immediately picked up and answered all my questions on how you use dots",
+      "url": "https://x.com/thsottiaux/status/2118874107341389982",
+      "posted_at": "2026-11-07T01:12:08.000Z",
+      "truncated": false,
+      "hash": "c56d9ffd15628dd44a812cd648f6cb1168af742624a09316f0d09bbdfbf24155",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-07T02:13:44.610Z",
+      "votes": [],
+      "result": null
+    },
+    {
+      "id": "2118871902366441879",
+      "text": "It's Friday",
+      "url": "https://x.com/thsottiaux/status/2118871902366441879",
+      "posted_at": "2026-11-07T01:03:22.000Z",
+      "truncated": false,
+      "hash": "4baa65e5387ed13e01e7ea91eb8dd59cf2538230ea073a49da303fe080fce553",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-07T02:13:44.610Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2118802895604994463",
       "text": "More things to come, join our Cyber at the Frontier livestream on November 12, 10am PT: https://t.co/GiwgmJXL1t",
@@ -31,7 +55,7 @@
       "posted_at": "2026-11-06T20:29:10.000Z",
       "truncated": false,
       "hash": "d135737c6e96ec83e71479cebb95b98542b7468f249be780680cdbcf2b1460a3",
-      "status": "error",
+      "status": "unresolved",
       "attempts": 3,
       "retry_at": "2026-11-07T00:50:25.555Z",
       "votes": [
@@ -67,7 +91,7 @@
       "posted_at": "2026-11-06T20:28:46.000Z",
       "truncated": false,
       "hash": "9b566a2f45c024461988789f5c1e93255ef2c827d4c912a8364d77e935b2dd71",
-      "status": "error",
+      "status": "unresolved",
       "attempts": 3,
       "retry_at": "2026-11-07T00:50:25.555Z",
       "votes": [
@@ -399,8 +423,8 @@
     }
   ],
   "budget": {
-    "day": "2026-11-06",
-    "requests": 18
+    "day": "2026-11-07",
+    "requests": 3
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
