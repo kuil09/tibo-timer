@@ -1,27 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-07T04:30:17.154Z",
-  "last_success_at": "2026-11-07T04:16:03.151Z",
-  "source_status": "http_404",
-  "analysis_status": "source_unavailable",
+  "checked_at": "2026-11-07T04:50:15.393Z",
+  "last_success_at": "2026-11-07T04:50:15.393Z",
+  "source_status": "ok",
+  "analysis_status": "running",
   "models": [
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-11-07T02:17:21.940Z"
+      "status": "pending",
+      "at": "2026-11-07T04:50:15.393Z"
     },
     {
-      "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
-      "status": "ok",
-      "at": "2026-11-07T02:17:21.940Z"
+      "id": "google/gemma-4-26b-a4b-it:free",
+      "status": "pending",
+      "at": "2026-11-07T04:50:15.393Z"
     },
     {
-      "id": "recursive/flint-v1.0:free",
-      "status": "ok",
-      "at": "2026-11-07T02:17:21.940Z"
+      "id": "liquid/lfm-2.5-2.6b:free",
+      "status": "pending",
+      "at": "2026-11-07T04:50:15.393Z"
     }
   ],
   "posts": [
+    {
+      "id": "2118927736031047850",
+      "text": "@jkelleyrtp Do it",
+      "url": "https://x.com/thsottiaux/status/2118927736031047850",
+      "posted_at": "2026-11-07T04:45:14.000Z",
+      "truncated": false,
+      "hash": "5773268c1e2cc1de2bfd5a9429f277ed1b5884a310873addfc14153b992aefe6",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-07T05:50:15.393Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2118874107341389982",
       "text": "@ritu_twts Love that you immediately picked up and answered all my questions on how you use dots",
@@ -514,7 +527,7 @@
   ],
   "budget": {
     "day": "2026-11-07",
-    "requests": 6
+    "requests": 9
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
