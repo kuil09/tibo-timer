@@ -1,25 +1,24 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-07T01:50:33.966Z",
-  "last_success_at": "2026-11-07T01:50:33.966Z",
+  "checked_at": "2026-11-07T02:17:21.940Z",
+  "last_success_at": "2026-11-07T02:17:21.940Z",
   "source_status": "ok",
-  "analysis_status": "retry_pending",
+  "analysis_status": "running",
   "models": [
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-11-07T01:13:44.610Z"
-    },
-    {
-      "id": "liquid/lfm-3-1.7b:free",
-      "status": "error",
-      "at": "2026-11-07T01:13:44.610Z",
-      "error": "http_504"
+      "status": "pending",
+      "at": "2026-11-07T02:17:21.940Z"
     },
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
-      "status": "ok",
-      "at": "2026-11-07T01:13:44.610Z"
+      "status": "pending",
+      "at": "2026-11-07T02:17:21.940Z"
+    },
+    {
+      "id": "recursive/flint-v1.0:free",
+      "status": "pending",
+      "at": "2026-11-07T02:17:21.940Z"
     }
   ],
   "posts": [
@@ -31,8 +30,8 @@
       "truncated": false,
       "hash": "c56d9ffd15628dd44a812cd648f6cb1168af742624a09316f0d09bbdfbf24155",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-11-07T02:13:44.610Z",
+      "attempts": 2,
+      "retry_at": "2026-11-07T03:17:21.940Z",
       "votes": [
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -74,8 +73,8 @@
       "truncated": false,
       "hash": "4baa65e5387ed13e01e7ea91eb8dd59cf2538230ea073a49da303fe080fce553",
       "status": "error",
-      "attempts": 1,
-      "retry_at": "2026-11-07T02:13:44.610Z",
+      "attempts": 2,
+      "retry_at": "2026-11-07T03:17:21.940Z",
       "votes": [
         {
           "model": "dots-studio/dots-3-note-preview:free",
@@ -485,7 +484,7 @@
   ],
   "budget": {
     "day": "2026-11-07",
-    "requests": 3
+    "requests": 6
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
