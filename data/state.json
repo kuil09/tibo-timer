@@ -1,29 +1,40 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-07T04:50:15.393Z",
-  "last_success_at": "2026-11-07T04:50:15.393Z",
+  "checked_at": "2026-11-07T05:13:22.975Z",
+  "last_success_at": "2026-11-07T05:13:22.975Z",
   "source_status": "ok",
-  "analysis_status": "error",
+  "analysis_status": "running",
   "models": [
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "status": "ok",
-      "at": "2026-11-07T04:50:15.393Z"
+      "status": "pending",
+      "at": "2026-11-07T05:13:22.975Z"
     },
     {
-      "id": "google/gemma-4-26b-a4b-it:free",
-      "status": "error",
-      "at": "2026-11-07T04:50:15.393Z",
-      "error": "http_429"
+      "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "status": "pending",
+      "at": "2026-11-07T05:13:22.975Z"
     },
     {
-      "id": "liquid/lfm-2.5-2.6b:free",
-      "status": "error",
-      "at": "2026-11-07T04:50:15.393Z",
-      "error": "invalid_vote"
+      "id": "recursive/flint-v1.0:free",
+      "status": "pending",
+      "at": "2026-11-07T05:13:22.975Z"
     }
   ],
   "posts": [
+    {
+      "id": "2118931941907165401",
+      "text": "@johnsavage_ai Savage, John",
+      "url": "https://x.com/thsottiaux/status/2118931941907165401",
+      "posted_at": "2026-11-07T05:01:57.000Z",
+      "truncated": false,
+      "hash": "d6882ec68f770b339d7eb956156c337644dea060035e3f8d88fa676cb7afa084",
+      "status": "pending",
+      "attempts": 1,
+      "retry_at": "2026-11-07T06:13:22.975Z",
+      "votes": [],
+      "result": null
+    },
     {
       "id": "2118927736031047850",
       "text": "@jkelleyrtp Do it",
@@ -290,269 +301,11 @@
         }
       ],
       "result": null
-    },
-    {
-      "id": "2118572184679710964",
-      "text": "@ajambrosino @pablostanley Feedback is a gift",
-      "url": "https://x.com/thsottiaux/status/2118572184679710964",
-      "posted_at": "2026-11-06T05:12:24.000Z",
-      "truncated": false,
-      "hash": "4d410349ccdce48f301384410df314c41f7ac85655103f1bc1b50ec8bfedaf46",
-      "status": "unresolved",
-      "attempts": 3,
-      "retry_at": "2026-11-06T09:18:48.017Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118572184679710964",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118572184679710964",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "claim": null,
-          "error": "invalid_json"
-        }
-      ],
-      "result": null
-    },
-    {
-      "id": "2118569868278796680",
-      "text": "@Sergey_Rura There is no going back. Software is changed forever.",
-      "url": "https://x.com/thsottiaux/status/2118569868278796680",
-      "posted_at": "2026-11-06T05:03:12.000Z",
-      "truncated": false,
-      "hash": "6e244ec5546997dda058f7d9b785a41f43f577448017a14854da0672c4faf960",
-      "status": "unresolved",
-      "attempts": 3,
-      "retry_at": "2026-11-06T09:18:48.017Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118569868278796680",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118569868278796680",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "claim": null,
-          "error": "invalid_json"
-        }
-      ],
-      "result": null
-    },
-    {
-      "id": "2118569441860723112",
-      "text": "Formal proofs of tens of millions of lines of code are not a ridiculous thing anymore and within the realm of what should be considered when designing new systems.",
-      "url": "https://x.com/thsottiaux/status/2118569441860723112",
-      "posted_at": "2026-11-06T05:01:30.000Z",
-      "truncated": false,
-      "hash": "fb78e387f5c6e416d3738d2b65d646b55d9b60ffe1c36f8656377dc5a1d546ad",
-      "status": "unresolved",
-      "attempts": 3,
-      "retry_at": "2026-11-06T09:18:48.017Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118569441860723112",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118569441860723112",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "claim": null,
-          "error": "invalid_json"
-        }
-      ],
-      "result": null
-    },
-    {
-      "id": "2118569235953893573",
-      "text": "I can confidently say that humans were not very good at writing secure infrastructure. The endstate will be hypersecure infrastructure and software for all, but we're going to go through some turbulence before we reach that.",
-      "url": "https://x.com/thsottiaux/status/2118569235953893573",
-      "posted_at": "2026-11-06T05:00:41.000Z",
-      "truncated": false,
-      "hash": "2d31145f4734b50e924c56cfd34c13424d375c54264ae9be96a4165a00764a29",
-      "status": "unresolved",
-      "attempts": 3,
-      "retry_at": "2026-11-06T09:18:48.017Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118569235953893573",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118569235953893573",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "claim": null,
-          "error": "invalid_json"
-        }
-      ],
-      "result": null
-    },
-    {
-      "id": "2118567894309306654",
-      "text": "@maxleiter Hi Max 👀",
-      "url": "https://x.com/thsottiaux/status/2118567894309306654",
-      "posted_at": "2026-11-06T04:55:21.000Z",
-      "truncated": false,
-      "hash": "2eaca3d15f8b1b08863eabef8f7a23bd6f8e8ace2d3ca384c320373242ad57cd",
-      "status": "unresolved",
-      "attempts": 3,
-      "retry_at": "2026-11-06T09:18:48.017Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118567894309306654",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118567894309306654",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "claim": null,
-          "error": "invalid_json"
-        }
-      ],
-      "result": null
-    },
-    {
-      "id": "2118567451596300778",
-      "text": "@Layton_Gott Basement is full of wonders",
-      "url": "https://x.com/thsottiaux/status/2118567451596300778",
-      "posted_at": "2026-11-06T04:53:36.000Z",
-      "truncated": false,
-      "hash": "f4fdfa4c7672649e8cddd775de539935c582026e5e92ac9558d17142327698a1",
-      "status": "unresolved",
-      "attempts": 3,
-      "retry_at": "2026-11-06T09:18:48.017Z",
-      "votes": [
-        {
-          "model": "cohere/north-mini-code:free",
-          "claim": {
-            "id": "2118567451596300778",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "dots-studio/dots-3-note-preview:free",
-          "claim": {
-            "id": "2118567451596300778",
-            "event": "none",
-            "state": "unknown",
-            "conditional": false,
-            "evidence": "",
-            "time_text": "",
-            "time": null
-          }
-        },
-        {
-          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "claim": null,
-          "error": "invalid_json"
-        }
-      ],
-      "result": null
     }
   ],
   "budget": {
     "day": "2026-11-07",
-    "requests": 9
+    "requests": 12
   },
   "cooldowns": {
     "google/gemma-4-31b-it:free": "2026-09-09T07:02:24.646Z",
